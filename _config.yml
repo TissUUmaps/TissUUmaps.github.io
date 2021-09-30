@@ -70,6 +70,13 @@ collections:
     feature_text: |
       Welcome to the blog
     feature_image: "https://picsum.photos/2560/600?image=866"
+  galleries:
+    title: Galleries # Needed for Siteleaf
+    output: true
+    description: "TissUUmaps gallery" # The post list page content
+    feature_text: |
+      Welcome to the gallery
+    feature_image: "https://picsum.photos/2560/600?image=866"
 
 # 6. Jekyll collections settings
 defaults:

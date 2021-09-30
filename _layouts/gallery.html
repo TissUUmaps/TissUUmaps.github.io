@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{% include site-header.html %}
+
+<main class="main  container">
+	<article class="article  article--page  content  typeset">
+		<h1>{{ page.title }}</h1>
+	</article>
+</main>
+
+
+<main class="container">
+    {% for item in site.galleries %}
+    <article class="article  article--page  content  typeset row">
+      <div class='column'>
+        <a target="_blank" href="{{ item.url }}">
+          <img src="{{ item.feature_image }}"/>
+        </a>
+      </div>
+      <div class='column'>
+        {{ item.excerpt }}
+        <a target="_blank" href="{{ item.url }}">
+          [Open in a new page]
+        </a>
+      </div>
+    </article>
+    <hr/>
+  {% endfor %}
+
+  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
+
+</main>
+
+{% include site-footer.html %}
