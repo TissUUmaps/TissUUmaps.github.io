@@ -15,14 +15,14 @@ layout: default
     {% for item in site.galleries %}
     <article class="article  article--page  content  typeset row">
       <div class='column'>
-        <a target="_blank" href="{{ item.url }}">
+        <a target="_blank" href="{{ item.link }}">
           <img src="{{ item.feature_image }}"/>
         </a>
       </div>
       <div class='column'>
         {{ item.excerpt }}
-        <a target="_blank" href="{{ item.url }}">
-          [Open in a new page]
+        <a target="_blank" href="{{ item.link }}">
+          [Interactive demo]
         </a>
       </div>
     </article>
