@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% include site-header.html %}
+
+<main class="main  container">
+	<article class="article  article--page  content  typeset">
+		<h1>{{ page.title }}</h1>
+	</article>
+</main>
+
+
+<main class="main container">
+  <div class="">
+    {% for item in site.downloads %}
+      <article class="article  article--page  typeset" id="{{ item.title | slugify  }}">
+        <h3>{{ item.title }}</h3>
+        <br/>
+        {{ item.content }}
+      </article>
+    {% endfor %}
+  </div>
+  <aside class="aside  typeset  aside--left">
+    <section class="section  section--category-index">
+      <h3>Index</h3>
+      <nav class="nav  nav--categories">
+        <ul class="list  list--categories">
+          {% for item in site.downloads %}
+            <li class="item  item--category">
+              <a href="#{{ item.title | slugify }}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+  
+    </section>
+  </aside>
+</main>
+{% include site-footer.html %}

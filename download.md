@@ -1,6 +1,6 @@
 ---
-title: Categories
-layout: categories
-excerpt: "Category index"
-aside: true
+title: Download
+layout: downloads
+excerpt: "Download index"
+aside: false
 ---

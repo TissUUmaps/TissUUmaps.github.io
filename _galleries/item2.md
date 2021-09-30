@@ -1,13 +1,11 @@
 ---
 title: Description of an Alembic
-feature_image: "https://picsum.photos/2560/600?image=872"
-url: "https://picsum.photos/2560/600?image=872"
+feature_image: "/assets/gallery_images/iss2ROIintro.png"
+link: "https://tissuumaps.research.it.uu.se/demo/isseq.html"
 ---
 
-The complete distilling apparatus consists of three parts: the "cucurbit" (Arabic ḳarʿa, Greek βίκος), the still pot containing the liquid to be distilled, which is heated by a flame; the "head" or "cap" (Arabic anbiḳ, Greek ἄμβιξ) which fits over the mouth of the cucurbit to receive the vapors, with an attached downward-sloping "tube" (Greek σωλήν), leading to the "receiver" (Arabic ḳābila, Greek ἄγγος or φιάλη) container.
+Spatial organization of tissue and cell types characterizes biological function, and spatially resolved gene expression has the power to reveal variations in this organization, with high resolution. Here, we show how in situ sequencing data combined with dimensionality reduction and clustering can be used to identify spatial compartments that correspond to known anatomical compartments of a mouse brain, replacing the need of manual annotation based on cell and tissue morphology. Here we visualize decoded spatial transcriptomic and gene expression defined compartments on a mouse brain coronal section.
 
-<!-- more -->
+We thank Xiaoyan Qian for kindly providing in situ sequencing raw data.
 
-Retorts have the "cap" and the "cucurbit" made into one. The anbik is also called the raʾs (head) of the cucurbit. The liquid in the cucurbit is heated or boiled; the vapour rises into the anbik, where it cools by contact with the walls and condenses, running down the spout into the receiver. A modern descendant of the alembic is the pot still, used to produce distilled beverages.
 
-_Originally from [Alembic - Wikipedia](https://en.wikipedia.org/wiki/Alembic)_
