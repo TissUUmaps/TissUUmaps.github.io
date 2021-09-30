@@ -9,7 +9,7 @@ aside: false
 
 <div class="row">
   <div class="column">
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/420612632?h=6d9618e308" width="792" height="445.5" frameborder="0" allowfullscreen></iframe>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/420612632?h=6d9618e308" width="792" height="445.5" frameborder="0" allowfullscreen style="max-width:100%;"></iframe>
   </div>
   <div class="column">
     TissUUmaps is a browser-based  tool for fast visualization and exploration of millions of data points overlaying a tissue sample. TissUUmaps can be used as a web service or locally in your computer, and allows users to share regions of interest and local statistics.

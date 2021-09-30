@@ -139,6 +139,10 @@ width: 90%;
   }
 }
 
+h1 {
+  text-align: center;
+}
+
 .header,
 .feature,
 .footer {
@@ -486,10 +490,13 @@ pre code {
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  display: contents;
+  @include breakpoint(break-3) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Inserting this collapsed row between two flex items will make 
@@ -500,16 +507,21 @@ pre code {
 
 
 img.publication{
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 	float: left;
 	margin-right: 2em;
 	clear: left;
 	border: 0px;
+  margin-top: 10px;
 }
 
 #publications li {
 	margin-bottom: 1em;
+}
+
+#publications p {
+	padding-left: 145px;
 }
 
 .erc-logo {
