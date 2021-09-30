@@ -8,12 +8,17 @@ body {
   overflow-x: hidden;
 }
 
-.container {
+.header .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+.container {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
 
 // Header, feature and footer
 .header,
@@ -142,7 +147,8 @@ width: 90%;
 
 .content {
   @include breakpoint(break-1) {
-    width: 62%;
+    width: 100%;
+	text-align: center;
   }
 }
 
@@ -152,10 +158,10 @@ width: 90%;
 
 .aside {
   @include breakpoint(break-1) {
-    max-width: 34%;
+    max-width: 45%;
     margin-left: 4%;
     @include flex(1, 0, auto);
-    opacity: 0.5;
+    opacity: 1;
     transition: opacity .1s;
     .section {
       /*position: sticky;*/
