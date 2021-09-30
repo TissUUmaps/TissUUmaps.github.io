@@ -1,6 +1,5 @@
 ---
-title: Categories
-layout: categories
-excerpt: "Category index"
-aside: true
+title: TissUUmaps - About
+layout: about
+aside: false
 ---

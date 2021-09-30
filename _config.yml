@@ -70,6 +70,13 @@ collections:
     feature_text: |
       Welcome to the blog
     feature_image: "https://picsum.photos/2560/600?image=866"
+  about:
+    title: About Us # Needed for Siteleaf
+    output: true
+    description: "TissUUmaps info" # The post list page content
+    feature_text: |
+      Welcome to the gallery
+    feature_image: "https://picsum.photos/2560/600?image=866"
   galleries:
     title: Galleries # Needed for Siteleaf
     output: true
@@ -103,9 +110,7 @@ encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "Alembic" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/uulogowhitetuum.png" # Site logo, also used in jekyll-seo-tag
-description: "TissUUmaps is a browser-based  tool for fast visualization and exploration of millions of data points overlaying a tissue sample. TissUUmaps can be used as a web service or locally in your computer, and allows users to share regions of interest and local statistics.
-<br /> <br />
-You can download TissUUmaps and follow our guides and tutorials to get started. You can also access the TissUUmaps project gallery with interactive examples to explore data from in situ sequencing and spatial transcriptomics experiments and view localized quantification of cell and tissue morphology, including links to publications." # Site description and default description, also used in jekyll-seo-tag
+description: "TissUUmaps is a browser-based  tool for fast visualization and exploration of millions of data points overlaying a tissue sample. TissUUmaps can be used as a web service or locally in your computer, and allows users to share regions of interest and local statistics." # Site description and default description, also used in jekyll-seo-tag
 url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/daviddarnes/alembic"

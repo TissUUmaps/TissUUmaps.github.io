@@ -16,7 +16,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1600px;
+  /*max-width: 1600px;*/
   margin: 0 auto;
 }
 
@@ -148,7 +148,10 @@ width: 90%;
 .content {
   @include breakpoint(break-1) {
     width: 100%;
-	text-align: center;
+	/*text-align: center;*/
+  }
+  .column {
+    padding-left:10px;
   }
 }
 
@@ -164,7 +167,7 @@ width: 90%;
     opacity: 1;
     transition: opacity .1s;
     .section {
-      /*position: sticky;*/
+      position: sticky;
       top: 0;
     }
     &--left {
@@ -487,4 +490,10 @@ pre code {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+}
+
+/* Inserting this collapsed row between two flex items will make 
+ * the flex item that comes after it break to a new row */
+ .index {
+  max-width: 30%;
 }
