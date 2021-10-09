@@ -10,8 +10,8 @@ title: People
         </p>
 	</li>
     <li>
-        <a href="https://katalog.uu.se/simpleprofile/?id=N13-1716"><img src="/assets/people_im/christophe.jpg" class="people"/></a>
-        <p class="name"><a href="https://katalog.uu.se/simpleprofile/?id=N13-1716">Christophe Avenel</a></p>
+        <a href="https://katalog.uu.se/empinfo/?id=N13-1716"><img src="/assets/people_im/christophe.jpg" class="people"/></a>
+        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N13-1716">Christophe Avenel</a></p>
         <p class="people">SciLifeLab - Bioimage Informatics Facility 
         </p>
 	</li>
@@ -27,5 +27,34 @@ title: People
         <p class="people">Researcher and Engineer
         </p>
 	</li>
-
+    <li>
+        <a href="https://katalog.uu.se/empinfo/?id=AA229"><img src="/assets/people_im/petter.jpg" class="people"/></a>
+        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=AA229">Petter Ranefall</a></p>
+        <p class="people">Bioinformatician
+        </p>
+	</li>
+    <li>
+        <a href="https://katalog.uu.se/empinfo/?id=N19-472"><img src="/assets/people_im/axel.jpg" class="people"/></a>
+        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N19-472">Axel Andersson</a></p>
+        <p class="people">PhD student
+        </p>
+	</li>    
+    <li>
+        <a href="https://katalog.uu.se/empinfo/?id=N20-66"><img src="/assets/people_im/andrea.jpg" class="people"/></a>
+        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N20-66">Andrea Behanova</a></p>
+        <p class="people">PhD student
+        </p>
+	</li>
+    <li>
+        <a href="https://katalog.uu.se/empinfo/?id=N20-1421"><img src="/assets/people_im/eduard.png" class="people"/></a>
+        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N20-1421">Eduard Chelebian</a></p>
+        <p class="people">PhD student
+        </p>
+	</li>
+    <li>
+        <a href="https://katalog.uu.se/profile/?id=N18-301"><img src="/assets/people_im/nicolas.jpg" class="people"/></a>
+        <p class="name"><a href="https://katalog.uu.se/profile/?id=N18-301">Nicolas Pielawski</a></p>
+        <p class="people">PhD student
+        </p>
+	</li>
 </ul>
