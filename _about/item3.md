@@ -17,25 +17,25 @@ title: Alumni
 	</li>
     <li>
         <a href="https://katalog.uu.se/empinfo/?id=N5-1054"><img src="/assets/people_im/Joakim.jpg" class="alumni"/></a>
-        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N5-1054"></a>Joakim Lindblad</p>
+        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N5-1054">Joakim Lindblad</a></p>
         <p class="alumni"> Researcher
         </p>
 	</li>
     <li>
         <a href="https://www.linkedin.com/in/maxime-bombrun-61b76648/?originalSubdomain=se"><img src="/assets/people_im/maxime.jpg" class="alumni"/></a>
-        <p class="name"><a href="https://www.linkedin.com/in/maxime-bombrun-61b76648/?originalSubdomain=se"></a>Maxime Bombrun</p>
+        <p class="name"><a href="https://www.linkedin.com/in/maxime-bombrun-61b76648/?originalSubdomain=se">Maxime Bombrun</a></p>
         <p class="alumni"> PhD student
         </p>
 	</li>
     <li>
         <a href=""><img src="/assets/people_im/person-icon.png" class="alumni"/></a>
-        <p class="name"><a href=""></a>Thu Tran</p>
+        <p class="name"><a href="">Thu Tran</a></p>
         <p class="alumni"> ?
         </p>
 	</li>
     <li>
         <a href="https://katalog.uu.se/profile/?id=N17-959"><img src="/assets/people_im/kimmo.jpg" class="alumni"/></a>
-        <p class="name"><a href="https://katalog.uu.se/profile/?id=N17-959"></a>Kimmo Kartasalo</p>
+        <p class="name"><a href="https://katalog.uu.se/profile/?id=N17-959">Kimmo Kartasalo</a></p>
         <p class="alumni"> PhD student
         </p>
 	</li>
