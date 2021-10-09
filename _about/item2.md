@@ -9,7 +9,7 @@ title: People
 		<p class="position">Principal investigator</p>
 	</li> -->
     <li>
-        <a href="https://katalog.uu.se/profile/?id=N96-5999"><img src="/assets/people_im/Carolina.png" width="130" height="170"/></a>
+        <a href="https://katalog.uu.se/profile/?id=N96-5999"><img src="/assets/people_im/Carolina.png" width="130" height="170" class="people"/></a>
         <p class="authors">Carolina W&auml;hlby</p>
         <p class="title">Principal investigator</p>
 	</li>
