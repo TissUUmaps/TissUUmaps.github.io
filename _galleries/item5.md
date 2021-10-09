@@ -1,6 +1,6 @@
 ---
 title: Description of an Alembic
-feature_image: "/assets/gallery_images/ISSintro.png"
+feature_image: "/assets/gallery_images/prostate.png"
 url: "https://picsum.photos/2560/600?image=872"
 ---
 
