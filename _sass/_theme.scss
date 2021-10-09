@@ -516,6 +516,15 @@ img.publication{
   margin-top: 10px;
 }
 
+
+#publications li {
+	margin-bottom: 1em;
+}
+
+#publications p {
+	padding-left: 145px;
+}
+
 img.people{
 	width: 130px;
 	height: 170px;
@@ -526,12 +535,13 @@ img.people{
   margin-top: 10px;
 }
 
-#publications li {
+
+#people li {
 	margin-bottom: 1em;
 }
 
-#publications p {
-	padding-left: 145px;
+#people p {
+	padding-left: 175px;
 }
 
 .erc-logo {
