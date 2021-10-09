@@ -12,7 +12,7 @@ title: People
     <li>
         <a href="https://katalog.uu.se/simpleprofile/?id=N13-1716"><img src="/assets/people_im/christophe.jpg" class="people"/></a>
         <p class="name"><a href="https://katalog.uu.se/simpleprofile/?id=N13-1716">Christophe Avenel</a></p>
-        <p class="people">SciLifeLab - Bioimage Informatics Facility
+        <p class="people">SciLifeLab - Bioimage Informatics Facility hhhh
         </p>
 	</li>
 
