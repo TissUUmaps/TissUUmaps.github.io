@@ -15,5 +15,11 @@ title: People
         <p class="people">SciLifeLab - Bioimage Informatics Facility 
         </p>
 	</li>
+    <li>
+        <a href="https://katalog.uu.se/empinfo/?id=N10-427"><img src="/assets/people_im/frederick.jpg" class="people"/></a>
+        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N10-427">Fredrik Nysj&ouml;</a></p>
+        <p class="people">Researcher and Engineer
+        </p>
+	</li>
 
 </ul>
