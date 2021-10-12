@@ -4,6 +4,13 @@ title: Publications
 
 <ul style="list-style-type:none">
 	<li>
+		<a href=""><img src="/assets/publi_images/Breast.png" class="publication"/></a>
+		<p class="authors">Y. Wang, B. Acs, S. Robertson, B. Liu, L. Solorzano, C. W&auml;hlby, J. Hartman, M. Rantalainen.</p>
+		<p class="title">Improved breast cancer histological grading using deep learning.</p>
+		<p class="publication"><a href="https://www.annalsofoncology.org/article/S0923-7534(21)04486-0/fulltext">Annals of Oncology</a>, doi: 10.1016/j.annonc.2021.09.007, Sept 29. 2021.
+		</p>
+	</li>
+	<li>
 		<a href=""><img src="/assets/publi_images/CNNrepurpose.png" class="publication"/></a>
 		<p class="authors">E. Chelebian, C. Avenel, K. Kartasalo, M. Marklund, A. Tanoglidi, T. Mirtti, R. Colling, A. Erickson, A.D. Lamb, J. Lundeberg, and C. W&auml;hlby.</p>
 		<p class="title">Morphological Features Extracted by AI Associated with Spatial Transcriptomics in Prostate Cancer.</p>

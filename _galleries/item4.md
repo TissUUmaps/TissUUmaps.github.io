@@ -1,15 +1,20 @@
 ---
 title: Description of an Alembic
-feature_image: "/assets/gallery_images/gene_spatial.png"
-url: "https://picsum.photos/2560/600?image=872"
+feature_image: "/assets/gallery_images/prostate.png"
+link: "https://tissuumaps.research.it.uu.se/sthlm3/viewer.html?image=28&choice=3"
 ---
 
-#### Automated identification of the mouse brain's spatial compartments from in situ sequencing data
+##### Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population-based, diagnostic study
+<br/>
+An increasing volume of prostate biopsies and a worldwide shortage of urological pathologists puts a
+strain on pathology departments. Additionally, the high intra-observer and inter-observer variability in grading can
+result in overtreatment and undertreatment of prostate cancer. To alleviate these problems, we aimed to develop an
+artificial intelligence (AI) system with clinically acceptable accuracy for prostate cancer detection, localisation, and
+Gleason grading. Here we show examples of full-resolution digitized biopsies and corresponding AI-based grading.
 
-Spatial organization of tissue and cell types characterizes biological function, and spatially resolved gene expression has the power to reveal variations in this organization, with high resolution. Here, we show how in situ sequencing data combined with dimensionality reduction and clustering can be used to identify spatial compartments that correspond to known anatomical compartments of the brain. We also visualize gradients in gene expression and sharp as well as smooth transitions between different compartments. We apply our method on mouse brain sections and show that computationally defined anatomical compartments are highly reproducible across individuals and have the potential to replace manual annotation based on cell and tissue morphology. Mapping the brain based on molecular information means that we can create detailed atlases independent of angle at sectioning or variations between individuals.
+More information is available in this <a href="https://arxiv.org/abs/1907.01368">publication</a>: \
+P. Ström, K. Kartasalo, H. Olsson, L. Solorzano, B. Delahunt, D.M. Berney, D.G. Bostwick, A.J. Evans, D.J. Grignon, P.A. Humphrey, K.A. Iczkowski, J.G. Kench, G. Kristiansen, T.H. van der Kwast, K.R.M. Leite, J.K. McKenney, J. Oxley, C-C. Pan, H. Samaratunga, J.R. Srigley, H. Takahashi, T. Tsuzuki, M. Varma, M. Zhou, J. Lindberg, C. Lindskog, P. Ruusuvuori, C. Wählby, H. Grönberg, M. Rantalainen, L. Egevad, and M. Eklund. Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population-based, diagnostic study. Lancet Oncology, doi: 10.1016/S1470-2045(19)30738-7, Jan 8, 2020. 
+arXiv version: <a href="https://arxiv.org/abs/1907.01368">https://arxiv.org/abs/1907.01368</a>
 
-Here you can access the <a href="https://doi.org/10.1038/s41592-019-0631-4"> publication</a> and demos 
-<a href="https://tissuumaps.research.it.uu.se/demo/1442_OB.html"> 1</a>,
-<a href="https://tissuumaps.research.it.uu.se/demo/1442_hippo.html"> 2</a>,
-<a href="https://tissuumaps.research.it.uu.se/demo/161230_161220_hippo_3_1.html"> 3</a> and
-<a href="https://tissuumaps.research.it.uu.se/demo/170315_161220_hippo_4_1.html"> 4</a> for Qian et al.
+An overview of all sample **datasets** can be found here: \
+<a href="https://tissuumaps.research.it.uu.se/sthlm3/viewer.html?image=0&choice=3">https://tissuumaps.research.it.uu.se/sthlm3/viewer.html?image=0&choice=3</a>
