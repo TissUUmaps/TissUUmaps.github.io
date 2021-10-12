@@ -1,6 +1,6 @@
 ---
 title: Description of an Alembic
-feature_image: "/assets/gallery_images/prostate.PNG"
+feature_image: "/assets/gallery_images/prostate.png"
 link: "https://tissuumaps.research.it.uu.se/sthlm3/viewer.html?image=28&choice=3"
 ---
 
