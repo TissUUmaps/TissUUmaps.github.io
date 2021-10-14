@@ -1,11 +1,9 @@
 ---
-title: Description of an Alembic
+title: "Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population-based, diagnostic study"
 feature_image: "/assets/gallery_images/prostate.png"
 link: "https://tissuumaps.research.it.uu.se/sthlm3/viewer.html?image=28&choice=3"
 ---
 
-##### Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population-based, diagnostic study
-<br/>
 An increasing volume of prostate biopsies and a worldwide shortage of urological pathologists puts a
 strain on pathology departments. Additionally, the high intra-observer and inter-observer variability in grading can
 result in overtreatment and undertreatment of prostate cancer. To alleviate these problems, we aimed to develop an
