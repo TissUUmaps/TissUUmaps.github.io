@@ -24,7 +24,7 @@ title: Alumni
     <li>
         <a href="https://www.linkedin.com/in/maxime-bombrun-61b76648/?originalSubdomain=se"><img src="/assets/people_im/maxime.jpg" class="alumni"/></a>
         <p class="name"><a href="https://www.linkedin.com/in/maxime-bombrun-61b76648/?originalSubdomain=se">Maxime Bombrun</a></p>
-        <p class="alumni"> PhD student
+        <p class="alumni"> Postdoc
         </p>
 	</li>
     <li>
