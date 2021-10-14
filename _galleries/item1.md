@@ -1,5 +1,5 @@
 ---
-title: "De novo spatiotemporal modelling of cell-type signatures identifies novel cell populations in the developmental human heart"
+title: "Modelling of cell-type signatures in the developmental human heart"
 feature_image: "/assets/gallery_images/de_novo.png"
 link: "https://tissuumaps.research.it.uu.se/heart/human_heart.html"
 ---
