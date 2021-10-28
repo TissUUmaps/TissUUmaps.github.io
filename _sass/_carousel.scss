@@ -1,9 +1,11 @@
 
 .wrapper{
   width: 100%;
+  overflow-x:hidden;
 }
 .owl-carousel .owl-stage-outer {
-    overflow: inherit !important;
+  overflow: visible !important;
+  overflow-y: clip !important;
 }
 .carousel{
   max-width: 1500px;
