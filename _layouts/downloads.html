@@ -12,14 +12,6 @@ layout: default
 
 
 <main class="main container">
-  <div class="">
-    {% for item in site.downloads %}
-      <article class="article  article--page  typeset" id="{{ item.title | slugify  }}">
-        <h3>{{ item.title }}</h3>
-        {{ item.content }}
-      </article>
-    {% endfor %}
-  </div>
   <aside class="aside  typeset  aside--left">
     <section class="section  section--category-index">
       <h3>Index</h3>
@@ -35,5 +27,14 @@ layout: default
   
     </section>
   </aside>
+  <div class="">
+    {% for item in site.downloads %}
+      <article class="article  article--page  typeset" id="{{ item.title | slugify  }}">
+        <h3>{{ item.title }}</h3>
+        <br/>
+        {{ item.content }}
+      </article>
+    {% endfor %}
+  </div>
 </main>
 {% include site-footer.html %}
