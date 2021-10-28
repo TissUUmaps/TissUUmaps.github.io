@@ -16,7 +16,6 @@ layout: default
     {% for item in site.downloads %}
       <article class="article  article--page  typeset" id="{{ item.title | slugify  }}">
         <h3>{{ item.title }}</h3>
-        <br/>
         {{ item.content }}
       </article>
     {% endfor %}
