@@ -536,35 +536,31 @@ img.people{
 	margin-right: 2em;
 	clear: left;
 	border: 0px;
-  margin-top: 10px;
 }
 
 
 #people li {
-	margin-bottom: 3em;
+  display:table;
+  width: 100%;
+  margin-bottom:20px;
 }
 
 #people p {
 	padding-left: 80px;
 }
 
-img.alumni{
-	width: 75px;
-	height: 105px;
-	float: left;
-	margin-right: 2em;
-	clear: left;
-	border: 0px;
-  margin-top: 10px;
-}
-
-
 #alumni li {
-	margin-bottom: 3em;
+  display:table;
+  width: 100%;
+  margin-bottom:20px;
 }
 
 #alumni p {
 	padding-left: 80px;
+}
+
+li .name {
+  padding-top:10px;
 }
 
 .erc-logo {
