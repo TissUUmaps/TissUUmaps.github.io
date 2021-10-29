@@ -16,7 +16,6 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  height: 114px;
 }
 
 .container {
@@ -34,6 +33,9 @@ body {
   }
   .logo {
     @include flex(0 0 auto);
+    img {
+      height:218px;
+    }
   }
   .container {
     @include flexbox;
