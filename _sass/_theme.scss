@@ -1,4 +1,8 @@
 // Structural elements
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: $backgroundColour;
   color: $bodyColour;
@@ -29,6 +33,9 @@ body {
   }
   .logo {
     @include flex(0 0 auto);
+    img {
+      height:218px;
+    }
   }
   .container {
     @include flexbox;
@@ -156,6 +163,7 @@ h1 {
   }
   .column {
     padding-left:10px;
+    padding-right:10px;
   }
 }
 
@@ -414,10 +422,12 @@ label {
 code {
   padding: .12rem .2rem;
   color: $headingColour;
+  white-space: break-spaces;
 }
 
 pre code {
   padding: 0;
+  padding-left: 5px;
 }
 
 .required {
@@ -496,6 +506,7 @@ pre code {
   @include breakpoint(break-3) {
     display: flex;
     flex-direction: column;
+    width:50%;
   }
 }
 
@@ -532,35 +543,31 @@ img.people{
 	margin-right: 2em;
 	clear: left;
 	border: 0px;
-  margin-top: 10px;
 }
 
 
 #people li {
-	margin-bottom: 3em;
+  display:table;
+  width: 100%;
+  margin-bottom:20px;
 }
 
 #people p {
 	padding-left: 80px;
 }
 
-img.alumni{
-	width: 75px;
-	height: 105px;
-	float: left;
-	margin-right: 2em;
-	clear: left;
-	border: 0px;
-  margin-top: 10px;
-}
-
-
 #alumni li {
-	margin-bottom: 3em;
+  display:table;
+  width: 100%;
+  margin-bottom:20px;
 }
 
 #alumni p {
 	padding-left: 80px;
+}
+
+li .name {
+  padding-top:10px;
 }
 
 .erc-logo {
@@ -573,4 +580,10 @@ img.alumni{
     border: none;
     height: 220px;
     background-position: center 0;
+}
+
+.typeset pre {
+  overflow-x: auto;
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
 }

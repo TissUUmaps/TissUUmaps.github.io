@@ -10,6 +10,62 @@ layout: default
 	</article>
 </main>
 
+{% if page.carousel == true %}
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <main class="container">
+    <div class="wrapper">
+      <div class="carousel owl-carousel">
+      {% for item in site.galleries %}
+        <div class="card">
+          <div class="img">
+            <a href="#gallery_{{ forloop.index }}"><img src="{{ item.feature_image }}" alt=""></a>
+          </div>
+          <div class="content">
+            <div class="title">
+              {{ item.title }}
+            </div>
+            <!--<p>
+              {{ item.summary }}
+            </p>-->
+            <div class="btn">
+              <a href="#gallery_{{ forloop.index }}" class="button">▼ Read more ▼</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </main>
+  <br/>
+  <script>
+    $(".carousel").owlCarousel({
+      margin: 20,
+      loop: false,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsive: {
+        0:{
+          items:1,
+          nav: false
+        },
+        600:{
+          items:2,
+          nav: false
+        },
+        1000:{
+          items:3,
+          nav: false
+        },
+        1200:{
+          items:4,
+          nav: false
+        }
+      }
+    });
+  </script>
+{% endif %}
 
 <main class="container">
     {% for item in site.galleries %}
@@ -20,6 +76,7 @@ layout: default
         </a>
       </div>
       <div class='column'>
+        <h5 id="gallery_{{ forloop.index }}">{{ item.title }}</h5><br/>
         {{ item.excerpt }}
         </a>
       </div>

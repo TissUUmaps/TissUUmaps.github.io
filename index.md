@@ -1,9 +1,9 @@
 ---
 title: TissUUmaps - Browser-based interactive visualization of multi-omics tissue data
 feature_text: |
-  A demo of Markdown and HTML includes
-  feature_image: "https://picsum.photos/2560/600?image=873"
-excerpt: "A demo of Markdown and HTML includes"
+  TissUUmaps is a browser-based  tool for fast visualization and exploration of millions of data points overlaying a tissue sample. 
+	TissUUmaps can be used as a web service or locally in your computer, and allows users to share regions of interest and local statistics.
+excerpt: "TissUUmaps is a browser-based  tool for fast visualization and exploration of millions of data points overlaying a tissue sample. TissUUmaps can be used as a web service or locally in your computer, and allows users to share regions of interest and local statistics."
 aside: false
 ---
 
