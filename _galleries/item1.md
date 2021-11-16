@@ -10,6 +10,6 @@ With the emergence of high throughput single cell techniques, the understanding 
 
 More information is available in the original <a href="https://doi.org/10.1101/2021.07.10.451822"> publication</a>: \
 RS. Marco Salas, X. Yuan,  C. Sylven,  M. Nilsson,  C. Wählby and  G.Partel. De novo spatiotemporal modelling of cell-type signatures identifies novel cell populations in the developmental human heart. BioRxiv doi: <a href="https://doi.org/10.1101/2021.07.10.451822"> https://doi.org/10.1101/2021.07.10.451822</a>
-
 **Dataset**: \
+
 <a href="https://tissuumaps.research.it.uu.se/heart/human_heart.html"> https://tissuumaps.research.it.uu.se/heart/human_heart.html</a>
