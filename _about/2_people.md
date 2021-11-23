@@ -34,6 +34,18 @@ title: People
         </p>
 	</li>
     <li>
+        <a href="https://www.it.uu.se/katalog/annkl878"><img src="/assets/people_im/Anna.jfif" class="people"/></a>
+        <p class="name"><a href="https://www.it.uu.se/katalog/annkl878">Anna Klemm</a></p>
+        <p class="people">SciLifeLab - Bioimage Informatics Facility
+        </p>
+	</li>
+    <li>
+        <a href="https://katalog.uu.se/empinfo/?id=N5-1097"><img src="/assets/people_im/Filip.jfif" class="people"/></a>
+        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N5-1097">Filip Malmberg</a></p>
+        <p class="people">Researcher
+        </p>
+	</li>
+    <li>
         <a href="https://katalog.uu.se/empinfo/?id=N19-472"><img src="/assets/people_im/axel.jpg" class="people"/></a>
         <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N19-472">Axel Andersson</a></p>
         <p class="people">PhD student
