@@ -117,6 +117,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -135,4 +136,4 @@ DEPENDENCIES
   jemoji (~> 0.12)
 
 BUNDLED WITH
-   2.2.28
+   2.2.32

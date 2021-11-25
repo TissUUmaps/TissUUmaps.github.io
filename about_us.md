@@ -1,5 +1,5 @@
 ---
-title: TissUUmaps - About
+title: About us
 layout: about
 aside: false
 ---

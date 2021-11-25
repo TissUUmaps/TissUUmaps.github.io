@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+{% include site-header.html %}
+
+<main class="main  container">
+	<article class="article  article--page  content  typeset">
+		<h1>{{ page.title }}</h1>
+	</article>
+</main>
+
+
+<main class="container">
+    {% for item in site.tutorials %}
+    <article class="article  article--page  content  typeset row">
+      <div class='column'>
+        <a target="_blank" href="{{ item.link }}">
+		  <iframe title="vimeo-player" src="{{ item.video_url }}" width="792" height="445.5" frameborder="0" allowfullscreen style="max-width:100%;"></iframe>
+        </a>
+      </div>
+      <div class='column'>
+        <h5 id="tutorial_{{ forloop.index }}">{{ item.title }}</h5><br/>
+        {{ item.excerpt }}
+        </a>
+      </div>
+    </article>
+    <hr/>
+  {% endfor %}
+
+  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
+
+</main>
+
+{% include site-footer.html %}

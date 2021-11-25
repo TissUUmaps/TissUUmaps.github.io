@@ -66,6 +66,12 @@ collections:
     description: "TissUUmaps gallery" # The post list page content
     feature_text: |
       Welcome to the gallery
+  tutorials:
+    title: Tutorials # Needed for Siteleaf
+    output: true
+    description: "TissUUmaps tutorials" # The post list page content
+    feature_text: |
+      Welcome to the tutorials
   downloads:
     title: Downloads # Needed for Siteleaf
     output: true
@@ -98,7 +104,8 @@ encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "TissUUmaps" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/uulogowhitetuum.png" # Site logo, also used in jekyll-seo-tag
-description: "TissUUmaps is a browser-based  tool for fast visualization and exploration of millions of data points overlaying a tissue sample. TissUUmaps can be used as a web service or locally in your computer, and allows users to share regions of interest and local statistics." # Site description and default description, also used in jekyll-seo-tag
+description: "" # Site description and default description, also used in jekyll-seo-tag
+# TissUUmaps is a browser-based  tool for fast visualization and exploration of millions of data points overlaying a tissue sample. TissUUmaps can be used as a web service or locally in your computer, and allows users to share regions of interest and local statistics.
 url: "https://tissuumaps.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/TissUUmaps/TissUUmaps"
@@ -124,6 +131,8 @@ navigation_header:
   url: /download/
 - title: Gallery
   url: /gallery/
+- title: Tutorials
+  url: /tutorials/
 - title: About us
   url: /about_us/
 
