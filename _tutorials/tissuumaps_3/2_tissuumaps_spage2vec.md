@@ -1,6 +1,6 @@
 ---
 title: "TissUUmaps Jupyter integration with Spage2vec"
-video_url: "https://player.vimeo.com/video/650376038?h=356de70249"
+video_url: "https://player.vimeo.com/video/651544132?h=4810569a67"
 ---
 
 This tutorial will show you how to integrate a code from Jupyter notebook with our interactive viewer TissUUmaps. For this example we use the method Spage2vec - unsupervised segmentation-free approach for decrypting the spatial transcriptomic heterogeneity of complex tissues at subcellular resolution.
