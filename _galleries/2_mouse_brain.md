@@ -9,13 +9,7 @@ Neuroanatomical compartments of the mouse brain are identified and outlined main
 More information is available in this [publication](https://doi.org/10.1186/s12915-020-00874-5){:target="_blank"}: \
 <small>G. Partel, M.M. Hilscher, G. Milli, L. Solorzano, A.H. Klemm, M. Nilsson, and C. Wählby.  Automated identification of the mouse brain’s spatial compartments from in situ sequencing data.  BMC Biology, <https://doi.org/10.1186/s12915-020-00874-5>{:target="_blank"}, Oct 2020.</small>
 
-**Dataset 1**: [Mouse 1, hippocampal section 1](https://tissuumaps.research.it.uu.se/demo/170315_161220_hippo_4_1.html){:target="_blank"} \
-\
-**Dataset 2**: [Mouse 1, hippocampal section 2](https://tissuumaps.research.it.uu.se/demo/161230_161220_hippo_3_1.html){:target="_blank"} \
-\
-**Dataset 3**: [Mouse 2, hippocampal section](https://tissuumaps.research.it.uu.se/demo/1442_hippo.html){:target="_blank"} \
-\
-**Dataset 4**: [Mouse 2, olfactory region](https://tissuumaps.research.it.uu.se/demo/1442_OB.html){:target="_blank"}
+**Dataset**: [Mouse brain](https://tissuumaps.research.it.uu.se/demo_projects/viewer.php?tmap=mousebrain_5){:target="_blank"}
 
 The original raw ISS data was published in Qian, X., Harris, K. D., Hauling, T., Nicoloutsopoulos, D., Muñoz-Manchado, A. B., Skene, N., ... & Nilsson, M. (2020). Probabilistic cell typing enables fine mapping of closely related cell types in situ. [Nature methods](https://doi.org/10.1038/s41592-019-0631-4){:target="_blank"}, 17(1), 101-106. 
 
