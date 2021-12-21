@@ -4,7 +4,7 @@ title: Server deployment
 
 ##### Static HTML pages
 
-To install TissUUmaps on an Apache web server, follow instructions from [https://github.com/wahlby-lab/TissUUmaps](https://github.com/wahlby-lab/TissUUmaps){:target="_blank"}.
+To install TissUUmaps on an Apache web server, follow instructions from [https://github.com/TissUUmaps/TissUUmapsCore](https://github.com/TissUUmaps/TissUUmapsCore){:target="_blank"}.
 
 ##### Docker container
 
