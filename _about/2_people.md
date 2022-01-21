@@ -69,4 +69,10 @@ title: People
         <p class="people">PhD student
         </p>
 	</li>
+    <li>
+        <a href="https://www.it.uu.se/katalog/saghe935"><img src="/assets/people_im/Saga.jpg" class="people"/></a>
+        <p class="name"><a href="https://www.it.uu.se/katalog/saghe935">Saga Helgadottir</a></p>
+        <p class="people">Postdoc
+        </p>
+	</li>
 </ul>

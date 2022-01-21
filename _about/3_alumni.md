@@ -30,7 +30,7 @@ title: Alumni
     <li>
         <a href=""><img src="/assets/people_im/person-icon.png" class="people"/></a>
         <p class="name"><a href="">Thu Tran</a></p>
-        <p class="people"> ?
+        <p class="people"> Bachelor student
         </p>
 	</li>
     <li>
