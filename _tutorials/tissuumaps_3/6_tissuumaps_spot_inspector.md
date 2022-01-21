@@ -7,4 +7,4 @@ perm_id: "spot_inspector"
 In this tutorial we will look at how one can TissUUmaps to explore raw situ sequencing data. 
 In this tutorial we use TissUUmaps windows desktop client together with a plugin called Spot Inspector. 
 
-See <a href="https://github.com/TissUUmaps/TissUUmaps"> https://github.com/TissUUmaps/TissUUmaps</a> for installation instructions.
+See <a href="https://github.com/TissUUmaps/TissUUmaps"> github.com/TissUUmaps/TissUUmaps</a> for installation instructions.
