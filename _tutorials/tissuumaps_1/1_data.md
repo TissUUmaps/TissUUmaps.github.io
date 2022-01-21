@@ -1,6 +1,7 @@
 ---
 title: "What is TissUUmaps? (TissUUmaps 1.0)"
 video_url: "https://player.vimeo.com/video/420612632?h=6d9618e308"
+perm_id: "data"
 ---
 
 In this video we see what TissUUmaps can do and what data we can visualize and explore. TissUUmaps allows the display of tissue slide images and uses an overlay to display any sort of marker data on top. Be it spatially resolved gene expression, per cell data, or regions of interest.

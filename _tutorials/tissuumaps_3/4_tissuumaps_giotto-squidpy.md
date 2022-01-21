@@ -1,6 +1,7 @@
 ---
 title: "TissUUmaps to explore ST analysis tools"
 video_url: "https://player.vimeo.com/video/654844598?h=96b4397ee9"
+perm_id: "giotto_squidpy"
 ---
 
 In this video, we show how to use TissUUmaps to visualize the outputs from two well known ST analysis frameworks: Giotto and Squidpy.
