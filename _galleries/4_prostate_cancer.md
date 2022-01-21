@@ -10,7 +10,7 @@ result in overtreatment and undertreatment of prostate cancer. To alleviate thes
 artificial intelligence (AI) system with clinically acceptable accuracy for prostate cancer detection, localisation, and
 Gleason grading. Here we show examples of full-resolution digitized biopsies and corresponding AI-based grading.
 
-More information is available in this [publication](https://arxiv.org/abs/1907.01368){:target="_blank"}: \
+More information is available in this [publication](https://www.sciencedirect.com/science/article/pii/S1470204519307387){:target="_blank"}: \
 <small>P. Ström, K. Kartasalo, H. Olsson, L. Solorzano et al. Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population-based, diagnostic study. The Lancet Oncology, Volume 21, Issue 2, 2020, Pages 222-232, ISSN 1470-2045,  doi: 10.1016/S1470-2045(19)30738-7, url: <https://www.sciencedirect.com/science/article/pii/S1470204519307387>{:target="_blank"}</small>
 
-An overview of all sample **datasets** can be found [here](https://tissuumaps.research.it.uu.se/sthlm3/viewer.html?image=0&choice=3){:target="_blank"}.
+An overview of all sample **datasets** can be found [here](https://tissuumaps.research.it.uu.se/sthlm3/viewer.html?image=0&choice=0){:target="_blank"}.
