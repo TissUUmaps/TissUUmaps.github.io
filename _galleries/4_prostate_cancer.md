@@ -15,6 +15,3 @@ More information is available in this [publication](https://www.sciencedirect.co
 
 An overview of all sample **datasets** can be found here: <a href='https://tissuumaps.research.it.uu.se/sthlm3/viewer.html?image=0&choice=0' target="_blank" class="button">Prostate cancer in biopsies</a> \
 <small>
-
-
-[here](https://tissuumaps.research.it.uu.se/sthlm3/viewer.html?image=0&choice=0){:target="_blank"}.
