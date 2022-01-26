@@ -28,8 +28,8 @@ title: Alumni
         </p>
 	</li>
     <li>
-        <a href=""><img src="/assets/people_im/person-icon.png" class="people"/></a>
-        <p class="name"><a href="">Thu Tran</a></p>
+        <a href="https://science.psu.edu/bio/people/tnt9"><img src="/assets/people_im/ThuTran.jpeg" class="people"/></a>
+        <p class="name"><a href="https://science.psu.edu/bio/people/tnt9">Thu Tran</a></p>
         <p class="people"> Bachelor student
         </p>
 	</li>
