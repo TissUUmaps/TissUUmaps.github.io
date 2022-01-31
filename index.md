@@ -16,7 +16,6 @@ aside: false
 	TissUUmaps can be used as a web service or locally in your computer, and allows users to share regions of interest and local statistics. </p>
     <p> You can <a href="/download/">download TissUUmaps</a> and follow our guides and tutorials to get started.
 	You can also access the <a href="/gallery/">TissUUmaps project gallery</a> with interactive examples to explore data from in situ sequencing and spatial transcriptomics experiments and view localized quantification of cell and tissue morphology, including links to publications. For seeing examples of TissUUmaps compatibility with other platforms you can access the <a href="/tutorials/"> tutorials page</a>. </p>
-    <p> You can <a href="/download/">download TissUUmaps</a> and follow our guides and tutorials to get started.
-	You can have a look at our <a href="https://www.biorxiv.org/content/10.1101/2022.01.28.478131v1">preprint</a>preprint on bioRxiv. </p>
+    <p> You can have a look at our <a href="https://www.biorxiv.org/content/10.1101/2022.01.28.478131v1">preprint</a> on bioRxiv. </p>
   </div>
 </div>
