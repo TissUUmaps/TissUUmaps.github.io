@@ -6,7 +6,7 @@ title: PIP installation
 
 1. Install the TissUUmaps library:
 ```bash
-pip install TissUUmaps[full]
+pip install "TissUUmaps[full]"
 ```
 
 1. Start the TissUUmaps user interface:
