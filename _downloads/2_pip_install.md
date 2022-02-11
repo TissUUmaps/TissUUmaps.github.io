@@ -2,9 +2,15 @@
 title: PIP installation
 ---
 
-1. Install libvips for your system: [https://www.libvips.org/install.html](https://www.libvips.org/install.html){:target="_blank"}
+1. Install `libvips` for your system: [https://www.libvips.org/install.html](https://www.libvips.org/install.html){:target="_blank"}
 
-1. Install the TissUUmaps library:
+An easy way to install `libvips` is to use an [Anaconda](https://docs.anaconda.com/anaconda/install/index.html){:target="_blank"} environment with `libvips`:
+```bash
+conda create -y -n tissuumaps_env -c conda-forge python=3.9 libvips
+conda activate tissuumaps_env
+```
+
+1. Install the TissUUmaps library using `pip`:
 ```bash
 pip install "TissUUmaps[full]"
 ```
