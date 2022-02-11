@@ -1,5 +1,5 @@
 ---
-title: PIP installation
+title: PIP installation (for Linux and Mac)
 ---
 
 1. Install `libvips` for your system: [https://www.libvips.org/install.html](https://www.libvips.org/install.html){:target="_blank"}

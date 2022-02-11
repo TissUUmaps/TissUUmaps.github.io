@@ -15,7 +15,3 @@ docker run -it -p 56733:80 --name=tissuumaps -v /path/to/local/images:/mnt/data 
 1. Place your images in the local folder `/path/to/local/images/share`.
 1. Open [http://127.0.0.1:56733/](http://127.0.0.1:56733/){:target="_blank"} in your favorite browser.
 
-
-
-
-Please cite our <a href="https://www.biorxiv.org/content/10.1101/2022.01.28.478131v1">preprint</a> on bioRxiv if using TissUUmaps in your work.
