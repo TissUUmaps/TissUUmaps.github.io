@@ -4,6 +4,20 @@ title: Publications
 
 <ul style="list-style-type:none">
 	<li>
+		<a href=""><img src="/assets/publi_images/tissuumaps3.png" class="publication"/></a>
+		<p class="authors"> N. Pielawski, A. Andersson, C. Avenel, A. Behanova, E. Chelebian, A. Klemm, F. Nysj&ouml;, L. Solorzano, C. W&auml;hlby.</p>
+		<p class="title">TissUUmaps 3: Interactive visualization and quality assessment of large-scale spatial omics data.</p>
+		<p class="publication"><a href="https://www.biorxiv.org/content/10.1101/2022.01.28.478131v1">bioRxiv</a>, doi: 10.1101/2022.01.28.478131, January 28. 2022.
+		</p>
+	</li>
+	<li>
+		<a href=""><img src="/assets/publi_images/Spat-Stat.jpg" class="publication"/></a>
+		<p class="authors">A. Behanova, A. Klemm, C. W&auml;hlby.</p>
+		<p class="title">Spatial Statistics for Understanding Tissue Organization.</p>
+		<p class="publication"><a href="https://www.frontiersin.org/articles/10.3389/fphys.2022.832417/full">Frontiers in Physiology</a>, doi: 10.3389/fphys.2022.832417, January 28. 2022.
+		</p>
+	</li>
+	<li>
 		<a href=""><img src="/assets/publi_images/Breast.png" class="publication"/></a>
 		<p class="authors">Y. Wang, B. Acs, S. Robertson, B. Liu, L. Solorzano, C. W&auml;hlby, J. Hartman, M. Rantalainen.</p>
 		<p class="title">Improved breast cancer histological grading using deep learning.</p>
