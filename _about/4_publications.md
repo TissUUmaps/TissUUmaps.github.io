@@ -18,6 +18,13 @@ title: Publications
 		</p>
 	</li>
 	<li>
+		<a href="https://www.biorxiv.org/content/10.1101/2022.01.11.475631v1"><img src="/assets/publi_images/lung_atlas.png" class="publication"/></a>
+		<p class="authors"> A. Sountoulidis, S.M. Salas, E. Braun, C. Avenel, J. Bergenstrahle, M. Vicari, P. Czarnewski, J. Theelke, A. Liontos, X. Abalo, Z. Andrusivova, M. Asp, X. Li, L. Hu, S. Sariyar, A.M. Casals, B. Ayoglu, A. Firsova, J. Micha&euml;lsson, E. Lundberg, C. W&auml;hlby, E. Sundstr&ouml;m, S. Linnarsson, J. Lundeberg, M. Nilsson, C. Samakovlis.</p>
+		<p class="title">Developmental origins of cell heterogeneity in the human lung.</p>
+		<p class="publication"><a href="https://www.biorxiv.org/content/10.1101/2022.01.11.475631v1">bioRxiv</a>, doi: 10.1101/2022.01.11.475631, January 12. 2022.
+		</p>
+	</li>
+	<li>
 		<a href="https://www.annalsofoncology.org/article/S0923-7534(21)04486-0/fulltext"><img src="/assets/publi_images/Breast.png" class="publication"/></a>
 		<p class="authors">Y. Wang, B. Acs, S. Robertson, B. Liu, L. Solorzano, C. W&auml;hlby, J. Hartman, M. Rantalainen.</p>
 		<p class="title">Improved breast cancer histological grading using deep learning.</p>
