@@ -9,10 +9,14 @@ The human lung is a highly complex tubular organ, whose main function is the gas
 More information is available in the original [publication](https://doi.org/10.1101/2022.01.11.475631){:target="_blank"}: \
 <small>A. Sountoulidis, S.M. Salas, E. Braun, C. Avenel, J. Bergenstr{\r a}hle, M. Vicari, P. Czarnewski, J. Theelke, A. Liontos, X. Abalo, {\v Z}. Andrusivov{\'a}, M. Asp, X. Li, L. Hu, S. Sariyar, A.M. Casals, B. Ayoglu, A. Firsova, J. Micha{\"e}lsson, E. Lundberg, C. W{\"a}hlby, E. Sundstr{\"o}m, S. Linnarsson, J. Lundeberg, M. Nilsson, C. Samakovlis. Developmental origins of cell heterogeneity in the human lung. BioRxiv doi: <https://doi.org/10.1101/2022.01.11.475631>{:target="_blank"}</small>
 
-**TissUUmaps interactive viewer 1**: \
+**TissUUmaps interactive viewer:**: \
 <a href='https://tissuumaps.dckube.scilifelab.se/UMAP.tmap?path=private/HDCA/UMAP/' target="_blank" class="button">Single-cell RNA-sequencing</a> \
 <small>UMAP representation of single-cell clusters and sub-clusters, gene expression and metadata.</small>
 
-**TissUUmaps interactive viewer 1**: \
-<a href='https://tissuumaps.dckube.scilifelab.se/05.tmap?path=private/HDCA/ISS/' target="_blank" class="button">In situ sequencing data (ISS)</a> \
+**TissUUmaps interactive viewer: In situ sequencing data (ISS)**: \
+<a href='https://tissuumaps.dckube.scilifelab.se/05.tmap?path=private/HDCA/ISS/' target="_blank" class="button">pcw 5</a> <a href='https://tissuumaps.dckube.scilifelab.se/06.tmap?path=private/HDCA/ISS/' target="_blank" class="button">pcw 6</a><a href='https://tissuumaps.dckube.scilifelab.se/13.tmap?path=private/HDCA/ISS/' target="_blank" class="button">pcw 13</a>\
 <small>In situ sequencing data. Spot location + identity, per bin pie chart view of cell type probabilities and imputed genes.</small>
+
+**TissUUmaps interactive viewer: SCRINSHOT data**: \
+<a href='https://tissuumaps.dckube.scilifelab.se/pcw6.tmap?path=private/HDCA/SCRINSHOT/' target="_blank" class="button">pcw 6</a> <a href='https://tissuumaps.dckube.scilifelab.se/pcw8.tmap?path=private/HDCA/SCRINSHOT/' target="_blank" class="button">pcw 8</a><a href='https://tissuumaps.dckube.scilifelab.se/pcw11.tmap?path=private/HDCA/SCRINSHOT/' target="_blank" class="button">pcw 11</a><a href='https://tissuumaps.dckube.scilifelab.se/pcw14.tmap?path=private/HDCA/SCRINSHOT/' target="_blank" class="button">pcw 14</a>\
+<small>SCRINSHOT data. Spot location + identity.</small>
