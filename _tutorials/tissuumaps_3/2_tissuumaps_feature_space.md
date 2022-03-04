@@ -1,6 +1,6 @@
 ---
 title: "TissUUmaps to explore feature space"
-video_url: "https://vimeo.com/684581649"
+video_url: "https://player.vimeo.com/video/684581649?h=4c5a735c36&amp"
 perm_id: "feature_space"
 ---
 
