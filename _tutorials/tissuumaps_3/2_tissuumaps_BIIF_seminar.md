@@ -1,6 +1,6 @@
 ---
 title: "TissUUmaps presented in BIIF seminar"
-video_url: ""
+video_url: "https://www.youtube.com/embed/W41SGTxhUCo"
 perm_id: "BIIF_seminar"
 ---
 
