@@ -510,6 +510,13 @@ pre code {
   }
 }
 
+.column_left {
+  flex:1;
+}
+.column_right {
+  flex:2;
+}
+
 /* Inserting this collapsed row between two flex items will make 
  * the flex item that comes after it break to a new row */
  .index {

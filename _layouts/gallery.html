@@ -70,12 +70,12 @@ layout: default
 <main class="container">
     {% for item in site.galleries %}
     <article class="article  article--page  content  typeset row">
-      <div class='column'>
+      <div class='column column_left'>
         <a target="_blank" href="{{ item.link }}">
           <img src="{{ item.feature_image }}"/>
         </a>
       </div>
-      <div class='column'>
+      <div class='column column_right'>
         <h5 id="{{ item.path }}">{{ item.title }}</h5><br/>
         {{ item.excerpt }}
         </a>
