@@ -1,7 +1,7 @@
 ---
 title: "Automated identification of the mouse brain's spatial compartments from in situ sequencing data"
 feature_image: "/assets/gallery_images/automated.png"
-link: "https://tissuumaps.research.it.uu.se/demo_projects/viewer.php?tmap=mousebrain_5"
+link: "https://tissuumaps.dckube.scilifelab.se/demo/mousebrain_5.tmap"
 ---
 
 Neuroanatomical compartments of the mouse brain are identified and outlined mainly based on manual annotations of samples using features related to tissue and cellular morphology, taking advantage of publicly available reference atlases. However, this task is challenging since sliced tissue sections are rarely perfectly parallel or angled with respect to sections in the reference atlas and organs from different individuals may vary in size and shape and requires manual annotation. Here, we show how in situ sequencing data combined with dimensionality reduction and unsupervised clustering can be used to identify spatial compartments that correspond to known anatomical compartments of the brain. Here we show results on four different sections of mouse brains.
