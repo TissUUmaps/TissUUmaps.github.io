@@ -10,7 +10,7 @@ More information is available in this [publication](https://doi.org/10.1186/s129
 <small>G. Partel, M.M. Hilscher, G. Milli, L. Solorzano, A.H. Klemm, M. Nilsson, and C. Wählby.  Automated identification of the mouse brain’s spatial compartments from in situ sequencing data.  BMC Biology, <https://doi.org/10.1186/s12915-020-00874-5>{:target="_blank"}, Oct 2020.</small>
 
 **TissUUmaps interactive viewer**: 
-<a href='https://tissuumaps.research.it.uu.se/demo_projects/viewer.php?tmap=mousebrain_5' target="_blank" class="button">Mouse brain</a>
+<a href='https://tissuumaps.dckube.scilifelab.se/demo/mousebrain_5.tmap' target="_blank" class="button">Mouse brain</a>
 
 The original raw ISS data was published in Qian, X., Harris, K. D., Hauling, T., Nicoloutsopoulos, D., Muñoz-Manchado, A. B., Skene, N., ... & Nilsson, M. (2020). Probabilistic cell typing enables fine mapping of closely related cell types in situ. [Nature methods](https://doi.org/10.1038/s41592-019-0631-4){:target="_blank"}, 17(1), 101-106. 
 
