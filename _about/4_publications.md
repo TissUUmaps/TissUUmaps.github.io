@@ -4,6 +4,20 @@ title: Publications
 
 <ul style="list-style-type:none">
 	<li>
+		<a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010366"><img src="/assets/publi_images/Heart.png" class="publication"/></a>
+		<p class="authors"> S. M. Salas, X. Yuan, C. Sylven, M. Nilsson, C. Wählby, and G. Partel.</p>
+		<p class="title">De novo spatiotemporal modelling of cell-type signatures in the developmental human heart using graph convolutional neural networks.</p>
+		<p class="publication"><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010366">PLoS Comput Biol</a>, doi: 10.1371/journal.pcbi.1010366, August 12. 2022.
+		</p>
+	</li>
+	<li>
+		<a href="https://onlinelibrary.wiley.com/doi/10.1002/path.5981"><img src="/assets/publi_images/HEVFinder.png" class="publication"/></a>
+		<p class="authors"> T. Bekkhus, C. Avenel, S. Hanna, M. Franzén Boger, A. Klemm, D.V. Bacovia, F. Wärnberg, C. Wählby, and M.H. Ulvmar.</p>
+		<p class="title">Automated detection of vascular remodeling in tumor-draining lymph nodes by the deep-learning tool HEV-finder.</p>
+		<p class="publication"><a href="https://onlinelibrary.wiley.com/doi/10.1002/path.5981">Journal of Pathology</a>, doi: 10.1002/path.5981, June 13. 2022.
+		</p>
+	</li>
+	<li>
 		<a href="https://www.biorxiv.org/content/10.1101/2022.01.28.478131v1"><img src="/assets/publi_images/tissuumaps3.png" class="publication"/></a>
 		<p class="authors"> N. Pielawski, A. Andersson, C. Avenel, A. Behanova, E. Chelebian, A. Klemm, F. Nysj&ouml;, L. Solorzano, C. W&auml;hlby.</p>
 		<p class="title">TissUUmaps 3: Interactive visualization and quality assessment of large-scale spatial omics data.</p>
@@ -22,6 +36,13 @@ title: Publications
 		<p class="authors"> A. Sountoulidis, S.M. Salas, E. Braun, C. Avenel, J. Bergenstrahle, M. Vicari, P. Czarnewski, J. Theelke, A. Liontos, X. Abalo, Z. Andrusivova, M. Asp, X. Li, L. Hu, S. Sariyar, A.M. Casals, B. Ayoglu, A. Firsova, J. Micha&euml;lsson, E. Lundberg, C. W&auml;hlby, E. Sundstr&ouml;m, S. Linnarsson, J. Lundeberg, M. Nilsson, C. Samakovlis.</p>
 		<p class="title">Developmental origins of cell heterogeneity in the human lung.</p>
 		<p class="publication"><a href="https://www.biorxiv.org/content/10.1101/2022.01.11.475631v1">bioRxiv</a>, doi: 10.1101/2022.01.11.475631, January 12. 2022.
+		</p>
+	</li>
+	<li>
+		<a href="https://pubmed.ncbi.nlm.nih.gov/34751446/"><img src="/assets/publi_images/Gastric.png" class="publication"/></a>
+		<p class="authors"> C. Pereira, J.H. Park, S. Campelos, I. Gullo, C. Lemos, L. Solorzano, D. Martins, G. Gonçalves, Leitão, H.J. Lee, S.H. Kong, A. André, C.D. Borges. Almeida, C. Wälbhy, R. Almeida, W.H. Kim, F. Carneiro, H.K. Yang, G.M. Almeida, and C. Oliveira.</p>
+		<p class="title">Comparison of East-Asia and West-Europe cohorts explains disparities in survival outcomes and highlights predictive biomarkers of early gastric cancer aggressiveness.</p>
+		<p class="publication"><a href="https://pubmed.ncbi.nlm.nih.gov/34751446/">Int J Cancer</a>, doi: 10.1002/ijc.33872, Dec 2, 2021.
 		</p>
 	</li>
 	<li>

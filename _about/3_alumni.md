@@ -4,6 +4,24 @@ title: Alumni
 
 <ul style="list-style-type:none">
     <li>
+        <a href="http://www.it.uu.se/katalog/lesso657?lang=en"><img src="/assets/people_im/LeslieSolorzano.jpg" class="people"/></a>
+        <p class="name"><a href="http://www.it.uu.se/katalog/lesso657?lang=en">Leslie Solorzano</a></p>
+        <p class="people">PhD student
+        </p>
+	</li>
+    <li>
+        <a href="https://katalog.uu.se/empinfo/?id=AA229"><img src="/assets/people_im/petter.jpg" class="people"/></a>
+        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=AA229">Petter Ranefall</a></p>
+        <p class="people">Bioinformatician
+        </p>
+	</li>
+    <li>
+        <a href="https://www.it.uu.se/katalog/saghe935"><img src="/assets/people_im/Saga.jpg" class="people"/></a>
+        <p class="name"><a href="https://www.it.uu.se/katalog/saghe935">Saga Helgadottir</a></p>
+        <p class="people">Postdoc
+        </p>
+	</li>
+    <li>
         <a href="https://www.linkedin.com/in/gapartel/?originalSubdomain=be"><img src="/assets/people_im/Gabriele.jpg" class="people"/></a>
         <p class="name"><a href="https://www.linkedin.com/in/gapartel/?originalSubdomain=be">Gabriele Partel</a></p>
         <p class="people"> PhD student
