@@ -4,6 +4,13 @@ title: Publications
 
 <ul style="list-style-type:none">
 	<li>
+		<a href="https://doi.org/10.48550/arXiv.2211.07425"><img src="/assets/publi_images/SIC.png" class="publication"/></a>
+		<p class="authors"> E. Chelebian, F, Ciompi, and C. Wählby.</p>
+		<p class="title">Seeded iterative clustering for histology region identification.</p>
+		<p class="publication"><a href="https://doi.org/10.48550/arXiv.2211.07425">arXiv</a>, doi: 10.48550/arXiv.2211.07425, November 14. 2022.
+		</p>
+	</li>
+	<li>
 		<a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010366"><img src="/assets/publi_images/Heart.png" class="publication"/></a>
 		<p class="authors"> S. M. Salas, X. Yuan, C. Sylven, M. Nilsson, C. Wählby, and G. Partel.</p>
 		<p class="title">De novo spatiotemporal modelling of cell-type signatures in the developmental human heart using graph convolutional neural networks.</p>
