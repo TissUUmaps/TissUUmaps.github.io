@@ -1,6 +1,6 @@
 ---
 title: "Using TissUUmaps plugin InteractionV&QC"
-feature_image: "/assets/gallery_images/ClassQC.gif"
+video_url: "/assets/gallery_images/InteractionQC.gif"
 perm_id: "presentation"
 ---
 
