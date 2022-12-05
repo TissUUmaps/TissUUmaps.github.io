@@ -1,6 +1,6 @@
 ---
 title: "Using TissUUmaps plugin ClassV&QC"
-video_url: "/assets/gallery_images/ClassQC.gif"
+feature_image: "/assets/gallery_images/ClassQC.gif"
 perm_id: "presentation"
 ---
 

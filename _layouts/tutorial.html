@@ -77,13 +77,16 @@ layout: default
     <article class="article  article--page  content  typeset row">
       <div class='column'>
         <a target="_blank" href="{{ item.link }}">
-		  <iframe title="vimeo-player" src="{{ item.video_url }}" width="792" height="445.5" frameborder="0" allowfullscreen style="max-width:100%;"></iframe>
+          {% if item.video_url %}
+		        <iframe title="vimeo-player" src="{{ item.video_url }}" width="792" height="445.5" frameborder="0" allowfullscreen style="max-width:100%;"></iframe>
+          {% else if item.feature_image %}
+            <img src="{{ item.feature_image }}"/>
+          {% endif %}
         </a>
       </div>
       <div class='column'>
         <h5 id="{{ item.perm_id }}">{{ item.title }}</h5><br/>
         {{ item.excerpt }}
-        </a>
       </div>
     </article>
     <hr/>

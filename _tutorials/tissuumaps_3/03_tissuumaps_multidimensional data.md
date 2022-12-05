@@ -1,6 +1,6 @@
 ---
 title: "Using TissUUmaps for exploring multidimensional data"
-video_url: "/assets/gallery_images/maldi_preview.png"
+feature_image: "/assets/gallery_images/maldi_preview.png"
 perm_id: "presentation"
 ---
 
