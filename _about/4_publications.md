@@ -4,8 +4,15 @@ title: Publications
 
 <ul style="list-style-type:none">
 	<li>
+		<a href="https://doi.org/10.1101/2022.12.01.518716"><img src="/assets/publi_images/Plugins.png" class="publication"/></a>
+		<p class="authors"> A. Behanova, C. Avenel, A. Andersson, E. Chelebian, A. Klemm, L. Wik, A. Östman, and C. Wählby.</p>
+		<p class="title">TissUUmaps 3 Tools for Visualization & Quality Control in Large-scale Multiplex Tissue Analysis.</p>
+		<p class="publication"><a href="https://doi.org/10.1101/2022.12.01.518716">bioRxiv</a>, doi: 10.1101/2022.12.01.518716, December 02. 2022.
+		</p>
+	</li>
+	<li>
 		<a href="https://doi.org/10.48550/arXiv.2211.07425"><img src="/assets/publi_images/SIC.png" class="publication"/></a>
-		<p class="authors"> E. Chelebian, F, Ciompi, and C. Wählby.</p>
+		<p class="authors"> E. Chelebian, F. Ciompi, and C. Wählby.</p>
 		<p class="title">Seeded iterative clustering for histology region identification.</p>
 		<p class="publication"><a href="https://doi.org/10.48550/arXiv.2211.07425">arXiv</a>, doi: 10.48550/arXiv.2211.07425, November 14. 2022.
 		</p>
