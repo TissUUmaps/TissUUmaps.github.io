@@ -80,7 +80,7 @@ layout: default
           {% if item.video_url %}
 		        <iframe title="vimeo-player" src="{{ item.video_url }}" width="792" height="445.5" frameborder="0" allowfullscreen style="max-width:100%;"></iframe>
           {% else if item.feature_image %}
-            <img src="{{ item.feature_image }}"/>
+            <img src="{{ item.feature_image }}" width="792" height="445.5"/>
           {% endif %}
         </a>
       </div>
