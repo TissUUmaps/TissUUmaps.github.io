@@ -4,10 +4,17 @@ title: Publications
 
 <ul style="list-style-type:none">
 	<li>
-		<a href="https://doi.org/10.1101/2022.12.01.518716"><img src="/assets/publi_images/Plugins.png" class="publication"/></a>
+		<a href="https://doi.org/10.1101/2022.12.07.519086"><img src="/assets/publi_images/Plugins.png" class="publication"/></a>
+		<p class="authors"> A. Andersson, A. Behanova, C. Avenel, C. Wählby, and F. Malmberg.</p>
+		<p class="title">Points2Regions: Fast Interactive Clustering of in Situ Transcriptomics Data.</p>
+		<p class="publication"><a href="https://doi.org/10.1101/2022.12.07.519086">bioRxiv</a>, doi: 10.1101/2022.12.07.519086, December 10. 2022.
+		</p>
+	</li>
+	<li>
+		<a href="https://doi.org/10.1017/S2633903X23000053"><img src="/assets/publi_images/Plugins.png" class="publication"/></a>
 		<p class="authors"> A. Behanova, C. Avenel, A. Andersson, E. Chelebian, A. Klemm, L. Wik, A. Östman, and C. Wählby.</p>
-		<p class="title">TissUUmaps 3 Tools for Visualization & Quality Control in Large-scale Multiplex Tissue Analysis.</p>
-		<p class="publication"><a href="https://doi.org/10.1101/2022.12.01.518716">bioRxiv</a>, doi: 10.1101/2022.12.01.518716, December 02. 2022.
+		<p class="title">Visualization & Quality Control Tools for Large-scale Multiplex Tissue Analysis in TissUUmaps 3.</p>
+		<p class="publication"><a href="https://doi.org/10.1017/S2633903X23000053">Biological Imaging</a>, doi: 10.1017/S2633903X23000053, February 20. 2023.
 		</p>
 	</li>
 	<li>
