@@ -4,7 +4,7 @@ title: Publications
 
 <ul style="list-style-type:none">
 	<li>
-		<a href="https://doi.org/10.1101/2022.12.07.519086"><img src="/assets/publi_images/Plugins.png" class="publication"/></a>
+		<a href="https://doi.org/10.1101/2022.12.07.519086"><img src="/assets/publi_images/Points2Regions.png" class="publication"/></a>
 		<p class="authors"> A. Andersson, A. Behanova, C. Avenel, C. Wählby, and F. Malmberg.</p>
 		<p class="title">Points2Regions: Fast Interactive Clustering of in Situ Transcriptomics Data.</p>
 		<p class="publication"><a href="https://doi.org/10.1101/2022.12.07.519086">bioRxiv</a>, doi: 10.1101/2022.12.07.519086, December 10. 2022.
