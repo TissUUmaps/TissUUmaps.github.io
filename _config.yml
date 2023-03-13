@@ -133,6 +133,8 @@ navigation_header:
   url: /gallery/
 - title: Tutorials
   url: /tutorials/
+- title: Plugins
+  url: /TissUUmaps/plugins/
 - title: About us
   url: /about_us/
 
