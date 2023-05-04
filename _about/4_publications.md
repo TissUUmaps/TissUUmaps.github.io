@@ -4,10 +4,10 @@ title: Publications
 
 <ul style="list-style-type:none">
 	<li>
-		<a href="https://doi.org/10.1101/2022.12.07.519086"><img src="/assets/publi_images/Points2Regions.png" class="publication"/></a>
-		<p class="authors"> A. Andersson, A. Behanova, C. Avenel, C. Wählby, and F. Malmberg.</p>
-		<p class="title">Points2Regions: Fast Interactive Clustering of in Situ Transcriptomics Data.</p>
-		<p class="publication"><a href="https://doi.org/10.1101/2022.12.07.519086">bioRxiv</a>, doi: 10.1101/2022.12.07.519086, December 10. 2022.
+		<a href="https://doi.org/10.1016/j.heliyon.2023.e15306"><img src="/assets/publi_images/tissuumaps3.png" class="publication"/></a>
+		<p class="authors"> N. Pielawski, A. Andersson, C. Avenel, A. Behanova, E. Chelebian, A. Klemm, F. Nysj&ouml;, L. Solorzano, C. W&auml;hlby.</p>
+		<p class="title">TissUUmaps 3: Interactive visualization and quality assessment of large-scale spatial omics data.</p>
+		<p class="publication"><a href="https://doi.org/10.1016/j.heliyon.2023.e15306">Heliyon</a>, doi: 10.1016/j.heliyon.2023.e15306, April 21. 2023.
 		</p>
 	</li>
 	<li>
@@ -15,6 +15,13 @@ title: Publications
 		<p class="authors"> A. Behanova, C. Avenel, A. Andersson, E. Chelebian, A. Klemm, L. Wik, A. Östman, and C. Wählby.</p>
 		<p class="title">Visualization & Quality Control Tools for Large-scale Multiplex Tissue Analysis in TissUUmaps 3.</p>
 		<p class="publication"><a href="https://doi.org/10.1017/S2633903X23000053">Biological Imaging</a>, doi: 10.1017/S2633903X23000053, February 20. 2023.
+		</p>
+	</li>
+	<li>
+		<a href="https://doi.org/10.1101/2022.12.07.519086"><img src="/assets/publi_images/Points2Regions.png" class="publication"/></a>
+		<p class="authors"> A. Andersson, A. Behanova, C. Avenel, C. Wählby, and F. Malmberg.</p>
+		<p class="title">Points2Regions: Fast Interactive Clustering of in Situ Transcriptomics Data.</p>
+		<p class="publication"><a href="https://doi.org/10.1101/2022.12.07.519086">bioRxiv</a>, doi: 10.1101/2022.12.07.519086, December 10. 2022.
 		</p>
 	</li>
 	<li>
@@ -36,13 +43,6 @@ title: Publications
 		<p class="authors"> T. Bekkhus, C. Avenel, S. Hanna, M. Franzén Boger, A. Klemm, D.V. Bacovia, F. Wärnberg, C. Wählby, and M.H. Ulvmar.</p>
 		<p class="title">Automated detection of vascular remodeling in tumor-draining lymph nodes by the deep-learning tool HEV-finder.</p>
 		<p class="publication"><a href="https://onlinelibrary.wiley.com/doi/10.1002/path.5981">Journal of Pathology</a>, doi: 10.1002/path.5981, June 13. 2022.
-		</p>
-	</li>
-	<li>
-		<a href="https://www.biorxiv.org/content/10.1101/2022.01.28.478131v1"><img src="/assets/publi_images/tissuumaps3.png" class="publication"/></a>
-		<p class="authors"> N. Pielawski, A. Andersson, C. Avenel, A. Behanova, E. Chelebian, A. Klemm, F. Nysj&ouml;, L. Solorzano, C. W&auml;hlby.</p>
-		<p class="title">TissUUmaps 3: Interactive visualization and quality assessment of large-scale spatial omics data.</p>
-		<p class="publication"><a href="https://www.biorxiv.org/content/10.1101/2022.01.28.478131v1">bioRxiv</a>, doi: 10.1101/2022.01.28.478131, January 28. 2022.
 		</p>
 	</li>
 	<li>
