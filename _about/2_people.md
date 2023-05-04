@@ -58,12 +58,6 @@ title: People
         </p>
 	</li>
     <li>
-        <a href="https://katalog.uu.se/profile/?id=N18-301"><img src="/assets/people_im/nicolas.jpg" class="people"/></a>
-        <p class="name"><a href="https://katalog.uu.se/profile/?id=N18-301">Nicolas Pielawski</a></p>
-        <p class="people">PhD student
-        </p>
-	</li>
-    <li>
         <a href="https://www.katalog.uu.se/profile/?id=N22-1834"><img src="/assets/people_im/Paula.jpg" class="people"/></a>
         <p class="name"><a href="https://www.katalog.uu.se/profile/?id=N22-1834">Paula Camargo Romera</a></p>
         <p class="people">Master student
