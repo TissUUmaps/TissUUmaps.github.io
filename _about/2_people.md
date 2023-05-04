@@ -28,6 +28,12 @@ title: People
         </p>
 	</li>
     <li>
+        <a href="https://www.it.uu.se/katalog/jonwi709"><img src="/assets/people_im/Jonas.png" class="people"/></a>
+        <p class="name"><a href="https://www.it.uu.se/katalog/jonwi709">Jonas Windhager</a></p>
+        <p class="people">SciLifeLab - Bioimage Informatics Facility
+        </p>
+	</li>
+    <li>
         <a href="https://katalog.uu.se/empinfo/?id=N5-1097"><img src="/assets/people_im/Filip.jfif" class="people"/></a>
         <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N5-1097">Filip Malmberg</a></p>
         <p class="people">Researcher
