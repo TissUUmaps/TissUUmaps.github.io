@@ -72,12 +72,6 @@ collections:
     description: "TissUUmaps tutorials" # The post list page content
     feature_text: |
       Welcome to the tutorials
-  downloads:
-    title: Downloads # Needed for Siteleaf
-    output: true
-    description: "TissUUmaps download" # The post list page content
-    feature_text: |
-      Welcome to the download
 
 # 6. Jekyll collections settings
 defaults:
@@ -127,8 +121,8 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 navigation_header:
 - title: Home
   url: /
-- title: Download
-  url: /download/
+- title: Installation
+  url: /installation/
 - title: Gallery
   url: /gallery/
 - title: Tutorials
