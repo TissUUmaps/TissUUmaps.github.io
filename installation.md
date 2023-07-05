@@ -10,8 +10,7 @@ aside: false
 function resizeIFrameToFitContent( iFrame ) {
 
     setTimeout(()=>{
-        iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
-        console.log(iFrame.contentWindow.document.body.scrollHeight, iFrame.height)
+        iFrame.height = iFrame.contentWindow.document.getElementsByTagName('section')[0].scrollHeight
     }, 0);
 }
 
