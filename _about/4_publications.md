@@ -18,7 +18,7 @@ title: Publications
 		</p>
 	</li>
 	<li>
-		<a href="https://doi.org/10.1038/s41593-023-01312-9"><img src="/assets/publi_images/.png" class="publication"/></a>
+		<a href="https://doi.org/10.1038/s41593-023-01312-9"><img src="/assets/publi_images/Profiling.png" class="publication"/></a>
 		<p class="authors"> X. Li, Z. Andrusivova, P. Czarnewski, C.M. Langseth, A. Andersson, Y. Liu, D. Gyllborg, E. Braun, L. Larsson, L. Hu, Z. Alekseenko, H. Lee, C. Avenel, H.K. Kallner, E. Åkesson, I. Adameyko, M. Nilsson, S. Linnarsson, J. Lundeberg, E. Sundström .</p>
 		<p class="title">Profiling spatiotemporal gene expression of the developing human spinal cord and implications for ependymoma origin.</p>
 		<p class="publication"><a href="https://doi.org/10.1038/s41593-023-01312-9">Nat Neurosci</a>, doi: 10.1038/s41593-023-01312-9, April 24. 2023.
@@ -39,7 +39,7 @@ title: Publications
 		</p>
 	</li>
 	<li>
-		<a href="https://doi.org/10.1038/s41556-022-01064-x"><img src="/assets/publi_images/.png" class="publication"/></a>
+		<a href="https://doi.org/10.1038/s41556-022-01064-x"><img src="/assets/publi_images/Topography.png" class="publication"/></a>
 		<p class="authors"> A. Sountoulidis, S. M. Salas, E. Braun, C. Avenel, J. Bergenstråhle, J. Theelke, M. Vicari, P. Czarnewski, A. Liontos, X. Abalo, Z. Andrusivovà, R. Mirzazadeh, M. Asp, X. Li, L. Hu, S. Sariyar, A. Martinez Casals, B. Ayoglu, A. Firsova, J. Michaëlsson, E. Lundberg, C. Wählby, E. Sundström, S. Linnarsson, J. Lundeberg, M. Nilsson, C. Samakovlis.</p>
 		<p class="title">A topographic atlas defines developmental origins of cell heterogeneity in the human embryonic lung.</p>
 		<p class="publication"><a href="https://doi.org/10.1038/s41556-022-01064-x">Nat Cell Biol</a>, doi: 10.1038/s41556-022-01064-x, January 16. 2023.
