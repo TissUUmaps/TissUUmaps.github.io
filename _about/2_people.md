@@ -57,10 +57,4 @@ title: People
         <p class="people">PhD student
         </p>
 	</li>
-    <li>
-        <a href="https://www.katalog.uu.se/profile/?id=N22-1834"><img src="/assets/people_im/Paula.jpg" class="people"/></a>
-        <p class="name"><a href="https://www.katalog.uu.se/profile/?id=N22-1834">Paula Camargo Romera</a></p>
-        <p class="people">Master student
-        </p>
-	</li>
 </ul>
