@@ -4,14 +4,14 @@ title: Publications
 
 <ul style="list-style-type:none">
 	<li>
-		<a href="https://doi.org/10.1016/j.compbiomed.2024.108026"><img src="/assets/publi_images/.png" class="publication"/></a>
+		<a href="https://doi.org/10.1016/j.compbiomed.2024.108026"><img src="/assets/publi_images/Depicter.png" class="publication"/></a>
 		<p class="authors"> E. Chelebian, C. Avenel, F. Ciompi, C. Wählby.</p>
 		<p class="title">DEPICTER: Deep representation clustering for histology annotation.</p>
 		<p class="publication"><a href="https://doi.org/10.1016/j.compbiomed.2024.108026">Computers in Biology and Medicine</a>, doi: 10.1016/j.compbiomed.2024.108026, January 26. 2024.
 		</p>
 	</li>
 	<li>
-		<a href="https://doi.org/10.1007/978-3-031-42795-4_13"><img src="/assets/publi_images/.png" class="publication"/></a>
+		<a href="https://doi.org/10.1007/978-3-031-42795-4_13"><img src="/assets/publi_images/IS3G.png" class="publication"/></a>
 		<p class="authors"> A. Andersson, A. Behanova, C. Wählby, F. Malmberg.</p>
 		<p class="title">Cell segmentation of in situ transcriptomics data using signed graph partitioning.</p>
 		<p class="publication"><a href="https://doi.org/10.1007/978-3-031-42795-4_13">Lecture Notes in Computer Science</a>, Presented at the International Workshop on Graph-Based Representations in Pattern Recognition, GbRPR 2023, doi: 10.1007/978-3-031-42795-4_13, August 24. 2023.
