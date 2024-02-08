@@ -18,6 +18,13 @@ title: Publications
 		</p>
 	</li>
 	<li>
+		<a href="https://doi.org/10.1038/s41593-023-01312-9"><img src="/assets/publi_images/.png" class="publication"/></a>
+		<p class="authors"> X. Li, Z. Andrusivova, P. Czarnewski, C.M. Langseth, A. Andersson, Y. Liu, D. Gyllborg, E. Braun, L. Larsson, L. Hu, Z. Alekseenko, H. Lee, C. Avenel, H.K. Kallner, E. Åkesson, I. Adameyko, M. Nilsson, S. Linnarsson, J. Lundeberg, E. Sundström .</p>
+		<p class="title">Profiling spatiotemporal gene expression of the developing human spinal cord and implications for ependymoma origin.</p>
+		<p class="publication"><a href="https://doi.org/10.1038/s41593-023-01312-9">Nat Neurosci</a>, doi: 10.1038/s41593-023-01312-9, April 24. 2023.
+		</p>
+	</li>
+	<li>
 		<a href="https://doi.org/10.1016/j.heliyon.2023.e15306"><img src="/assets/publi_images/tissuumaps3.png" class="publication"/></a>
 		<p class="authors"> N. Pielawski, A. Andersson, C. Avenel, A. Behanova, E. Chelebian, A. Klemm, F. Nysj&ouml;, L. Solorzano, C. W&auml;hlby.</p>
 		<p class="title">TissUUmaps 3: Interactive visualization and quality assessment of large-scale spatial omics data.</p>
@@ -29,6 +36,13 @@ title: Publications
 		<p class="authors"> A. Behanova, C. Avenel, A. Andersson, E. Chelebian, A. Klemm, L. Wik, A. Östman, and C. Wählby.</p>
 		<p class="title">Visualization & Quality Control Tools for Large-scale Multiplex Tissue Analysis in TissUUmaps 3.</p>
 		<p class="publication"><a href="https://doi.org/10.1017/S2633903X23000053">Biological Imaging</a>, doi: 10.1017/S2633903X23000053, February 20. 2023.
+		</p>
+	</li>
+	<li>
+		<a href="https://doi.org/10.1038/s41556-022-01064-x"><img src="/assets/publi_images/.png" class="publication"/></a>
+		<p class="authors"> A. Sountoulidis, S. M. Salas, E. Braun, C. Avenel, J. Bergenstråhle, J. Theelke, M. Vicari, P. Czarnewski, A. Liontos, X. Abalo, Z. Andrusivovà, R. Mirzazadeh, M. Asp, X. Li, L. Hu, S. Sariyar, A. Martinez Casals, B. Ayoglu, A. Firsova, J. Michaëlsson, E. Lundberg, C. Wählby, E. Sundström, S. Linnarsson, J. Lundeberg, M. Nilsson, C. Samakovlis.</p>
+		<p class="title">A topographic atlas defines developmental origins of cell heterogeneity in the human embryonic lung.</p>
+		<p class="publication"><a href="https://doi.org/10.1038/s41556-022-01064-x">Nat Cell Biol</a>, doi: 10.1038/s41556-022-01064-x, January 16. 2023.
 		</p>
 	</li>
 	<li>
