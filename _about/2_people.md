@@ -16,12 +16,6 @@ title: People
         </p>
 	</li>
     <li>
-        <a href="https://katalog.uu.se/empinfo/?id=N10-427"><img src="/assets/people_im/frederick.jpg" class="people"/></a>
-        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N10-427">Fredrik Nysj&ouml;</a></p>
-        <p class="people">Researcher and Engineer
-        </p>
-	</li>
-    <li>
         <a href="https://www.it.uu.se/katalog/annkl878"><img src="/assets/people_im/Anna.jfif" class="people"/></a>
         <p class="name"><a href="https://www.it.uu.se/katalog/annkl878">Anna Klemm</a></p>
         <p class="people">SciLifeLab - Bioimage Informatics Facility

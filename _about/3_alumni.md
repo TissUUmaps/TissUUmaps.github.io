@@ -4,6 +4,12 @@ title: Alumni
 
 <ul style="list-style-type:none">
     <li>
+        <a href="https://katalog.uu.se/empinfo/?id=N10-427"><img src="/assets/people_im/frederick.jpg" class="people"/></a>
+        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N10-427">Fredrik Nysj&ouml;</a></p>
+        <p class="people">Researcher and Engineer
+        </p>
+	</li>
+    <li>
         <a href="https://www.katalog.uu.se/profile/?id=N22-1834"><img src="/assets/people_im/Paula.jpg" class="people"/></a>
         <p class="name"><a href="https://www.katalog.uu.se/profile/?id=N22-1834">Paula Camargo Romera</a></p>
         <p class="people">Master student
