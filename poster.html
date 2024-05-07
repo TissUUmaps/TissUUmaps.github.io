@@ -121,9 +121,14 @@ background-color: #BFBFBF;
         <span class="nav-text">Lung</span>
       </a>
       
-      <a href="https://tissuumaps.scilifelab.se/2023_spinal_brain_xenium.tmap?path=private/Christophe/Christoffer">
-        <i class="fa fa-lungs fa-lg"></i>
+      <a href="https://tissuumaps.scilifelab.se/2023_spinal_brain_xenium_umap.tmap?path=private/Christophe/Christoffer">
+        <i class="fa fa-brain fa-lg"></i>
         <span class="nav-text">UMAP</span>
+      </a>
+      
+      <a href="https://tissuumaps.scilifelab.se/p2r_mousebrain.tmap?path=demo">
+        <i class="fa fa-draw-polygon fa-lg"></i>
+        <span class="nav-text">P2Regions</span>
       </a>
       
       <a href="https://tissuumaps.scilifelab.se/Spage2vec_ISS_Qian_et_al.tmap?path=demo">
@@ -211,7 +216,7 @@ background-color: #BFBFBF;
     function resetTimer() {
         console.log("Reset");
         clearTimeout(time);
-        time = setTimeout(video, 1000000)
+        time = setTimeout(video, 2000000)
         var div = document.getElementById("vimeoPlayer");
         if (div !== null) {
           div.parentElement.removeChild(div);
