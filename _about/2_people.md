@@ -29,6 +29,13 @@ title: People
         <p class="people">Head of the <a href="https://www.scilifelab.se/units/bioimage-informatics/">SciLifeLab Bioimage Informatics Facility</a> 
         </p>
 	</li>
+    <li>
+        <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N25-392"><img src="/assets/people_im/Suganya.jpeg" class="people"/></a>
+        <p class="name"><a href="https://www.uu.se/en/contact-and-organisation/staff?query=N25-392">Suganya Sivagurunathan</a></p>
+        <p class="people">PhD, Bioinformatician at the 
+			<a href="https://www.scilifelab.se/units/bioimage-informatics/">SciLifeLab Bioimage Informatics Facility</a> 
+        </p>
+	</li>	
 	<li>
         <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N25-2113"><img src="/assets/people_im/alessia.jpg" class="people"/></a>
         <p class="name"><a href="https://www.uu.se/en/contact-and-organisation/staff?query=N25-2113">Alessia Giustolisi</a></p>
