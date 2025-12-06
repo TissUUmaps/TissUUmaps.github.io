@@ -42,28 +42,5 @@ title: People
         <p class="people">PhD student
         </p>
 	</li>
-    <li>
-        <a href="https://katalog.uu.se/empinfo/?id=N5-1097"><img src="/assets/people_im/Filip.jfif" class="people"/></a>
-        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N5-1097">Filip Malmberg</a></p>
-        <p class="people">PhD, Researcher
-        </p>
-	</li>
-    <li>
-        <a href="https://katalog.uu.se/empinfo/?id=N19-472"><img src="/assets/people_im/axel.jpg" class="people"/></a>
-        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N19-472">Axel Andersson</a></p>
-        <p class="people">PhD student
-        </p>
-	</li>    
-    <li>
-        <a href="https://katalog.uu.se/empinfo/?id=N20-66"><img src="/assets/people_im/andrea.jpg" class="people"/></a>
-        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N20-66">Andrea Behanova</a></p>
-        <p class="people">PhD student
-        </p>
-	</li>
-    <li>
-        <a href="https://katalog.uu.se/empinfo/?id=N20-1421"><img src="/assets/people_im/eduard.png" class="people"/></a>
-        <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N20-1421">Eduard Chelebian</a></p>
-        <p class="people">PhD student
-        </p>
-	</li>
+
 </ul>
