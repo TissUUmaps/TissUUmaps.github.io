@@ -30,12 +30,26 @@ title: People
         </p>
 	</li>
     <li>
+        <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N12-590"><img src="/assets/people_im/kika.jpg" class="people"/></a>
+        <p class="name"><a href="https://www.uu.se/en/contact-and-organisation/staff?query=N12-590">Kristina Lidayová</a></p>
+        <p class="people">PhD, Bioinformatician at the 
+			<a href="https://www.scilifelab.se/units/bioimage-informatics/">SciLifeLab Bioimage Informatics Facility</a> 
+        </p>
+	</li>	
+    <li>
         <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N25-392"><img src="/assets/people_im/suganya2.jpg" class="people"/></a>
         <p class="name"><a href="https://www.uu.se/en/contact-and-organisation/staff?query=N25-392">Suganya Sivagurunathan</a></p>
         <p class="people">PhD, Bioinformatician at the 
 			<a href="https://www.scilifelab.se/units/bioimage-informatics/">SciLifeLab Bioimage Informatics Facility</a> 
         </p>
-	</li>	
+	</li>
+    <li>
+        <a href="https://www.kth.se/profile/maxsen"><img src="/assets/people_im/max.png" class="people"/></a>
+        <p class="name"><a href="https://www.kth.se/profile/maxsen">Maximilian Senftleben</a></p>
+        <p class="people">PhD, Bioinformatician at the 
+			<a href="https://www.scilifelab.se/units/bioimage-informatics/">SciLifeLab Bioimage Informatics Facility</a> 
+        </p>
+	</li>
 	<li>
         <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N25-2113"><img src="/assets/people_im/alessia2.jpg" class="people"/></a>
         <p class="name"><a href="https://www.uu.se/en/contact-and-organisation/staff?query=N25-2113">Alessia Giustolisi</a></p>
