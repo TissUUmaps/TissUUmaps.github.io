@@ -12,14 +12,14 @@ title: People
     <li>
         <a href="https://katalog.uu.se/empinfo/?id=N13-1716"><img src="/assets/people_im/christophe.jpg" class="people"/></a>
         <p class="name"><a href="https://katalog.uu.se/empinfo/?id=N13-1716">Christophe Avenel</a></p>
-        <p class="people">Main developer of the current verison of TissUUmaps. PhD, Bioinformatician at the 
+        <p class="people">Main developer of TissUUmaps. PhD, Bioinformatician at the 
 			<a href="https://www.scilifelab.se/units/bioimage-informatics/">SciLifeLab Bioimage Informatics Facility</a>  
         </p>
 	</li>
     <li>
         <a href="https://www.it.uu.se/katalog/jonwi709"><img src="/assets/people_im/Jonas.png" class="people"/></a>
         <p class="name"><a href="https://www.it.uu.se/katalog/jonwi709">Jonas Windhager</a></p>
-        <p class="people">Main developer of the soon-to-be-released 4.0 verison of TissUUmaps. PhD, Bioinformatician at the 
+        <p class="people">Main developer of the 4.0 verison of TissUUmaps. PhD, Bioinformatician at the 
 			<a href="https://www.scilifelab.se/units/bioimage-informatics/">SciLifeLab Bioimage Informatics Facility</a> 
         </p>
 	</li>
