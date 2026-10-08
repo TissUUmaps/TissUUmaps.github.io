@@ -3,6 +3,13 @@ title: Publications
 ---
 
 <ul style="list-style-type:none">
+		<li>
+		<a href="https://doi.org/10.1038/s41467-025-58989-8"><img src="/assets/publi_images/NM2025.png" class="publication"/></a>
+		<p class="authors"> E. Chelebian, C. Avenel, C. Wählby.</p>
+		<p class="title">Combining spatial transcriptomics with tissue morphology.</p>
+		<p class="publication"><a href="https://doi.org/10.1038/s41467-025-58989-8">Nature Communications</a>, doi: doi.org/10.1038/s41467-025-58989-8, May 13. 2025.
+		</p>
+	</li>
 	<li>
 		<a href="https://doi.org/10.1016/j.compbiomed.2024.108026"><img src="/assets/publi_images/Depicter.png" class="publication"/></a>
 		<p class="authors"> E. Chelebian, C. Avenel, F. Ciompi, C. Wählby.</p>
