@@ -30,14 +30,7 @@ import {
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
-
-/** A parsed semantic version; the prerelease identifiers are empty for a stable version */
-export type Version = {
-  major: number;
-  minor: number;
-  patch: number;
-  prerelease: (string | number)[];
-};
+import semver from "semver";
 
 /** The repository whose releases carry the apps */
 const appRepository = "TissUUmaps/TissUUmaps";
@@ -50,123 +43,13 @@ const appRepository = "TissUUmaps/TissUUmaps";
 const customHTMLMarker = "<!-- GHA_CUSTOM_HTML -->";
 
 /**
- * Parses a semantic version as created by changesets (without build metadata)
- *
- * @param version - The version string, e.g. `4.1.0-rc.1`
- * @returns The parsed version
- */
-export function parseVersion(version: string): Version {
-  const match = /^(\d+)\.(\d+)\.(\d+)(?:-(.+))?$/.exec(version);
-  if (!match) {
-    throw new Error(`${version} is not a semantic version`);
-  }
-  const [, major, minor, patch, prerelease] = match;
-  return {
-    major: Number(major),
-    minor: Number(minor),
-    patch: Number(patch),
-    prerelease: (prerelease?.split(".") ?? []).map((part) =>
-      /^\d+$/.test(part) ? Number(part) : part,
-    ),
-  };
-}
-
-/**
- * Whether a version is a prerelease
- *
- * @param version - The parsed version
- * @returns `true` if the version has prerelease identifiers
- */
-export function isPrerelease(version: Version): boolean {
-  return version.prerelease.length > 0;
-}
-
-/**
- * Formats a parsed version back into its string form
- *
- * @param version - The parsed version
- * @returns The version string
- */
-export function formatVersion(version: Version): string {
-  const core = `${version.major}.${version.minor}.${version.patch}`;
-  return isPrerelease(version)
-    ? `${core}-${version.prerelease.join(".")}`
-    : core;
-}
-
-/**
  * The MAJOR.MINOR line of a version, which names its docs version and app directory
  *
- * @param version - The parsed version
+ * @param version - The version
  * @returns The line, e.g. `4.1` for `4.1.2` and for `4.1.0-rc.1`
  */
-export function formatLine(version: Version): string {
-  return `${version.major}.${version.minor}`;
-}
-
-/**
- * Compares two versions by semantic version precedence
- *
- * @param a - The first version
- * @param b - The second version
- * @returns A negative number if `a` ranks below `b`, a positive number if above, and `0` if equal
- */
-export function compareVersions(a: Version, b: Version): number {
-  return (
-    a.major - b.major ||
-    a.minor - b.minor ||
-    a.patch - b.patch ||
-    comparePrereleases(a.prerelease, b.prerelease)
-  );
-}
-
-/**
- * Compares two lists of prerelease identifiers by semantic version precedence
- *
- * An empty list (a stable version) ranks above any prerelease; otherwise the
- * identifiers are compared one by one, and a shorter list ranks below a longer
- * one with the same prefix.
- *
- * @param a - The first list of identifiers
- * @param b - The second list of identifiers
- * @returns A negative number if `a` ranks below `b`, a positive number if above, and `0` if equal
- */
-export function comparePrereleases(
-  a: (string | number)[],
-  b: (string | number)[],
-): number {
-  if (a.length === 0 || b.length === 0) {
-    return b.length - a.length;
-  }
-  for (let i = 0; i < Math.min(a.length, b.length); i++) {
-    const result = comparePrereleaseIdentifiers(a[i]!, b[i]!);
-    if (result !== 0) {
-      return result;
-    }
-  }
-  return a.length - b.length;
-}
-
-/**
- * Compares two prerelease identifiers by semantic version precedence:
- * numerically if both are numeric, numeric ones below alphanumeric ones,
- * alphanumeric ones in ASCII order
- *
- * @param a - The first identifier
- * @param b - The second identifier
- * @returns A negative number if `a` ranks below `b`, a positive number if above, and `0` if equal
- */
-export function comparePrereleaseIdentifiers(
-  a: string | number,
-  b: string | number,
-): number {
-  if (typeof a === "number" && typeof b === "number") {
-    return a - b;
-  }
-  if (typeof a === "number" || typeof b === "number") {
-    return typeof a === "number" ? -1 : 1;
-  }
-  return a < b ? -1 : a > b ? 1 : 0;
+export function formatLine(version: string): string {
+  return `${semver.major(version)}.${semver.minor(version)}`;
 }
 
 /**
@@ -183,19 +66,19 @@ export function comparePrereleaseIdentifiers(
  * version shown by default: the highest stable version, or the highest
  * prerelease while there is none (`null` without any version to deploy)
  */
-export function selectVersionsToDeploy(versions: Version[]): {
-  versionsToDeploy: Version[];
-  latestVersion: Version | null;
+export function selectVersionsToDeploy(versions: string[]): {
+  versionsToDeploy: string[];
+  latestVersion: string | null;
 } {
-  const sortedVersions = versions.toSorted(compareVersions);
+  const sortedVersions = versions.toSorted(semver.compare);
   const highestStableVersion = sortedVersions.findLast(
-    (version) => !isPrerelease(version),
+    (version) => semver.prerelease(version) === null,
   );
   const versionsToDeploy = sortedVersions.filter(
     (version) =>
-      !isPrerelease(version) ||
+      semver.prerelease(version) === null ||
       highestStableVersion === undefined ||
-      compareVersions(version, highestStableVersion) > 0,
+      semver.gt(version, highestStableVersion),
   );
   const latestVersion = highestStableVersion ?? versionsToDeploy.at(-1) ?? null;
   return { versionsToDeploy, latestVersion };
@@ -208,7 +91,7 @@ export function selectVersionsToDeploy(versions: Version[]): {
  * (other entries are ignored)
  * @returns The released version of every line; empty without releases
  */
-export function readReleases(releasesDir: string): Version[] {
+export function readReleases(releasesDir: string): string[] {
   if (!existsSync(releasesDir)) {
     return [];
   }
@@ -219,9 +102,12 @@ export function readReleases(releasesDir: string): Version[] {
     const release = JSON.parse(
       readFileSync(join(releasesDir, line, "release.json"), "utf8"),
     ) as { version: string };
-    const version = parseVersion(release.version);
+    const { version } = release;
+    if (semver.valid(version) !== version) {
+      throw new Error(`${version} is not a semantic version`);
+    }
     if (formatLine(version) !== line) {
-      throw new Error(`${releasesDir}/${line} holds ${release.version}`);
+      throw new Error(`${releasesDir}/${line} holds ${version}`);
     }
     return version;
   });
@@ -240,8 +126,8 @@ export function readReleases(releasesDir: string): Version[] {
  */
 export function prepareApps(options: {
   siteDir: string;
-  versions: Version[];
-  latestVersion: Version;
+  versions: string[];
+  latestVersion: string;
   customHtml: string;
   assetsDir?: string;
 }): void {
@@ -252,11 +138,11 @@ export function prepareApps(options: {
   const zipDir = assetsDir ?? mkdtempSync(join(tmpdir(), "tissuumaps-app-"));
   try {
     for (const version of versions) {
-      const asset = `tissuumaps-${formatVersion(version)}.zip`;
+      const asset = `tissuumaps-${version}.zip`;
       if (!assetsDir) {
         // prettier-ignore
         execFileSync("gh", [
-          "release", "download", `tissuumaps@${formatVersion(version)}`,
+          "release", "download", `tissuumaps@${version}`,
           "--repo", appRepository,
           "--dir", zipDir,
           "--pattern", asset,
@@ -317,7 +203,7 @@ export function prepareApps(options: {
 export function prepareDocs(
   siteDir: string,
   releasesDir: string,
-  versions: Version[],
+  versions: string[],
 ): void {
   // docs:version refuses to overwrite existing versions
   for (const output of [
@@ -376,7 +262,7 @@ export function prepare(options: {
   }
   prepareDocs(siteDir, releasesDir, versionsToDeploy);
   for (const version of versionsToDeploy) {
-    console.log(`prepared ${formatVersion(version)} as ${formatLine(version)}`);
+    console.log(`prepared ${version} as ${formatLine(version)}`);
   }
   console.log(`latest: ${formatLine(latestVersion)}`);
 }

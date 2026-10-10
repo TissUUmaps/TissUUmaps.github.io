@@ -14,105 +14,17 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
 
-import {
-  comparePrereleaseIdentifiers,
-  comparePrereleases,
-  compareVersions,
-  formatLine,
-  formatVersion,
-  isPrerelease,
-  parseVersion,
-  prepare,
-  selectVersionsToDeploy,
-} from "./prepare.ts";
+import { formatLine, prepare, selectVersionsToDeploy } from "./prepare.ts";
 
-const parse = parseVersion;
-
-void test("parses stable and prerelease versions", () => {
-  assert.deepEqual(parse("4.0.1"), {
-    major: 4,
-    minor: 0,
-    patch: 1,
-    prerelease: [],
-  });
-  assert.deepEqual(parse("4.0.0-beta.10"), {
-    major: 4,
-    minor: 0,
-    patch: 0,
-    prerelease: ["beta", 10],
-  });
-  assert.deepEqual(parse("4.0.0-0a.1-b.x").prerelease, ["0a", "1-b", "x"]);
-  assert.throws(() => parseVersion("v4.0.0"), /not a semantic version/);
-  assert.throws(() => parseVersion("4.0"), /not a semantic version/);
-});
-
-void test("formats versions", () => {
-  assert.equal(formatVersion(parse("4.0.0-beta.0")), "4.0.0-beta.0");
-  assert.equal(formatVersion(parse("4.1.0")), "4.1.0");
-  assert.equal(isPrerelease(parse("4.0.0-rc.1")), true);
-  assert.equal(isPrerelease(parse("4.0.0")), false);
-});
-
-void test("compares prerelease identifiers", () => {
-  assert.ok(comparePrereleaseIdentifiers(2, 10) < 0);
-  assert.equal(comparePrereleaseIdentifiers(1, 1), 0);
-  assert.ok(comparePrereleaseIdentifiers(99, "alpha") < 0);
-  assert.ok(comparePrereleaseIdentifiers("alpha", 0) > 0);
-  assert.ok(comparePrereleaseIdentifiers("alpha", "beta") < 0);
-  assert.equal(comparePrereleaseIdentifiers("rc", "rc"), 0);
-});
-
-void test("compares lists of prerelease identifiers", () => {
-  assert.equal(comparePrereleases([], []), 0);
-  assert.ok(comparePrereleases([], ["rc", 1]) > 0);
-  assert.ok(comparePrereleases(["rc", 1], []) < 0);
-  assert.ok(comparePrereleases(["beta"], ["beta", 0]) < 0);
-  assert.ok(comparePrereleases(["beta", 2], ["beta", 10]) < 0);
-  assert.equal(comparePrereleases(["rc", 1], ["rc", 1]), 0);
-});
-
-void test("orders versions by semantic version precedence", () => {
-  const ordered = [
-    "4.0.0-alpha",
-    "4.0.0-alpha.1",
-    "4.0.0-beta.0",
-    "4.0.0-beta.1",
-    "4.0.0-beta.2",
-    "4.0.0-beta.10",
-    "4.0.0-rc.1",
-    "4.0.0",
-    "4.0.1",
-    "4.0.9",
-    "4.1.0-rc.1",
-    "4.1.0",
-    "5.0.0",
-  ].map(parse);
-  for (let i = 0; i < ordered.length; i++) {
-    for (let j = 0; j < ordered.length; j++) {
-      const expected = Math.sign(i - j);
-      assert.equal(
-        Math.sign(compareVersions(ordered[i]!, ordered[j]!)),
-        expected,
-        `${formatVersion(ordered[i]!)} vs ${formatVersion(ordered[j]!)}`,
-      );
-    }
-  }
-});
-
-/** Runs {@link selectVersionsToDeploy} on version strings */
+/** Runs {@link selectVersionsToDeploy}, with `deployed` and `latest` for short */
 function select(versions: string[]) {
-  const { versionsToDeploy, latestVersion } = selectVersionsToDeploy(
-    versions.map(parseVersion),
-  );
-  return {
-    deployed: versionsToDeploy.map(formatVersion),
-    latest: latestVersion === null ? null : formatVersion(latestVersion),
-  };
+  const { versionsToDeploy, latestVersion } = selectVersionsToDeploy(versions);
+  return { deployed: versionsToDeploy, latest: latestVersion };
 }
 
 void test("names lines by MAJOR.MINOR", () => {
-  assert.equal(formatLine(parseVersion("4.1.2")), "4.1");
-  assert.equal(formatLine(parseVersion("4.10.0-rc.1")), "4.10");
+  assert.equal(formatLine("4.1.2"), "4.1");
+  assert.equal(formatLine("4.10.0-rc.1"), "4.10");
 });
 
 void test("deploys every stable line, in ascending order", () => {
@@ -189,7 +101,7 @@ function fixture(
   const assetsDir = join(dir, "assets");
   mkdirSync(assetsDir);
   for (const version of versions) {
-    const releaseDir = join(siteDir, "releases", formatLine(parse(version)));
+    const releaseDir = join(siteDir, "releases", formatLine(version));
     mkdirSync(join(releaseDir, "docs", "api"), { recursive: true });
     writeFileSync(
       join(releaseDir, "release.json"),
@@ -298,6 +210,25 @@ void test("ignores files next to the line directories", () => {
       JSON.parse(readFileSync(join(siteDir, "versions.json"), "utf8")),
       ["4.0"],
     );
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+void test("fails on an invalid version", () => {
+  const { dir, siteDir } = fixture(["4.0.0"]);
+  try {
+    for (const version of ["4.0", "v4.0.0", "4.0.0+build"]) {
+      writeFileSync(
+        join(siteDir, "releases", "4.0", "release.json"),
+        JSON.stringify({ version }),
+      );
+      assert.throws(
+        () => prepare({ siteDir, skipApps: true }),
+        /not a semantic version/,
+        version,
+      );
+    }
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }

@@ -1,6 +1,7 @@
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
+import semver from "semver";
 
 import { docsPath, loadVersions } from "./tissuumaps-docs";
 
@@ -17,7 +18,8 @@ if (versions.length === 0 && !docsPath) {
   );
 }
 const lastVersion =
-  versions.find(({ version }) => !version.includes("-")) ?? versions[0];
+  versions.find(({ version }) => semver.prerelease(version) === null) ??
+  versions[0];
 
 const config: Config = {
   title: "TissUUmaps",
