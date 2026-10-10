@@ -1,0 +1,35 @@
+name: ci
+on:
+  pull_request:
+    branches:
+      - main
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+      - name: Set up pnpm and Node, and install dependencies
+        uses: pnpm/setup@v3
+        with:
+          cache: true
+          require-lockfile: true
+      - name: Check formatting
+        run: pnpm run fmt:check
+      - name: Lint
+        run: pnpm run lint
+      - name: Type-check
+        run: pnpm run typecheck
+      - name: Test
+        run: pnpm run test
+      - name: Prepare the released docs
+        if: hashFiles('releases/*/release.json') != ''
+        run: pnpm run prepare:site --skip-apps
+      - name: Build the website
+        if: hashFiles('releases/*/release.json') != ''
+        run: pnpm run build

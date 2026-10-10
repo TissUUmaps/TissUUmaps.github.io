@@ -1,0 +1,5 @@
+allowBuilds:
+  "@swc/core": false
+  core-js: false
+
+minimumReleaseAge: 1440
