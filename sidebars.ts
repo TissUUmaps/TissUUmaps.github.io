@@ -18,7 +18,7 @@ function createSidebars(docsPath: string): SidebarsConfig {
   const typedocSidebarFile = join(docsPath, "api", "typedoc-sidebar.cjs");
   if (!existsSync(typedocSidebarFile)) {
     throw new Error(
-      `${typedocSidebarFile} not found, generate the API docs in TissUUmaps first (pnpm run build:docs)`,
+      `${typedocSidebarFile} not found, generate the API docs in TissUUmaps first`,
     );
   }
   const require = createRequire(import.meta.url);

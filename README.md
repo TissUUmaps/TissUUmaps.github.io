@@ -34,7 +34,7 @@ Clone this repository next to a TissUUmaps checkout and generate the API docs th
 ```bash
 cd ../TissUUmaps
 pnpm install
-pnpm run build && pnpm run build:docs
+pnpm run build:packages && pnpm run build:apidocs
 ```
 
 Then start the website with the TissUUmaps docs as the current version:
