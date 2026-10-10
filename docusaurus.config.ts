@@ -2,13 +2,22 @@ import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
 
-import { tissuumapsDocsPath } from "./tissuumaps-docs";
+import { docsPath, loadVersions } from "./tissuumaps-docs";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 // The versioned TissUUmaps app is served next to the website as static files,
 // so link to it by pathname instead of as a Docusaurus route
 const appUrl = "pathname:///app/";
+
+const versions = loadVersions();
+if (versions.length === 0 && !docsPath) {
+  throw new Error(
+    "No docs to build: run `node scripts/prepare.ts` or set TISSUUMAPS_DOCS",
+  );
+}
+const lastVersion =
+  versions.find(({ version }) => !version.includes("-")) ?? versions[0];
 
 const config: Config = {
   title: "TissUUmaps",
@@ -46,11 +55,14 @@ const config: Config = {
       "classic",
       {
         docs: {
-          path: tissuumapsDocsPath,
+          path: docsPath,
           sidebarPath: "./sidebars.ts",
-          // The docs are written in the TissUUmaps repository
+          includeCurrentVersion: docsPath !== undefined,
+          lastVersion: docsPath ? "current" : lastVersion?.line,
           editUrl: ({ docPath }) =>
-            `https://github.com/TissUUmaps/TissUUmaps/tree/main/docs/${docPath}`,
+            docPath.startsWith("api/")
+              ? undefined
+              : `https://github.com/TissUUmaps/TissUUmaps/tree/main/docs/${docPath}`,
         },
         blog: false,
         theme: {
@@ -82,6 +94,10 @@ const config: Config = {
           sidebarId: "apiSidebar",
           position: "left",
           label: "Packages",
+        },
+        {
+          type: "docsVersionDropdown",
+          position: "right",
         },
         {
           href: "https://github.com/TissUUmaps/TissUUmaps",
