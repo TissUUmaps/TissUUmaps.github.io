@@ -18,7 +18,7 @@ export default defineConfig([
   js.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
   {
-    files: ["**/*.{js,jsx,ts,tsx,mjs}"],
+    files: ["**/*.{js,jsx,ts,tsx,mjs,mts}"],
     languageOptions: {
       ecmaVersion: 2025,
       globals: globals.browser,
@@ -35,7 +35,7 @@ export default defineConfig([
     },
   },
   {
-    files: ["*.{js,ts,mjs}", "scripts/**/*.{js,ts,mjs}"],
+    files: ["*.{js,ts,mjs,mts}", "scripts/**/*.{js,ts,mjs,mts}"],
     languageOptions: { globals: globals.node },
   },
   {

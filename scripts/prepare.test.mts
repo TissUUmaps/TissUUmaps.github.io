@@ -14,7 +14,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
 
-import { formatLine, prepare, selectVersionsToDeploy } from "./prepare.ts";
+import { formatLine, prepare, selectVersionsToDeploy } from "./prepare.mts";
 
 /** Runs {@link selectVersionsToDeploy}, with `deployed` and `latest` for short */
 function select(versions: string[]) {

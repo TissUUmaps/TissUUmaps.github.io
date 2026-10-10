@@ -14,7 +14,7 @@ const appUrl = "pathname:///app/";
 const versions = loadVersions();
 if (versions.length === 0 && !docsPath) {
   throw new Error(
-    "No docs to build: run `node scripts/prepare.ts` or set TISSUUMAPS_DOCS",
+    "No docs to build: run `pnpm run prepare:site` or set TISSUUMAPS_DOCS",
   );
 }
 const lastVersion =
@@ -40,7 +40,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "TissUUmaps", // Usually your GitHub org/user name.
-  projectName: "website", // Usually your repo name.
+  projectName: "tissuumaps.github.io", // Usually your repo name.
 
   onBrokenLinks: "throw",
 

@@ -11,7 +11,7 @@
  * redirecting to the latest line. The outputs are generated (gitignored) and
  * replaced on every run.
  *
- * Run from the site directory (`node scripts/prepare.ts`); downloading the
+ * Run from the site directory (`node scripts/prepare.mts`); downloading the
  * apps needs a `gh` token, `--skip-apps` skips them (e.g. for checks). Inserts
  * `.github/pages/custom.html` into every app page (the release assets stay
  * free of it). The functions are exported for the tests, which import this

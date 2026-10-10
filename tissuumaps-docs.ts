@@ -16,7 +16,7 @@ export const docsPath = process.env.TISSUUMAPS_DOCS
 const siteDir = fileURLToPath(new URL(".", import.meta.url));
 
 /**
- * Loads the released versions prepared by `scripts/prepare.ts`
+ * Loads the released versions prepared by `scripts/prepare.mts`
  *
  * @returns The versions in the order of `versions.json` (highest line first),
  * each with its released version; empty if nothing was prepared

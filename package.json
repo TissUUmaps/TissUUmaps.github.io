@@ -9,8 +9,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "typecheck": "tsc",
-    "test": "node --test scripts/*.test.ts",
-    "prepare:site": "node scripts/prepare.ts",
+    "test": "node --test scripts/*.test.mts",
+    "prepare:site": "node scripts/prepare.mts",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
@@ -63,7 +63,7 @@
     ]
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx,mjs}": "eslint --fix",
+    "**/*.{js,jsx,ts,tsx,mjs,mts}": "eslint --fix",
     "**/*": "prettier --write --ignore-unknown"
   },
   "engines": {
