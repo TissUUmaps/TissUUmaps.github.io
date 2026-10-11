@@ -91,6 +91,11 @@ const config: Config = {
               ? undefined
               : `https://github.com/TissUUmaps/TissUUmaps/tree/main/docs/${docPath}`,
         },
+        // Markdown pages in src/pages get an "Edit this page" link
+        pages: {
+          editUrl:
+            "https://github.com/TissUUmaps/tissuumaps.github.io/edit/main/",
+        },
         // The gallery: one Markdown file per project in gallery/, shown as
         // cards by our own list page (see gallery/README.md)
         blog: {
@@ -139,6 +144,11 @@ const config: Config = {
       },
       items: [
         {
+          to: "/getting-started",
+          label: "Getting started",
+          position: "left",
+        },
+        {
           type: "docSidebar",
           sidebarId: "docsSidebar",
           position: "left",
@@ -147,6 +157,11 @@ const config: Config = {
         {
           to: "/gallery",
           label: "Gallery",
+          position: "left",
+        },
+        {
+          to: "/about",
+          label: "About",
           position: "left",
         },
         {

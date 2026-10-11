@@ -116,3 +116,20 @@
   --ifm-footer-color: rgb(255 255 255 / 80%);
   font-size: 0.8rem;
 }
+
+/* Markdown pages (src/pages/*.mdx): readable width, titles like the gallery */
+.mdx-page main.container {
+  max-width: 1280px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.mdx-page article h1 {
+  color: var(--ifm-color-primary);
+  font-size: 3rem;
+}
+
+.mdx-page article h2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
