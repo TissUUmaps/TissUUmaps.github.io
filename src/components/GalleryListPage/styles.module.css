@@ -48,14 +48,16 @@
   overflow: hidden;
   border-radius: 0.75rem;
   background: var(--ifm-background-surface-color);
-  box-shadow: 0 0.5rem 1.5rem rgb(4 92 100 / 12%);
+  box-shadow: 0 0.5rem 1.5rem
+    color-mix(in srgb, var(--scilifelab-teal) 12%, transparent);
   transition:
     transform 0.15s,
     box-shadow 0.15s;
 }
 
 .card:hover {
-  box-shadow: 0 1rem 2rem rgb(4 92 100 / 20%);
+  box-shadow: 0 1rem 2rem
+    color-mix(in srgb, var(--scilifelab-teal) 20%, transparent);
   transform: translateY(-3px);
 }
 
@@ -102,13 +104,13 @@
   display: block;
   padding: 0.1rem 0.65rem;
   border-radius: 999px;
-  background: rgb(167 201 71 / 25%);
+  background: color-mix(in srgb, var(--scilifelab-lime) 25%, transparent);
   color: var(--ifm-font-color-base);
   font-size: 0.8rem;
 }
 
 .tags a:hover {
-  background: rgb(167 201 71 / 50%);
+  background: color-mix(in srgb, var(--scilifelab-lime) 50%, transparent);
   text-decoration: none;
 }
 

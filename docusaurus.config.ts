@@ -151,8 +151,8 @@ const config: Config = {
       id: "tissuumaps3-legacy",
       content:
         'TissUUmaps 4 is in beta. Looking for TissUUmaps 3? <a href="https://tissuumaps.github.io/TissUUmaps3">Go to the TissUUmaps 3 website</a>',
-      backgroundColor: "#a7c947",
-      textColor: "#3f3f3f",
+      backgroundColor: "var(--scilifelab-lime)",
+      textColor: "var(--scilifelab-dark-gray)",
     },
     navbar: {
       title: "TissUUmaps",

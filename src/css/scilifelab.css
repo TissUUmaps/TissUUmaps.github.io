@@ -1,0 +1,16 @@
+/**
+ * The SciLifeLab visual identity, as variables only; update it here when
+ * SciLifeLab updates it. Graphic Manual 2025, see
+ * https://www.scilifelab.se/community-pages/resources/visual-identity/
+ * Lime is the main color, Grape only for small details ("color pop").
+ */
+:root {
+  --scilifelab-lime: #a7c947;
+  --scilifelab-teal: #045c64;
+  --scilifelab-aqua: #4c979f;
+  --scilifelab-grape: #491f53;
+  --scilifelab-light-gray: #e5e5e5;
+  --scilifelab-medium-gray: #a6a6a6;
+  --scilifelab-dark-gray: #3f3f3f;
+  --scilifelab-font-family: "Lato";
+}

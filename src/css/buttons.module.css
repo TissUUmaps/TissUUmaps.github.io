@@ -10,7 +10,7 @@
   gap: 1rem;
   padding: 0.45rem 1.25rem;
   border-radius: 999px;
-  background: var(--tm-teal);
+  background: var(--scilifelab-teal);
   color: #fff;
   font-size: 0.85rem;
   letter-spacing: 0.1em;
@@ -22,7 +22,7 @@
 }
 
 .button:hover {
-  background: var(--tm-grape);
+  background: var(--scilifelab-grape);
   color: #fff;
   text-decoration: none;
 }
