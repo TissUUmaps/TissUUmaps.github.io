@@ -1,0 +1,28 @@
+/**
+ * Buttons shared by the custom pages (home, gallery). Import this module
+ * before the page's own module so that page styles can override it.
+ */
+
+/* Rounded buttons with spaced letters and a long arrow */
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.45rem 1.25rem;
+  border-radius: 999px;
+  background: var(--tm-teal);
+  color: #fff;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  transition: background 0.15s;
+}
+
+.button::after {
+  content: "⟶";
+}
+
+.button:hover {
+  background: var(--tm-grape);
+  color: #fff;
+  text-decoration: none;
+}

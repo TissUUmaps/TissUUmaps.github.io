@@ -91,7 +91,27 @@ const config: Config = {
               ? undefined
               : `https://github.com/TissUUmaps/TissUUmaps/tree/main/docs/${docPath}`,
         },
-        blog: false,
+        // The gallery: one Markdown file per project in gallery/, shown as
+        // cards by our own list page (see gallery/README.md)
+        blog: {
+          path: "gallery",
+          routeBasePath: "gallery",
+          blogTitle: "Gallery",
+          blogDescription:
+            "Example projects. Each one opens directly in TissUUmaps, in your browser.",
+          blogListComponent: "@site/src/components/GalleryListPage",
+          blogTagsPostsComponent: "@site/src/components/GalleryListPage",
+          blogPostComponent: "@site/src/components/GalleryProjectPage",
+          exclude: ["**/_*/**", "**/_*.md", "README.md"],
+          postsPerPage: "ALL",
+          blogSidebarCount: 0,
+          showReadingTime: false,
+          archiveBasePath: null,
+          feedOptions: { type: null },
+          onUntruncatedBlogPosts: "ignore",
+          editUrl:
+            "https://github.com/TissUUmaps/tissuumaps.github.io/edit/main/",
+        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -123,6 +143,11 @@ const config: Config = {
           sidebarId: "docsSidebar",
           position: "left",
           label: "Documentation",
+        },
+        {
+          to: "/gallery",
+          label: "Gallery",
+          position: "left",
         },
         {
           type: "docSidebar",

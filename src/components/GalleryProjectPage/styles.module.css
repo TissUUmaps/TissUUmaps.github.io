@@ -1,0 +1,56 @@
+.main {
+  padding: 2rem 0 4rem;
+}
+
+.main > :global(.container) {
+  max-width: 1280px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+  margin: 1rem 0 2.5rem;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 0.75rem;
+  background: #000;
+  box-shadow: 0 1rem 2rem rgb(4 92 100 / 20%);
+  object-fit: cover;
+}
+
+.title {
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+  font-size: 2.5rem;
+}
+
+.lead {
+  font-size: 1.15rem;
+}
+
+.source {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+}
+
+.text {
+  max-width: 50rem;
+}
+
+.edit {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 996px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+}
