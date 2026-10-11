@@ -3,7 +3,11 @@ import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
 import semver from "semver";
 
-import { docsPath, loadTypedocSidebar, loadVersions } from "./tissuumaps-docs";
+import {
+  docsPath,
+  loadVersions,
+  sidebarItemsGenerator,
+} from "./tissuumaps-docs";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -60,28 +64,7 @@ const config: Config = {
         docs: {
           path: docsPath,
           sidebarPath: "./sidebars.ts",
-          // The API docs are a category like the others: a generated index
-          // listing the packages from the version's typedoc sidebar
-          sidebarItemsGenerator: async ({
-            defaultSidebarItemsGenerator,
-            ...args
-          }) => {
-            const items = await defaultSidebarItemsGenerator(args);
-            return items.map((item) =>
-              item.type === "category" &&
-              item.link?.type === "doc" &&
-              item.link.id === "api/index"
-                ? {
-                    ...item,
-                    label: "API",
-                    link: { type: "generated-index", slug: "/category/api" },
-                    items: loadTypedocSidebar(
-                      args.version.contentPath,
-                    ) as typeof items,
-                  }
-                : item,
-            );
-          },
+          sidebarItemsGenerator,
           includeCurrentVersion: docsPath !== undefined,
           lastVersion: docsPath ? "current" : lastVersion?.line,
           editUrl: ({ docPath }) =>
