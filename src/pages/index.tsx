@@ -79,11 +79,11 @@ export default function Home(): ReactNode {
                 An interactive web application for visualizing spatial biology
                 data.
               </p>
-              <p>
+              {/* <p>
                 Originally developed in the Wählby Group at Uppsala University,
                 TissUUmaps is developed and maintained by the SciLifeLab
                 BioImage Informatics Unit.
-              </p>
+              </p> */}
               <ul className={styles.features}>
                 {features.map(([feature, detail]) => (
                   <li key={feature}>
