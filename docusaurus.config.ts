@@ -11,6 +11,26 @@ import { docsPath, loadVersions } from "./tissuumaps-docs";
 // so link to it by pathname instead of as a Docusaurus route
 const appUrl = "pathname:///app/";
 
+// Served at tissuumaps.github.io/website/ until this repository replaces
+// tissuumaps.github.io
+const baseUrl = process.env.DOCUSAURUS_BASE_URL || "/website/";
+
+// Partner logos shown on the right of the navbar, with a light and a dark
+// variant where the logo has black text
+const partners = `<div class="navbar-partners">
+  <a href="https://www.scilifelab.se/" target="_blank" rel="noopener noreferrer">
+    <img class="partner-light partner-scilifelab" src="${baseUrl}img/scilifelab.svg" alt="SciLifeLab" />
+    <img class="partner-dark partner-scilifelab" src="${baseUrl}img/scilifelab-dark.svg" alt="SciLifeLab" />
+  </a>
+  <a href="https://nbis.se/" target="_blank" rel="noopener noreferrer">
+    <img class="partner-nbis" src="${baseUrl}img/nbis.svg" alt="NBIS" />
+  </a>
+  <a href="https://www.scilifelab.se/units/bioimage-informatics/" target="_blank" rel="noopener noreferrer">
+    <img class="partner-light partner-biif" src="${baseUrl}img/biif.svg" alt="BIIF" />
+    <img class="partner-dark partner-biif" src="${baseUrl}img/biif-dark.svg" alt="BIIF" />
+  </a>
+</div>`;
+
 const versions = loadVersions();
 if (versions.length === 0 && !docsPath) {
   throw new Error(
@@ -26,6 +46,11 @@ const config: Config = {
   tagline: "Spatial Biology Visualization",
   favicon: "img/favicon.ico",
 
+  // Lato, the SciLifeLab typeface
+  stylesheets: [
+    "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap",
+  ],
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -35,7 +60,7 @@ const config: Config = {
   url: "https://tissuumaps.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: process.env.DOCUSAURUS_BASE_URL || "/website/",
+  baseUrl,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -78,6 +103,14 @@ const config: Config = {
     colorMode: {
       respectPrefersColorScheme: true,
     },
+    // Points TissUUmaps 3 users to the legacy website while 4 is in beta
+    announcementBar: {
+      id: "tissuumaps3-legacy",
+      content:
+        'TissUUmaps 4 is in beta. Looking for TissUUmaps 3? <a href="https://tissuumaps.github.io/TissUUmaps3">Go to the TissUUmaps 3 website</a>',
+      backgroundColor: "#a7c947",
+      textColor: "#3f3f3f",
+    },
     navbar: {
       title: "TissUUmaps",
       logo: {
@@ -111,48 +144,15 @@ const config: Config = {
           label: "App",
           position: "right",
         },
+        {
+          type: "html",
+          position: "right",
+          value: partners,
+        },
       ],
     },
     footer: {
-      style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Documentation",
-              to: "/docs/",
-            },
-            {
-              label: "Packages",
-              to: "/docs/api",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "SciLifeLab BioImage Informatics Unit",
-              href: "https://www.scilifelab.se/units/bioimage-informatics/",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "GitHub",
-              href: "https://github.com/TissUUmaps/TissUUmaps",
-            },
-            {
-              label: "App",
-              href: appUrl,
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} TissUUmaps Core Team. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} TissUUmaps Core Team.`,
     },
     prism: {
       theme: prismThemes.github,
