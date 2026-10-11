@@ -143,6 +143,7 @@
 }
 
 .mdx-page article h2 {
+  clear: both;
   margin-top: 3rem;
   font-size: 2rem;
 }
