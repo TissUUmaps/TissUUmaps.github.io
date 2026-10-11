@@ -10,6 +10,19 @@ The website of [TissUUmaps](https://github.com/TissUUmaps/TissUUmaps), a GPU-acc
 
 The website hosts the TissUUmaps application and its documentation, both versioned by MAJOR.MINOR line. The documentation is written in the TissUUmaps repository; changes to it go there. This repository holds the rest of the website.
 
+## Editing the website
+
+Most pages are Markdown files that can be edited on GitHub in the browser, through their "Edit this page" link.
+
+| Page            | File                                                                             |
+| --------------- | -------------------------------------------------------------------------------- |
+| Gallery         | one folder per project in [`gallery/`](gallery/README.md)                        |
+| Getting started | [`src/pages/getting-started.mdx`](src/pages/getting-started.mdx)                 |
+| About           | [`src/pages/about.mdx`](src/pages/about.mdx)                                     |
+| Documentation   | `docs/` in the [TissUUmaps](https://github.com/TissUUmaps/TissUUmaps) repository |
+
+The Markdown pages can use a few components for their layout, such as `<Steps>`, `<Box>`, `<Publication>` or `<Logo>`, without an import (see [`src/components/markdown`](src/components/markdown/index.ts)). Image paths start with `/`, from `static/`. The landing page is [`src/pages/index.tsx`](src/pages/index.tsx).
+
 ## Releases
 
 On every application release, the TissUUmaps release workflow pushes the released docs to `releases/<line>/`:

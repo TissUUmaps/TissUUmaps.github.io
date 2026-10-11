@@ -1,0 +1,42 @@
+/* A lime number in front of every step heading */
+.steps {
+  padding-left: 4.5rem;
+  counter-reset: step;
+}
+
+.steps h2 {
+  position: relative;
+  margin-top: 3rem;
+  counter-increment: step;
+}
+
+.steps h2::before {
+  content: counter(step);
+  position: absolute;
+  top: 50%;
+  left: -4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--scilifelab-lime);
+  color: var(--scilifelab-dark-gray);
+  font-size: 1.35rem;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 600px) {
+  .steps {
+    padding-left: 0;
+  }
+
+  .steps h2 {
+    padding-left: 4rem;
+  }
+
+  .steps h2::before {
+    left: 0;
+  }
+}

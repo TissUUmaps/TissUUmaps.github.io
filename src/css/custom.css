@@ -4,27 +4,98 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+@import "./scilifelab.css";
+
+/* Infima's primary color and its shades, from the SciLifeLab colors */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: var(--scilifelab-teal);
+  --ifm-color-primary-dark: color-mix(
+    in srgb,
+    var(--ifm-color-primary) 90%,
+    black
+  );
+  --ifm-color-primary-darker: color-mix(
+    in srgb,
+    var(--ifm-color-primary) 85%,
+    black
+  );
+  --ifm-color-primary-darkest: color-mix(
+    in srgb,
+    var(--ifm-color-primary) 70%,
+    black
+  );
+  --ifm-color-primary-light: color-mix(
+    in srgb,
+    var(--ifm-color-primary) 90%,
+    white
+  );
+  --ifm-color-primary-lighter: color-mix(
+    in srgb,
+    var(--ifm-color-primary) 85%,
+    white
+  );
+  --ifm-color-primary-lightest: color-mix(
+    in srgb,
+    var(--ifm-color-primary) 70%,
+    white
+  );
+  --ifm-font-family-base:
+    var(--scilifelab-font-family), system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+  --ifm-heading-font-weight: 700;
+  --ifm-heading-color: var(--scilifelab-dark-gray);
+  --ifm-navbar-height: 4.5rem;
+  --ifm-navbar-link-color: var(--scilifelab-teal);
+  --tm-band-background: #f2f2f2;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: var(--scilifelab-lime);
+  --ifm-heading-color: var(--ifm-font-color-base);
+  --ifm-navbar-link-color: var(--ifm-font-color-base);
+  --tm-band-background: #262829;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  box-shadow: none;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.navbar__logo {
+  height: 2.5rem;
+}
+
+.navbar__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* Footer: a single slim copyright line */
+.footer {
+  --ifm-footer-padding-vertical: 0.6rem;
+  --ifm-footer-background-color: var(--scilifelab-teal);
+  --ifm-footer-color: rgb(255 255 255 / 80%);
+  font-size: 0.8rem;
+}
+
+/* Markdown pages (src/pages/*.mdx): readable width, titles like the gallery */
+.mdx-page main.container {
+  max-width: 1280px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.mdx-page article h1 {
+  color: var(--ifm-color-primary);
+  font-size: 3rem;
+}
+
+.mdx-page article h2 {
+  clear: both;
+  margin-top: 3rem;
+  font-size: 2rem;
 }

@@ -3,13 +3,9 @@ import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
 import semver from "semver";
 
-import { docsPath, loadVersions } from "./tissuumaps-docs";
+import { docsPath, loadTypedocSidebar, loadVersions } from "./tissuumaps-docs";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
-// The versioned TissUUmaps app is served next to the website as static files,
-// so link to it by pathname instead of as a Docusaurus route
-const appUrl = "pathname:///app/";
 
 const versions = loadVersions();
 if (versions.length === 0 && !docsPath) {
@@ -25,6 +21,11 @@ const config: Config = {
   title: "TissUUmaps",
   tagline: "Spatial Biology Visualization",
   favicon: "img/favicon.ico",
+
+  // Lato, the SciLifeLab typeface
+  stylesheets: [
+    "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap",
+  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -59,6 +60,26 @@ const config: Config = {
         docs: {
           path: docsPath,
           sidebarPath: "./sidebars.ts",
+          sidebarItemsGenerator: async ({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) => {
+            const items = await defaultSidebarItemsGenerator(args);
+            return items.map((item) =>
+              item.type === "category" &&
+              item.link?.type === "doc" &&
+              item.link.id === "api/index"
+                ? {
+                    ...item,
+                    label: "API",
+                    link: { type: "generated-index", slug: "/category/api" },
+                    items: loadTypedocSidebar(
+                      args.version.contentPath,
+                    ) as typeof items,
+                  }
+                : item,
+            );
+          },
           includeCurrentVersion: docsPath !== undefined,
           lastVersion: docsPath ? "current" : lastVersion?.line,
           editUrl: ({ docPath }) =>
@@ -66,7 +87,32 @@ const config: Config = {
               ? undefined
               : `https://github.com/TissUUmaps/TissUUmaps/tree/main/docs/${docPath}`,
         },
-        blog: false,
+        // Markdown pages in src/pages get an "Edit this page" link
+        pages: {
+          editUrl:
+            "https://github.com/TissUUmaps/tissuumaps.github.io/edit/main/",
+        },
+        // The gallery: one Markdown file per project in gallery/, shown as
+        // cards by our own list page (see gallery/README.md)
+        blog: {
+          path: "gallery",
+          routeBasePath: "gallery",
+          blogTitle: "Gallery",
+          blogDescription:
+            "Example projects. Each one opens directly in TissUUmaps, in your browser.",
+          blogListComponent: "@site/src/components/pages/GalleryListPage",
+          blogTagsPostsComponent: "@site/src/components/pages/GalleryListPage",
+          blogPostComponent: "@site/src/components/pages/GalleryProjectPage",
+          exclude: ["**/_*/**", "**/_*.md", "README.md"],
+          postsPerPage: "ALL",
+          blogSidebarCount: 0,
+          showReadingTime: false,
+          archiveBasePath: null,
+          feedOptions: { type: null },
+          onUntruncatedBlogPosts: "ignore",
+          editUrl:
+            "https://github.com/TissUUmaps/tissuumaps.github.io/edit/main/",
+        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -78,6 +124,14 @@ const config: Config = {
     colorMode: {
       respectPrefersColorScheme: true,
     },
+    // Points TissUUmaps 3 users to the legacy website while 4 is in beta
+    announcementBar: {
+      id: "tissuumaps3-legacy",
+      content:
+        'TissUUmaps 4 is in beta. Looking for TissUUmaps 3? <a href="https://tissuumaps.github.io/TissUUmaps3">Go to the TissUUmaps 3 website</a>',
+      backgroundColor: "var(--scilifelab-lime)",
+      textColor: "var(--scilifelab-dark-gray)",
+    },
     navbar: {
       title: "TissUUmaps",
       logo: {
@@ -86,73 +140,38 @@ const config: Config = {
       },
       items: [
         {
+          to: "/getting-started",
+          label: "Getting started",
+          position: "left",
+        },
+        {
           type: "docSidebar",
           sidebarId: "docsSidebar",
           position: "left",
           label: "Documentation",
         },
         {
-          type: "docSidebar",
-          sidebarId: "apiSidebar",
+          to: "/gallery",
+          label: "Gallery",
           position: "left",
-          label: "Packages",
+        },
+        {
+          to: "/about",
+          label: "About",
+          position: "left",
         },
         {
           type: "docsVersionDropdown",
           position: "right",
         },
         {
-          href: "https://github.com/TissUUmaps/TissUUmaps",
-          label: "GitHub",
-          position: "right",
-        },
-        {
-          href: appUrl,
-          label: "App",
+          type: "custom-partnerLogos",
           position: "right",
         },
       ],
     },
     footer: {
-      style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Documentation",
-              to: "/docs/",
-            },
-            {
-              label: "Packages",
-              to: "/docs/api",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "SciLifeLab BioImage Informatics Unit",
-              href: "https://www.scilifelab.se/units/bioimage-informatics/",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "GitHub",
-              href: "https://github.com/TissUUmaps/TissUUmaps",
-            },
-            {
-              label: "App",
-              href: appUrl,
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} TissUUmaps Core Team. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} TissUUmaps Core Team.`,
     },
     prism: {
       theme: prismThemes.github,

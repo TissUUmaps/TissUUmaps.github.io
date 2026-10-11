@@ -1,0 +1,78 @@
+---
+title: Getting started
+description: Open TissUUmaps, explore an example, add your own data and share it
+hide_table_of_contents: true
+---
+
+# Getting started
+
+From your first look to sharing your own data.
+
+<Steps>
+
+## Open TissUUmaps
+
+TissUUmaps runs in your browser, with nothing to install.
+
+<Button to="pathname:///app/">Open TissUUmaps</Button>
+
+## Explore an example
+
+Open a project from the gallery. Pan and zoom in the viewer, and show, hide or restyle each image, label, point and shape layer in the side panel.
+
+<Button to="/gallery">Gallery</Button>
+
+## Add your own data
+
+<Columns>
+<Box title="Local data" note="Chrome, Edge and other Chromium-based browsers only. Not available in Firefox or Safari.">
+
+Drag the folder with your data onto the **Project** tab to connect it, then click **Start empty**. Now drag files or folders, such as an OME-Zarr store, from that folder onto the **Images**, **Labels**, **Points**, **Shapes** or **Tables** tab. TissUUmaps recognizes the format and fills in the add dialog.
+
+</Box>
+<Box title="Cloud data" note="All browsers.">
+
+Click **Start empty**, then **Add image** (or labels, points, shapes, table) in the matching tab and paste the URL of your data. The server must allow cross-origin requests (CORS).
+
+</Box>
+</Columns>
+
+See the [supported data](/docs/supported-data) for the formats and their settings.
+
+## Open a SpatialData store
+
+:::info
+
+The SpatialData plugin is still in development. It will become part of TissUUmaps itself in a future release.
+
+:::
+
+The SpatialData plugin reads a whole SpatialData store. Open the plugins menu (**⋮** in the tab bar), choose **Load plugin from URL…** and paste:
+
+```
+https://tissuumaps4.serve.scilifelab.se/plugins/spatialdata.js
+```
+
+In the new **SpatialData** tab, paste the URL of a store and click **Load**. For a store on your computer, first connect the folder that contains it (see Local data above), then click **Choose a store in the connected folder** and pick the `.zarr` folder.
+
+The tab lists the images, labels, points and shapes of the store by coordinate system. Add the ones you want and color them by the store's tables.
+
+## Save and share
+
+**Download project** in the project menu saves a project file (`.tm4`). It describes your data and how to show it, but does not contain the data. Drop it on the **Project** tab to open it again.
+
+To share a project, put the project file and the data on a web server, and add the project file's URL to the TissUUmaps link:
+
+```
+https://tissuumaps.github.io/app/?project=https://example.org/project.tm4
+```
+
+Paths in the project file can be relative to it, so the project folder can move without editing the file. See [Projects](/docs/concepts/projects).
+
+</Steps>
+
+## Learn more
+
+- [Concepts](/docs/category/concepts): projects, data types and coordinate systems.
+- [Supported data](/docs/supported-data): the file formats TissUUmaps reads, and how to configure them.
+- [Questions and bugs](https://github.com/TissUUmaps/TissUUmaps/issues): ask a question or report a problem on GitHub.

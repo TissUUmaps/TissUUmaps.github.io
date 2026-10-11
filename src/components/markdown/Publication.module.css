@@ -1,0 +1,51 @@
+/* Full-width rows with the figure on the left */
+.publications {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.publication {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 0.25rem 1rem
+    color-mix(in srgb, var(--scilifelab-teal) 12%, transparent);
+}
+
+.publication img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 0.5rem;
+  background: #fff;
+  object-fit: contain;
+}
+
+.publication a {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.publication p {
+  margin: 0.4rem 0 0;
+  font-size: 0.9rem;
+}
+
+.authors {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.journal {
+  font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  .publication {
+    grid-template-columns: 6rem minmax(0, 1fr);
+    gap: 1rem;
+  }
+}

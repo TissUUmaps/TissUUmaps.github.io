@@ -1,0 +1,138 @@
+/* The project grid stretches down to the footer */
+.wrapper,
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+.header {
+  padding: 4rem 0 2.5rem;
+}
+
+.title {
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+  font-size: 3rem;
+}
+
+.lead {
+  max-width: 45rem;
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.band {
+  flex: 1;
+  padding: 3rem 0 4rem;
+  background: var(--tm-band-background);
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+/* Card: screenshot on top, the button at the bottom so all cards line up */
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 0.5rem 1.5rem
+    color-mix(in srgb, var(--scilifelab-teal) 12%, transparent);
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
+}
+
+.card:hover {
+  box-shadow: 0 1rem 2rem
+    color-mix(in srgb, var(--scilifelab-teal) 20%, transparent);
+  transform: translateY(-3px);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #000;
+  object-fit: cover;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.body h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.body h2 a {
+  color: inherit;
+}
+
+.body p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.tags a {
+  display: block;
+  padding: 0.1rem 0.65rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--scilifelab-lime) 25%, transparent);
+  color: var(--ifm-font-color-base);
+  font-size: 0.8rem;
+}
+
+.tags a:hover {
+  background: color-mix(in srgb, var(--scilifelab-lime) 50%, transparent);
+  text-decoration: none;
+}
+
+/* The source line takes the free space, which pushes the button down */
+.body .source {
+  flex: 1;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 996px) {
+  .header {
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,30 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.45rem 1.25rem;
+  border-radius: 999px;
+  background: var(--scilifelab-teal);
+  color: #fff;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  transition: background 0.15s;
+}
+
+.button::after {
+  content: "⟶";
+}
+
+.button:hover {
+  background: var(--scilifelab-grape);
+  color: #fff;
+  text-decoration: none;
+}
+
+.large {
+  gap: 1.5rem;
+  padding: 1.1rem 2.75rem;
+  box-shadow: 0 0.75rem 1.5rem
+    color-mix(in srgb, var(--scilifelab-teal) 25%, transparent);
+  font-size: 1.35rem;
+}
