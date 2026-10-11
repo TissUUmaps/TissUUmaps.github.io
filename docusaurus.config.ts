@@ -35,8 +35,8 @@ const config: Config = {
   // Set the production url of your site here
   url: "https://tissuumaps.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: process.env.DOCUSAURUS_BASE_URL || "/website/",
+  // The site is the organization's root GitHub Pages site, so it is served at /
+  baseUrl: process.env.DOCUSAURUS_BASE_URL || "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -128,7 +128,7 @@ const config: Config = {
     announcementBar: {
       id: "tissuumaps3-legacy",
       content:
-        'TissUUmaps 4 is in beta. Looking for TissUUmaps 3? <a href="https://tissuumaps.github.io/TissUUmaps3">Go to the TissUUmaps 3 website</a>',
+        'TissUUmaps 4 is in beta. Looking for TissUUmaps 3? <a href="https://tissuumaps.github.io/TissUUmaps3/">Go to the TissUUmaps 3 website</a>',
       backgroundColor: "var(--scilifelab-lime)",
       textColor: "var(--scilifelab-dark-gray)",
     },
