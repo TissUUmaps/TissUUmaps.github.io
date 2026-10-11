@@ -2,7 +2,8 @@ import type { Content } from "@theme/BlogPostPage";
 
 /**
  * The application the gallery projects open in: the latest release, served
- * next to the website (see docusaurus.config.ts)
+ * next to the website as static files (see scripts/prepare.mts), so linked
+ * by pathname instead of as a route
  */
 const galleryAppUrl = "pathname:///app/";
 

@@ -9,8 +9,8 @@ import type { ReactNode } from "react";
 import buttons from "../css/buttons.module.css";
 import styles from "./index.module.css";
 
-// The latest release of the app, served next to the website (see
-// docusaurus.config.ts)
+// The latest release of the app, served next to the website as static files
+// (see scripts/prepare.mts), so linked by pathname instead of as a route
 const appUrl = "pathname:///app/";
 
 // Main point and detail, as on the TissUUmaps 4 poster

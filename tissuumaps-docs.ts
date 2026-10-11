@@ -1,4 +1,5 @@
 import { existsSync, readFileSync } from "node:fs";
+import { createRequire } from "node:module";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -33,4 +34,23 @@ export function loadVersions(): { line: string; version: string }[] {
     ) as { version: string };
     return { line, version: release.version };
   });
+}
+
+/**
+ * Loads the sidebar items that typedoc generated for the API docs of a docs
+ * version
+ *
+ * @param docsDir - The docs folder of the version
+ * @returns The sidebar items
+ * @throws Error if the docs folder has no typedoc sidebar
+ */
+export function loadTypedocSidebar(docsDir: string): unknown[] {
+  const typedocSidebarFile = join(docsDir, "api", "typedoc-sidebar.cjs");
+  if (!existsSync(typedocSidebarFile)) {
+    throw new Error(
+      `${typedocSidebarFile} not found, generate the API docs in TissUUmaps first`,
+    );
+  }
+  const require = createRequire(import.meta.url);
+  return require(typedocSidebarFile) as unknown[];
 }
