@@ -153,6 +153,10 @@ void test("prepares the selected versions' docs and apps", () => {
     assert.ok(existsSync(join(siteDir, "static/app/4.3/index.html")));
     assert.ok(!existsSync(join(siteDir, "static/app/4.0")));
     assert.match(read("static/app/index.html"), /url=4\.1\/"/);
+    assert.match(
+      read("static/app/index.html"),
+      /location\.replace\("4\.1\/" \+ location\.search \+ location\.hash\)/,
+    );
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }

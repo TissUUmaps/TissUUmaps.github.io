@@ -119,7 +119,8 @@ export function readReleases(releasesDir: string): string[] {
  *
  * @param options.siteDir - The site directory
  * @param options.versions - The versions to prepare
- * @param options.latestVersion - The version `app/` redirects to
+ * @param options.latestVersion - The version `app/` redirects to, keeping the
+ * query (e.g. `?project=…`) and the fragment
  * @param options.customHtml - The HTML to insert into every app page
  * @param options.assetsDir - A directory holding the app assets
  * (`tissuumaps-<version>.zip`); downloaded from the releases if omitted
@@ -177,6 +178,9 @@ export function prepareApps(options: {
   <head>
     <meta charset="utf-8" />
     <meta name="robots" content="noindex" />
+    <script>
+      location.replace("${latestLine}/" + location.search + location.hash);
+    </script>
     <meta http-equiv="refresh" content="0; url=${latestLine}/" />
     <title>TissUUmaps</title>
   </head>
