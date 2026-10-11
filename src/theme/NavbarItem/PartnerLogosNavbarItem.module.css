@@ -1,0 +1,38 @@
+/**
+ * Each logo is sized so that the capitals of the names have the same height
+ * (1.18rem) and their tops line up (0.7rem from the top); NBIS has its
+ * subtitle below the name.
+ */
+.partners {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-right: 1rem;
+}
+
+.partners a {
+  display: flex;
+}
+
+/* Capitals from 31 % to 84 % of the height */
+.scilifelab {
+  height: 2.25rem;
+}
+
+/* Name in the top 65 %, subtitle below */
+.nbis {
+  height: 1.82rem;
+  margin-top: 0.7rem;
+}
+
+/* Capitals fill the height */
+.biif {
+  height: 1.18rem;
+  margin-top: 0.7rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .partners {
+    display: none;
+  }
+}

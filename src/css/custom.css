@@ -74,54 +74,6 @@
   font-weight: 700;
 }
 
-/**
- * Partner logos on the right of the navbar. Each logo is sized so that the
- * capitals of the names have the same height (1.18rem) and their tops line up
- * (0.7rem from the top); NBIS has its subtitle below the name.
- */
-.navbar-partners {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-right: 1rem;
-}
-
-.navbar-partners a {
-  display: flex;
-}
-
-/* Capitals from 31 % to 84 % of the height */
-.partner-scilifelab {
-  height: 2.25rem;
-}
-
-/* Name in the top 65 %, subtitle below */
-.partner-nbis {
-  height: 1.82rem;
-  margin-top: 0.7rem;
-}
-
-/* Capitals fill the height */
-.partner-biif {
-  height: 1.18rem;
-  margin-top: 0.7rem;
-}
-
-.partner-dark,
-[data-theme="dark"] .partner-light {
-  display: none;
-}
-
-[data-theme="dark"] .partner-dark {
-  display: block;
-}
-
-@media screen and (max-width: 1200px) {
-  .navbar-partners {
-    display: none;
-  }
-}
-
 /* Footer: a single slim copyright line */
 .footer {
   --ifm-footer-padding-vertical: 0.6rem;
