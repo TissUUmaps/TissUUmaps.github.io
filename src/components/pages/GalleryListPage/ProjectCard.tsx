@@ -2,8 +2,8 @@ import Link from "@docusaurus/Link";
 import Heading from "@theme/Heading";
 import type { ReactNode } from "react";
 
-import buttons from "../../css/buttons.module.css";
-import type { GalleryProject } from "../../data/gallery";
+import type { GalleryProject } from "../../../gallery";
+import { Button } from "../../markdown/Button";
 import styles from "./styles.module.css";
 
 export function ProjectCard({
@@ -26,9 +26,7 @@ export function ProjectCard({
           Data: <Link href={project.dataUrl}>{project.dataProvider}</Link>,{" "}
           {project.dataLicense}
         </p>
-        <Link className={buttons.button} href={project.appUrl}>
-          Open in TissUUmaps
-        </Link>
+        <Button to={project.appUrl}>Open in TissUUmaps</Button>
       </div>
     </article>
   );

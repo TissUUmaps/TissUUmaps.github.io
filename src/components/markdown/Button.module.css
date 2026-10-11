@@ -1,9 +1,3 @@
-/**
- * Buttons shared by the custom pages (home, gallery). Import this module
- * before the page's own module so that page styles can override it.
- */
-
-/* Rounded buttons with spaced letters and a long arrow */
 .button {
   display: inline-flex;
   align-items: center;
@@ -25,4 +19,12 @@
   background: var(--scilifelab-grape);
   color: #fff;
   text-decoration: none;
+}
+
+.large {
+  gap: 1.5rem;
+  padding: 1.1rem 2.75rem;
+  box-shadow: 0 0.75rem 1.5rem
+    color-mix(in srgb, var(--scilifelab-teal) 25%, transparent);
+  font-size: 1.35rem;
 }

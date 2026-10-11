@@ -21,7 +21,7 @@ Most pages are Markdown files that can be edited on GitHub in the browser, throu
 | About           | [`src/pages/about.mdx`](src/pages/about.mdx)                                     |
 | Documentation   | `docs/` in the [TissUUmaps](https://github.com/TissUUmaps/TissUUmaps) repository |
 
-The Markdown pages can use a few components for their layout, such as `<Steps>`, `<Box>`, `<Publication>` or `<Logo>`, without an import (see [`src/components/MarkdownComponents`](src/components/MarkdownComponents/index.tsx)). Image paths start with `/`, from `static/`. The landing page is [`src/pages/index.tsx`](src/pages/index.tsx).
+The Markdown pages can use a few components for their layout, such as `<Steps>`, `<Box>`, `<Publication>` or `<Logo>`, without an import (see [`src/components/markdown`](src/components/markdown/index.ts)). Image paths start with `/`, from `static/`. The landing page is [`src/pages/index.tsx`](src/pages/index.tsx).
 
 ## Releases
 

@@ -117,14 +117,6 @@
   justify-content: center;
 }
 
-.run {
-  gap: 1.5rem;
-  padding: 1.1rem 2.75rem;
-  box-shadow: 0 0.75rem 1.5rem
-    color-mix(in srgb, var(--scilifelab-teal) 25%, transparent);
-  font-size: 1.35rem;
-}
-
 /* Links into the site, on a band like the SciLifeLab section blocks */
 .band {
   flex: 1;

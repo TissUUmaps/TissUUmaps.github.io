@@ -1,4 +1,3 @@
-import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Heading from "@theme/Heading";
@@ -6,7 +5,7 @@ import Layout from "@theme/Layout";
 import clsx from "clsx";
 import type { ReactNode } from "react";
 
-import buttons from "../css/buttons.module.css";
+import { Button } from "../components/markdown/Button";
 import styles from "./index.module.css";
 
 // The latest release of the app, served next to the website as static files
@@ -93,12 +92,9 @@ export default function Home(): ReactNode {
                 ))}
               </ul>
               <div className={styles.actions}>
-                <Link
-                  className={clsx(buttons.button, styles.run)}
-                  href={appUrl}
-                >
+                <Button to={appUrl} size="large">
                   Open TissUUmaps
-                </Link>
+                </Button>
               </div>
             </div>
           </div>
@@ -109,9 +105,7 @@ export default function Home(): ReactNode {
               <div key={title}>
                 <Heading as="h2">{title}</Heading>
                 <p>{text}</p>
-                <Link className={buttons.button} to={to}>
-                  {label}
-                </Link>
+                <Button to={to}>{label}</Button>
               </div>
             ))}
           </div>

@@ -6,7 +6,7 @@ import Layout from "@theme/Layout";
 import clsx from "clsx";
 import type { ReactNode } from "react";
 
-import { readGalleryProject } from "../../data/gallery";
+import { readGalleryProject } from "../../../gallery";
 import { ProjectCard } from "./ProjectCard";
 import styles from "./styles.module.css";
 

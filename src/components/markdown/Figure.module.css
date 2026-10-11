@@ -1,0 +1,27 @@
+.figure {
+  float: right;
+  width: 40%;
+  margin: 0 0 1.5rem 2.5rem;
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  border-radius: 0.75rem;
+  box-shadow: 0 1rem 2rem
+    color-mix(in srgb, var(--scilifelab-teal) 20%, transparent);
+}
+
+.figure figcaption {
+  margin-top: 0.5rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.85rem;
+}
+
+@media screen and (max-width: 996px) {
+  .figure {
+    float: none;
+    width: 100%;
+    margin: 0 0 1.5rem;
+  }
+}

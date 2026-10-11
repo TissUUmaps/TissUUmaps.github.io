@@ -122,9 +122,9 @@ const config: Config = {
           blogTitle: "Gallery",
           blogDescription:
             "Example projects. Each one opens directly in TissUUmaps, in your browser.",
-          blogListComponent: "@site/src/components/GalleryListPage",
-          blogTagsPostsComponent: "@site/src/components/GalleryListPage",
-          blogPostComponent: "@site/src/components/GalleryProjectPage",
+          blogListComponent: "@site/src/components/pages/GalleryListPage",
+          blogTagsPostsComponent: "@site/src/components/pages/GalleryListPage",
+          blogPostComponent: "@site/src/components/pages/GalleryProjectPage",
           exclude: ["**/_*/**", "**/_*.md", "README.md"],
           postsPerPage: "ALL",
           blogSidebarCount: 0,

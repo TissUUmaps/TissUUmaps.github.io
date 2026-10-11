@@ -5,8 +5,8 @@ import Layout from "@theme/Layout";
 import MDXContent from "@theme/MDXContent";
 import type { ReactNode } from "react";
 
-import buttons from "../../css/buttons.module.css";
-import { readGalleryProject } from "../../data/gallery";
+import { readGalleryProject } from "../../../gallery";
+import { Button } from "../../markdown/Button";
 import { ProjectTags } from "../GalleryListPage/ProjectCard";
 import styles from "./styles.module.css";
 
@@ -36,9 +36,7 @@ export default function GalleryProjectPage({ content }: Props): ReactNode {
                 Data: <Link href={project.dataUrl}>{project.dataProvider}</Link>
                 , {project.dataLicense}
               </p>
-              <Link className={buttons.button} href={project.appUrl}>
-                Open in TissUUmaps
-              </Link>
+              <Button to={project.appUrl}>Open in TissUUmaps</Button>
             </div>
           </div>
           <article className={styles.text}>
