@@ -3,21 +3,174 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+/* The last band stretches down to the footer */
+.wrapper,
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+.hero {
+  padding: 4.5rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 4rem;
+  align-items: center;
+  max-width: 1440px;
+}
+
+/* Video placeholder: screenshot with a play badge */
+.video {
   position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.content {
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 3rem rgb(4 92 100 / 25%);
+}
+
+.video img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 1.5rem 0.6rem 0.6rem;
+  border-radius: 999px;
+  background: rgb(4 92 100 / 90%);
+  color: #fff;
+  font-size: 1.15rem;
+  letter-spacing: 0.05em;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--tm-lime);
+  color: var(--tm-teal);
+}
+
+/* Intro text */
+.title {
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.lead {
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+/* Check-marked features, each a main point and a muted detail */
+.features {
+  margin: 1.5rem 0 2.5rem;
+  padding: 0;
+  list-style: none;
+  font-size: 1.15rem;
+}
+
+.features li {
+  position: relative;
+  margin: 0 0 0.5rem;
+  padding-left: 2rem;
+  font-weight: 700;
+}
+
+.features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--tm-lime);
+}
+
+.features span {
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 400;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.run {
+  gap: 1.5rem;
+  padding: 1.1rem 2.75rem;
+  box-shadow: 0 0.75rem 1.5rem rgb(4 92 100 / 25%);
+  font-size: 1.35rem;
+}
+
+/* Links into the site, on a band like the SciLifeLab section blocks */
+.band {
+  flex: 1;
+  padding: 3.5rem 0;
+  background: var(--tm-band-background);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 3rem;
+  max-width: 1440px;
+}
+
+.cards h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+}
+
+/* Each card is a column whose text takes the free space, so the buttons of
+   all cards line up */
+.cards > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cards p {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 996px) {
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
 }
