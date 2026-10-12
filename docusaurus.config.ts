@@ -99,7 +99,7 @@ const config: Config = {
           routeBasePath: "gallery",
           blogTitle: "Gallery",
           blogDescription:
-            "Example projects. Each one opens directly in TissUUmaps, in your browser.",
+            "Example projects made with TissUUmaps, to open in your browser.",
           blogListComponent: "@site/src/components/pages/GalleryListPage",
           blogTagsPostsComponent: "@site/src/components/pages/GalleryListPage",
           blogPostComponent: "@site/src/components/pages/GalleryProjectPage",

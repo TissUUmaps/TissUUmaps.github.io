@@ -23,4 +23,6 @@ Every folder here is one project of the Gallery page of the website. Folders sta
 | `data_url`      | Where the data comes from                                          |
 | `data_license`  | The license of the data, for example `CC BY 4.0`                   |
 
+The gallery has two sections: TissUUmaps 4 projects, then older TissUUmaps 3 projects. For a TissUUmaps 3 project, replace `project` with `link`, the address of the project on its own server. The data fields are optional for these: remove all three, or keep all three.
+
 The text below the fields is optional. It appears on the project's own page and can use [Markdown](https://www.markdownguide.org/basic-syntax/): paragraphs, **bold**, links, lists and images.

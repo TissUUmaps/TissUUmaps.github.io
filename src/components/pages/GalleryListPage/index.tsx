@@ -10,6 +10,21 @@ import { readGalleryProject } from "../../../gallery";
 import { ProjectCard } from "./ProjectCard";
 import styles from "./styles.module.css";
 
+// The gallery sections: TissUUmaps project files first, then links to older
+// TissUUmaps 3 projects
+const sections = [
+  {
+    version: 4,
+    title: "TissUUmaps 4 projects",
+    lead: "Each one opens directly in TissUUmaps, in your browser.",
+  },
+  {
+    version: 3,
+    title: "TissUUmaps 3 projects",
+    lead: "Older projects made with TissUUmaps 3.",
+  },
+] as const;
+
 // The gallery is the blog plugin's content (see docusaurus.config.ts), listed
 // as cards; the same page lists the projects with one tag
 export default function GalleryListPage(
@@ -42,13 +57,31 @@ export default function GalleryListPage(
             </p>
           </div>
         </section>
-        <section className={styles.band}>
-          <div className={clsx("container", styles.container, styles.grid)}>
-            {projects.map((project) => (
-              <ProjectCard key={project.pageUrl} project={project} />
-            ))}
-          </div>
-        </section>
+        <div className={styles.band}>
+          {sections.map(({ version, title, lead }) => {
+            const sectionProjects = projects.filter(
+              (project) => project.version === version,
+            );
+            return (
+              sectionProjects.length > 0 && (
+                <section
+                  key={version}
+                  className={clsx("container", styles.container)}
+                >
+                  <Heading as="h2" className={styles.sectionTitle}>
+                    {title}
+                  </Heading>
+                  <p className={styles.sectionLead}>{lead}</p>
+                  <div className={styles.grid}>
+                    {sectionProjects.map((project) => (
+                      <ProjectCard key={project.pageUrl} project={project} />
+                    ))}
+                  </div>
+                </section>
+              )
+            );
+          })}
+        </div>
       </main>
     </Layout>
   );

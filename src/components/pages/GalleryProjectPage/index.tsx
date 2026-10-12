@@ -6,8 +6,11 @@ import MDXContent from "@theme/MDXContent";
 import type { ReactNode } from "react";
 
 import { readGalleryProject } from "../../../gallery";
-import { Button } from "../../markdown/Button";
-import { ProjectTags } from "../GalleryListPage/ProjectCard";
+import {
+  ProjectButton,
+  ProjectSource,
+  ProjectTags,
+} from "../GalleryListPage/ProjectCard";
 import styles from "./styles.module.css";
 
 // The own page of a gallery project: its card details and the Markdown text
@@ -23,20 +26,17 @@ export default function GalleryProjectPage({ content }: Props): ReactNode {
             <Link to="/gallery">← Gallery</Link>
           </p>
           <div className={styles.grid}>
-            <Link href={project.appUrl} tabIndex={-1} aria-hidden>
-              <img className={styles.image} src={project.image} alt="" />
-            </Link>
+            <img className={styles.image} src={project.image} alt="" />
             <div>
               <Heading as="h1" className={styles.title}>
                 {project.title}
               </Heading>
               <p className={styles.lead}>{project.description}</p>
               <ProjectTags project={project} />
-              <p className={styles.source}>
-                Data: <Link href={project.dataUrl}>{project.dataProvider}</Link>
-                , {project.dataLicense}
-              </p>
-              <Button to={project.appUrl}>Open in TissUUmaps</Button>
+              {project.data && (
+                <ProjectSource project={project} className={styles.source} />
+              )}
+              <ProjectButton project={project} />
             </div>
           </div>
           <article className={styles.text}>
