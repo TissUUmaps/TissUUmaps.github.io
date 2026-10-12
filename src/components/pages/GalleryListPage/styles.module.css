@@ -35,6 +35,19 @@
   max-width: 1280px;
 }
 
+.band > .container + .container {
+  margin-top: 4rem;
+}
+
+.sectionTitle {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.sectionLead {
+  margin-bottom: 2rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -77,12 +90,12 @@
   padding: 1.25rem 1.5rem 1.5rem;
 }
 
-.body h2 {
+.body h3 {
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
 }
 
-.body h2 a {
+.body h3 a {
   color: inherit;
 }
 
