@@ -22,6 +22,12 @@ const config: Config = {
   tagline: "Spatial Biology Visualization",
   favicon: "img/favicon.ico",
 
+  // Per browser tab, so that a closed announcement bar comes back in a new tab
+  // (also the color mode and the docs version)
+  storage: {
+    type: "sessionStorage",
+  },
+
   // Lato, the SciLifeLab typeface
   stylesheets: [
     "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap",
@@ -140,6 +146,12 @@ const config: Config = {
       },
       items: [
         {
+          to: "pathname:///app/",
+          label: "Open app",
+          position: "left",
+          className: "navbar-app",
+        },
+        {
           to: "/getting-started",
           label: "Getting started",
           position: "left",
@@ -161,9 +173,12 @@ const config: Config = {
           position: "left",
         },
         {
-          type: "docsVersionDropdown",
+          href: "https://github.com/TissUUmaps/TissUUmaps",
           position: "right",
+          className: "navbar-github",
+          "aria-label": "GitHub repository",
         },
+        // Last in the mobile menu; first on the right of the navbar (CSS order)
         {
           type: "custom-partnerLogos",
           position: "right",

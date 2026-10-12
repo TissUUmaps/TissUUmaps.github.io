@@ -1,5 +1,6 @@
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import ThemedImage from "@theme/ThemedImage";
+import clsx from "clsx";
 import type { ReactNode } from "react";
 
 import styles from "./PartnerLogosNavbarItem.module.css";
@@ -48,22 +49,20 @@ function PartnerLogo({
 }
 
 /**
- * The partner logos on the right of the navbar (navbar item type
- * `custom-partnerLogos`, see ComponentTypes.tsx); not in the mobile menu
+ * The partner logos on the right of the navbar, and at the bottom of the
+ * mobile menu (navbar item type `custom-partnerLogos`, see ComponentTypes.tsx)
  */
 export default function PartnerLogosNavbarItem({
   mobile,
 }: {
   mobile?: boolean;
 }): ReactNode {
-  if (mobile) {
-    return null;
-  }
-  return (
-    <div className={styles.partners}>
-      {partners.map((partner) => (
-        <PartnerLogo key={partner.name} {...partner} />
-      ))}
-    </div>
+  const logos = partners.map((partner) => (
+    <PartnerLogo key={partner.name} {...partner} />
+  ));
+  return mobile ? (
+    <li className={clsx(styles.partners, styles.mobile)}>{logos}</li>
+  ) : (
+    <div className={clsx(styles.partners, styles.desktop)}>{logos}</div>
   );
 }
