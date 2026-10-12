@@ -7,7 +7,29 @@
   display: flex;
   align-items: flex-start;
   gap: 2rem;
+}
+
+/* Before the GitHub link, which comes first in the navbar items */
+.desktop {
+  order: -1;
   margin-right: 1rem;
+}
+
+/* At the bottom of the mobile menu, which fills the height of the drawer */
+:global(.menu__list):has(> .mobile) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Scaled down to fit the menu width of a phone on one row */
+.mobile {
+  zoom: 0.85;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-top: auto;
+  padding: 1rem var(--ifm-menu-link-padding-horizontal);
+  border-top: 1px solid var(--ifm-toc-border-color);
 }
 
 .partners a {
@@ -31,8 +53,8 @@
   margin-top: 0.7rem;
 }
 
-@media screen and (max-width: 1200px) {
-  .partners {
+@media screen and (max-width: 1300px) {
+  .desktop {
     display: none;
   }
 }
