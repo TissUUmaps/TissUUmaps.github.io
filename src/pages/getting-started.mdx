@@ -18,7 +18,7 @@ TissUUmaps runs in your browser, with nothing to install.
 
 ## Explore an example
 
-Open a project from the gallery. Pan and zoom in the viewer, and show, hide or restyle each image, label, point and shape layer in the side panel.
+Open a project from the gallery. Pan and zoom in the viewer. Show, hide or restyle each image, label image, point cloud and shape cloud in the **Images**, **Labels**, **Points** and **Shapes** tabs.
 
 <Button to="/gallery">Gallery</Button>
 
@@ -27,12 +27,12 @@ Open a project from the gallery. Pan and zoom in the viewer, and show, hide or r
 <Columns>
 <Box title="Local data" note="Chrome, Edge and other Chromium-based browsers only. Not available in Firefox or Safari.">
 
-Drag the folder with your data onto the **Project** tab to connect it, then click **Start empty**. Now drag files or folders, such as an OME-Zarr store, from that folder onto the **Images**, **Labels**, **Points**, **Shapes** or **Tables** tab. TissUUmaps recognizes the format and fills in the add dialog.
+Drag the folder with your data onto the **Project** tab and open it as the workspace. Then drag files or folders, such as an OME-Zarr store, from the workspace onto the **Images**, **Labels**, **Points**, **Shapes** or **Tables** tab. TissUUmaps recognizes the format, fills in the add dialog and starts a project if none is open.
 
 </Box>
 <Box title="Cloud data" note="All browsers.">
 
-Click **Start empty**, then **Add image** (or labels, points, shapes, table) in the matching tab and paste the URL of your data. The server must allow cross-origin requests (CORS).
+Click **Start empty** in the **Project** tab. Then click **Add** in the **Images**, **Labels**, **Points**, **Shapes** or **Tables** tab and paste the URL of your data. The server must allow cross-origin requests (CORS).
 
 </Box>
 </Columns>
@@ -41,25 +41,24 @@ See the [supported data](/docs/supported-data) for the formats and their setting
 
 ## Open a SpatialData store
 
-:::info
+TissUUmaps opens SpatialData stores as projects. In the **Project** tab:
 
-The SpatialData plugin is still in development. It will become part of TissUUmaps itself in a future release.
+- **From a URL:** click **From URL…** (or **Open from URL…** in the project menu) and paste the URL of the store (the `.zarr` folder).
+- **From your computer:** drag the store's `.zarr` folder onto the **Project** tab and choose **Open as project**. Chromium-based browsers only.
 
-:::
+Each coordinate system becomes a layer, and each element becomes an image, labels, points or shapes object. Only the first element of each layer is shown at first. Show the others in the **Images**, **Labels**, **Points** and **Shapes** tabs.
 
-The SpatialData plugin reads a whole SpatialData store. Open the plugins menu (**⋮** in the tab bar), choose **Load plugin from URL…** and paste:
+To link to a store, add its URL to the TissUUmaps link, as in [this example](pathname:///app/4.0/?spatialdata=https://tissuumaps4.serve.scilifelab.se/data/xenium_512.zarr):
 
 ```
-https://tissuumaps4.serve.scilifelab.se/plugins/spatialdata.js
+https://tissuumaps.github.io/app/4.0/?spatialdata=https://tissuumaps4.serve.scilifelab.se/data/xenium_512.zarr
 ```
 
-In the new **SpatialData** tab, paste the URL of a store and click **Load**. For a store on your computer, first connect the folder that contains it (see Local data above), then click **Choose a store in the connected folder** and pick the `.zarr` folder.
-
-The tab lists the images, labels, points and shapes of the store by coordinate system. Add the ones you want and color them by the store's tables.
+See [SpatialData](/docs/supported-projects/spatialdata) for the details and limitations.
 
 ## Save and share
 
-**Download project** in the project menu saves a project file (`.tm4`). It describes your data and how to show it, but does not contain the data. Drop it on the **Project** tab to open it again.
+A project file (`.tm4`) describes your data and how to show it, but does not contain the data. With a workspace open, **Save as…** in the project menu saves it to a file in the workspace, and **Save project** saves later changes to that file. Without a workspace, **Download project** downloads it. Drop the file on the **Project** tab to open it again.
 
 To share a project, put the project file and the data on a web server, and add the project file's URL to the TissUUmaps link:
 
