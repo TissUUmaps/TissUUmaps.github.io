@@ -1,6 +1,6 @@
 # Class: SourceUtils
 
-Defined in: [utils/SourceUtils.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L53)
+Defined in: [utils/SourceUtils.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L45)
 
 Utility methods for resolving the `source` of data sources to URLs or file
 system handles
@@ -41,14 +41,6 @@ against a URL follows URL semantics: `..` segments beyond the root of the
 URL's path are dropped silently. Resolving within the workspace collapses the
 segments and fails if the path leaves the workspace.
 
-Helpers work on normalized sources: [SourceUtils.isWorkspacePath](#isworkspacepath)
-classifies them, [SourceUtils.makeWorkspacePath](#makeworkspacepath) builds them,
-[SourceUtils.getPathSegments](#getpathsegments), [SourceUtils.getParentSource](#getparentsource),
-[SourceUtils.getStem](#getstem) and [SourceUtils.getExtension](#getextension) take them
-apart, and
-[SourceUtils.makeProjectPath](#makeprojectpath) turns them back into project-relative
-paths.
-
 A relative path whose first segment contains a colon (e.g.
 `sample1:ch2.tif`) is taken for a URL; write it as `./sample1:ch2.tif`
 instead.
@@ -65,11 +57,47 @@ instead.
 
 ## Methods
 
+### createID()
+
+> `static` **createID**(`normalizedSource`): `string`
+
+Defined in: [utils/SourceUtils.ts:532](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L532)
+
+Creates a unique ID for an object, named after its source
+
+The ID is the file name of the source with every `.` replaced by `-`,
+followed by a random UUID, so `cells.ome.zarr` gives e.g.
+`cells-ome-zarr-0f8e…`. The UUID keeps the ID unique, also against the IDs
+of deleted objects that may still be referenced, and against the IDs of
+objects of other projects. Without a source, or for URLs without a path,
+the ID is the UUID alone.
+
+#### Parameters
+
+##### normalizedSource
+
+`string` \| `undefined`
+
+The normalized source of the object (see
+  [SourceUtils.normalizeSource](#normalizesource)), if any
+
+#### Returns
+
+`string`
+
+The ID
+
+#### Throws
+
+See [SourceUtils.getPathSegments](#getpathsegments)
+
+***
+
 ### getExtension()
 
 > `static` **getExtension**(`normalizedSource`): `string`
 
-Defined in: [utils/SourceUtils.ts:465](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L465)
+Defined in: [utils/SourceUtils.ts:509](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L509)
 
 Returns the last extension of the file or directory a normalized source
 refers to, lower-cased for comparison
@@ -103,7 +131,7 @@ See [SourceUtils.getPathSegments](#getpathsegments)
 
 > `static` **getParentSource**(`normalizedSource`): \{ `name`: `string`; `parentSource`: `string`; \} \| `null`
 
-Defined in: [utils/SourceUtils.ts:408](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L408)
+Defined in: [utils/SourceUtils.ts:452](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L452)
 
 Returns the directory that contains a normalized source
 
@@ -135,7 +163,7 @@ See [SourceUtils.getPathSegments](#getpathsegments)
 
 > `static` **getPathSegments**(`normalizedSource`): `string`[]
 
-Defined in: [utils/SourceUtils.ts:388](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L388)
+Defined in: [utils/SourceUtils.ts:432](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L432)
 
 Returns the path segments of a normalized source
 
@@ -172,7 +200,7 @@ Error if a workspace-relative path leads above the workspace root
 
 > `static` **getStem**(`normalizedSource`): `string`
 
-Defined in: [utils/SourceUtils.ts:446](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L446)
+Defined in: [utils/SourceUtils.ts:490](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L490)
 
 Returns the name of the file or directory a normalized source refers to,
 without its last extension
@@ -207,7 +235,7 @@ See [SourceUtils.getPathSegments](#getpathsegments)
 
 > `static` **isWorkspacePath**(`normalizedSource`): `boolean`
 
-Defined in: [utils/SourceUtils.ts:299](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L299)
+Defined in: [utils/SourceUtils.ts:343](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L343)
 
 Returns whether a normalized source refers to a file or directory within
 the workspace
@@ -234,7 +262,7 @@ The normalized source (see
 
 > `static` **makeProjectPath**(`normalizedSource`, `projectSource`): `string`
 
-Defined in: [utils/SourceUtils.ts:339](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L339)
+Defined in: [utils/SourceUtils.ts:383](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L383)
 
 Turns a workspace-relative path into a path relative to the project file,
 if the project was loaded from the workspace
@@ -276,7 +304,7 @@ The project-relative path (e.g. `points.csv` or
 
 > `static` **makeWorkspacePath**(`segments`): `string`
 
-Defined in: [utils/SourceUtils.ts:314](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L314)
+Defined in: [utils/SourceUtils.ts:358](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L358)
 
 Builds a workspace-relative path from the segments of a path within the
 workspace, as returned by `FileSystemDirectoryHandle.resolve`
@@ -302,7 +330,7 @@ The workspace-relative path (with `/` prefix)
 
 > `static` **normalizeSource**(`source`, `workspace`, `projectSource`, `options?`): `string`
 
-Defined in: [utils/SourceUtils.ts:82](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L82)
+Defined in: [utils/SourceUtils.ts:74](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L74)
 
 Normalizes a source, applying the fallbacks for missing project sources
 and workspaces
@@ -363,7 +391,7 @@ Error if the source is empty or not a valid URL, or if it cannot be
 
 > `static` **openSourceFile**(`normalizedSource`, `workspace`, `options?`): `Promise`\<\{ `file?`: `undefined`; `url`: `string`; \} \| \{ `file`: `File`; `url?`: `undefined`; \}\>
 
-Defined in: [utils/SourceUtils.ts:269](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L269)
+Defined in: [utils/SourceUtils.ts:313](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L313)
 
 Resolves a normalized source to an absolute URL or an opened file
 
@@ -418,11 +446,56 @@ The abort reason of the signal, if it is aborted once the file
 
 ***
 
+### rebaseSource()
+
+> `static` **rebaseSource**(`source`, `projectSource`): `string`
+
+Defined in: [utils/SourceUtils.ts:123](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L123)
+
+Resolves a project-relative source against where its project was loaded
+from, so that it no longer depends on the project
+
+Unlike [SourceUtils.normalizeSource](#normalizesource), this applies no fallbacks for
+a missing workspace, so the source keeps its meaning wherever it is used:
+URLs, app-relative and workspace-relative paths are returned unchanged, and
+a project-relative path becomes an absolute URL against a project URL, or a
+workspace-relative path otherwise. This is how data sources move from one
+project into another.
+
+#### Parameters
+
+##### source
+
+`string`
+
+The source
+
+##### projectSource
+
+`string` \| `null`
+
+Where the source's project was loaded from (see
+  [SourceUtils.normalizeSource](#normalizesource))
+
+#### Returns
+
+`string`
+
+The source unchanged, the absolute URL, or the collapsed
+  workspace-relative path (with `/` prefix)
+
+#### Throws
+
+Error if the source is empty, if a project-relative path does not
+  form a valid URL with the project URL, or if it leaves the workspace
+
+***
+
 ### resolveSource()
 
 > `static` **resolveSource**(`normalizedSource`, `workspace`, `options?`): `Promise`\<`string` \| `FileSystemDirectoryHandle` \| `FileSystemFileHandle`\>
 
-Defined in: [utils/SourceUtils.ts:137](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L137)
+Defined in: [utils/SourceUtils.ts:179](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L179)
 
 Resolves a normalized source to an absolute URL, a file handle or a
 directory handle
@@ -483,7 +556,7 @@ DOMException if a segment names nothing within the workspace
 
 > `static` **resolveSourceDirectory**(`normalizedSource`, `workspace`, `options?`): `Promise`\<`string` \| `FileSystemDirectoryHandle`\>
 
-Defined in: [utils/SourceUtils.ts:227](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L227)
+Defined in: [utils/SourceUtils.ts:271](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L271)
 
 Resolves a normalized source to an absolute URL or a directory handle
 
@@ -534,7 +607,7 @@ DOMException if the source refers to a file within the workspace
 
 > `static` **resolveSourceFile**(`normalizedSource`, `workspace`, `options?`): `Promise`\<`string` \| `FileSystemFileHandle`\>
 
-Defined in: [utils/SourceUtils.ts:193](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L193)
+Defined in: [utils/SourceUtils.ts:237](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/SourceUtils.ts#L237)
 
 Resolves a normalized source to an absolute URL or a file handle
 

@@ -2,7 +2,7 @@
 
 > **GroupValueMap**\<`TValue`\> = `object`
 
-Defined in: [model/primitives.ts:2](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/primitives.ts#L2)
+Defined in: [model/primitives.ts:2](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/primitives.ts#L2)
 
 A named mapping from string keys (groups) to typed values with an optional default value
 
@@ -18,7 +18,7 @@ A named mapping from string keys (groups) to typed values with an optional defau
 
 > `optional` **default?**: `TValue`
 
-Defined in: [model/primitives.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/primitives.ts#L18)
+Defined in: [model/primitives.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/primitives.ts#L18)
 
 Default value for groups not present in [values](#values)
 
@@ -28,7 +28,7 @@ Default value for groups not present in [values](#values)
 
 > **id**: `string`
 
-Defined in: [model/primitives.ts:4](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/primitives.ts#L4)
+Defined in: [model/primitives.ts:4](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/primitives.ts#L4)
 
 Map ID, referenced from data object configurations
 
@@ -38,7 +38,7 @@ Map ID, referenced from data object configurations
 
 > **name**: `string`
 
-Defined in: [model/primitives.ts:7](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/primitives.ts#L7)
+Defined in: [model/primitives.ts:7](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/primitives.ts#L7)
 
 Human-readable map name
 
@@ -48,7 +48,7 @@ Human-readable map name
 
 > **values**: `object`
 
-Defined in: [model/primitives.ts:15](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/primitives.ts#L15)
+Defined in: [model/primitives.ts:15](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/primitives.ts#L15)
 
 Mapping from group names to values
 

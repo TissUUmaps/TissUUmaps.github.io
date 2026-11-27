@@ -1,6 +1,6 @@
 # Class: WebGLContext
 
-Defined in: [webgl/WebGLContext.ts:7](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L7)
+Defined in: [webgl/WebGLContext.ts:7](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L7)
 
 A wrapper around a WebGL2RenderingContext that provides utility methods for
 creating shaders, programs, buffers, and textures
@@ -11,7 +11,7 @@ creating shaders, programs, buffers, and textures
 
 > **new WebGLContext**(`canvas`): `WebGLContext`
 
-Defined in: [webgl/WebGLContext.ts:21](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L21)
+Defined in: [webgl/WebGLContext.ts:21](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L21)
 
 Creates a new WebGLContext for the given canvas element
 
@@ -37,7 +37,7 @@ Error if the browser does not support WebGL 2.0
 
 > `readonly` **gl**: `WebGL2RenderingContext`
 
-Defined in: [webgl/WebGLContext.ts:11](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L11)
+Defined in: [webgl/WebGLContext.ts:11](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L11)
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: [webgl/WebGLContext.ts:11](https://github.com/TissUUmaps/TissUUmaps/
 
 > `readonly` **maxTextureSize**: `number`
 
-Defined in: [webgl/WebGLContext.ts:13](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L13)
+Defined in: [webgl/WebGLContext.ts:13](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L13)
 
 The largest width and height of a texture that the GPU supports, in texels
 
@@ -55,7 +55,7 @@ The largest width and height of a texture that the GPU supports, in texels
 
 > **allocateBuffer**(`target`, `buffer`, `data`, `usage`): `void`
 
-Defined in: [webgl/WebGLContext.ts:445](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L445)
+Defined in: [webgl/WebGLContext.ts:445](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L445)
 
 Allocates (or re-allocates) storage for a buffer and fills it with the
 given data, discarding previous contents
@@ -96,7 +96,7 @@ Usage hint (e.g. `gl.STATIC_DRAW`)
 
 > **clear**(): `void`
 
-Defined in: [webgl/WebGLContext.ts:70](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L70)
+Defined in: [webgl/WebGLContext.ts:70](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L70)
 
 Clears the color buffer with transparent black
 
@@ -110,7 +110,7 @@ Clears the color buffer with transparent black
 
 > **configureVertexFloatAttribute**(`target`, `buffer`, `index`, `size`, `type`, `options?`): `void`
 
-Defined in: [webgl/WebGLContext.ts:186](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L186)
+Defined in: [webgl/WebGLContext.ts:186](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L186)
 
 Binds a buffer to a vertex attribute as a floating-point attribute
 
@@ -176,7 +176,7 @@ Optional normalized, stride, offset, and divisor settings
 
 > **configureVertexIntAttribute**(`target`, `buffer`, `index`, `size`, `type`, `options?`): `void`
 
-Defined in: [webgl/WebGLContext.ts:222](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L222)
+Defined in: [webgl/WebGLContext.ts:222](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L222)
 
 Binds a buffer to a vertex attribute as an integer attribute
 
@@ -238,7 +238,7 @@ Optional stride, offset, and divisor settings
 
 > **createBuffer**(): `WebGLBuffer`
 
-Defined in: [webgl/WebGLContext.ts:428](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L428)
+Defined in: [webgl/WebGLContext.ts:428](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L428)
 
 Creates a new WebGL buffer
 
@@ -256,7 +256,7 @@ Error if buffer creation fails
 
 > **createDataTexture**(`internalformat`, `width`, `height`, `format`, `type`, `data?`): `WebGLTexture`
 
-Defined in: [webgl/WebGLContext.ts:250](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L250)
+Defined in: [webgl/WebGLContext.ts:250](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L250)
 
 Creates an immutable 2D data texture with nearest-neighbor filtering
 and clamp-to-edge wrapping
@@ -313,7 +313,7 @@ Error if texture creation fails
 
 > **createProgram**(`vertexShaderSource`, `fragmentShaderSource`): `WebGLProgram`
 
-Defined in: [webgl/WebGLContext.ts:85](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L85)
+Defined in: [webgl/WebGLContext.ts:85](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L85)
 
 Compiles vertex and fragment shaders, links them into a program, and
 returns the linked program
@@ -348,7 +348,7 @@ Error if shader compilation or program linking fails
 
 > **createVertexArray**(): `WebGLVertexArrayObject`
 
-Defined in: [webgl/WebGLContext.ts:168](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L168)
+Defined in: [webgl/WebGLContext.ts:168](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L168)
 
 Creates a new vertex array object (VAO)
 
@@ -366,7 +366,7 @@ Error if VAO creation fails
 
 > **destroy**(): `void`
 
-Defined in: [webgl/WebGLContext.ts:518](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L518)
+Defined in: [webgl/WebGLContext.ts:518](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L518)
 
 Destroys the WebGLContext by forcing the underlying WebGL context to be
 lost, releasing its GPU resources immediately.
@@ -387,7 +387,7 @@ they created through this context.
 
 > **disableAlphaBlending**(): `void`
 
-Defined in: [webgl/WebGLContext.ts:497](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L497)
+Defined in: [webgl/WebGLContext.ts:497](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L497)
 
 Disables blending and restores the default blend state
 
@@ -401,7 +401,7 @@ Disables blending and restores the default blend state
 
 > **enableAlphaBlending**(): `void`
 
-Defined in: [webgl/WebGLContext.ts:479](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L479)
+Defined in: [webgl/WebGLContext.ts:479](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L479)
 
 Enables premultiplied-alpha blending (Porter-Duff "over" operator)
 
@@ -415,7 +415,7 @@ Enables premultiplied-alpha blending (Porter-Duff "over" operator)
 
 > **getUniformLocation**(`program`, `name`): `WebGLUniformLocation`
 
-Defined in: [webgl/WebGLContext.ts:152](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L152)
+Defined in: [webgl/WebGLContext.ts:152](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L152)
 
 Returns the location of a uniform variable in a shader program
 
@@ -447,7 +447,7 @@ Error if the uniform is not found
 
 > **loadBuffer**(`target`, `buffer`, `data`, `options?`): `void`
 
-Defined in: [webgl/WebGLContext.ts:464](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L464)
+Defined in: [webgl/WebGLContext.ts:464](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L464)
 
 Uploads typed array data into a region of an existing buffer
 
@@ -489,7 +489,7 @@ Optional element offset within the buffer
 
 > **loadDataTexture**(`texture`, `width`, `height`, `format`, `type`, `data`): `void`
 
-Defined in: [webgl/WebGLContext.ts:318](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L318)
+Defined in: [webgl/WebGLContext.ts:318](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L318)
 
 Uploads new pixel data into an existing immutable 2D data texture
 
@@ -541,7 +541,7 @@ The pixel data to upload
 
 > **loadImageTextureFromUrl**(`url`, `options?`): `Promise`\<`WebGLTexture`\>
 
-Defined in: [webgl/WebGLContext.ts:352](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L352)
+Defined in: [webgl/WebGLContext.ts:352](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L352)
 
 Loads an image from a URL and creates a WebGL texture from it
 
@@ -583,7 +583,7 @@ operation was aborted
 
 > **resizeCanvas**(`canvas`, `newCanvasSize`): `boolean`
 
-Defined in: [webgl/WebGLContext.ts:44](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L44)
+Defined in: [webgl/WebGLContext.ts:44](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLContext.ts#L44)
 
 Resizes the canvas to match the given screen-space dimensions,
 accounting for `devicePixelRatio` and clamping to \_maxCanvasSize

@@ -1,6 +1,6 @@
 # Class: TablePointsDataProvider
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L18)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L18)
 
 Data provider for point clouds
 
@@ -14,7 +14,7 @@ Data provider for point clouds
 
 > **new TablePointsDataProvider**(`options`): `TablePointsDataProvider`
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:87](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L87)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:87](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L87)
 
 Creates the data provider
 
@@ -46,7 +46,7 @@ Creates the data provider
 
 > `readonly` **name**: `"Table"` = `"Table"`
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:23](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L23)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:23](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L23)
 
 The name of the data provider
 
@@ -60,7 +60,7 @@ The name of the data provider
 
 > `readonly` **schema**: `object`
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L25)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L25)
 
 The JSON schema for the data source
 
@@ -130,7 +130,7 @@ The JSON schema for the data source
 
 > `readonly` **uischema**: `object`
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L47)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L47)
 
 The JSON Forms UI schema for the data source
 
@@ -155,7 +155,7 @@ application renders itself if the schema declares it, as a string.
 
 > **load**(`normalizedDataSource`, `options?`): `Promise`\<[`TablePointsData`](TablePointsData.md)\>
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:219](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L219)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:219](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L219)
 
 Opens a data source and returns the loaded data accessor
 
@@ -192,7 +192,7 @@ A promise that resolves to the loaded data accessor
 
 > **normalize**(`dataSource`): [`NormalizedTablePointsDataSource`](../type-aliases/NormalizedTablePointsDataSource.md)
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:102](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L102)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:102](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L102)
 
 Returns the data source with all of this data provider's defaults applied
 and its source normalized
@@ -235,7 +235,7 @@ The normalized data source
 
 > **prepareDataSource**(`dataSource`, `workspace`, `projectSource`, `options?`): `Promise`\<[`TablePointsDataSource`](../interfaces/TablePointsDataSource.md)\>
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:170](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L170)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:170](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L170)
 
 Adds the table file a data source names as a new table, and returns the
 data source referencing that table instead
@@ -294,7 +294,7 @@ Error if no table data provider supports the source, if the
 
 > **supports**(`normalizedSource`, `workspace`, `options?`): `Promise`\<`boolean`\>
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:118](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L118)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataProvider.ts:118](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataProvider.ts#L118)
 
 Returns whether a source is a table that any of the table data providers
 supports

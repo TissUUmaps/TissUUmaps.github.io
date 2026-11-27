@@ -2,7 +2,7 @@
 
 > **SimilarityTransform** = `object`
 
-Defined in: [model/primitives.ts:31](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/primitives.ts#L31)
+Defined in: [model/primitives.ts:31](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/primitives.ts#L31)
 
 Similarity transform (uniform scale, rotation, translation, and flip)
 
@@ -12,7 +12,7 @@ Similarity transform (uniform scale, rotation, translation, and flip)
 
 > **flip**: `boolean`
 
-Defined in: [model/primitives.ts:33](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/primitives.ts#L33)
+Defined in: [model/primitives.ts:33](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/primitives.ts#L33)
 
 Horizontal reflection, applied before scaling, rotation, and translation
 
@@ -22,7 +22,7 @@ Horizontal reflection, applied before scaling, rotation, and translation
 
 > **rotation**: `number`
 
-Defined in: [model/primitives.ts:39](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/primitives.ts#L39)
+Defined in: [model/primitives.ts:39](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/primitives.ts#L39)
 
 Rotation around origin, in degrees
 
@@ -32,7 +32,7 @@ Rotation around origin, in degrees
 
 > **scale**: `number`
 
-Defined in: [model/primitives.ts:36](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/primitives.ts#L36)
+Defined in: [model/primitives.ts:36](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/primitives.ts#L36)
 
 Uniform scale factor (1 = no scaling)
 
@@ -42,7 +42,7 @@ Uniform scale factor (1 = no scaling)
 
 > **translation**: `object`
 
-Defined in: [model/primitives.ts:42](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/primitives.ts#L42)
+Defined in: [model/primitives.ts:42](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/primitives.ts#L42)
 
 Translation in X and Y, applied after scaling and rotation
 

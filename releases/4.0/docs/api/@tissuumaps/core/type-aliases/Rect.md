@@ -2,7 +2,7 @@
 
 > **Rect** = `object`
 
-Defined in: [types/geometry.ts:10](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/geometry.ts#L10)
+Defined in: [types/geometry.ts:10](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/geometry.ts#L10)
 
 An axis-aligned rectangle defined by its top-left corner and dimensions
 
@@ -12,7 +12,7 @@ An axis-aligned rectangle defined by its top-left corner and dimensions
 
 > **height**: `number`
 
-Defined in: [types/geometry.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/geometry.ts#L18)
+Defined in: [types/geometry.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/geometry.ts#L18)
 
 Height of the rectangle
 
@@ -22,7 +22,7 @@ Height of the rectangle
 
 > **width**: `number`
 
-Defined in: [types/geometry.ts:16](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/geometry.ts#L16)
+Defined in: [types/geometry.ts:16](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/geometry.ts#L16)
 
 Width of the rectangle
 
@@ -32,7 +32,7 @@ Width of the rectangle
 
 > **x**: `number`
 
-Defined in: [types/geometry.ts:12](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/geometry.ts#L12)
+Defined in: [types/geometry.ts:12](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/geometry.ts#L12)
 
 X coordinate of the top-left corner
 
@@ -42,6 +42,6 @@ X coordinate of the top-left corner
 
 > **y**: `number`
 
-Defined in: [types/geometry.ts:14](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/geometry.ts#L14)
+Defined in: [types/geometry.ts:14](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/geometry.ts#L14)
 
 Y coordinate of the top-left corner

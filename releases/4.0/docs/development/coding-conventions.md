@@ -15,7 +15,7 @@ TissUUmaps is research software that is meant to be maintained over many years, 
 - **Resource efficiency**: the application handles large data sets in the browser; be deliberate about memory, network traffic and rendering cost.
 - **Maintainability and clean architecture**: respect module boundaries and keep responsibilities well separated (see [Code architecture](./code-architecture.md)).
 
-Conversely, we do not like shortcuts and "quick solutions", premature optimization, and unnecessary over-engineering. Abstractions must earn their place: new named types, generics, conditional types and similar constructs should only be introduced when there is a real need for them. If a single feature ships several of these without such a reason, it is over-engineered and should be simplified.
+Conversely, we do not like shortcuts and "quick solutions", premature optimization, and unnecessary over-engineering. Abstractions must earn their place: new named types, generics, conditional types and similar constructs should only be introduced when there is a real need for them. If a single feature ships several of these without such a reason, it is over-engineered and should be simplified. For example, a small object shape is typed inline, or derived from an existing type with `Pick<>`, rather than given a name of its own.
 
 ## Modules
 
@@ -29,7 +29,7 @@ Conversely, we do not like shortcuts and "quick solutions", premature optimizati
   export type Shape = (typeof Shape)[keyof typeof Shape];
   ```
 
-- Constants are camelCase module-level `const` declarations with a TSDoc comment, not `SCREAMING_CASE`.
+- Constants are camelCase with a TSDoc comment, not `SCREAMING_CASE`. A constant used by a single class is a `private static readonly` member of that class (`_maxCanvasSize`); all others are module-level `const` declarations.
 - Generic type parameters are prefixed with `T` (`TData`, `TValue`), not single letters beyond the trivial `T`.
 
 ## Classes
@@ -56,6 +56,13 @@ async function load(
 }
 ```
 
+## Interfaces
+
+- An interface that is the counterpart of an existing one mirrors its signatures exactly, including which parameters are positional and which are options. For example, `ProjectProvider` mirrors `DataProvider`.
+- Option shapes are declared inline. An interface for a new concept never reuses another interface's option type, even if it matches today.
+- Methods are not named after reserved words (`load`, not `import`).
+- Implementations are trusted to fulfill their contract, e.g. to honor the abort signal. Callers do not guard against broken implementations.
+
 ## Comments
 
 We are old-school and prefer readable and well-organized code over excessive inline comments. Variable and function names, types, and architecture should be self-explanatory; `//` comments should only be placed where essential. Non-obvious code gets a `//` comment explaining _why_ it is written the way it is (not what it does), ideally linking to the issue, specification or upstream bug that motivates it. Deliberate deviations from the conventions on this page are documented the same way.
@@ -66,7 +73,24 @@ Every export carries a TSDoc comment, from which API documentation is generated 
 
 - Errors are thrown as plain `Error` instances (`throw new Error("...")`), optionally with a `cause`. There are no custom error classes and no `Result` types.
 - Code paths that must not fail (e.g. plugin setup, event handlers) catch, report via `console.error`, and continue.
-- Only `console.error` and `console.warn` are used, for errors and warnings respectively. Any `console.log` is a finding.
+- Only `console.error` and `console.warn` are used: `console.error` when an operation fails and its result is lost (e.g. an object is not loaded or rendered), `console.warn` when it continues in a degraded way (e.g. a fallback, skipped items, a missing optional extra). Any other `console` method is a finding.
+- The underlying error is passed as `cause` when rethrowing and as the second argument when logging, never interpolated into the message.
+- When an action the user started fails, the application shows the error's message in an alert dialog (`useAlertDialog`) and also logs the error via `console.error`, as the dialog shows neither its stack nor its `cause`. Cancellations (e.g. a dismissed picker) and input validation are neither shown as errors nor logged.
+
+## Messages
+
+Console and error messages:
+
+- Start with a capital letter, unless the first word is a code identifier (e.g. `n must be non-negative`).
+- End without a period or colon; a second clause is joined with a semicolon.
+- Put string values inline and in single quotes (e.g. `Table with ID '${tableId}' not found`); other values, such as numbers, are not quoted. Diagnostics that are not values (e.g. an HTTP status or a shader log) may follow a colon.
+- Use the same phrasing for the same situation: `Failed to …` for failures, and `… not found`, `No … found in …`, `Invalid … '…'`, `… is not supported (by this browser)`, `… is out of bounds` and `… has been destroyed`. Preconditions use "must".
+
+Dialog texts are prose for the user:
+
+- They are full sentences, with string values in double quotes.
+- Titles of error alerts read `Cannot …`; titles of confirm and prompt dialogs are a verb and a noun (e.g. "Delete map").
+- Confirm and prompt buttons are a verb (e.g. "Delete") and "Cancel". Destructive confirms ask "Are you sure you want to …?".
 
 ## React components
 
@@ -75,6 +99,7 @@ Every export carries a TSDoc comment, from which API documentation is generated 
 - Callback props are named `onX` for events (`onClose`) and `onXChange` for controlled values (`onValueChange`).
 - Every component that renders an element of its own accepts `className?: string`. In the application, it is merged into the root element via `cn()`; components in publishable packages are styling-agnostic and forward it verbatim.
 - In the application, styling uses Tailwind (v4) utility classes and `cva` variants; there are no CSS modules. Inline styles are limited to values that cannot be expressed as classes (e.g. measured pixel sizes, CSS custom properties).
+- Components and hooks select the state they render with the store hooks (e.g. `useAppStore`). `getState()` is for event handlers and non-React code, as it does not subscribe to changes.
 - Icons come from `lucide-react`.
 - There is no internationalization; user-facing strings are inline English literals.
 

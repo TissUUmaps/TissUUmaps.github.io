@@ -1,6 +1,6 @@
 # Class: OpenSeadragonImageData
 
-Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts:7](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts#L7)
+Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts:7](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts#L7)
 
 Loaded image data providing one or more OpenSeadragon-compatible tile sources
 
@@ -27,7 +27,7 @@ which are drawn as they are.
 
 > **new OpenSeadragonImageData**(`tileSource`, `objectUrl?`): `OpenSeadragonImageData`
 
-Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts:11](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts#L11)
+Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts:11](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts#L11)
 
 #### Parameters
 
@@ -49,7 +49,7 @@ Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts:11]
 
 > **close**(): `void`
 
-Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts#L27)
+Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts#L27)
 
 Releases all resources held by this data object
 
@@ -67,7 +67,7 @@ Releases all resources held by this data object
 
 > **getSizeC**(): `number` \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts:16](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts#L16)
+Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts:16](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts#L16)
 
 Returns the number of channels in the image, or undefined if not multi-channel
 
@@ -85,7 +85,7 @@ Returns the number of channels in the image, or undefined if not multi-channel
 
 > **getTileSource**(`c?`): `string` \| `object` \| [`CustomTileSource`](../../core/interfaces/CustomTileSource.md)
 
-Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts#L20)
+Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageData.ts#L20)
 
 Returns the tile source of a channel, or the only tile source of image data that is not multi-channel
 

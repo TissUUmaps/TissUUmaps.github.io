@@ -1,6 +1,6 @@
 # Class: TIFFImageData
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:35](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L35)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:35](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L35)
 
 The loaded image of a TIFF file
 
@@ -23,7 +23,7 @@ description records it.
 
 > **new TIFFImageData**(`tileSources`, `channels`): `TIFFImageData`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:43](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L43)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:43](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L43)
 
 #### Parameters
 
@@ -49,7 +49,7 @@ The channels, or `undefined` for RGB images
 
 > **close**(): `void`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:180](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L180)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:180](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L180)
 
 Closing does nothing: the decoder pool is shared, and the file is read on demand
 
@@ -67,7 +67,7 @@ Closing does nothing: the decoder pool is shared, and the file is read on demand
 
 > **getChannelColor**(`c`): [`Color`](../../core/type-aliases/Color.md) \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:133](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L133)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:133](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L133)
 
 Returns the color of a channel, as the OME-XML or the QPTIFF description
 records it
@@ -103,7 +103,7 @@ Error if `c` is out of bounds
 
 > **getChannelContrastLimits**(`c`): \[`number`, `number`\] \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:175](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L175)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:175](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L175)
 
 Returns the contrast limits an 8-bit channel is shown over
 
@@ -141,7 +141,7 @@ Error if `c` is out of bounds
 
 > **getChannelDataTypeRange**(`c`): \[`number`, `number`\] \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:158](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L158)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:158](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L158)
 
 Returns the range the sample type of a channel can hold
 
@@ -174,7 +174,7 @@ Error if `c` is out of bounds
 
 > **getChannelHistogram**(`c`): [`ImageChannelHistogram`](../../core/type-aliases/ImageChannelHistogram.md) \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:146](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L146)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:146](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L146)
 
 Returns the value histogram read from the pixels of a channel, which the
 renderer derives its contrast limits from
@@ -208,7 +208,7 @@ Error if `c` is out of bounds
 
 > **getChannelName**(`c`): `string` \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:118](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L118)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:118](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L118)
 
 Returns the name of a channel, as the OME-XML or the QPTIFF description
 records it
@@ -241,7 +241,7 @@ Error if `c` is out of bounds
 
 > **getSizeC**(): `number` \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:52](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L52)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:52](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L52)
 
 Returns the number of channels, or `undefined` for a file drawn in its own colors
 
@@ -259,7 +259,7 @@ Returns the number of channels, or `undefined` for a file drawn in its own color
 
 > **getTileData**(`event`): `Promise`\<\{ `height`: `number`; `values`: [`TypedArray`](../../core/type-aliases/TypedArray.md); `width`: `number`; \}\>
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:96](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L96)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:96](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L96)
 
 Extracts the samples of a channel tile from a tile invalidation event
 
@@ -298,7 +298,7 @@ raster has no band
 
 > **getTileSource**(`c?`): `string` \| `object` \| [`CustomTileSource`](../../core/interfaces/CustomTileSource.md)
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:66](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L66)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:66](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L66)
 
 Returns the tile source of a channel, or the only tile source of a file
 drawn in its own colors

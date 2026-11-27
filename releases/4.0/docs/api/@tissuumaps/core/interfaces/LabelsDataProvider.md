@@ -1,6 +1,6 @@
 # Interface: LabelsDataProvider\<TLabelsDataSource, TLabelsData, TNormalizedLabelsDataSource\>
 
-Defined in: [storage/labels.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/labels.ts#L45)
+Defined in: [storage/labels.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/labels.ts#L45)
 
 Data provider for label images
 
@@ -36,7 +36,7 @@ produced by `normalize` and accepted by `load`
 
 > `readonly` **name**: `string`
 
-Defined in: [storage/base.ts:137](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L137)
+Defined in: [storage/base.ts:137](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L137)
 
 The name of the data provider
 
@@ -50,7 +50,7 @@ The name of the data provider
 
 > `readonly` **schema**: `JsonSchema`
 
-Defined in: [storage/base.ts:140](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L140)
+Defined in: [storage/base.ts:140](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L140)
 
 The JSON schema for the data source
 
@@ -64,7 +64,7 @@ The JSON schema for the data source
 
 > `readonly` **uischema**: `UISchemaElement`
 
-Defined in: [storage/base.ts:148](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L148)
+Defined in: [storage/base.ts:148](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L148)
 
 The JSON Forms UI schema for the data source
 
@@ -81,7 +81,7 @@ application renders itself if the schema declares it, as a string.
 
 > **load**(`normalizedDataSource`, `options?`): `Promise`\<`TLabelsData`\>
 
-Defined in: [storage/base.ts:303](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L303)
+Defined in: [storage/base.ts:303](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L303)
 
 Opens a data source and returns the loaded data accessor
 
@@ -118,7 +118,7 @@ A promise that resolves to the loaded data accessor
 
 > **normalize**(`dataSource`, `workspace`, `projectSource`): `TNormalizedLabelsDataSource`
 
-Defined in: [storage/base.ts:175](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L175)
+Defined in: [storage/base.ts:175](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L175)
 
 Returns the data source with all of this data provider's defaults applied
 and its source normalized
@@ -175,7 +175,7 @@ The normalized data source
 
 > `optional` **prepareDataSource**(`dataSource`, `workspace`, `projectSource`, `options?`): `Promise`\<`TLabelsDataSource`\>
 
-Defined in: [storage/base.ts:238](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L238)
+Defined in: [storage/base.ts:238](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L238)
 
 Prepares a data source before a data object backed by it is added, or
 before it is saved with a changed source or type
@@ -230,7 +230,7 @@ A promise that resolves to the data source to add or save
 
 > `optional` **readName**(`normalizedSource`, `workspace`, `options?`): `Promise`\<`string` \| `undefined`\>
 
-Defined in: [storage/base.ts:216](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L216)
+Defined in: [storage/base.ts:216](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L216)
 
 Reads the name a source stores in its metadata
 
@@ -279,7 +279,7 @@ A promise that resolves to the name, if any
 
 > `optional` **supports**(`normalizedSource`, `workspace`, `options?`): `Promise`\<`boolean`\>
 
-Defined in: [storage/base.ts:195](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L195)
+Defined in: [storage/base.ts:195](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L195)
 
 Returns whether this data provider can likely open a source
 

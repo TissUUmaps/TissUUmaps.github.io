@@ -1,6 +1,6 @@
 # Class: GeometryUtils
 
-Defined in: [utils/GeometryUtils.ts:4](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/GeometryUtils.ts#L4)
+Defined in: [utils/GeometryUtils.ts:4](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/GeometryUtils.ts#L4)
 
 Utility methods for rectangle and dimension geometry
 
@@ -20,7 +20,7 @@ Utility methods for rectangle and dimension geometry
 
 > `static` **dilate**(`rect`, `amount`): [`Rect`](../type-aliases/Rect.md)
 
-Defined in: [utils/GeometryUtils.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/GeometryUtils.ts#L51)
+Defined in: [utils/GeometryUtils.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/GeometryUtils.ts#L51)
 
 Grows a rectangle by the same amount on every side
 
@@ -51,7 +51,7 @@ The grown rectangle
 
 > `static` **dimsEquals**(`a`, `b`): `boolean`
 
-Defined in: [utils/GeometryUtils.ts:67](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/GeometryUtils.ts#L67)
+Defined in: [utils/GeometryUtils.ts:67](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/GeometryUtils.ts#L67)
 
 Checks if two dimensions are equal by comparing their width and height properties
 
@@ -81,7 +81,7 @@ The second dimensions to compare
 
 > `static` **intersection**(`a`, `b`): [`Rect`](../type-aliases/Rect.md) \| `null`
 
-Defined in: [utils/GeometryUtils.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/GeometryUtils.ts#L32)
+Defined in: [utils/GeometryUtils.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/GeometryUtils.ts#L32)
 
 Computes the intersection of two rectangles
 
@@ -112,7 +112,7 @@ The rectangle covered by both, or `null` if they do not overlap
 
 > `static` **rectEquals**(`a`, `b`): `boolean`
 
-Defined in: [utils/GeometryUtils.ts:78](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/GeometryUtils.ts#L78)
+Defined in: [utils/GeometryUtils.ts:78](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/GeometryUtils.ts#L78)
 
 Checks if two rectangles are equal by comparing their x, y, width, and height properties
 
@@ -142,7 +142,7 @@ The second rectangle to compare
 
 > `static` **union**(...`rects`): [`Rect`](../type-aliases/Rect.md) \| `null`
 
-Defined in: [utils/GeometryUtils.ts:11](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/GeometryUtils.ts#L11)
+Defined in: [utils/GeometryUtils.ts:11](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/GeometryUtils.ts#L11)
 
 Computes the union of multiple rectangles and returns the smallest rectangle that contains all of them
 

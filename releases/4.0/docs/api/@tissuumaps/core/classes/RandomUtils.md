@@ -1,6 +1,6 @@
 # Class: RandomUtils
 
-Defined in: [utils/RandomUtils.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L26)
+Defined in: [utils/RandomUtils.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L26)
 
 Utility methods for seeded, non-cryptographic pseudo-random numbers
 
@@ -40,7 +40,7 @@ need the plain algorithm regardless of the current default.
 
 > `static` **createUint32RNG**(`seed?`): () => `number`
 
-Defined in: [utils/RandomUtils.ts:58](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L58)
+Defined in: [utils/RandomUtils.ts:58](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L58)
 
 Creates a seeded generator of 32-bit integers
 
@@ -67,7 +67,7 @@ A function that returns the next non-negative 32-bit integer
 
 > `static` **randUint32**(`seedOrRng?`): `number`
 
-Defined in: [utils/RandomUtils.ts:74](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L74)
+Defined in: [utils/RandomUtils.ts:74](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L74)
 
 Draws a 32-bit integer
 
@@ -97,7 +97,7 @@ A non-negative 32-bit integer
 
 > `static` **randUint32Array**(`n`, `seedOrRng?`, `array?`): `Uint32Array`
 
-Defined in: [utils/RandomUtils.ts:95](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L95)
+Defined in: [utils/RandomUtils.ts:95](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L95)
 
 Draws consecutive 32-bit integers into an array
 
@@ -145,7 +145,7 @@ RangeError if `array` is given and holds fewer than `n` elements
 
 > `static` **randUnitFloat32**(`seedOrRng?`): `number`
 
-Defined in: [utils/RandomUtils.ts:137](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L137)
+Defined in: [utils/RandomUtils.ts:137](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L137)
 
 Draws a float in `[0, 1)` that is exact in `float32`
 
@@ -174,7 +174,7 @@ A float in `[0, 1)`, exact in `float32`
 
 > `static` **randUnitFloat32Array**(`n`, `seedOrRng?`, `array?`): `Float32Array`
 
-Defined in: [utils/RandomUtils.ts:161](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L161)
+Defined in: [utils/RandomUtils.ts:161](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L161)
 
 Draws consecutive floats in `[0, 1)` into an array
 
@@ -225,7 +225,7 @@ RangeError if `array` is given and holds fewer than `n` elements
 
 > `static` **seed**(): `number`
 
-Defined in: [utils/RandomUtils.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L45)
+Defined in: [utils/RandomUtils.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L45)
 
 Draws a random seed from `Math.random()`
 
@@ -246,7 +246,7 @@ A uniformly distributed non-negative 32-bit integer
 
 > `static` **splitmix32**(`seed?`): () => `number`
 
-Defined in: [utils/RandomUtils.ts:190](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L190)
+Defined in: [utils/RandomUtils.ts:190](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L190)
 
 Creates a SplitMix32 generator
 
@@ -281,7 +281,7 @@ https://github.com/bryc/code/blob/master/jshash/PRNGs.md#splitmix32
 
 > `static` **toUnitFloat32**(`uint32`): `number`
 
-Defined in: [utils/RandomUtils.ts:121](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L121)
+Defined in: [utils/RandomUtils.ts:121](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/RandomUtils.ts#L121)
 
 Maps a 32-bit integer to a float in `[0, 1)` that is exact in `float32`
 

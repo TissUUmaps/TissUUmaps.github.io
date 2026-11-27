@@ -1,6 +1,6 @@
 # Class: OMEZarrLabelsDataProvider
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L25)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L25)
 
 Data provider for OME-Zarr label images
 
@@ -28,7 +28,7 @@ any, is not iterated, and `image-label` metadata is not read.
 
 > `readonly` **name**: `"OME-Zarr"` = `"OME-Zarr"`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L30)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L30)
 
 The name of the data provider
 
@@ -42,7 +42,7 @@ The name of the data provider
 
 > `readonly` **schema**: `object`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L32)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L32)
 
 The JSON schema for the data source
 
@@ -108,7 +108,7 @@ The JSON schema for the data source
 
 > `readonly` **uischema**: `object`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L53)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L53)
 
 The JSON Forms UI schema for the data source
 
@@ -133,7 +133,7 @@ application renders itself if the schema declares it, as a string.
 
 > **load**(`normalizedDataSource`, `options?`): `Promise`\<[`OMEZarrLabelsData`](OMEZarrLabelsData.md)\>
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:162](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L162)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:162](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L162)
 
 Opens an OME-Zarr labels data source and returns the loaded labels data
 
@@ -178,7 +178,7 @@ open
 
 > **normalize**(`dataSource`, `workspace`, `projectSource`): [`NormalizedOMEZarrLabelsDataSource`](../type-aliases/NormalizedOMEZarrLabelsDataSource.md)
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:88](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L88)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:88](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L88)
 
 Returns the data source with [omeZarrLabelsDataSourceDefaults](../variables/omeZarrLabelsDataSourceDefaults.md)
 applied and its source normalized (see `SourceUtils.normalizeSource`)
@@ -219,7 +219,7 @@ The normalized data source
 
 > **readName**(`normalizedSource`, `workspace`, `options?`): `Promise`\<`string` \| `undefined`\>
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:139](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L139)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:139](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L139)
 
 Reads the image's own name from its metadata (see
 OMEZarrUtils.readImageName)
@@ -267,7 +267,7 @@ See OMEZarrUtils.readImageName
 
 > **supports**(`normalizedSource`, `workspace`, `options?`): `Promise`\<`boolean`\>
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:115](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L115)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts:115](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsDataProvider.ts#L115)
 
 Returns whether a source is an OME-Zarr image, which may be a label image
 even without `image-label` attributes (see

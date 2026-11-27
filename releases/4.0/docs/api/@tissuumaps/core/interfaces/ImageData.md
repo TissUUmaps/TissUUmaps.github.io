@@ -1,6 +1,6 @@
 # Interface: ImageData
 
-Defined in: [storage/image.ts:38](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/image.ts#L38)
+Defined in: [storage/image.ts:38](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/image.ts#L38)
 
 Loaded image data providing one or more OpenSeadragon-compatible tile sources
 
@@ -27,7 +27,7 @@ which are drawn as they are.
 
 > `optional` **getChannelColor?**: (`c`) => [`Color`](../type-aliases/Color.md) \| `undefined`
 
-Defined in: [storage/image.ts:78](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/image.ts#L78)
+Defined in: [storage/image.ts:78](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/image.ts#L78)
 
 Returns the color of a specific channel, or undefined if not available
 
@@ -60,7 +60,7 @@ The channel's color, or `undefined` if not available
 
 > `optional` **getChannelContrastLimits?**: (`c`) => \[`number`, `number`\] \| `undefined`
 
-Defined in: [storage/image.ts:132](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/image.ts#L132)
+Defined in: [storage/image.ts:132](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/image.ts#L132)
 
 Returns the contrast limits of a specific channel, or undefined if not available
 
@@ -97,7 +97,7 @@ The channel's contrast limits, in the channel's value range, or
 
 > `optional` **getChannelDataTypeRange?**: (`c`) => \[`number`, `number`\] \| `undefined`
 
-Defined in: [storage/image.ts:111](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/image.ts#L111)
+Defined in: [storage/image.ts:111](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/image.ts#L111)
 
 Returns the range the data type of a specific channel can hold, or undefined if not available
 
@@ -126,7 +126,7 @@ available
 
 > `optional` **getChannelHistogram?**: (`c`) => [`ImageChannelHistogram`](../type-aliases/ImageChannelHistogram.md) \| `undefined`
 
-Defined in: [storage/image.ts:98](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/image.ts#L98)
+Defined in: [storage/image.ts:98](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/image.ts#L98)
 
 Returns the value histogram of a specific channel, or undefined if not available
 
@@ -162,7 +162,7 @@ bins span, or `undefined` if not available
 
 > `optional` **getChannelName?**: (`c`) => `string` \| `undefined`
 
-Defined in: [storage/image.ts:55](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/image.ts#L55)
+Defined in: [storage/image.ts:55](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/image.ts#L55)
 
 Returns the name of a specific channel, or undefined if not available
 
@@ -182,7 +182,7 @@ Returns the name of a specific channel, or undefined if not available
 
 > `optional` **getChannelOpacity?**: (`c`) => `number` \| `undefined`
 
-Defined in: [storage/image.ts:61](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/image.ts#L61)
+Defined in: [storage/image.ts:61](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/image.ts#L61)
 
 Returns the opacity of a specific channel, or undefined if not available
 
@@ -202,7 +202,7 @@ Returns the opacity of a specific channel, or undefined if not available
 
 > `optional` **getChannelVisibility?**: (`c`) => `boolean` \| `undefined`
 
-Defined in: [storage/image.ts:58](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/image.ts#L58)
+Defined in: [storage/image.ts:58](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/image.ts#L58)
 
 Returns the visibility of a specific channel, or undefined if not available
 
@@ -222,7 +222,7 @@ Returns the visibility of a specific channel, or undefined if not available
 
 > `optional` **getTileData?**: (`event`) => `Promise`\<\{ `height`: `number`; `values`: [`TypedArray`](../type-aliases/TypedArray.md); `width`: `number`; \}\>
 
-Defined in: [storage/base.ts:104](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L104)
+Defined in: [storage/base.ts:104](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L104)
 
 Extracts the raw values of an invalidated tile
 
@@ -264,7 +264,7 @@ Error if the event does not contain raster data
 
 > **close**(): `void`
 
-Defined in: [storage/base.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L18)
+Defined in: [storage/base.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L18)
 
 Releases all resources held by this data object
 
@@ -282,7 +282,7 @@ Releases all resources held by this data object
 
 > **getSizeC**(): `number` \| `undefined`
 
-Defined in: [storage/image.ts:40](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/image.ts#L40)
+Defined in: [storage/image.ts:40](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/image.ts#L40)
 
 Returns the number of channels in the image, or undefined if not multi-channel
 
@@ -296,7 +296,7 @@ Returns the number of channels in the image, or undefined if not multi-channel
 
 > **getTileSource**(`c?`): `string` \| `object` \| [`CustomTileSource`](CustomTileSource.md)
 
-Defined in: [storage/image.ts:52](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/image.ts#L52)
+Defined in: [storage/image.ts:52](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/image.ts#L52)
 
 Returns the tile source of a channel, or the only tile source of image data that is not multi-channel
 

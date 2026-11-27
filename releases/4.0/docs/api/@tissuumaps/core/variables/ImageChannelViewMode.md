@@ -2,7 +2,7 @@
 
 > `const` **ImageChannelViewMode**: `object`
 
-Defined in: [model/image.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/image.ts#L18)
+Defined in: [model/image.ts:19](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/image.ts#L19)
 
 How the channels of multi-channel image data are displayed
 

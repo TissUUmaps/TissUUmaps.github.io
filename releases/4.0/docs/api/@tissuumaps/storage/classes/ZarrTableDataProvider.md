@@ -1,6 +1,6 @@
 # Class: ZarrTableDataProvider
 
-Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts#L20)
+Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts#L20)
 
 Reads tables from Zarr stores, including the AnnData tables of SpatialData
 stores
@@ -31,7 +31,7 @@ Zarr reads are asynchronous fetches, so no Web Worker is needed.
 
 > `readonly` **name**: `"Zarr"` = `"Zarr"`
 
-Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts#L28)
+Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts#L28)
 
 #### Overrides
 
@@ -43,7 +43,7 @@ Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:
 
 > `readonly` **schema**: `object`
 
-Defined in: [@tissuumaps-storage/src/hierarchical/HierarchicalTableDataProviderBase.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/hierarchical/HierarchicalTableDataProviderBase.ts#L34)
+Defined in: [@tissuumaps-storage/src/hierarchical/HierarchicalTableDataProviderBase.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/hierarchical/HierarchicalTableDataProviderBase.ts#L34)
 
 The JSON schema for the data source
 
@@ -93,7 +93,7 @@ The JSON schema for the data source
 
 > `readonly` **uischema**: `object`
 
-Defined in: [@tissuumaps-storage/src/hierarchical/HierarchicalTableDataProviderBase.ts:50](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/hierarchical/HierarchicalTableDataProviderBase.ts#L50)
+Defined in: [@tissuumaps-storage/src/hierarchical/HierarchicalTableDataProviderBase.ts:50](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/hierarchical/HierarchicalTableDataProviderBase.ts#L50)
 
 The JSON Forms UI schema for the data source
 
@@ -118,7 +118,7 @@ application renders itself if the schema declares it, as a string.
 
 > `protected` **createTableData**(`table`, `numRows`, `ids`, `names`): [`ZarrTableData`](ZarrTableData.md)
 
-Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:78](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts#L78)
+Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:78](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts#L78)
 
 Wraps an open table in the data class of the container format
 
@@ -164,7 +164,7 @@ The data, which owns the table
 
 > **load**(`normalizedDataSource`, `options?`): `Promise`\<[`ZarrTableData`](ZarrTableData.md)\>
 
-Defined in: [@tissuumaps-storage/src/hierarchical/HierarchicalTableDataProviderBase.ts:72](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/hierarchical/HierarchicalTableDataProviderBase.ts#L72)
+Defined in: [@tissuumaps-storage/src/hierarchical/HierarchicalTableDataProviderBase.ts:72](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/hierarchical/HierarchicalTableDataProviderBase.ts#L72)
 
 Opens a data source and returns the loaded data accessor
 
@@ -201,7 +201,7 @@ A promise that resolves to the loaded data accessor
 
 > **normalize**(`dataSource`, `workspace`, `projectSource`): [`NormalizedZarrTableDataSource`](../type-aliases/NormalizedZarrTableDataSource.md)
 
-Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts#L30)
+Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts#L30)
 
 #### Parameters
 
@@ -231,7 +231,7 @@ Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:
 
 > `protected` **openHierarchicalTable**(`normalizedSource`, `options`): `Promise`\<`HierarchicalTable`\>
 
-Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:65](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts#L65)
+Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:65](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts#L65)
 
 Opens the hierarchical table a normalized source points to
 
@@ -273,7 +273,7 @@ HierarchicalTableDataBase
 
 > **supports**(`normalizedSource`): `Promise`\<`boolean`\>
 
-Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:57](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts#L57)
+Defined in: [@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts:57](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/hierarchical/zarr/ZarrTableDataProvider.ts#L57)
 
 Returns whether a source lies within a Zarr store, judged by whether any
 of its segments has the store extension (see

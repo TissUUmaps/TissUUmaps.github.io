@@ -1,6 +1,6 @@
 # Interface: RawImage
 
-Defined in: [model/image.ts:97](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/image.ts#L97)
+Defined in: [model/image.ts:98](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/image.ts#L98)
 
 A two-dimensional raster image
 
@@ -14,7 +14,7 @@ A two-dimensional raster image
 
 > `optional` **activeChannel?**: `number`
 
-Defined in: [model/image.ts:124](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/image.ts#L124)
+Defined in: [model/image.ts:125](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/image.ts#L125)
 
 The channel shown in the single-channel view modes (0-based)
 
@@ -28,7 +28,7 @@ The channel shown in the single-channel view modes (0-based)
 
 > `optional` **channels?**: [`ImageChannel`](../type-aliases/ImageChannel.md)[]
 
-Defined in: [model/image.ts:106](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/image.ts#L106)
+Defined in: [model/image.ts:107](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/image.ts#L107)
 
 The channels of the image, indexed by channel
 
@@ -41,7 +41,7 @@ not multi-channel, use the default values of [ImageChannel](../type-aliases/Imag
 
 > `optional` **channelViewMode?**: [`ImageChannelViewMode`](../type-aliases/ImageChannelViewMode.md)
 
-Defined in: [model/image.ts:117](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/image.ts#L117)
+Defined in: [model/image.ts:118](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/image.ts#L118)
 
 How the channels are displayed
 
@@ -59,7 +59,7 @@ ignored in grayscale.
 
 > **dataSource**: [`RawImageDataSource`](RawImageDataSource.md)
 
-Defined in: [model/base.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L53)
+Defined in: [model/base.ts:70](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L70)
 
 Data source
 
@@ -73,7 +73,7 @@ Data source
 
 > **id**: `string`
 
-Defined in: [model/base.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L47)
+Defined in: [model/base.ts:64](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L64)
 
 Data object ID
 
@@ -87,7 +87,7 @@ Data object ID
 
 > **layer**: `string`
 
-Defined in: [model/base.ts:173](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L173)
+Defined in: [model/base.ts:190](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L190)
 
 Layer ID
 
@@ -101,7 +101,7 @@ Layer ID
 
 > **name**: `string`
 
-Defined in: [model/base.ts:50](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L50)
+Defined in: [model/base.ts:67](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L67)
 
 Human-readable data object name
 
@@ -115,7 +115,7 @@ Human-readable data object name
 
 > `optional` **opacity?**: `number`
 
-Defined in: [model/base.ts:112](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L112)
+Defined in: [model/base.ts:129](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L129)
 
 Data object opacity, in the range [0, 1]
 
@@ -133,7 +133,7 @@ Data object opacity, in the range [0, 1]
 
 > `optional` **transform?**: [`SimilarityTransform`](../type-aliases/SimilarityTransform.md)
 
-Defined in: [model/base.ts:119](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L119)
+Defined in: [model/base.ts:136](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L136)
 
 Transformation from data object space to layer space
 
@@ -151,7 +151,7 @@ Transformation from data object space to layer space
 
 > `optional` **visibility?**: `boolean`
 
-Defined in: [model/base.ts:105](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L105)
+Defined in: [model/base.ts:122](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L122)
 
 Data object visibility
 

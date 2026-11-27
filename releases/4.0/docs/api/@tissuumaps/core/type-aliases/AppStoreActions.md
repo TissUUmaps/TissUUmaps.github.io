@@ -2,13 +2,14 @@
 
 > **AppStoreActions** = `object`
 
-Defined in: [types/stores/app.ts:164](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L164)
+Defined in: [types/stores/app.ts:169](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L169)
 
 The actions of the app store
 
 Registering a data provider for a data source type that is already taken
 replaces the previously registered provider, which invalidates the data
-loaded through it.
+loaded through it. Registering a project provider for a project type that is
+already taken replaces the previously registered project provider.
 
 ## Properties
 
@@ -16,7 +17,7 @@ loaded through it.
 
 > **registerImageDataProvider**: (`type`, `dataProvider`) => `void`
 
-Defined in: [types/stores/app.ts:260](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L260)
+Defined in: [types/stores/app.ts:265](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L265)
 
 Registers an image data provider
 
@@ -44,7 +45,7 @@ The data provider to register
 
 > **registerLabelsDataProvider**: (`type`, `dataProvider`) => `void`
 
-Defined in: [types/stores/app.ts:271](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L271)
+Defined in: [types/stores/app.ts:276](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L276)
 
 Registers a labels data provider
 
@@ -72,7 +73,7 @@ The data provider to register
 
 > **registerPointsDataProvider**: (`type`, `dataProvider`) => `void`
 
-Defined in: [types/stores/app.ts:282](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L282)
+Defined in: [types/stores/app.ts:287](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L287)
 
 Registers a points data provider
 
@@ -96,11 +97,39 @@ The data provider to register
 
 ***
 
+### registerProjectProvider
+
+> **registerProjectProvider**: (`type`, `projectProvider`) => `void`
+
+Defined in: [types/stores/app.ts:320](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L320)
+
+Registers a project provider
+
+#### Parameters
+
+##### type
+
+`string`
+
+The project type the provider handles
+
+##### projectProvider
+
+[`ProjectProvider`](../interfaces/ProjectProvider.md)
+
+The project provider to register
+
+#### Returns
+
+`void`
+
+***
+
 ### registerShapesDataProvider
 
 > **registerShapesDataProvider**: (`type`, `dataProvider`) => `void`
 
-Defined in: [types/stores/app.ts:293](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L293)
+Defined in: [types/stores/app.ts:298](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L298)
 
 Registers a shapes data provider
 
@@ -128,7 +157,7 @@ The data provider to register
 
 > **registerTableDataProvider**: (`type`, `dataProvider`) => `void`
 
-Defined in: [types/stores/app.ts:304](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L304)
+Defined in: [types/stores/app.ts:309](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L309)
 
 Registers a table data provider
 
@@ -156,7 +185,7 @@ The data provider to register
 
 > **setActivePanelId**: (`activePanelId`) => `void`
 
-Defined in: [types/stores/app.ts:217](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L217)
+Defined in: [types/stores/app.ts:222](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L222)
 
 Makes a panel the active panel, bringing its tab to the front
 
@@ -183,7 +212,7 @@ The ID of the panel, see
 
 > **setExpandedImageIds**: (`expandedImageIds`) => `void`
 
-Defined in: [types/stores/app.ts:224](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L224)
+Defined in: [types/stores/app.ts:229](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L229)
 
 Sets the images whose entries are expanded in the Images panel
 
@@ -205,7 +234,7 @@ The IDs of the images, in any order
 
 > **setExpandedLabelsIds**: (`expandedLabelsIds`) => `void`
 
-Defined in: [types/stores/app.ts:231](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L231)
+Defined in: [types/stores/app.ts:236](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L236)
 
 Sets the labels whose entries are expanded in the Labels panel
 
@@ -227,7 +256,7 @@ The IDs of the labels, in any order
 
 > **setExpandedPointsIds**: (`expandedPointsIds`) => `void`
 
-Defined in: [types/stores/app.ts:238](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L238)
+Defined in: [types/stores/app.ts:243](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L243)
 
 Sets the points whose entries are expanded in the Points panel
 
@@ -249,7 +278,7 @@ The IDs of the points, in any order
 
 > **setExpandedShapesIds**: (`expandedShapesIds`) => `void`
 
-Defined in: [types/stores/app.ts:245](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L245)
+Defined in: [types/stores/app.ts:250](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L250)
 
 Sets the shapes whose entries are expanded in the Shapes panel
 
@@ -271,7 +300,7 @@ The IDs of the shapes, in any order
 
 > **setExpandedTableIds**: (`expandedTableIds`) => `void`
 
-Defined in: [types/stores/app.ts:252](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L252)
+Defined in: [types/stores/app.ts:257](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L257)
 
 Sets the tables whose entries are expanded in the Tables panel
 
@@ -293,7 +322,7 @@ The IDs of the tables, in any order
 
 > **setHighlightedItemGroup**: (`highlightedItemGroup`) => `void`
 
-Defined in: [types/stores/app.ts:203](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L203)
+Defined in: [types/stores/app.ts:208](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L208)
 
 Highlights a group of an object in the viewer
 
@@ -316,7 +345,7 @@ none
 
 > **setImageChannelPreview**: (`imageChannelPreview`) => `void`
 
-Defined in: [types/stores/app.ts:186](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L186)
+Defined in: [types/stores/app.ts:191](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L191)
 
 Previews a single image channel on its own, or ends the preview
 
@@ -339,7 +368,7 @@ end the preview
 
 > **setInteractionMode**: (`interactionMode`) => `void`
 
-Defined in: [types/stores/app.ts:178](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L178)
+Defined in: [types/stores/app.ts:183](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L183)
 
 Sets how mouse events in the viewer are interpreted
 
@@ -361,7 +390,7 @@ The interaction mode to switch to
 
 > **setProjectOpen**: (`projectOpen`) => `void`
 
-Defined in: [types/stores/app.ts:195](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L195)
+Defined in: [types/stores/app.ts:200](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L200)
 
 Marks a project as open, or as closed
 
@@ -383,7 +412,7 @@ Whether a project is open
 
 > **setWorkspace**: (`workspace`) => `void`
 
-Defined in: [types/stores/app.ts:171](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L171)
+Defined in: [types/stores/app.ts:176](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L176)
 
 Opens a workspace, against which local data source paths are resolved
 

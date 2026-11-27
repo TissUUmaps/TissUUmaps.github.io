@@ -2,7 +2,7 @@
 
 > **createDataSource**\<`TType`\>(`rawDataSource`): [`DataSource`](../type-aliases/DataSource.md)\<`TType`\>
 
-Defined in: [model/base.ts:311](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L311)
+Defined in: [model/base.ts:331](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L331)
 
 Creates a [DataSource](../type-aliases/DataSource.md) from a [RawDataSource](../interfaces/RawDataSource.md) by applying [dataSourceDefaults](../variables/dataSourceDefaults.md)
 
@@ -24,4 +24,4 @@ The raw data source
 
 [`DataSource`](../type-aliases/DataSource.md)\<`TType`\>
 
-The complete data source with default values applied
+The complete data source with the default values of missing or `undefined` properties

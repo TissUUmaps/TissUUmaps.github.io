@@ -2,7 +2,7 @@
 
 > **DataRef**\<`TData`\> = `object` & \{ `progress?`: `number`; `status`: `"loading"`; `total?`: `number`; \} \| \{ `data`: `TData`; `status`: `"loaded"`; \} \| \{ `error`: `unknown`; `status`: `"error"`; \}
 
-Defined in: [types/stores/data.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/data.ts#L18)
+Defined in: [types/stores/data.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/data.ts#L18)
 
 A reference to an object's data, in one of three states
 

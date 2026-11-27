@@ -2,7 +2,7 @@
 
 > **createLabels**(`rawLabels`): [`Labels`](../type-aliases/Labels.md)
 
-Defined in: [model/labels.ts:66](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/labels.ts#L66)
+Defined in: [model/labels.ts:67](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/labels.ts#L67)
 
 Creates a [Labels](../type-aliases/Labels.md) from a [RawLabels](../interfaces/RawLabels.md) by applying [labelsDefaults](../variables/labelsDefaults.md)
 
@@ -18,4 +18,4 @@ The raw labels
 
 [`Labels`](../type-aliases/Labels.md)
 
-The complete labels with default values applied
+The complete labels with the default values of missing or `undefined` properties

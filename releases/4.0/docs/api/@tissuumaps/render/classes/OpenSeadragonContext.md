@@ -1,6 +1,6 @@
 # Class: OpenSeadragonContext
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:82](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L82)
+Defined in: [openseadragon/OpenSeadragonContext.ts:82](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L82)
 
 A wrapper around an OpenSeadragon viewer
 
@@ -53,7 +53,7 @@ without ever uncovering the canvas.
 
 > **new OpenSeadragonContext**(`viewerElement`, `backgroundColor`, `viewerOptions?`): `OpenSeadragonContext`
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:139](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L139)
+Defined in: [openseadragon/OpenSeadragonContext.ts:139](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L139)
 
 Creates a new OpenSeadragonContext instance and initializes the OpenSeadragon viewer
 
@@ -88,7 +88,7 @@ Options for configuring the OpenSeadragon viewer (optional)
 
 > `readonly` **viewer**: `Viewer`
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:104](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L104)
+Defined in: [openseadragon/OpenSeadragonContext.ts:104](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L104)
 
 ## Methods
 
@@ -96,7 +96,7 @@ Defined in: [openseadragon/OpenSeadragonContext.ts:104](https://github.com/TissU
 
 > **addTiledImage**(`tiledImageOptions`, `options?`): `Promise`\<`TiledImage`\>
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:438](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L438)
+Defined in: [openseadragon/OpenSeadragonContext.ts:439](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L439)
 
 Adds a tiled image to the OpenSeadragon viewer
 
@@ -154,7 +154,7 @@ adding it failed or the operation was aborted
 
 > **configureAnimationHandlers**(`viewerAnimationStartOptions`, `viewerAnimationFinishOptions`): `void`
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:235](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L235)
+Defined in: [openseadragon/OpenSeadragonContext.ts:236](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L236)
 
 Installs OpenSeadragon `animation-start` and `animation-finish` handlers
 
@@ -193,7 +193,7 @@ Options to apply when an animation finishes
 
 > **destroy**(): `Promise`\<`void`\>
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:622](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L622)
+Defined in: [openseadragon/OpenSeadragonContext.ts:623](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L623)
 
 Destroys the OpenSeadragon viewer and cleans up resources
 
@@ -213,7 +213,7 @@ so awaiting the queue's current tail is enough to drain it.
 
 > **getContainerSize**(): [`Dims`](../../core/type-aliases/Dims.md)
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:327](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L327)
+Defined in: [openseadragon/OpenSeadragonContext.ts:328](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L328)
 
 Returns the size of the viewer container element, in screen-space pixels
 
@@ -227,7 +227,7 @@ Returns the size of the viewer container element, in screen-space pixels
 
 > **getTiledImageIndex**(`tiledImage`): `number`
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:494](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L494)
+Defined in: [openseadragon/OpenSeadragonContext.ts:495](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L495)
 
 Returns the index of a tiled image in the OpenSeadragon viewer's world
 
@@ -251,7 +251,7 @@ The index of the tiled image, or -1 if it is not in the world
 
 > **getViewport**(): [`Rect`](../../core/type-aliases/Rect.md)
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:314](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L314)
+Defined in: [openseadragon/OpenSeadragonContext.ts:315](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L315)
 
 Returns the currently visible viewport bounds in world coordinates
 
@@ -267,7 +267,7 @@ Reflects the current viewport, not the target of an ongoing animation.
 
 > **isDestroyed**(): `boolean`
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:305](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L305)
+Defined in: [openseadragon/OpenSeadragonContext.ts:306](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L306)
 
 Returns whether [destroy](#destroy) has been called
 
@@ -285,7 +285,7 @@ additions are rejected and further removals are ignored from that point on.
 
 > **openTileSource**(`tiledImageOptions`, `options?`): `Promise`\<`TileSource`\>
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:394](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L394)
+Defined in: [openseadragon/OpenSeadragonContext.ts:395](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L395)
 
 Resolves a tile source specifier to a ready-to-use OpenSeadragon tile source
 
@@ -325,7 +325,7 @@ A promise that resolves with the opened tile source
 
 > **removeTiledImage**(`tiledImage`): `Promise`\<`void`\>
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:479](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L479)
+Defined in: [openseadragon/OpenSeadragonContext.ts:480](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L480)
 
 Removes a tiled image from the OpenSeadragon viewer
 
@@ -354,7 +354,7 @@ A promise that resolves once the tiled image has been removed.
 
 > **resetViewport**(): `void`
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:608](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L608)
+Defined in: [openseadragon/OpenSeadragonContext.ts:609](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L609)
 
 Hands viewport control back to the renderers
 
@@ -372,7 +372,7 @@ of the viewer is replaced, e.g. on opening a project.
 
 > **setContentBounds**(`source`, `bounds`, `options?`): `Promise`\<`void`\>
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:588](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L588)
+Defined in: [openseadragon/OpenSeadragonContext.ts:589](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L589)
 
 Sets the bounds of the content that a source contributes to the world
 
@@ -419,7 +419,7 @@ i.e. once it has been drawn wherever they are in the viewport
 
 > **setViewerOptions**(`viewerOptions`): `void`
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:341](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L341)
+Defined in: [openseadragon/OpenSeadragonContext.ts:342](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L342)
 
 Applies viewer options to the OpenSeadragon viewer and all existing tiled images
 
@@ -445,7 +445,7 @@ Options to apply
 
 > **updateTiledImageDataTransfer**(`tiledImage`, `dataTransfer`): `void`
 
-Defined in: [openseadragon/OpenSeadragonContext.ts:534](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L534)
+Defined in: [openseadragon/OpenSeadragonContext.ts:535](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonContext.ts#L535)
 
 Updates the data transfer of a tiled image
 

@@ -2,7 +2,7 @@
 
 > **createPointsDataSource**\<`TType`\>(`rawPointsDataSource`): [`PointsDataSource`](../type-aliases/PointsDataSource.md)\<`TType`\>
 
-Defined in: [model/points.ts:145](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/points.ts#L145)
+Defined in: [model/points.ts:154](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/points.ts#L154)
 
 Creates a [PointsDataSource](../type-aliases/PointsDataSource.md) from a [RawPointsDataSource](../interfaces/RawPointsDataSource.md) by applying [pointsDataSourceDefaults](../variables/pointsDataSourceDefaults.md)
 
@@ -24,4 +24,4 @@ The raw points data source
 
 [`PointsDataSource`](../type-aliases/PointsDataSource.md)\<`TType`\>
 
-The complete points data source with default values applied
+The complete points data source with the default values of missing or `undefined` properties

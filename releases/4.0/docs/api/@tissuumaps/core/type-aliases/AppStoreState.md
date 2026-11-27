@@ -2,7 +2,7 @@
 
 > **AppStoreState** = `object`
 
-Defined in: [types/stores/app.ts:44](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L44)
+Defined in: [types/stores/app.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L45)
 
 The state of the app store, holding what is not part of the project
 
@@ -12,7 +12,7 @@ The state of the app store, holding what is not part of the project
 
 > **activePanelId**: `string`
 
-Defined in: [types/stores/app.ts:119](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L119)
+Defined in: [types/stores/app.ts:123](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L123)
 
 The ID of the active panel, i.e. the panel whose tab was selected last
 
@@ -28,7 +28,7 @@ is never the active panel, so focusing it leaves this unchanged.
 
 > **expandedImageIds**: `string`[]
 
-Defined in: [types/stores/app.ts:126](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L126)
+Defined in: [types/stores/app.ts:130](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L130)
 
 The IDs of the images whose entries are expanded in the Images panel
 
@@ -40,7 +40,7 @@ Cleared whenever another project is loaded or the project is closed.
 
 > **expandedLabelsIds**: `string`[]
 
-Defined in: [types/stores/app.ts:133](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L133)
+Defined in: [types/stores/app.ts:137](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L137)
 
 The IDs of the labels whose entries are expanded in the Labels panel
 
@@ -52,7 +52,7 @@ Cleared whenever another project is loaded or the project is closed.
 
 > **expandedPointsIds**: `string`[]
 
-Defined in: [types/stores/app.ts:140](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L140)
+Defined in: [types/stores/app.ts:144](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L144)
 
 The IDs of the points whose entries are expanded in the Points panel
 
@@ -64,7 +64,7 @@ Cleared whenever another project is loaded or the project is closed.
 
 > **expandedShapesIds**: `string`[]
 
-Defined in: [types/stores/app.ts:147](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L147)
+Defined in: [types/stores/app.ts:151](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L151)
 
 The IDs of the shapes whose entries are expanded in the Shapes panel
 
@@ -76,7 +76,7 @@ Cleared whenever another project is loaded or the project is closed.
 
 > **expandedTableIds**: `string`[]
 
-Defined in: [types/stores/app.ts:154](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L154)
+Defined in: [types/stores/app.ts:158](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L158)
 
 The IDs of the tables whose entries are expanded in the Tables panel
 
@@ -88,7 +88,7 @@ Cleared whenever another project is loaded or the project is closed.
 
 > **highlightedItemGroup**: [`HighlightedItemGroup`](HighlightedItemGroup.md) \| `null`
 
-Defined in: [types/stores/app.ts:64](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L64)
+Defined in: [types/stores/app.ts:65](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L65)
 
 The group shown alone in the viewer, hiding every other item of its
 object, or `null` for none
@@ -99,7 +99,7 @@ object, or `null` for none
 
 > **imageChannelPreview**: [`ImageChannelPreview`](ImageChannelPreview.md) \| `null`
 
-Defined in: [types/stores/app.ts:58](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L58)
+Defined in: [types/stores/app.ts:59](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L59)
 
 The channel previewed on its own while it is hovered, if any
 
@@ -109,7 +109,7 @@ The channel previewed on its own while it is hovered, if any
 
 > **imageDataProviders**: `Map`\<`string`, [`ImageDataProvider`](../interfaces/ImageDataProvider.md)\<[`ImageDataSource`](ImageDataSource.md), [`ImageData`](../interfaces/ImageData.md)\>\>
 
-Defined in: [types/stores/app.ts:67](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L67)
+Defined in: [types/stores/app.ts:68](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L68)
 
 The registered image data providers, by data source type
 
@@ -119,7 +119,7 @@ The registered image data providers, by data source type
 
 > **interactionMode**: [`InteractionMode`](InteractionMode.md)
 
-Defined in: [types/stores/app.ts:55](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L55)
+Defined in: [types/stores/app.ts:56](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L56)
 
 How mouse events in the viewer are currently interpreted
 
@@ -129,7 +129,7 @@ How mouse events in the viewer are currently interpreted
 
 > **labelsDataProviders**: `Map`\<`string`, [`LabelsDataProvider`](../interfaces/LabelsDataProvider.md)\<[`LabelsDataSource`](LabelsDataSource.md), [`LabelsData`](../interfaces/LabelsData.md)\>\>
 
-Defined in: [types/stores/app.ts:73](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L73)
+Defined in: [types/stores/app.ts:74](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L74)
 
 The registered labels data providers, by data source type
 
@@ -139,7 +139,7 @@ The registered labels data providers, by data source type
 
 > **plugins**: `Map`\<`string`, \{ `container?`: `HTMLElement`; `mountable`: `boolean`; `name`: `string`; \}\>
 
-Defined in: [types/stores/app.ts:105](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L105)
+Defined in: [types/stores/app.ts:109](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L109)
 
 The registered plugins, by plugin ID, each as its human-readable name,
 whether it has a user interface that can be mounted, and the element its
@@ -155,7 +155,7 @@ up frozen in the store.
 
 > **pointsDataProviders**: `Map`\<`string`, [`PointsDataProvider`](../interfaces/PointsDataProvider.md)\<[`PointsDataSource`](PointsDataSource.md), [`PointsData`](../interfaces/PointsData.md)\>\>
 
-Defined in: [types/stores/app.ts:79](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L79)
+Defined in: [types/stores/app.ts:80](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L80)
 
 The registered points data providers, by data source type
 
@@ -165,10 +165,20 @@ The registered points data providers, by data source type
 
 > **projectOpen**: `boolean`
 
-Defined in: [types/stores/app.ts:52](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L52)
+Defined in: [types/stores/app.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L53)
 
 Whether a project is open, possibly an empty one; the Project tab shows
 its welcome view otherwise
+
+***
+
+### projectProviders
+
+> **projectProviders**: `Map`\<`string`, [`ProjectProvider`](../interfaces/ProjectProvider.md)\>
+
+Defined in: [types/stores/app.ts:98](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L98)
+
+The registered project providers, by project type
 
 ***
 
@@ -176,7 +186,7 @@ its welcome view otherwise
 
 > **shapesDataProviders**: `Map`\<`string`, [`ShapesDataProvider`](../interfaces/ShapesDataProvider.md)\<[`ShapesDataSource`](ShapesDataSource.md), [`ShapesData`](../interfaces/ShapesData.md)\>\>
 
-Defined in: [types/stores/app.ts:85](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L85)
+Defined in: [types/stores/app.ts:86](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L86)
 
 The registered shapes data providers, by data source type
 
@@ -186,7 +196,7 @@ The registered shapes data providers, by data source type
 
 > **tableDataProviders**: `Map`\<`string`, [`TableDataProvider`](../interfaces/TableDataProvider.md)\<[`TableDataSource`](TableDataSource.md), [`TableData`](../interfaces/TableData.md)\>\>
 
-Defined in: [types/stores/app.ts:91](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L91)
+Defined in: [types/stores/app.ts:92](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L92)
 
 The registered table data providers, by data source type
 
@@ -196,6 +206,6 @@ The registered table data providers, by data source type
 
 > **workspace**: `FileSystemDirectoryHandle` \| `null`
 
-Defined in: [types/stores/app.ts:46](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L46)
+Defined in: [types/stores/app.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L47)
 
 The directory handle of the open workspace, if any

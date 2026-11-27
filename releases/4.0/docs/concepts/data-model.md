@@ -23,6 +23,7 @@ classDiagram
     Project : marker/size/color/visibility/opacity maps
     Project : OpenSeadragon viewer options, WebGL render options
     Project : viewer background color
+    Project : physical unit size, physical unit, scalebar visibility, colorbars visibility
     Project "1" *--> "0..*" Layer : layers
     Project "1" *--> "0..*" Image : images
     Project "1" *--> "0..*" Labels : labels
@@ -60,7 +61,7 @@ classDiagram
     Points : data source
     Points : visibility, opacity
     Points : data-to-layer transform
-    Points : point marker/size/color/visibility/opacity
+    Points : point marker/size/color/visibility/opacity/order
     Points "0..*" --> "0..*" Layer
     Points "0..*" ..> "1" Table
 
@@ -68,7 +69,7 @@ classDiagram
     Shapes : id
     Shapes : name
     Shapes : data source
-    Shapes : visibility, opacity
+    Shapes : visibility, opacity, fill/stroke visibility
     Shapes : data-to-layer transform
     Shapes : shape fill color/visibility/opacity
     Shapes : shape stroke color/visibility/opacity

@@ -2,11 +2,15 @@
 
 > `const` **shapesDefaults**: `object`
 
-Defined in: [model/shapes.ts:24](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/shapes.ts#L24)
+Defined in: [model/shapes.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/shapes.ts#L25)
 
 Default values for [RawShapes](../interfaces/RawShapes.md)
 
 ## Type Declaration
+
+### fillVisibility
+
+> `readonly` **fillVisibility**: `true` = `true`
 
 ### shapeFillColor
 
@@ -127,3 +131,7 @@ Default values for [RawShapes](../interfaces/RawShapes.md)
 #### shapeVisibility.constant.value
 
 > `readonly` **value**: `true` = `defaultShapeVisibility`
+
+### strokeVisibility
+
+> `readonly` **strokeVisibility**: `true` = `true`

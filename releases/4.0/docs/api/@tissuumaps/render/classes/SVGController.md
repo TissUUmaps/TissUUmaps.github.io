@@ -1,6 +1,6 @@
 # Class: SVGController
 
-Defined in: [SVGController.ts:37](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/SVGController.ts#L37)
+Defined in: [SVGController.ts:37](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/SVGController.ts#L37)
 
 Controller for managing the drawing of SVG shapes
 
@@ -10,7 +10,7 @@ Controller for managing the drawing of SVG shapes
 
 > **new SVGController**(`container`, `options?`): `SVGController`
 
-Defined in: [SVGController.ts:80](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/SVGController.ts#L80)
+Defined in: [SVGController.ts:81](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/SVGController.ts#L81)
 
 Creates the transform node inside the given container and registers the
 shape drawing event handlers
@@ -44,7 +44,7 @@ Optional shape drawing event handlers
 
 > `readonly` **container**: `SVGSVGElement`
 
-Defined in: [SVGController.ts:38](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/SVGController.ts#L38)
+Defined in: [SVGController.ts:38](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/SVGController.ts#L38)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [SVGController.ts:38](https://github.com/TissUUmaps/TissUUmaps/blob/
 
 > `readonly` `optional` **shapeCompleteHandler?**: (`shape`) => `void`
 
-Defined in: [SVGController.ts:40](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/SVGController.ts#L40)
+Defined in: [SVGController.ts:40](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/SVGController.ts#L40)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [SVGController.ts:40](https://github.com/TissUUmaps/TissUUmaps/blob/
 
 > `readonly` **transformNode**: `SVGGElement`
 
-Defined in: [SVGController.ts:39](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/SVGController.ts#L39)
+Defined in: [SVGController.ts:39](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/SVGController.ts#L39)
 
 ## Methods
 
@@ -78,7 +78,7 @@ Defined in: [SVGController.ts:39](https://github.com/TissUUmaps/TissUUmaps/blob/
 
 > **destroy**(): `void`
 
-Defined in: [SVGController.ts:153](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/SVGController.ts#L153)
+Defined in: [SVGController.ts:160](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/SVGController.ts#L160)
 
 #### Returns
 
@@ -90,7 +90,7 @@ Defined in: [SVGController.ts:153](https://github.com/TissUUmaps/TissUUmaps/blob
 
 > **resizeContainer**(`newContainerSize`): `boolean`
 
-Defined in: [SVGController.ts:132](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/SVGController.ts#L132)
+Defined in: [SVGController.ts:139](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/SVGController.ts#L139)
 
 Resizes the SVG container to match the given screen-space dimensions,
 accounting for `devicePixelRatio`
@@ -115,7 +115,7 @@ Desired container size in screen-space pixels
 
 > **setInteractionMode**(`newInteractionMode`): `void`
 
-Defined in: [SVGController.ts:115](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/SVGController.ts#L115)
+Defined in: [SVGController.ts:116](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/SVGController.ts#L116)
 
 Updates the interaction mode
 
@@ -137,7 +137,7 @@ New interaction mode
 
 > **setViewport**(`viewport`): `boolean`
 
-Defined in: [SVGController.ts:101](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/SVGController.ts#L101)
+Defined in: [SVGController.ts:102](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/SVGController.ts#L102)
 
 Updates the world-space viewport rectangle
 
@@ -161,7 +161,7 @@ New viewport bounds in world coordinates
 
 > `static` **createContainer**(): `SVGSVGElement`
 
-Defined in: [SVGController.ts:60](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/SVGController.ts#L60)
+Defined in: [SVGController.ts:61](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/SVGController.ts#L61)
 
 Creates a positioned, full-size `<svg>` element for the SVG overlay
 

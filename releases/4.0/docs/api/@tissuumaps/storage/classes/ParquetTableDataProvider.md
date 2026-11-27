@@ -1,6 +1,6 @@
 # Class: ParquetTableDataProvider
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:15](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L15)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:17](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L17)
 
 Data provider for tabular data
 
@@ -24,7 +24,7 @@ Data provider for tabular data
 
 > `readonly` **name**: `"Parquet"` = `"Parquet"`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:23](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L23)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L25)
 
 The name of the data provider
 
@@ -38,7 +38,7 @@ The name of the data provider
 
 > `readonly` **schema**: `object`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L25)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L27)
 
 The JSON schema for the data source
 
@@ -104,7 +104,7 @@ The JSON schema for the data source
 
 > `readonly` **uischema**: `object`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L45)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L47)
 
 The JSON Forms UI schema for the data source
 
@@ -129,12 +129,13 @@ application renders itself if the schema declares it, as a string.
 
 > **load**(`normalizedDataSource`, `options?`): `Promise`\<[`ParquetTableData`](ParquetTableData.md)\>
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:93](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L93)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:108](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L108)
 
-Opens a data source and returns the loaded data accessor
+Loads a table from a Parquet file, or from the partition files of a Dask
+dataset directory, in partition order
 
-The data source has to have been normalized by
-[DataProvider.normalize](../../core/interfaces/DataProvider.md#normalize) beforehand.
+A remote directory cannot be listed, so its partition files are requested
+in order until one is missing.
 
 #### Parameters
 
@@ -142,19 +143,24 @@ The data source has to have been normalized by
 
 [`NormalizedParquetTableDataSource`](../type-aliases/NormalizedParquetTableDataSource.md)
 
-The normalized data source to open
+The normalized data source
 
 ##### options?
 
 [`DataProviderLoadOptions`](../../core/type-aliases/DataProviderLoadOptions.md)
 
-See [DataProviderLoadOptions](../../core/type-aliases/DataProviderLoadOptions.md)
+Optional abort signal, progress callback and workspace
 
 #### Returns
 
 `Promise`\<[`ParquetTableData`](ParquetTableData.md)\>
 
-A promise that resolves to the loaded data accessor
+A promise that resolves to the table
+
+#### Throws
+
+Error if the source names neither a Parquet file nor a directory
+holding partition files
 
 #### Implementation of
 
@@ -166,7 +172,7 @@ A promise that resolves to the loaded data accessor
 
 > **normalize**(`dataSource`, `workspace`, `projectSource`): [`NormalizedParquetTableDataSource`](../type-aliases/NormalizedParquetTableDataSource.md)
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:61](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L61)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:63](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L63)
 
 Returns the data source with all of this data provider's defaults applied
 and its source normalized
@@ -223,7 +229,7 @@ The normalized data source
 
 > **supports**(`normalizedSource`): `Promise`\<`boolean`\>
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:85](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L85)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts:87](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableDataProvider.ts#L87)
 
 Returns whether a source has a Parquet or GeoParquet file extension (see
 ParquetTableDataProvider.\_extensions), as the point geometry of

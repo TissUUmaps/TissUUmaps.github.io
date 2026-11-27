@@ -1,6 +1,6 @@
 # Class: ParquetShapesData
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:4](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L4)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:4](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L4)
 
 Shapes data of a GeoParquet file, fully loaded up front
 
@@ -14,7 +14,7 @@ Shapes data of a GeoParquet file, fully loaded up front
 
 > **new ParquetShapesData**(`geometry`, `ids`, `names`): `ParquetShapesData`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:9](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L9)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:9](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L9)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:9](https://git
 
 > **close**(): `void`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:38](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L38)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:38](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L38)
 
 Releases all resources held by this data object
 
@@ -58,7 +58,7 @@ Releases all resources held by this data object
 
 > **getIds**(): [`IDArray`](../../core/type-aliases/IDArray.md)
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:22](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L22)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:22](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L22)
 
 Returns an array of item IDs
 
@@ -84,7 +84,7 @@ The item IDs
 
 > **getNames**(): `string`[] \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L30)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L30)
 
 Returns the item names if available, otherwise undefined
 
@@ -109,7 +109,7 @@ The item names, or `undefined` if not available
 
 > **getSize**(): `number`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L26)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L26)
 
 Returns the total number of items
 
@@ -129,7 +129,7 @@ The item count
 
 > **loadGeometry**(): `Promise`\<[`ShapesGeometry`](../../core/type-aliases/ShapesGeometry.md)\>
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L34)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesData.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesData.ts#L34)
 
 Loads the geometry for all shapes
 

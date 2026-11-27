@@ -2,7 +2,7 @@
 
 > **HighlightedItemGroup** = `object`
 
-Defined in: [types/stores/app.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L26)
+Defined in: [types/stores/app.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L27)
 
 The items of one group of a labels, points or shapes object, highlighted in the viewer
 
@@ -12,7 +12,7 @@ The items of one group of a labels, points or shapes object, highlighted in the 
 
 > **annotatedObject**: \{ `labelsId`: `string`; \} \| \{ `pointsId`: `string`; \} \| \{ `shapesId`: `string`; \}
 
-Defined in: [types/stores/app.ts:31](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L31)
+Defined in: [types/stores/app.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L32)
 
 The object whose items are grouped, by the ID of its labels, points or
 shapes; IDs are only unique within each of these lists
@@ -23,7 +23,7 @@ shapes; IDs are only unique within each of these lists
 
 > **group**: `string`
 
-Defined in: [types/stores/app.ts:38](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L38)
+Defined in: [types/stores/app.ts:39](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L39)
 
 The group, i.e. the cell value as a string
 
@@ -33,6 +33,6 @@ The group, i.e. the cell value as a string
 
 > **groupBy**: [`TableColumnRef`](TableColumnRef.md)
 
-Defined in: [types/stores/app.ts:35](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/app.ts#L35)
+Defined in: [types/stores/app.ts:36](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/app.ts#L36)
 
 The categorical table column

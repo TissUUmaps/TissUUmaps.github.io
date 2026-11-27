@@ -2,7 +2,7 @@
 
 > **Plugin** = `object`
 
-Defined in: [types/plugins.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/plugins.ts#L27)
+Defined in: [types/plugins.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/plugins.ts#L27)
 
 A plugin that can be registered with the application
 
@@ -20,7 +20,7 @@ four steps are optional.
 
 > **id**: `string`
 
-Defined in: [types/plugins.ts:29](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/plugins.ts#L29)
+Defined in: [types/plugins.ts:29](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/plugins.ts#L29)
 
 The unique ID of the plugin
 
@@ -30,7 +30,7 @@ The unique ID of the plugin
 
 > `optional` **mount?**: (`container`, `stores`) => (() => `void`) \| `void`
 
-Defined in: [types/plugins.ts:78](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/plugins.ts#L78)
+Defined in: [types/plugins.ts:78](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/plugins.ts#L78)
 
 Mounts the plugin's user interface, if any
 
@@ -78,7 +78,7 @@ returned by [setup](#setup).
 
 > **name**: `string`
 
-Defined in: [types/plugins.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/plugins.ts#L32)
+Defined in: [types/plugins.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/plugins.ts#L32)
 
 The human-readable name of the plugin
 
@@ -88,7 +88,7 @@ The human-readable name of the plugin
 
 > `optional` **setup?**: (`stores`) => (() => `void`) \| `void`
 
-Defined in: [types/plugins.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/plugins.ts#L51)
+Defined in: [types/plugins.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/plugins.ts#L51)
 
 Sets up the plugin and registers any necessary event listeners or other resources
 

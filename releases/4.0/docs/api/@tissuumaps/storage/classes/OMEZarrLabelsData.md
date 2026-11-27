@@ -1,6 +1,6 @@
 # Class: OMEZarrLabelsData
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts:19](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts#L19)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts:19](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts#L19)
 
 Loaded OME-Zarr label image data
 
@@ -19,7 +19,7 @@ label images can be opened without scanning them.
 
 > **new OMEZarrLabelsData**(`tileSource`): `OMEZarrLabelsData`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts#L26)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts#L26)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ single channel
 
 > **close**(): `void`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts:78](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts#L78)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts:80](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts#L80)
 
 Releases all resources held by this data object
 
@@ -58,7 +58,7 @@ Releases all resources held by this data object
 
 > **getTileData**(`event`): `Promise`\<\{ `height`: `number`; `values`: [`IntOrUintArray`](../../core/type-aliases/IntOrUintArray.md); `width`: `number`; \}\>
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts#L53)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts#L53)
 
 Extracts the label IDs of an invalidated tile from its raw OME-Zarr data
 
@@ -101,7 +101,7 @@ tile is not an 8-, 16- or 32-bit integer array
 
 > **getTileSource**(): `string` \| `object` \| [`CustomTileSource`](../../core/interfaces/CustomTileSource.md)
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts:31](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts#L31)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts:31](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrLabelsData.ts#L31)
 
 Returns the tile source of the label image
 

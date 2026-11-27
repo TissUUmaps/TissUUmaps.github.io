@@ -2,7 +2,7 @@
 
 > **ShapesGeometry** = `object`
 
-Defined in: [storage/shapes.ts:17](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/shapes.ts#L17)
+Defined in: [storage/shapes.ts:17](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/shapes.ts#L17)
 
 Geometry for shapes (multi-polygons) stored in CSR-style format
 
@@ -21,7 +21,7 @@ Typed arrays are used for efficient storage and transfer across worker boundarie
 
 > **coords**: `Float32Array`
 
-Defined in: [storage/shapes.ts:52](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/shapes.ts#L52)
+Defined in: [storage/shapes.ts:52](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/shapes.ts#L52)
 
 Vertex coordinates
 
@@ -35,7 +35,7 @@ Two entries per vertex, giving the x and y coordinates of each vertex; the coord
 
 > **polygonRingOffsets**: `Uint32Array`
 
-Defined in: [storage/shapes.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/shapes.ts#L34)
+Defined in: [storage/shapes.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/shapes.ts#L34)
 
 Polygon --> ring offsets
 
@@ -49,7 +49,7 @@ One entry per polygon, giving the starting ring index for each polygon; the firs
 
 > **ringVertexOffsets**: `Uint32Array`
 
-Defined in: [storage/shapes.ts:43](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/shapes.ts#L43)
+Defined in: [storage/shapes.ts:43](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/shapes.ts#L43)
 
 Ring --> vertex offsets
 
@@ -63,7 +63,7 @@ One entry per ring, giving the starting vertex index for each ring; the last ver
 
 > **shapePolygonOffsets**: `Uint32Array`
 
-Defined in: [storage/shapes.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/shapes.ts#L25)
+Defined in: [storage/shapes.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/shapes.ts#L25)
 
 Shape --> polygon offsets
 

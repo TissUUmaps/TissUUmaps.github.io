@@ -2,7 +2,7 @@
 
 > **createShapes**(`rawShapes`): [`Shapes`](../type-aliases/Shapes.md)
 
-Defined in: [model/shapes.ts:116](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/shapes.ts#L116)
+Defined in: [model/shapes.ts:139](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/shapes.ts#L139)
 
 Creates a [Shapes](../type-aliases/Shapes.md) from a [RawShapes](../interfaces/RawShapes.md) by applying [shapesDefaults](../variables/shapesDefaults.md)
 
@@ -18,4 +18,4 @@ The raw shapes
 
 [`Shapes`](../type-aliases/Shapes.md)
 
-The complete shapes with default values applied
+The complete shapes with the default values of missing or `undefined` properties

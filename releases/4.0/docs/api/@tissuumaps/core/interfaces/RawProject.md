@@ -1,6 +1,6 @@
 # Interface: RawProject
 
-Defined in: [model/project.ts:76](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L76)
+Defined in: [model/project.ts:106](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L106)
 
 A TissUUmaps project
 
@@ -14,11 +14,25 @@ into a single serializable configuration.
 
 ## Properties
 
+### colorbarsVisibility?
+
+> `optional` **colorbarsVisibility?**: `boolean`
+
+Defined in: [model/project.ts:237](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L237)
+
+Whether the viewer shows the colorbars of colors taken from table columns
+
+#### Default Value
+
+[projectDefaults.colorbarsVisibility](../variables/projectDefaults.md#colorbarsvisibility)
+
+***
+
 ### colorMaps?
 
 > `optional` **colorMaps?**: [`GroupValueMap`](../type-aliases/GroupValueMap.md)\<[`Color`](../type-aliases/Color.md)\>[]
 
-Defined in: [model/project.ts:137](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L137)
+Defined in: [model/project.ts:167](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L167)
 
 Project-global color maps, referenced by [GroupByConfig](../type-aliases/GroupByConfig.md) color configurations
 
@@ -34,7 +48,7 @@ Map IDs are unique within this list; the other lists of maps may reuse them.
 
 > `optional` **glOptions?**: [`WebGLOptions`](../type-aliases/WebGLOptions.md)
 
-Defined in: [model/project.ts:170](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L170)
+Defined in: [model/project.ts:200](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L200)
 
 WebGL render options for points/shapes
 
@@ -48,7 +62,7 @@ WebGL render options for points/shapes
 
 > `optional` **images?**: [`RawImage`](RawImage.md)[]
 
-Defined in: [model/project.ts:90](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L90)
+Defined in: [model/project.ts:120](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L120)
 
 Images
 
@@ -58,7 +72,7 @@ Images
 
 > `optional` **labels?**: [`RawLabels`](RawLabels.md)[]
 
-Defined in: [model/project.ts:95](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L95)
+Defined in: [model/project.ts:125](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L125)
 
 Labels
 
@@ -68,7 +82,7 @@ Labels
 
 > `optional` **layers?**: [`RawLayer`](RawLayer.md)[]
 
-Defined in: [model/project.ts:85](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L85)
+Defined in: [model/project.ts:115](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L115)
 
 Layers
 
@@ -78,7 +92,7 @@ Layers
 
 > `optional` **markerMaps?**: [`GroupValueMap`](../type-aliases/GroupValueMap.md)\<[`Marker`](../type-aliases/Marker.md)\>[]
 
-Defined in: [model/project.ts:119](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L119)
+Defined in: [model/project.ts:149](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L149)
 
 Project-global marker maps, referenced by [GroupByConfig](../type-aliases/GroupByConfig.md) marker configurations
 
@@ -94,7 +108,7 @@ Map IDs are unique within this list; the other lists of maps may reuse them.
 
 > **name**: `string`
 
-Defined in: [model/project.ts:80](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L80)
+Defined in: [model/project.ts:110](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L110)
 
 Project name
 
@@ -104,7 +118,7 @@ Project name
 
 > `optional` **opacityMaps?**: [`GroupValueMap`](../type-aliases/GroupValueMap.md)\<`number`\>[]
 
-Defined in: [model/project.ts:155](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L155)
+Defined in: [model/project.ts:185](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L185)
 
 Project-global opacity maps, referenced by [GroupByConfig](../type-aliases/GroupByConfig.md) opacity configurations
 
@@ -120,7 +134,7 @@ Map IDs are unique within this list; the other lists of maps may reuse them.
 
 > `optional` **osOptions?**: [`OpenSeadragonOptions`](../type-aliases/OpenSeadragonOptions.md)
 
-Defined in: [model/project.ts:163](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L163)
+Defined in: [model/project.ts:193](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L193)
 
 OpenSeadragon viewer options for images/labels
 
@@ -134,13 +148,53 @@ https://openseadragon.github.io/docs/OpenSeadragon.html#.Options
 
 ***
 
+### physicalUnit?
+
+> `optional` **physicalUnit?**: `string`
+
+Defined in: [model/project.ts:223](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L223)
+
+Unit of the physical unit size
+
+Either one of the [PhysicalUnit](../variables/PhysicalUnit.md) names, between which the scalebar
+converts, or any other text, which the scalebar shows as is.
+
+***
+
+### physicalUnitSize?
+
+> `optional` **physicalUnitSize?**: `number`
+
+Defined in: [model/project.ts:215](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L215)
+
+Physical size of one world unit, in the physical unit
+
+The scalebar is in world units unless this is set to a positive value
+and the physical unit is set.
+
+***
+
 ### points?
 
 > `optional` **points?**: [`RawPoints`](RawPoints.md)[]
 
-Defined in: [model/project.ts:100](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L100)
+Defined in: [model/project.ts:130](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L130)
 
 Points
+
+***
+
+### scalebarVisibility?
+
+> `optional` **scalebarVisibility?**: `boolean`
+
+Defined in: [model/project.ts:230](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L230)
+
+Whether the viewer shows the scalebar
+
+#### Default Value
+
+[projectDefaults.scalebarVisibility](../variables/projectDefaults.md#scalebarvisibility)
 
 ***
 
@@ -148,7 +202,7 @@ Points
 
 > `optional` **shapes?**: [`RawShapes`](RawShapes.md)[]
 
-Defined in: [model/project.ts:105](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L105)
+Defined in: [model/project.ts:135](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L135)
 
 Shapes
 
@@ -158,7 +212,7 @@ Shapes
 
 > `optional` **sizeMaps?**: [`GroupValueMap`](../type-aliases/GroupValueMap.md)\<`number`\>[]
 
-Defined in: [model/project.ts:128](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L128)
+Defined in: [model/project.ts:158](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L158)
 
 Project-global size maps, referenced by [GroupByConfig](../type-aliases/GroupByConfig.md) size configurations
 
@@ -174,7 +228,7 @@ Map IDs are unique within this list; the other lists of maps may reuse them.
 
 > `optional` **tables?**: [`RawTable`](RawTable.md)[]
 
-Defined in: [model/project.ts:110](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L110)
+Defined in: [model/project.ts:140](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L140)
 
 Tables
 
@@ -184,7 +238,7 @@ Tables
 
 > `optional` **viewerBackgroundColor?**: [`Color`](../type-aliases/Color.md)
 
-Defined in: [model/project.ts:177](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L177)
+Defined in: [model/project.ts:207](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L207)
 
 Color of the viewer background, behind all rendered content
 
@@ -198,7 +252,7 @@ Color of the viewer background, behind all rendered content
 
 > `optional` **visibilityMaps?**: [`GroupValueMap`](../type-aliases/GroupValueMap.md)\<`boolean`\>[]
 
-Defined in: [model/project.ts:146](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L146)
+Defined in: [model/project.ts:176](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L176)
 
 Project-global visibility maps, referenced by [GroupByConfig](../type-aliases/GroupByConfig.md) visibility configurations
 

@@ -2,7 +2,7 @@
 
 > **SettingsStoreActions** = `object`
 
-Defined in: [types/stores/settings.ts:14](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/settings.ts#L14)
+Defined in: [types/stores/settings.ts:14](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/settings.ts#L14)
 
 The actions of the settings store
 
@@ -12,7 +12,7 @@ The actions of the settings store
 
 > **setDark**: (`dark`) => `void`
 
-Defined in: [types/stores/settings.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/settings.ts#L20)
+Defined in: [types/stores/settings.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/settings.ts#L20)
 
 Switches the user interface between light and dark mode
 

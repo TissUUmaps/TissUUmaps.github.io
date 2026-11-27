@@ -1,6 +1,6 @@
 # Class: BitUtils
 
-Defined in: [utils/BitUtils.ts:2](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/BitUtils.ts#L2)
+Defined in: [utils/BitUtils.ts:2](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/BitUtils.ts#L2)
 
 Utility methods for bitwise operations that yield unsigned 32-bit results
 
@@ -20,7 +20,7 @@ Utility methods for bitwise operations that yield unsigned 32-bit results
 
 > `static` **safeAnd**(`a`, `b`): `number`
 
-Defined in: [utils/BitUtils.ts:10](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/BitUtils.ts#L10)
+Defined in: [utils/BitUtils.ts:10](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/BitUtils.ts#L10)
 
 Performs a bitwise AND, returning an unsigned 32-bit result
 
@@ -50,7 +50,7 @@ The result, as an unsigned 32-bit integer
 
 > `static` **safeLeftShift**(`value`, `shift`): `number`
 
-Defined in: [utils/BitUtils.ts:65](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/BitUtils.ts#L65)
+Defined in: [utils/BitUtils.ts:65](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/BitUtils.ts#L65)
 
 Performs a left shift, returning an unsigned 32-bit result
 
@@ -80,7 +80,7 @@ The result, as an unsigned 32-bit integer
 
 > `static` **safeNot**(`a`): `number`
 
-Defined in: [utils/BitUtils.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/BitUtils.ts#L51)
+Defined in: [utils/BitUtils.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/BitUtils.ts#L51)
 
 Performs a bitwise NOT, returning an unsigned 32-bit result
 
@@ -104,7 +104,7 @@ The result, as an unsigned 32-bit integer
 
 > `static` **safeOr**(`a`, `b`): `number`
 
-Defined in: [utils/BitUtils.ts:24](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/BitUtils.ts#L24)
+Defined in: [utils/BitUtils.ts:24](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/BitUtils.ts#L24)
 
 Performs a bitwise OR, returning an unsigned 32-bit result
 
@@ -134,7 +134,7 @@ The result, as an unsigned 32-bit integer
 
 > `static` **safeRightShift**(`value`, `shift`): `number`
 
-Defined in: [utils/BitUtils.ts:79](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/BitUtils.ts#L79)
+Defined in: [utils/BitUtils.ts:79](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/BitUtils.ts#L79)
 
 Performs an unsigned right shift
 
@@ -164,7 +164,7 @@ The result, as an unsigned 32-bit integer
 
 > `static` **safeXor**(`a`, `b`): `number`
 
-Defined in: [utils/BitUtils.ts:38](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/BitUtils.ts#L38)
+Defined in: [utils/BitUtils.ts:38](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/BitUtils.ts#L38)
 
 Performs a bitwise XOR, returning an unsigned 32-bit result
 

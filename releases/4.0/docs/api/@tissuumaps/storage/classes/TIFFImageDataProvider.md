@@ -1,6 +1,6 @@
 # Class: TIFFImageDataProvider
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L34)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L34)
 
 Data provider for images stored in TIFF files
 
@@ -31,7 +31,7 @@ pixels.
 
 > `readonly` **name**: `"TIFF"` = `"TIFF"`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L51)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L51)
 
 The name of the data provider
 
@@ -45,7 +45,7 @@ The name of the data provider
 
 > `readonly` **schema**: `object`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L53)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L53)
 
 The JSON schema for the data source
 
@@ -103,7 +103,7 @@ The JSON schema for the data source
 
 > `readonly` **uischema**: `object`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:71](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L71)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:71](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L71)
 
 The JSON Forms UI schema for the data source
 
@@ -128,7 +128,7 @@ application renders itself if the schema declares it, as a string.
 
 > **load**(`normalizedDataSource`, `options?`): `Promise`\<[`TIFFImageData`](TIFFImageData.md)\>
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:170](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L170)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:170](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L170)
 
 Opens a TIFF image data source and returns the loaded image data
 
@@ -174,7 +174,7 @@ open, or if the file holds a TIFF no parser recognizes
 
 > **normalize**(`dataSource`, `workspace`, `projectSource`): [`NormalizedTIFFImageDataSource`](../type-aliases/NormalizedTIFFImageDataSource.md)
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:101](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L101)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:101](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L101)
 
 Returns the data source with [tiffImageDataSourceDefaults](../variables/tiffImageDataSourceDefaults.md) applied
 and its source normalized (see `SourceUtils.normalizeSource`)
@@ -215,7 +215,7 @@ The normalized data source
 
 > **readName**(`normalizedSource`, `workspace`, `options?`): `Promise`\<`string` \| `undefined`\>
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:143](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L143)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:143](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L143)
 
 Reads the image's own name for a data object backed by a source, which
 only OME-TIFF files have (see OMETIFFParser.readImageName)
@@ -263,7 +263,7 @@ open, or if the file cannot be read
 
 > **supports**(`normalizedSource`): `Promise`\<`boolean`\>
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:124](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L124)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts:124](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageDataProvider.ts#L124)
 
 Returns whether a source has a TIFF file extension (see
 TIFFImageDataProvider.\_extensions)

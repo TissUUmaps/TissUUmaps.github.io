@@ -2,7 +2,7 @@
 
 > `const` **pointsDefaults**: `object`
 
-Defined in: [model/points.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/points.ts#L27)
+Defined in: [model/points.ts:29](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/points.ts#L29)
 
 Default values for [RawPoints](../interfaces/RawPoints.md)
 

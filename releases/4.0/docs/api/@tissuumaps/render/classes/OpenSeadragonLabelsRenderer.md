@@ -1,15 +1,15 @@
 # Class: OpenSeadragonLabelsRenderer
 
-Defined in: [openseadragon/OpenSeadragonLabelsRenderer.ts:67](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonLabelsRenderer.ts#L67)
+Defined in: [openseadragon/OpenSeadragonLabelsRenderer.ts:67](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonLabelsRenderer.ts#L67)
 
 Renderer for the tiled images of [Labels](../../core/type-aliases/Labels.md) data objects
 
 The tiles of a labels object carry label IDs rather than colors, and are
 recolored by a data transfer (see
 [OpenSeadragonContext.updateTiledImageDataTransfer](OpenSeadragonContext.md#updatetiledimagedatatransfer)) that looks each
-ID up in a color lookup table, which folds the visibility and opacity into
-the alpha channel. Layer and object opacity are not part of it; OpenSeadragon
-applies them when drawing the tiled image.
+ID up in an RGBA color lookup table, which folds the visibility and opacity
+into the alpha channel. Layer and object opacity are not part of it;
+OpenSeadragon applies them when drawing the tiled image.
 
 A label image does not enumerate its labels (see [LabelsData](../../core/interfaces/LabelsData.md)), so the
 lookup table is resolved per object for the labels that the referenced table
@@ -35,7 +35,7 @@ their identity for as long as they are unchanged.
 
 > **new OpenSeadragonLabelsRenderer**(`context`, `onInitialized`, `onError`, `options?`): `OpenSeadragonLabelsRenderer`
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:93](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L93)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:93](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L93)
 
 Creates a new OpenSeadragonRendererBase instance and asynchronously adds its anchor
 
@@ -89,7 +89,7 @@ the anchor, behind the context's world background (i.e. `1` or higher)
 
 > `readonly` **context**: [`OpenSeadragonContext`](OpenSeadragonContext.md)
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:73](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L73)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:73](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L73)
 
 #### Inherited from
 
@@ -101,7 +101,7 @@ Defined in: [openseadragon/OpenSeadragonRendererBase.ts:73](https://github.com/T
 
 > **destroy**(): `Promise`\<`void`\>
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:300](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L300)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:304](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L304)
 
 Destroys the renderer by removing the anchor tiled image and all rendered objects from the OpenSeadragon viewer, and its bounds from the context
 
@@ -132,7 +132,7 @@ not depend on it.
 
 > `protected` **getLayerSyncState**(`layer`): `object`
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:354](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L354)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:358](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L358)
 
 Returns the state of a layer that a synchronization depends on
 
@@ -165,7 +165,7 @@ The layer without the properties that are applied by
 
 > `protected` **getObjectSyncState**(`object`): `object`
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:382](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L382)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:386](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L386)
 
 Returns the state of an object that a synchronization depends on
 
@@ -204,7 +204,7 @@ The object without the properties that are applied by
 
 > `protected` **getSyncState**(): `object` \| `undefined`
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:331](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L331)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:335](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L335)
 
 Returns the state of the current model that a synchronization depends on
 
@@ -230,7 +230,7 @@ The state, or `undefined` if no model has been set
 
 > `protected` **getTiledImageOpacity**(`ref`, `_index`): `number`
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:496](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L496)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:500](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L500)
 
 Computes the effective opacity for one of an object's tiled images
 
@@ -271,7 +271,7 @@ The effective opacity for the tiled image
 
 > `protected` **getTileSources**(`data`): (`string` \| `object` \| [`CustomTileSource`](../../core/interfaces/CustomTileSource.md))[]
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:449](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L449)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:453](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L453)
 
 Returns the tile sources for the given object data
 
@@ -301,7 +301,7 @@ override this.
 
 > **needsSynchronization**(): `boolean`
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:154](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L154)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:154](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L154)
 
 Returns whether the rendered objects have to be synchronized with the
 current model
@@ -326,7 +326,7 @@ tiled images take directly - is fully applied by [setModel](#setmodel).
 
 > `protected` **resolveObject**(`labels`, `data`, `context`, `options?`): `Promise`\<`void`\>
 
-Defined in: [openseadragon/OpenSeadragonLabelsRenderer.ts:117](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonLabelsRenderer.ts#L117)
+Defined in: [openseadragon/OpenSeadragonLabelsRenderer.ts:117](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonLabelsRenderer.ts#L117)
 
 Resolves the data transfer of a labels object, unless it is up to date
 
@@ -384,7 +384,7 @@ A promise that resolves once the data transfer has been resolved
 
 > `protected` **resolveTiledImageDataTransfer**(`ref`): `DataTransfer` \| `undefined`
 
-Defined in: [openseadragon/OpenSeadragonLabelsRenderer.ts:174](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonLabelsRenderer.ts#L174)
+Defined in: [openseadragon/OpenSeadragonLabelsRenderer.ts:174](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonLabelsRenderer.ts#L174)
 
 Returns the data transfer resolved for the given labels object
 
@@ -416,7 +416,7 @@ The data transfer resolved by [resolveObject](#resolveobject), or
 
 > `protected` **retainObjects**(`labels`): `void`
 
-Defined in: [openseadragon/OpenSeadragonLabelsRenderer.ts:90](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonLabelsRenderer.ts#L90)
+Defined in: [openseadragon/OpenSeadragonLabelsRenderer.ts:90](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonLabelsRenderer.ts#L90)
 
 Drops the data transfers of all labels objects other than the given ones
 
@@ -442,7 +442,7 @@ The labels objects about to be displayed
 
 > **setModel**(`layers`, `objects`): `void`
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:135](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L135)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:135](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L135)
 
 Sets the layers and objects to render
 
@@ -493,7 +493,7 @@ The objects (images or labels) to render
 
 > **synchronize**(`context`, `options?`): `Promise`\<`void`\>
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:185](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L185)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:185](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L185)
 
 Synchronizes the viewer's tiled images with the current model
 
@@ -551,7 +551,7 @@ Error if no model has been set (see [setModel](#setmodel))
 
 > **updateBounds**(`options?`): `Promise`\<`void`\>
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:249](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L249)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:249](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L249)
 
 Resizes the anchor to the bounding box of all tiled images, and registers it with the context
 
@@ -589,7 +589,7 @@ Optional abort signal
 
 > `protected` **usesAdditiveBlending**(`_data`): `boolean`
 
-Defined in: [openseadragon/OpenSeadragonRendererBase.ts:478](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L478)
+Defined in: [openseadragon/OpenSeadragonRendererBase.ts:482](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/openseadragon/OpenSeadragonRendererBase.ts#L482)
 
 Returns whether the channels of the given object data are blended additively
 

@@ -1,6 +1,6 @@
 # Interface: RasterData
 
-Defined in: [storage/base.ts:75](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L75)
+Defined in: [storage/base.ts:75](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L75)
 
 A [Data](Data.md) object that provides a tiled, multi-resolution raster
 
@@ -22,7 +22,7 @@ images, labels).
 
 > `optional` **getTileData?**: (`event`) => `Promise`\<\{ `height`: `number`; `values`: [`TypedArray`](../type-aliases/TypedArray.md); `width`: `number`; \}\>
 
-Defined in: [storage/base.ts:104](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L104)
+Defined in: [storage/base.ts:104](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L104)
 
 Extracts the raw values of an invalidated tile
 
@@ -60,7 +60,7 @@ Error if the event does not contain raster data
 
 > **close**(): `void`
 
-Defined in: [storage/base.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L18)
+Defined in: [storage/base.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L18)
 
 Releases all resources held by this data object
 
@@ -78,7 +78,7 @@ Releases all resources held by this data object
 
 > **getTileSource**(): `string` \| `object` \| [`CustomTileSource`](CustomTileSource.md)
 
-Defined in: [storage/base.ts:85](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L85)
+Defined in: [storage/base.ts:85](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L85)
 
 Returns the tile source of this raster
 

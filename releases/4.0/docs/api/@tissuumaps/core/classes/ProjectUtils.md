@@ -1,6 +1,6 @@
 # Class: ProjectUtils
 
-Defined in: [utils/ProjectUtils.ts:11](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L11)
+Defined in: [utils/ProjectUtils.ts:13](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L13)
 
 Utility methods for projects
 
@@ -20,7 +20,7 @@ Utility methods for projects
 
 > `static` **getColorConfigs**(`project`): [`ColorConfig`](../type-aliases/ColorConfig.md)[]
 
-Defined in: [utils/ProjectUtils.ts:64](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L64)
+Defined in: [utils/ProjectUtils.ts:89](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L89)
 
 Returns the color configurations of a project's labels, points and shapes
 
@@ -45,7 +45,7 @@ shapes
 
 > `static` **getMarkerConfigs**(`project`): [`MarkerConfig`](../type-aliases/MarkerConfig.md)[]
 
-Defined in: [utils/ProjectUtils.ts:39](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L39)
+Defined in: [utils/ProjectUtils.ts:64](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L64)
 
 Returns the marker configurations of a project's points
 
@@ -69,7 +69,7 @@ The marker configurations
 
 > `static` **getOpacityConfigs**(`project`): [`OpacityConfig`](../type-aliases/OpacityConfig.md)[]
 
-Defined in: [utils/ProjectUtils.ts:106](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L106)
+Defined in: [utils/ProjectUtils.ts:131](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L131)
 
 Returns the opacity configurations of a project's labels, points and shapes
 
@@ -94,7 +94,7 @@ opacities of shapes
 
 > `static` **getSizeConfigs**(`project`): [`SizeConfig`](../type-aliases/SizeConfig.md)[]
 
-Defined in: [utils/ProjectUtils.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L51)
+Defined in: [utils/ProjectUtils.ts:76](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L76)
 
 Returns the size configurations of a project's points
 
@@ -118,7 +118,7 @@ The size configurations
 
 > `static` **getVisibilityConfigs**(`project`): [`VisibilityConfig`](../type-aliases/VisibilityConfig.md)[]
 
-Defined in: [utils/ProjectUtils.ts:85](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L85)
+Defined in: [utils/ProjectUtils.ts:110](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L110)
 
 Returns the visibility configurations of a project's labels, points and
 shapes
@@ -144,7 +144,7 @@ stroke visibilities of shapes
 
 > `static` **hasData**(`project`): `boolean`
 
-Defined in: [utils/ProjectUtils.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L18)
+Defined in: [utils/ProjectUtils.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L20)
 
 Returns whether a project has any data objects
 
@@ -161,3 +161,44 @@ The project, or only its data objects
 `boolean`
 
 `true` if the project has images, labels, points, shapes or tables
+
+***
+
+### mayBeVisible()
+
+> `static` **mayBeVisible**(`object`, `layers`): `boolean`
+
+Defined in: [utils/ProjectUtils.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ProjectUtils.ts#L47)
+
+Returns whether an object may be visible
+
+An object may be visible if it is visible itself and its layer is visible.
+An object whose items are assigned to layers by a table column may be
+visible if it is visible itself, even if all of its items' layers are
+hidden.
+
+#### Parameters
+
+##### object
+
+The object, or only its visibility and layer
+
+###### layer
+
+`string` \| [`TableColumnRef`](../type-aliases/TableColumnRef.md)
+
+###### visibility
+
+`boolean`
+
+##### layers
+
+[`Layer`](../type-aliases/Layer.md)[]
+
+The layers of the project
+
+#### Returns
+
+`boolean`
+
+`true` if the object may be visible

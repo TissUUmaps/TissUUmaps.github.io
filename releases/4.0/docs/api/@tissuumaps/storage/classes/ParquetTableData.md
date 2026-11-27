@@ -1,12 +1,9 @@
 # Class: ParquetTableData
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:14](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L14)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:19](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L19)
 
-Loaded tabular data providing column-wise access
-
-The items of a table are its rows, each of which annotates one item of
-another data object (see `AnnotatedDataSource`); the item IDs and names are
-those of the annotated items, in row order.
+A table read from one or more Parquet files, such as the partitions of a
+Dask dataset, whose rows follow one another in the order of the files
 
 ## Implements
 
@@ -16,15 +13,15 @@ those of the annotated items, in row order.
 
 ### Constructor
 
-> **new ParquetTableData**(`source`, `numRows`, `columns`, `coordinateColumns`, `ids`, `names`): `ParquetTableData`
+> **new ParquetTableData**(`parts`, `numRows`, `columns`, `coordinateColumns`, `ids`, `names`, `categoricalColumns`): `ParquetTableData`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L30)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:37](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L37)
 
 #### Parameters
 
-##### source
+##### parts
 
-[`ParquetSource`](../type-aliases/ParquetSource.md)
+[`ParquetSource`](../type-aliases/ParquetSource.md)[]
 
 ##### numRows
 
@@ -46,6 +43,10 @@ Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:30](https://git
 
 `string`[] \| `undefined`
 
+##### categoricalColumns
+
+`string`[]
+
 #### Returns
 
 `ParquetTableData`
@@ -56,7 +57,7 @@ Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:30](https://git
 
 > **close**(): `void`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:165](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L165)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:178](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L178)
 
 Releases all resources held by this data object
 
@@ -70,11 +71,44 @@ Releases all resources held by this data object
 
 ***
 
+### getColumnType()
+
+> **getColumnType**(`column`): [`TableColumnType`](../../core/type-aliases/TableColumnType.md) \| `undefined`
+
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:76](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L76)
+
+Returns the type of a column, as its encoding declares
+
+Only implemented by table data whose format declares column types that the
+loaded values do not reveal (e.g. AnnData categoricals with numeric
+categories); callers without it, or given `undefined`, inspect the values
+(see `TableUtils.loadColumnType`).
+
+#### Parameters
+
+##### column
+
+`string`
+
+The column name
+
+#### Returns
+
+[`TableColumnType`](../../core/type-aliases/TableColumnType.md) \| `undefined`
+
+The column type, or `undefined` if the format does not say
+
+#### Implementation of
+
+[`TableData`](../../core/interfaces/TableData.md).[`getColumnType`](../../core/interfaces/TableData.md#getcolumntype)
+
+***
+
 ### getIds()
 
 > **getIds**(): [`IDArray`](../../core/type-aliases/IDArray.md)
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L51)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:60](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L60)
 
 Returns an array of item IDs
 
@@ -100,7 +134,7 @@ The item IDs
 
 > **getNames**(): `string`[] \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:63](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L63)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:72](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L72)
 
 Returns the item names if available, otherwise undefined
 
@@ -125,7 +159,7 @@ The item names, or `undefined` if not available
 
 > **getSize**(): `number`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:59](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L59)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:68](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L68)
 
 Returns the total number of items
 
@@ -145,7 +179,7 @@ The item count
 
 > **loadValueRange**(`column`, `options?`): `Promise`\<\[`number`, `number`\] \| `undefined`\>
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:146](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L146)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:159](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L159)
 
 Loads a column's minimum and maximum values
 
@@ -189,7 +223,7 @@ The numeric [min, max] value range of the column, or `undefined` if not numeric
 
 > **loadValues**\<`T`\>(`column`, `options?`): `Promise`\<[`TypedArrayOrArray`](../../core/type-aliases/TypedArrayOrArray.md)\<`T`\>\>
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:105](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L105)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:118](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L118)
 
 Loads a column's values
 
@@ -240,7 +274,7 @@ The column values
 
 > **resolveColumnQuery**(`query`): `Promise`\<`string` \| `null`\>
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:94](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L94)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:107](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L107)
 
 Resolves a query to an exact column name
 
@@ -268,13 +302,17 @@ The resolved column name, or `null` if no match is found
 
 > **suggestColumnQueries**(`currentQuery`): `Promise`\<[`TableColumnQuerySuggestion`](../../core/type-aliases/TableColumnQuerySuggestion.md)[]\>
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:67](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L67)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableData.ts:80](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableData.ts#L80)
 
-Returns column query suggestions for the current query
+Suggests column queries matching the current query
 
-The query format is up to the provider. Suggestions matching the current
+Suggestions are unique by query. Suggestions that resolve to the current
 query come first, best matches first, followed by the other suggestions.
 The list is not capped.
+
+Within a leaf section (see [getColumnSections](../../core/interfaces/TableData.md#getcolumnsections)), the suggestions
+are the leaf's columns, and the current query is matched against their
+names.
 
 #### Parameters
 
@@ -282,7 +320,8 @@ The list is not capped.
 
 `string`
 
-The partial column query to autocomplete
+The partial column query, or the text to search for
+within a leaf section
 
 #### Returns
 

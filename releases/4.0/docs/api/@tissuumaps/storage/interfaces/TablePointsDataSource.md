@@ -1,6 +1,6 @@
 # Interface: TablePointsDataSource
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataSource.ts:10](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataSource.ts#L10)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataSource.ts:10](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataSource.ts#L10)
 
 A [RawPointsDataSource](../../core/interfaces/RawPointsDataSource.md) with [pointsDataSourceDefaults](../../core/variables/pointsDataSourceDefaults.md) applied
 
@@ -14,7 +14,7 @@ A [RawPointsDataSource](../../core/interfaces/RawPointsDataSource.md) with [poin
 
 > `optional` **source?**: `string`
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataSource.ts:17](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataSource.ts#L17)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataSource.ts:17](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataSource.ts#L17)
 
 A table file to add as a new table, which the data source then references
 instead (see `TablePointsDataProvider.prepareDataSource`); never persisted
@@ -29,7 +29,7 @@ instead (see `TablePointsDataProvider.prepareDataSource`); never persisted
 
 > `optional` **table?**: `string`
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataSource.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataSource.ts#L18)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataSource.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataSource.ts#L18)
 
 ID of the table holding the per-item annotations of this data source, if any
 
@@ -43,7 +43,7 @@ ID of the table holding the per-item annotations of this data source, if any
 
 > **type**: `"table"`
 
-Defined in: @tissuumaps-core/build/src/model/base.d.ts:171
+Defined in: @tissuumaps-core/build/src/model/base.d.ts:180
 
 Data source type
 
@@ -57,7 +57,7 @@ Data source type
 
 > `optional` **x?**: `string`
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataSource.ts:19](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataSource.ts#L19)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataSource.ts:19](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataSource.ts#L19)
 
 ***
 
@@ -65,4 +65,4 @@ Defined in: [@tissuumaps-storage/src/table/TablePointsDataSource.ts:19](https://
 
 > `optional` **y?**: `string`
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsDataSource.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsDataSource.ts#L20)
+Defined in: [@tissuumaps-storage/src/table/TablePointsDataSource.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsDataSource.ts#L20)

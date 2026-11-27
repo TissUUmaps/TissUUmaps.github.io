@@ -1,6 +1,6 @@
 # Interface: LabelsData
 
-Defined in: [storage/labels.ts:15](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/labels.ts#L15)
+Defined in: [storage/labels.ts:15](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/labels.ts#L15)
 
 Loaded label image data providing a tiled, multi-resolution integer raster
 
@@ -19,7 +19,7 @@ opened without scanning them.
 
 > **close**(): `void`
 
-Defined in: [storage/base.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L18)
+Defined in: [storage/base.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L18)
 
 Releases all resources held by this data object
 
@@ -37,7 +37,7 @@ Releases all resources held by this data object
 
 > **getTileData**(`event`): `Promise`\<\{ `height`: `number`; `values`: [`IntOrUintArray`](../type-aliases/IntOrUintArray.md); `width`: `number`; \}\>
 
-Defined in: [storage/labels.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/labels.ts#L28)
+Defined in: [storage/labels.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/labels.ts#L28)
 
 Extracts the label IDs of an invalidated tile
 
@@ -74,7 +74,7 @@ Error if the event does not contain label image data
 
 > **getTileSource**(): `string` \| `object` \| [`CustomTileSource`](CustomTileSource.md)
 
-Defined in: [storage/base.ts:85](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L85)
+Defined in: [storage/base.ts:85](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L85)
 
 Returns the tile source of this raster
 

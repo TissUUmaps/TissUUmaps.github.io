@@ -2,7 +2,7 @@
 
 > **createImageDataSource**\<`TType`\>(`rawImageDataSource`): [`ImageDataSource`](../type-aliases/ImageDataSource.md)\<`TType`\>
 
-Defined in: [model/image.ts:179](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/image.ts#L179)
+Defined in: [model/image.ts:180](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/image.ts#L180)
 
 Creates an [ImageDataSource](../type-aliases/ImageDataSource.md) from a [RawImageDataSource](../interfaces/RawImageDataSource.md) by applying [imageDataSourceDefaults](../variables/imageDataSourceDefaults.md)
 
@@ -24,4 +24,4 @@ The raw image data source
 
 [`ImageDataSource`](../type-aliases/ImageDataSource.md)\<`TType`\>
 
-The complete image data source with default values applied
+The complete image data source with the default values of missing or `undefined` properties

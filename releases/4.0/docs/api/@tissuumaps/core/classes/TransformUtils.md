@@ -1,6 +1,6 @@
 # Class: TransformUtils
 
-Defined in: [utils/TransformUtils.ts:10](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TransformUtils.ts#L10)
+Defined in: [utils/TransformUtils.ts:10](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TransformUtils.ts#L10)
 
 Utility methods for converting between [SimilarityTransform](../type-aliases/SimilarityTransform.md)
 objects and `gl-matrix` mat3 matrices
@@ -21,7 +21,7 @@ objects and `gl-matrix` mat3 matrices
 
 > `static` **compose**(`tf`, `pivot?`): `mat3`
 
-Defined in: [utils/TransformUtils.ts:66](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TransformUtils.ts#L66)
+Defined in: [utils/TransformUtils.ts:66](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TransformUtils.ts#L66)
 
 Builds a 3×3 similarity matrix from a (partial) [SimilarityTransform](../type-aliases/SimilarityTransform.md)
 
@@ -66,7 +66,7 @@ The composed matrix
 
 > `static` **decompose**(`m`, `pivot?`): [`SimilarityTransform`](../type-aliases/SimilarityTransform.md)
 
-Defined in: [utils/TransformUtils.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TransformUtils.ts#L30)
+Defined in: [utils/TransformUtils.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TransformUtils.ts#L30)
 
 Decomposes a 3×3 similarity matrix into a [SimilarityTransform](../type-aliases/SimilarityTransform.md)
 
@@ -114,7 +114,7 @@ The decomposed transform
 
 > `static` **transformBoundingBox**(`rect`, `m`): [`Rect`](../type-aliases/Rect.md)
 
-Defined in: [utils/TransformUtils.ts:103](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TransformUtils.ts#L103)
+Defined in: [utils/TransformUtils.ts:103](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TransformUtils.ts#L103)
 
 Transforms an axis-aligned rectangle and returns the axis-aligned bounding box of the transformed corners
 

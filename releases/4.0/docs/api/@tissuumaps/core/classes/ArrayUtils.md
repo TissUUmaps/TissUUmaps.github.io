@@ -1,6 +1,6 @@
 # Class: ArrayUtils
 
-Defined in: [utils/ArrayUtils.ts:7](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ArrayUtils.ts#L7)
+Defined in: [utils/ArrayUtils.ts:7](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ArrayUtils.ts#L7)
 
 Utility methods for converting arrays to the types the storage API holds
 
@@ -20,7 +20,7 @@ Utility methods for converting arrays to the types the storage API holds
 
 > `static` **parseSafeInts**(`values`): `Float64Array`
 
-Defined in: [utils/ArrayUtils.ts:76](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ArrayUtils.ts#L76)
+Defined in: [utils/ArrayUtils.ts:78](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ArrayUtils.ts#L78)
 
 Converts 64-bit integers to 64-bit floats
 
@@ -48,7 +48,7 @@ Error if an integer is outside the safe integer range
 
 > `static` **toIDArray**(`values`): [`IDArray`](../type-aliases/IDArray.md)
 
-Defined in: [utils/ArrayUtils.ts:24](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ArrayUtils.ts#L24)
+Defined in: [utils/ArrayUtils.ts:24](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ArrayUtils.ts#L24)
 
 Converts item IDs to an `IDArray`
 

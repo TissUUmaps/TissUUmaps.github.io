@@ -2,6 +2,6 @@
 
 > `const` **tableDataSourceDefaults**: `object`
 
-Defined in: [model/table.ts:46](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/table.ts#L46)
+Defined in: [model/table.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/table.ts#L47)
 
 Default values for [RawTableDataSource](../interfaces/RawTableDataSource.md)

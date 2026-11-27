@@ -1,12 +1,16 @@
 # Class: CSVTableData
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:8](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L8)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:8](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L8)
 
 Loaded tabular data providing column-wise access
 
 The items of a table are its rows, each of which annotates one item of
 another data object (see `AnnotatedDataSource`); the item IDs and names are
 those of the annotated items, in row order.
+
+A query is what is typed to find a column (partial, in the provider's own
+format); a column is the exact name that [resolveColumnQuery](../../core/interfaces/TableData.md#resolvecolumnquery) returns,
+which is saved and passed to [loadValues](../../core/interfaces/TableData.md#loadvalues).
 
 ## Implements
 
@@ -18,7 +22,7 @@ those of the annotated items, in row order.
 
 > **new CSVTableData**(`n`, `ids`, `names`, `columns`, `columnValues`): `CSVTableData`
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L18)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L18)
 
 #### Parameters
 
@@ -52,7 +56,7 @@ Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:18](https://github.com/
 
 > **close**(): `void`
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:96](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L96)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:96](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L96)
 
 Releases all resources held by this data object
 
@@ -70,7 +74,7 @@ Releases all resources held by this data object
 
 > **getIds**(): [`IDArray`](../../core/type-aliases/IDArray.md)
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L32)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L32)
 
 Returns an array of item IDs
 
@@ -96,7 +100,7 @@ The item IDs
 
 > **getNames**(): `string`[] \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:44](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L44)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:44](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L44)
 
 Returns the item names if available, otherwise undefined
 
@@ -121,7 +125,7 @@ The item names, or `undefined` if not available
 
 > **getSize**(): `number`
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:40](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L40)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:40](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L40)
 
 Returns the total number of items
 
@@ -141,7 +145,7 @@ The item count
 
 > **loadValues**\<`T`\>(`column`): `Promise`\<[`TypedArrayOrArray`](../../core/type-aliases/TypedArrayOrArray.md)\<`T`\>\>
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:86](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L86)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:86](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L86)
 
 Loads a column's values
 
@@ -180,7 +184,7 @@ The column values
 
 > **resolveColumnQuery**(`query`): `Promise`\<`string` \| `null`\>
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:75](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L75)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:75](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L75)
 
 Resolves a query to an exact column name
 
@@ -208,13 +212,17 @@ The resolved column name, or `null` if no match is found
 
 > **suggestColumnQueries**(`currentQuery`): `Promise`\<[`TableColumnQuerySuggestion`](../../core/type-aliases/TableColumnQuerySuggestion.md)[]\>
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:48](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L48)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableData.ts:48](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableData.ts#L48)
 
-Returns column query suggestions for the current query
+Suggests column queries matching the current query
 
-The query format is up to the provider. Suggestions matching the current
+Suggestions are unique by query. Suggestions that resolve to the current
 query come first, best matches first, followed by the other suggestions.
 The list is not capped.
+
+Within a leaf section (see [getColumnSections](../../core/interfaces/TableData.md#getcolumnsections)), the suggestions
+are the leaf's columns, and the current query is matched against their
+names.
 
 #### Parameters
 
@@ -222,7 +230,8 @@ The list is not capped.
 
 `string`
 
-The partial column query to autocomplete
+The partial column query, or the text to search for
+within a leaf section
 
 #### Returns
 

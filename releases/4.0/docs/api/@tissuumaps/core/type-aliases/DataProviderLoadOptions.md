@@ -2,7 +2,7 @@
 
 > **DataProviderLoadOptions** = `object`
 
-Defined in: [storage/base.ts:112](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L112)
+Defined in: [storage/base.ts:112](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L112)
 
 Options accepted by [DataProvider.load](../interfaces/DataProvider.md#load)
 
@@ -12,7 +12,7 @@ Options accepted by [DataProvider.load](../interfaces/DataProvider.md#load)
 
 > `optional` **onProgress?**: [`ProgressCallback`](ProgressCallback.md)
 
-Defined in: [storage/base.ts:120](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L120)
+Defined in: [storage/base.ts:120](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L120)
 
 Callback for reporting the progress of the load operation
 
@@ -22,7 +22,7 @@ Callback for reporting the progress of the load operation
 
 > `optional` **signal?**: `AbortSignal`
 
-Defined in: [storage/base.ts:114](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L114)
+Defined in: [storage/base.ts:114](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L114)
 
 Signal for aborting the load operation
 
@@ -32,6 +32,6 @@ Signal for aborting the load operation
 
 > `optional` **workspace?**: `FileSystemDirectoryHandle` \| `null`
 
-Defined in: [storage/base.ts:117](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L117)
+Defined in: [storage/base.ts:117](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L117)
 
 Directory handle of the open workspace, if any

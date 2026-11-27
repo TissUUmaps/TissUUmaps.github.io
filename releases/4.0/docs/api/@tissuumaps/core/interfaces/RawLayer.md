@@ -1,6 +1,6 @@
 # Interface: RawLayer
 
-Defined in: [model/layer.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/layer.ts#L18)
+Defined in: [model/layer.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/layer.ts#L18)
 
 A named collection of rendered data objects sharing the same (e.g. physical) coordinate system
 
@@ -14,7 +14,7 @@ A named collection of rendered data objects sharing the same (e.g. physical) coo
 
 > **id**: `string`
 
-Defined in: [model/layer.ts:22](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/layer.ts#L22)
+Defined in: [model/layer.ts:22](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/layer.ts#L22)
 
 Layer ID
 
@@ -24,7 +24,7 @@ Layer ID
 
 > **name**: `string`
 
-Defined in: [model/layer.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/layer.ts#L27)
+Defined in: [model/layer.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/layer.ts#L27)
 
 Human-readable layer name
 
@@ -34,7 +34,7 @@ Human-readable layer name
 
 > `optional` **opacity?**: `number`
 
-Defined in: [model/layer.ts:48](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/layer.ts#L48)
+Defined in: [model/layer.ts:48](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/layer.ts#L48)
 
 Layer opacity, in the range [0, 1]
 
@@ -48,7 +48,7 @@ Layer opacity, in the range [0, 1]
 
 > `optional` **pointSizeFactor?**: `number`
 
-Defined in: [model/layer.ts:62](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/layer.ts#L62)
+Defined in: [model/layer.ts:62](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/layer.ts#L62)
 
 Layer-level point size scaling factor
 
@@ -69,7 +69,7 @@ Point sizes are also affected by the project-global
 
 > `optional` **transform?**: [`SimilarityTransform`](../type-aliases/SimilarityTransform.md)
 
-Defined in: [model/layer.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/layer.ts#L34)
+Defined in: [model/layer.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/layer.ts#L34)
 
 Transformation from layer space to world space
 
@@ -83,7 +83,7 @@ Transformation from layer space to world space
 
 > `optional` **visibility?**: `boolean`
 
-Defined in: [model/layer.ts:41](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/layer.ts#L41)
+Defined in: [model/layer.ts:41](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/layer.ts#L41)
 
 Layer visibility
 

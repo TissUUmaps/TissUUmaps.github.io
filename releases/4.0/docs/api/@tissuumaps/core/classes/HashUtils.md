@@ -1,6 +1,6 @@
 # Class: HashUtils
 
-Defined in: [utils/HashUtils.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/HashUtils.ts#L34)
+Defined in: [utils/HashUtils.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/HashUtils.ts#L34)
 
 Utility methods for non-cryptographic hashing
 
@@ -30,7 +30,7 @@ of the methods above.
 
 > `static` **fmix32**(`h`, `c?`): `number`
 
-Defined in: [utils/HashUtils.ts:121](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/HashUtils.ts#L121)
+Defined in: [utils/HashUtils.ts:121](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/HashUtils.ts#L121)
 
 Applies a three-round xorshift-multiply finalizer; defaults to MurmurHash3's constants
 
@@ -68,7 +68,7 @@ https://github.com/aappleby/smhasher/blob/master/src/MurmurHash3.cpp
 
 > `static` **fnv1a**(`str`): `number`
 
-Defined in: [utils/HashUtils.ts:101](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/HashUtils.ts#L101)
+Defined in: [utils/HashUtils.ts:101](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/HashUtils.ts#L101)
 
 Computes the 32-bit FNV-1a hash of a string
 
@@ -102,7 +102,7 @@ http://www.isthe.com/chongo/tech/comp/fnv/
 
 > `static` **hash**(`key`, `seed?`): `number`
 
-Defined in: [utils/HashUtils.ts:84](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/HashUtils.ts#L84)
+Defined in: [utils/HashUtils.ts:84](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/HashUtils.ts#L84)
 
 Computes a seeded 32-bit hash of a string
 
@@ -134,7 +134,7 @@ The hash, as a non-negative 32-bit integer
 
 > `static` **hashRaw**(`key`): `number`
 
-Defined in: [utils/HashUtils.ts:54](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/HashUtils.ts#L54)
+Defined in: [utils/HashUtils.ts:54](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/HashUtils.ts#L54)
 
 Computes the raw hash of a string
 
@@ -163,7 +163,7 @@ The raw hash, as a non-negative 32-bit integer
 
 > `static` **mix**(`h`, `seed?`): `number`
 
-Defined in: [utils/HashUtils.ts:71](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/HashUtils.ts#L71)
+Defined in: [utils/HashUtils.ts:71](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/HashUtils.ts#L71)
 
 Scrambles a 32-bit integer with a seed
 

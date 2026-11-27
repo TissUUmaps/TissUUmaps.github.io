@@ -1,6 +1,6 @@
 # Class: OMEZarrImageData
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:36](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L36)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:36](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L36)
 
 Loaded OME-Zarr image data
 
@@ -33,7 +33,7 @@ contrast limits for channels whose `omero` window is incomplete, except for
 
 > **new OMEZarrImageData**(`tileSources`, `histograms?`): `OMEZarrImageData`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:49](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L49)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:49](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L49)
 
 #### Parameters
 
@@ -63,7 +63,7 @@ channel axis; `undefined` for images without one
 
 > **close**(): `void`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:238](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L238)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:238](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L238)
 
 Releases all resources held by this data object
 
@@ -81,7 +81,7 @@ Releases all resources held by this data object
 
 > **getChannelColor**(`c`): [`Color`](../../core/type-aliases/Color.md) \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:163](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L163)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:163](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L163)
 
 Returns the color of a channel from the image's `omero` metadata
 
@@ -118,7 +118,7 @@ Error if the image has no channel axis, or if `c` is out of bounds
 
 > **getChannelContrastLimits**(`c`): \[`number`, `number`\] \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:225](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L225)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:225](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L225)
 
 Returns the rendering window of a channel from the image's `omero` metadata
 
@@ -157,7 +157,7 @@ Error if the image has no channel axis, or if `c` is out of bounds
 
 > **getChannelDataTypeRange**(`c`): \[`number`, `number`\] \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:200](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L200)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:200](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L200)
 
 Returns the range the `dtype` of a channel can hold
 
@@ -190,7 +190,7 @@ Error if the image has no channel axis, or if `c` is out of bounds
 
 > **getChannelHistogram**(`c`): [`ImageChannelHistogram`](../../core/type-aliases/ImageChannelHistogram.md) \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:187](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L187)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:187](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L187)
 
 Returns the precomputed value histogram of a channel
 
@@ -229,7 +229,7 @@ Error if the image has no channel axis, or if `c` is out of bounds
 
 > **getChannelName**(`c`): `string` \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:133](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L133)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:133](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L133)
 
 Returns the label of a channel from the image's `omero` metadata
 
@@ -261,7 +261,7 @@ Error if the image has no channel axis, or if `c` is out of bounds
 
 > **getChannelVisibility**(`c`): `boolean` \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:146](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L146)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:146](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L146)
 
 Returns whether a channel is active in the image's `omero` metadata
 
@@ -293,7 +293,7 @@ Error if the image has no channel axis, or if `c` is out of bounds
 
 > **getSizeC**(): `number` \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:61](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L61)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:61](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L61)
 
 Returns the number of channels, or `undefined` for images without a
 channel axis
@@ -312,7 +312,7 @@ channel axis
 
 > **getTileData**(`event`): `Promise`\<\{ `height`: `number`; `values`: [`TypedArray`](../../core/type-aliases/TypedArray.md); `width`: `number`; \}\>
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:105](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L105)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:105](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L105)
 
 Extracts the samples of an invalidated tile from its raw OME-Zarr data
 
@@ -352,7 +352,7 @@ tile holds 64-bit integers
 
 > **getTileSource**(`c?`): `string` \| `object` \| [`CustomTileSource`](../../core/interfaces/CustomTileSource.md)
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:77](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L77)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts:77](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageData.ts#L77)
 
 Returns the tile source of a channel, or the only tile source of an image
 without a channel axis

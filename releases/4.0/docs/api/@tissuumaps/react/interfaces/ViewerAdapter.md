@@ -1,6 +1,6 @@
 # Interface: ViewerAdapter
 
-Defined in: [adapter.ts:22](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L22)
+Defined in: [adapter.ts:22](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L22)
 
 ## Properties
 
@@ -8,7 +8,7 @@ Defined in: [adapter.ts:22](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > `optional` **addShape?**: (`shape`) => `void`
 
-Defined in: [adapter.ts:60](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L60)
+Defined in: [adapter.ts:60](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L60)
 
 #### Parameters
 
@@ -26,7 +26,7 @@ Defined in: [adapter.ts:60](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **colorMaps**: [`GroupValueMap`](../../core/type-aliases/GroupValueMap.md)\<[`Color`](../../core/type-aliases/Color.md)\>[]
 
-Defined in: [adapter.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L32)
+Defined in: [adapter.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L32)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [adapter.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **glOptions**: [`WebGLOptions`](../../core/type-aliases/WebGLOptions.md)
 
-Defined in: [adapter.ts:36](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L36)
+Defined in: [adapter.ts:36](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L36)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [adapter.ts:36](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **images**: [`Image`](../../core/type-aliases/Image.md)[]
 
-Defined in: [adapter.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L25)
+Defined in: [adapter.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L25)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [adapter.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **interactionMode**: [`InteractionMode`](../../core/type-aliases/InteractionMode.md)
 
-Defined in: [adapter.ts:59](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L59)
+Defined in: [adapter.ts:59](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L59)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [adapter.ts:59](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **labels**: [`Labels`](../../core/type-aliases/Labels.md)[]
 
-Defined in: [adapter.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L26)
+Defined in: [adapter.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L26)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: [adapter.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **layers**: [`Layer`](../../core/type-aliases/Layer.md)[]
 
-Defined in: [adapter.ts:24](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L24)
+Defined in: [adapter.ts:24](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L24)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [adapter.ts:24](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **loadImage**: (`image`, `options?`) => `Promise`\<[`ImageData`](../../core/interfaces/ImageData.md)\>
 
-Defined in: [adapter.ts:37](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L37)
+Defined in: [adapter.ts:37](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L37)
 
 #### Parameters
 
@@ -98,7 +98,7 @@ Defined in: [adapter.ts:37](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **loadLabels**: (`labels`, `options?`) => `Promise`\<[`LabelsData`](../../core/interfaces/LabelsData.md)\>
 
-Defined in: [adapter.ts:41](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L41)
+Defined in: [adapter.ts:41](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L41)
 
 #### Parameters
 
@@ -122,7 +122,7 @@ Defined in: [adapter.ts:41](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **loadPoints**: (`points`, `options?`) => `Promise`\<[`PointsData`](../../core/interfaces/PointsData.md)\>
 
-Defined in: [adapter.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L45)
+Defined in: [adapter.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L45)
 
 #### Parameters
 
@@ -146,7 +146,7 @@ Defined in: [adapter.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **loadShapes**: (`shapes`, `options?`) => `Promise`\<[`ShapesData`](../../core/interfaces/ShapesData.md)\>
 
-Defined in: [adapter.ts:49](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L49)
+Defined in: [adapter.ts:49](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L49)
 
 #### Parameters
 
@@ -170,7 +170,7 @@ Defined in: [adapter.ts:49](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **loadTable**: (`table`, `options?`) => `Promise`\<[`TableData`](../../core/interfaces/TableData.md)\>
 
-Defined in: [adapter.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L53)
+Defined in: [adapter.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L53)
 
 #### Parameters
 
@@ -194,7 +194,7 @@ Defined in: [adapter.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **markerMaps**: [`GroupValueMap`](../../core/type-aliases/GroupValueMap.md)\<[`Marker`](../../core/type-aliases/Marker.md)\>[]
 
-Defined in: [adapter.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L30)
+Defined in: [adapter.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L30)
 
 ***
 
@@ -202,7 +202,7 @@ Defined in: [adapter.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **opacityMaps**: [`GroupValueMap`](../../core/type-aliases/GroupValueMap.md)\<`number`\>[]
 
-Defined in: [adapter.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L34)
+Defined in: [adapter.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L34)
 
 ***
 
@@ -210,7 +210,7 @@ Defined in: [adapter.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **osOptions**: [`OpenSeadragonOptions`](../../core/type-aliases/OpenSeadragonOptions.md)
 
-Defined in: [adapter.ts:35](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L35)
+Defined in: [adapter.ts:35](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L35)
 
 ***
 
@@ -218,7 +218,7 @@ Defined in: [adapter.ts:35](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **points**: [`Points`](../../core/type-aliases/Points.md)[]
 
-Defined in: [adapter.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L27)
+Defined in: [adapter.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L27)
 
 ***
 
@@ -226,7 +226,7 @@ Defined in: [adapter.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **projectInstanceId**: `string`
 
-Defined in: [adapter.ts:23](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L23)
+Defined in: [adapter.ts:23](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L23)
 
 ***
 
@@ -234,7 +234,7 @@ Defined in: [adapter.ts:23](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **shapes**: [`Shapes`](../../core/type-aliases/Shapes.md)[]
 
-Defined in: [adapter.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L28)
+Defined in: [adapter.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L28)
 
 ***
 
@@ -242,7 +242,7 @@ Defined in: [adapter.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **sizeMaps**: [`GroupValueMap`](../../core/type-aliases/GroupValueMap.md)\<`number`\>[]
 
-Defined in: [adapter.ts:31](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L31)
+Defined in: [adapter.ts:31](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L31)
 
 ***
 
@@ -250,7 +250,7 @@ Defined in: [adapter.ts:31](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **tables**: [`Table`](../../core/type-aliases/Table.md)[]
 
-Defined in: [adapter.ts:29](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L29)
+Defined in: [adapter.ts:29](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L29)
 
 ***
 
@@ -258,4 +258,4 @@ Defined in: [adapter.ts:29](https://github.com/TissUUmaps/TissUUmaps/blob/4d8787
 
 > **visibilityMaps**: [`GroupValueMap`](../../core/type-aliases/GroupValueMap.md)\<`boolean`\>[]
 
-Defined in: [adapter.ts:33](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/adapter.ts#L33)
+Defined in: [adapter.ts:33](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/adapter.ts#L33)

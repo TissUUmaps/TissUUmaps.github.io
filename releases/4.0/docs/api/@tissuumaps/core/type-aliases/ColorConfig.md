@@ -1,8 +1,8 @@
 # Type Alias: ColorConfig
 
-> **ColorConfig** = [`ConstantConfig`](ConstantConfig.md)\<[`Color`](Color.md)\> \| [`FromConfig`](FromConfig.md)\<\{ `palette`: `string`; `range?`: \[`number`, `number`\]; \}\> \| [`GroupByConfig`](GroupByConfig.md)\<`false`, \{ `palette?`: `string`; \}\> \| [`RandomConfig`](RandomConfig.md)\<\{ `palette`: `string`; \}\>
+> **ColorConfig** = [`ConstantConfig`](ConstantConfig.md)\<[`Color`](Color.md)\> \| [`FromConfig`](FromConfig.md)\<\{ `palette`: `string`; `range?`: \[`number` \| `null`, `number` \| `null`\]; \}\> \| [`GroupByConfig`](GroupByConfig.md)\<`false`, \{ `palette?`: `string`; \}\> \| [`RandomConfig`](RandomConfig.md)\<\{ `palette`: `string`; \}\>
 
-Defined in: [model/configs.ts:203](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/configs.ts#L203)
+Defined in: [model/configs.ts:203](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/configs.ts#L203)
 
 Color configuration
 

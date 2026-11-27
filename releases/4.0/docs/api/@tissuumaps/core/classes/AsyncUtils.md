@@ -1,6 +1,6 @@
 # Class: AsyncUtils
 
-Defined in: [utils/AsyncUtils.ts:5](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/AsyncUtils.ts#L5)
+Defined in: [utils/AsyncUtils.ts:5](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/AsyncUtils.ts#L5)
 
 Utility methods for running large CPU workloads on the main thread without
 blocking the UI, by cooperatively yielding to the event loop
@@ -21,7 +21,7 @@ blocking the UI, by cooperatively yielding to the event loop
 
 > `static` **createYielder**(`options?`): (`opts?`) => `Promise`\<`void`\>
 
-Defined in: [utils/AsyncUtils.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/AsyncUtils.ts#L53)
+Defined in: [utils/AsyncUtils.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/AsyncUtils.ts#L53)
 
 Creates a time-sliced yielder for loops whose iterations are too coarse or
 heterogeneous for [AsyncUtils.forEach](#foreach) (e.g. nested loops).
@@ -53,7 +53,7 @@ The yielder, which takes an optional abort signal
 
 > `static` **forEach**\<`T`\>(`items`, `callback`, `options?`): `Promise`\<`void`\>
 
-Defined in: [utils/AsyncUtils.ts:86](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/AsyncUtils.ts#L86)
+Defined in: [utils/AsyncUtils.ts:86](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/AsyncUtils.ts#L86)
 
 Invokes `callback(item, index)` for every element of `items`, yielding to
 the event loop whenever the time budget is exceeded so the UI stays
@@ -114,7 +114,7 @@ A promise that resolves once every item has been visited, or
 
 > `static` **raceSignal**\<`T`\>(`promise`, `options?`): `Promise`\<`T`\>
 
-Defined in: [utils/AsyncUtils.ts:114](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/AsyncUtils.ts#L114)
+Defined in: [utils/AsyncUtils.ts:114](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/AsyncUtils.ts#L114)
 
 Returns a promise that resolves or rejects with the given `promise`, but
 rejects early if the given `signal` is aborted.
@@ -153,7 +153,7 @@ A promise that resolves or rejects based on the race condition
 
 > `static` **withResolvers**\<`T`\>(): `object`
 
-Defined in: [utils/AsyncUtils.ts:145](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/AsyncUtils.ts#L145)
+Defined in: [utils/AsyncUtils.ts:145](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/AsyncUtils.ts#L145)
 
 Creates a promise together with the functions that resolve and reject it,
 like `Promise.withResolvers()`, which is not yet widely available.
@@ -208,7 +208,7 @@ The promise and the functions that resolve and reject it
 
 > `static` **yield**(): `Promise`\<`void`\>
 
-Defined in: [utils/AsyncUtils.ts:22](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/AsyncUtils.ts#L22)
+Defined in: [utils/AsyncUtils.ts:22](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/AsyncUtils.ts#L22)
 
 Yields control back to the event loop, allowing the browser to paint and
 process input before resuming.

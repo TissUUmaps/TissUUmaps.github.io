@@ -1,6 +1,6 @@
 # Interface: OMEZarrImageDataSource
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts#L26)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts#L26)
 
 Data source for OME-Zarr images
 
@@ -28,7 +28,7 @@ middle of the axis without them).
 
 > **source**: `string`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts#L30)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts#L30)
 
 URL or path of the OME-Zarr image (see `SourceUtils`)
 
@@ -42,7 +42,7 @@ URL or path of the OME-Zarr image (see `SourceUtils`)
 
 > `optional` **t?**: `number`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts:33](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts#L33)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts:33](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts#L33)
 
 Timepoint index (0-based) to open, for images with a `t` axis
 
@@ -52,7 +52,7 @@ Timepoint index (0-based) to open, for images with a `t` axis
 
 > **type**: `"ome-zarr"`
 
-Defined in: @tissuumaps-core/build/src/model/base.d.ts:171
+Defined in: @tissuumaps-core/build/src/model/base.d.ts:180
 
 Data source type
 
@@ -66,6 +66,6 @@ Data source type
 
 > `optional` **z?**: `number`
 
-Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts:36](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts#L36)
+Defined in: [@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts:36](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/ome-zarr/OMEZarrImageDataSource.ts#L36)
 
 Z-slice index (0-based) to open, for images with a `z` axis

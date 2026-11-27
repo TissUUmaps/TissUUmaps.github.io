@@ -1,6 +1,6 @@
 # Class: WebGLShapesRenderer
 
-Defined in: [webgl/WebGLShapesRenderer.ts:59](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L59)
+Defined in: [webgl/WebGLShapesRenderer.ts:59](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L59)
 
 WebGL renderer for two-dimensional shape clouds
 
@@ -26,7 +26,7 @@ the textures, and never requires a synchronization (see
 
 > **new WebGLShapesRenderer**(`context`): `WebGLShapesRenderer`
 
-Defined in: [webgl/WebGLShapesRenderer.ts:98](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L98)
+Defined in: [webgl/WebGLShapesRenderer.ts:100](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L100)
 
 Creates the shader program and retrieves uniform locations
 
@@ -52,7 +52,7 @@ The WebGL context to use for rendering
 
 > `readonly` **context**: [`WebGLContext`](WebGLContext.md)
 
-Defined in: [webgl/WebGLRendererBase.ts:62](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L62)
+Defined in: [webgl/WebGLRendererBase.ts:62](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L62)
 
 #### Inherited from
 
@@ -64,7 +64,7 @@ Defined in: [webgl/WebGLRendererBase.ts:62](https://github.com/TissUUmaps/TissUU
 
 > **renderOptions**: [`WebGLShapesRenderOptions`](../../core/type-aliases/WebGLShapesRenderOptions.md) = `projectDefaults.glOptions.shapesRenderOptions`
 
-Defined in: [webgl/WebGLShapesRenderer.ts:78](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L78)
+Defined in: [webgl/WebGLShapesRenderer.ts:78](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L78)
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: [webgl/WebGLShapesRenderer.ts:78](https://github.com/TissUUmaps/Tiss
 
 > **viewport**: [`Rect`](../../core/type-aliases/Rect.md)
 
-Defined in: [webgl/WebGLRendererBase.ts:63](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L63)
+Defined in: [webgl/WebGLRendererBase.ts:63](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L63)
 
 #### Inherited from
 
@@ -84,7 +84,7 @@ Defined in: [webgl/WebGLRendererBase.ts:63](https://github.com/TissUUmaps/TissUU
 
 > `protected` **addRenderedObject**(`renderedObject`): `void`
 
-Defined in: [webgl/WebGLRendererBase.ts:542](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L542)
+Defined in: [webgl/WebGLRendererBase.ts:542](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L542)
 
 Adds a newly created rendered object under its layer and object
 
@@ -110,7 +110,7 @@ The rendered object to add
 
 > `protected` **clearRenderedObjects**(): `void`
 
-Defined in: [webgl/WebGLRendererBase.ts:567](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L567)
+Defined in: [webgl/WebGLRendererBase.ts:567](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L567)
 
 Drops all rendered objects and releases their GPU resources
 
@@ -128,7 +128,7 @@ Drops all rendered objects and releases their GPU resources
 
 > `protected` **createRenderedObject**(`newRef`, `prepared`): `RenderedShapes`
 
-Defined in: [webgl/WebGLShapesRenderer.ts:625](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L625)
+Defined in: [webgl/WebGLShapesRenderer.ts:661](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L661)
 
 Creates the textures of a new object
 
@@ -162,7 +162,7 @@ The rendered object
 
 > **destroy**(): `void`
 
-Defined in: [webgl/WebGLShapesRenderer.ts:278](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L278)
+Defined in: [webgl/WebGLShapesRenderer.ts:296](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L296)
 
 Releases the shader program and all per-object GPU textures
 
@@ -176,7 +176,7 @@ Releases the shader program and all per-object GPU textures
 
 > `protected` **destroyRenderedObject**(`renderedShapes`): `void`
 
-Defined in: [webgl/WebGLShapesRenderer.ts:711](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L711)
+Defined in: [webgl/WebGLShapesRenderer.ts:747](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L747)
 
 Deletes all GPU textures owned by a single rendered object
 
@@ -202,7 +202,7 @@ The rendered object whose textures to delete
 
 > **draw**(): `void`
 
-Defined in: [webgl/WebGLShapesRenderer.ts:162](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L162)
+Defined in: [webgl/WebGLShapesRenderer.ts:169](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L169)
 
 Issues the WebGL draw calls for all synchronized shapes
 
@@ -228,7 +228,7 @@ scanlines or bins are skipped.
 
 > `protected` **getLayerSyncState**(`layer`): `object`
 
-Defined in: [webgl/WebGLRendererBase.ts:272](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L272)
+Defined in: [webgl/WebGLRendererBase.ts:272](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L272)
 
 Returns the state of a layer that a synchronization depends on
 
@@ -260,38 +260,30 @@ and without the cosmetic ones
 
 ### getObjectSyncState()
 
-> `protected` **getObjectSyncState**(`object`): `object`
+> `protected` **getObjectSyncState**(`shapes`): `object`
 
-Defined in: [webgl/WebGLRendererBase.ts:300](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L300)
+Defined in: [webgl/WebGLShapesRenderer.ts:325](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L325)
 
-Returns the state of an object that a synchronization depends on
+Returns the state of a shapes object that a synchronization depends on
 
-Everything but the properties that are applied when drawing, which are read
-from the current model on every draw (see [getRenderPasses](#getrenderpasses)) and
-hence need no synchronization, and but the cosmetic ones, which nothing
-rendered depends on. Those are blanked out rather than dropped, so that a
-property added to the model later is part of the state, and thereby
-requires a resynchronization, unless it is blanked out here as well.
-
-The result is only ever deep-compared against that of another object, hence
-the opaque return type.
+Blanks out the object-level fill and stroke visibility on top of what the
+base class blanks out: they are uniforms applied when drawing.
 
 #### Parameters
 
-##### object
+##### shapes
 
 [`Shapes`](../../core/type-aliases/Shapes.md)
 
-The object (points or shapes) to return the state of
+The shapes object to return the state of
 
 #### Returns
 
 `object`
 
-The object without the properties that are applied when drawing,
-and without the cosmetic ones
+The shapes object without the properties that are applied when drawing
 
-#### Inherited from
+#### Overrides
 
 `WebGLRendererBase.getObjectSyncState`
 
@@ -301,7 +293,7 @@ and without the cosmetic ones
 
 > **getRenderedBounds**(): [`Rect`](../../core/type-aliases/Rect.md) \| `null`
 
-Defined in: [webgl/WebGLShapesRenderer.ts:290](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L290)
+Defined in: [webgl/WebGLShapesRenderer.ts:308](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L308)
 
 Gets the bounding box of all drawn shapes, in world coordinates
 
@@ -323,7 +315,7 @@ the current zoom level (see \_computeQuad).
 
 > `protected` **getRenderOptionsSyncState**(): `object`
 
-Defined in: [webgl/WebGLShapesRenderer.ts:303](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L303)
+Defined in: [webgl/WebGLShapesRenderer.ts:338](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L338)
 
 Returns the grid render options (the number of edges per scanline, the
 bin width factor and the shape padding), which the scanline data textures
@@ -343,7 +335,7 @@ are rasterized for, so that changing them requires a resynchronization
 
 > `protected` **getRenderPasses**(): `object`[]
 
-Defined in: [webgl/WebGLRendererBase.ts:667](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L667)
+Defined in: [webgl/WebGLRendererBase.ts:667](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L667)
 
 Returns one render pass per rendered object to draw, in draw order
 
@@ -382,7 +374,7 @@ The render passes, in draw order
 
 > `protected` **getSyncState**(): `object` \| `undefined`
 
-Defined in: [webgl/WebGLRendererBase.ts:239](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L239)
+Defined in: [webgl/WebGLRendererBase.ts:239](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L239)
 
 Returns the state of the current model and render options that a
 synchronization depends on
@@ -408,7 +400,7 @@ The state, or `undefined` if no model has been set
 
 > `protected` **loadObjects**(`syncContext`, `options?`): `object`[]
 
-Defined in: [webgl/WebGLRendererBase.ts:348](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L348)
+Defined in: [webgl/WebGLRendererBase.ts:348](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L348)
 
 Starts loading the data of all objects to be rendered on the layers of the current model
 
@@ -465,7 +457,7 @@ Error if no model has been set (see [setModel](#setmodel))
 
 > **needsSynchronization**(): `boolean`
 
-Defined in: [webgl/WebGLRendererBase.ts:157](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L157)
+Defined in: [webgl/WebGLRendererBase.ts:157](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L157)
 
 Returns whether the rendered objects have to be synchronized with the
 current model and render options
@@ -493,7 +485,7 @@ Whether [synchronize](#synchronize) has to be called
 
 > `protected` **prepareRenderedObject**(`newRef`, `renderedShapes`, `syncContext`, `options?`): `Promise`\<`PreparedShapes` \| `null`\>
 
-Defined in: [webgl/WebGLShapesRenderer.ts:333](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L333)
+Defined in: [webgl/WebGLShapesRenderer.ts:368](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L368)
 
 Prepares everything that has to be uploaded for an object
 
@@ -503,7 +495,7 @@ the resolved fill and stroke colors whose configurations or referenced
 maps changed (see \_createRenderConfigSnapshot) -
 requests all of it before the first `await`, and then computes the bounds,
 the grid size and the paddings, rasterizes the scanline data and folds the
-resolved visibilities and opacities into the colors.
+resolved visibilities and opacities into the colors as alpha.
 
 See WebGLRendererBase.prepareRenderedObject for when this runs.
 
@@ -554,7 +546,7 @@ uploaded, or `null` if the shapes have no area
 
 > `protected` **removeRenderedObject**(`renderedObject`): `void`
 
-Defined in: [webgl/WebGLRendererBase.ts:557](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L557)
+Defined in: [webgl/WebGLRendererBase.ts:557](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L557)
 
 Drops a rendered object and releases its GPU resources
 
@@ -580,7 +572,7 @@ The rendered object to remove
 
 > **setModel**(`layers`, `objects`): `boolean`
 
-Defined in: [webgl/WebGLRendererBase.ts:111](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L111)
+Defined in: [webgl/WebGLRendererBase.ts:111](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L111)
 
 Sets the layers and objects to render
 
@@ -633,7 +625,7 @@ Whether the model differs from the current one
 
 > **synchronize**(`syncContext`, `options?`): `Promise`\<`void`\>
 
-Defined in: [webgl/WebGLRendererBase.ts:192](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L192)
+Defined in: [webgl/WebGLRendererBase.ts:192](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L192)
 
 Synchronizes the rendered objects with the current model and render options
 
@@ -700,11 +692,11 @@ Error if no model has been set (see [setModel](#setmodel))
 
 > `protected` **updateRenderedObject**(`renderedShapes`, `prepared`): `boolean`
 
-Defined in: [webgl/WebGLShapesRenderer.ts:669](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L669)
+Defined in: [webgl/WebGLShapesRenderer.ts:705](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLShapesRenderer.ts#L705)
 
 Reloads the textures of an object whose data was prepared again
 
-Refills the colors textures in place, and creates a new scanline data
+Refills the RGBA textures in place, and creates a new scanline data
 texture before releasing the one it replaces, so that the old one survives
 if creating the new one throws. The snapshot is adopted last, so that an
 update that throws is retried by the next synchronization.
@@ -739,7 +731,7 @@ Whether any texture was reloaded
 
 > `protected` `static` **computeOpacityFactor**(`layer`, `object`): `number`
 
-Defined in: [webgl/WebGLRendererBase.ts:1010](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L1010)
+Defined in: [webgl/WebGLRendererBase.ts:1010](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L1010)
 
 Computes the factor that the alpha of every item of an object is
 multiplied with when drawing
@@ -775,7 +767,7 @@ layer or the object is invisible
 
 > `protected` `static` **createTableLoader**(`ref`, `syncContext`): (`tableId`, `options?`) => `Promise`\<[`TableData`](../../core/interfaces/TableData.md)\>
 
-Defined in: [webgl/WebGLRendererBase.ts:973](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L973)
+Defined in: [webgl/WebGLRendererBase.ts:973](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-render/src/webgl/WebGLRendererBase.ts#L973)
 
 Creates the loader for the tables that an object resolves its properties
 from

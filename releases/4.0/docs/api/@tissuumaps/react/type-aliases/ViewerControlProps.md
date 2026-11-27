@@ -2,7 +2,7 @@
 
 > **ViewerControlProps** = `object`
 
-Defined in: [components/ViewerControl/index.tsx:9](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/components/ViewerControl/index.tsx#L9)
+Defined in: [components/ViewerControl/index.tsx:9](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/components/ViewerControl/index.tsx#L9)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [components/ViewerControl/index.tsx:9](https://github.com/TissUUmaps
 
 > `optional` **anchor?**: [`ViewerControlAnchor`](ViewerControlAnchor.md)
 
-Defined in: [components/ViewerControl/index.tsx:10](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/components/ViewerControl/index.tsx#L10)
+Defined in: [components/ViewerControl/index.tsx:10](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/components/ViewerControl/index.tsx#L10)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [components/ViewerControl/index.tsx:10](https://github.com/TissUUmap
 
 > `optional` **attachToViewer?**: `boolean`
 
-Defined in: [components/ViewerControl/index.tsx:11](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/components/ViewerControl/index.tsx#L11)
+Defined in: [components/ViewerControl/index.tsx:11](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/components/ViewerControl/index.tsx#L11)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [components/ViewerControl/index.tsx:11](https://github.com/TissUUmap
 
 > `optional` **autoFade?**: `boolean`
 
-Defined in: [components/ViewerControl/index.tsx:12](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/components/ViewerControl/index.tsx#L12)
+Defined in: [components/ViewerControl/index.tsx:12](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/components/ViewerControl/index.tsx#L12)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [components/ViewerControl/index.tsx:12](https://github.com/TissUUmap
 
 > `optional` **children?**: `ReactNode`
 
-Defined in: [components/ViewerControl/index.tsx:13](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-react/src/components/ViewerControl/index.tsx#L13)
+Defined in: [components/ViewerControl/index.tsx:13](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-react/src/components/ViewerControl/index.tsx#L13)

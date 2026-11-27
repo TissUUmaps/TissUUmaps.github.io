@@ -1,6 +1,6 @@
 # Class: GeoJSONShapesDataProvider
 
-Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:15](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L15)
+Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:15](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L15)
 
 Data provider for shape (polygon) collections
 
@@ -24,7 +24,7 @@ Data provider for shape (polygon) collections
 
 > `readonly` **name**: `"GeoJSON"` = `"GeoJSON"`
 
-Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:23](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L23)
+Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:23](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L23)
 
 The name of the data provider
 
@@ -38,7 +38,7 @@ The name of the data provider
 
 > `readonly` **schema**: `object`
 
-Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L25)
+Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L25)
 
 The JSON schema for the data source
 
@@ -96,7 +96,7 @@ The JSON schema for the data source
 
 > `readonly` **uischema**: `object`
 
-Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:44](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L44)
+Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:44](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L44)
 
 The JSON Forms UI schema for the data source
 
@@ -121,7 +121,7 @@ application renders itself if the schema declares it, as a string.
 
 > **load**(`normalizedDataSource`, `options?`): `Promise`\<[`GeoJSONShapesData`](GeoJSONShapesData.md)\>
 
-Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:96](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L96)
+Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:96](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L96)
 
 Opens a data source and returns the loaded data accessor
 
@@ -158,7 +158,7 @@ A promise that resolves to the loaded data accessor
 
 > **normalize**(`dataSource`, `workspace`, `projectSource`): [`NormalizedGeoJSONShapesDataSource`](../type-aliases/NormalizedGeoJSONShapesDataSource.md)
 
-Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:65](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L65)
+Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:65](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L65)
 
 Returns the data source with all of this data provider's defaults applied
 and its source normalized
@@ -215,7 +215,7 @@ The normalized data source
 
 > **supports**(`normalizedSource`): `Promise`\<`boolean`\>
 
-Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:88](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L88)
+Defined in: [@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts:88](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/geojson/GeoJSONShapesDataProvider.ts#L88)
 
 Returns whether a source has a GeoJSON file extension (see
 GeoJSONShapesDataProvider.\_extensions)

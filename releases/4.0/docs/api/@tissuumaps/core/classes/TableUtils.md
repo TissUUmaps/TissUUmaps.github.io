@@ -1,6 +1,6 @@
 # Class: TableUtils
 
-Defined in: [utils/TableUtils.ts:35](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TableUtils.ts#L35)
+Defined in: [utils/TableUtils.ts:35](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TableUtils.ts#L35)
 
 Lookups into tabular data (`TableData`) by item ID
 
@@ -45,7 +45,7 @@ groups of a column, for all rows rather than per item.
 
 > `static` **computeValueRange**(`values`, `options?`): `Promise`\<\[`number`, `number`\] \| `undefined`\>
 
-Defined in: [utils/TableUtils.ts:207](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TableUtils.ts#L207)
+Defined in: [utils/TableUtils.ts:207](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TableUtils.ts#L207)
 
 Computes the range of loaded table column values
 
@@ -53,7 +53,7 @@ Computes the range of loaded table column values
 
 ##### values
 
-[`TypedArray`](../type-aliases/TypedArray.md) \| `unknown`[]
+`unknown`[] \| [`TypedArray`](../type-aliases/TypedArray.md)
 
 The column values
 
@@ -70,7 +70,7 @@ Optional abort signal
 `Promise`\<\[`number`, `number`\] \| `undefined`\>
 
 The minimum and maximum value, or `undefined` if the values are
-not numeric or hold no two distinct finite values
+not numeric or hold no finite value
 
 ***
 
@@ -78,7 +78,7 @@ not numeric or hold no two distinct finite values
 
 > `static` **fillFromTableGroups**\<`TValue`\>(`packedValues`, `tableData`, `ids`, `column`, `defaultValue`, `mapGroupToValue`, `packValue`, `options?`): `Promise`\<`void`\>
 
-Defined in: [utils/TableUtils.ts:133](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TableUtils.ts#L133)
+Defined in: [utils/TableUtils.ts:133](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TableUtils.ts#L133)
 
 Fills `packedValues` by grouping IDs by the given table column and mapping the groups to values
 
@@ -159,7 +159,7 @@ Optional abort signal
 
 > `static` **fillFromTableValues**\<`TValue`\>(`packedValues`, `tableData`, `ids`, `column`, `defaultValue`, `parseTableValue`, `packValue`, `options?`): `Promise`\<`void`\>
 
-Defined in: [utils/TableUtils.ts:68](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TableUtils.ts#L68)
+Defined in: [utils/TableUtils.ts:68](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TableUtils.ts#L68)
 
 Fills `packedValues` by loading values from the given table column
 
@@ -238,7 +238,7 @@ Optional abort signal
 
 > `static` **forEachRow**(`ids`, `tableData`, `callback`, `options?`): `Promise`\<`void`\>
 
-Defined in: [utils/TableUtils.ts:292](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TableUtils.ts#L292)
+Defined in: [utils/TableUtils.ts:317](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TableUtils.ts#L317)
 
 Calls `callback` for every ID with the index of the table row holding that ID
 
@@ -286,7 +286,7 @@ Optional abort signal
 
 > `static` **getRowIndices**(`tableData`, `options?`): `Promise`\<`ReadonlyMap`\<`string` \| `number`, `number`\>\>
 
-Defined in: [utils/TableUtils.ts:326](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TableUtils.ts#L326)
+Defined in: [utils/TableUtils.ts:351](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TableUtils.ts#L351)
 
 Returns the row indices of a table by item ID
 
@@ -319,11 +319,57 @@ more than once, which is reported with a warning, the index of its last row
 
 ***
 
+### loadColumnType()
+
+> `static` **loadColumnType**(`tableData`, `column`, `options?`): `Promise`\<[`TableColumnType`](../type-aliases/TableColumnType.md)\>
+
+Defined in: [utils/TableUtils.ts:232](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TableUtils.ts#L232)
+
+Loads the type of a table column
+
+Uses what the table declares, if it declares anything (see
+`TableData.getColumnType`), and otherwise inspects the loaded column
+values: numeric typed arrays hold numbers, plain arrays categories.
+
+#### Parameters
+
+##### tableData
+
+[`TableData`](../interfaces/TableData.md)
+
+The table holding the column
+
+##### column
+
+`string`
+
+Name of the table column
+
+##### options?
+
+Optional abort signal and progress callback
+
+###### onProgress?
+
+[`ProgressCallback`](../type-aliases/ProgressCallback.md)
+
+###### signal?
+
+`AbortSignal`
+
+#### Returns
+
+`Promise`\<[`TableColumnType`](../type-aliases/TableColumnType.md)\>
+
+The column type
+
+***
+
 ### loadGroupCounts()
 
 > `static` **loadGroupCounts**(`tableData`, `column`, `options?`): `Promise`\<`Map`\<`string`, `number`\>\>
 
-Defined in: [utils/TableUtils.ts:233](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TableUtils.ts#L233)
+Defined in: [utils/TableUtils.ts:258](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TableUtils.ts#L258)
 
 Loads how many rows of a table each group of a column holds
 
@@ -366,7 +412,7 @@ appear in the column
 
 > `static` **loadUniqueValueCounts**\<`T`\>(`tableData`, `column`, `options?`): `Promise`\<`Map`\<`T`, `number`\>\>
 
-Defined in: [utils/TableUtils.ts:266](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TableUtils.ts#L266)
+Defined in: [utils/TableUtils.ts:291](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TableUtils.ts#L291)
 
 Loads the number of rows per unique value of a table column
 
@@ -420,7 +466,7 @@ order the values first appear
 
 > `static` **loadValueRange**(`tableData`, `column`, `options?`): `Promise`\<\[`number`, `number`\] \| `undefined`\>
 
-Defined in: [utils/TableUtils.ts:187](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/TableUtils.ts#L187)
+Defined in: [utils/TableUtils.ts:187](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/TableUtils.ts#L187)
 
 Loads the range of a table column's numeric values
 

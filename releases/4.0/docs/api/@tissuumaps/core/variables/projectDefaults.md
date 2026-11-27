@@ -2,11 +2,15 @@
 
 > `const` **projectDefaults**: `object`
 
-Defined in: [model/project.ts:15](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/project.ts#L15)
+Defined in: [model/project.ts:43](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/project.ts#L43)
 
 Default values for [RawProject](../interfaces/RawProject.md)
 
 ## Type Declaration
+
+### colorbarsVisibility
+
+> `readonly` **colorbarsVisibility**: `true` = `true`
 
 ### colorMaps
 
@@ -155,6 +159,10 @@ Default values for [RawProject](../interfaces/RawProject.md)
 #### osOptions.viewerOptions.zoomPerClick
 
 > `readonly` **zoomPerClick**: `1` = `1`
+
+### scalebarVisibility
+
+> `readonly` **scalebarVisibility**: `true` = `true`
 
 ### sizeMaps
 

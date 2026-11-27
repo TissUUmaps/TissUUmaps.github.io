@@ -2,7 +2,7 @@
 
 > **ImageChannel** = `object`
 
-Defined in: [model/image.ts:42](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/image.ts#L42)
+Defined in: [model/image.ts:43](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/image.ts#L43)
 
 A channel of a two-dimensional raster image
 
@@ -15,7 +15,7 @@ image's data provider.
 
 > `optional` **color?**: [`Color`](Color.md)
 
-Defined in: [model/image.ts:79](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/image.ts#L79)
+Defined in: [model/image.ts:80](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/image.ts#L80)
 
 Channel color
 
@@ -33,7 +33,7 @@ otherwise (see [ImageUtils.getDefaultChannelColor](../classes/ImageUtils.md#getd
 
 > `optional` **contrastLimits?**: \[`number`, `number`\]
 
-Defined in: [model/image.ts:91](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/image.ts#L91)
+Defined in: [model/image.ts:92](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/image.ts#L92)
 
 Channel contrast limits, in the channel's image data value range
 
@@ -52,7 +52,7 @@ range of the channel's data type
 
 > `optional` **name?**: `string`
 
-Defined in: [model/image.ts:50](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/image.ts#L50)
+Defined in: [model/image.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/image.ts#L51)
 
 Channel name
 
@@ -68,7 +68,7 @@ The name reported by the image data provider, or `undefined`
 
 > `optional` **opacity?**: `number`
 
-Defined in: [model/image.ts:68](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/image.ts#L68)
+Defined in: [model/image.ts:69](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/image.ts#L69)
 
 Channel opacity, in the range [0, 1]
 
@@ -84,7 +84,7 @@ The opacity reported by the image data provider, or `1`
 
 > `optional` **visibility?**: `boolean`
 
-Defined in: [model/image.ts:59](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/image.ts#L59)
+Defined in: [model/image.ts:60](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/image.ts#L60)
 
 Channel visibility
 

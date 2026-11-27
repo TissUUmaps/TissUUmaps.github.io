@@ -1,6 +1,6 @@
 # Class: MathUtils
 
-Defined in: [utils/MathUtils.ts:9](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/MathUtils.ts#L9)
+Defined in: [utils/MathUtils.ts:9](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L9)
 
 Utility methods for numeric clamping, remapping, alignment, rounding,
 medians, histograms and counts
@@ -21,7 +21,7 @@ medians, histograms and counts
 
 > `static` **align**(`n`, `m`): `number`
 
-Defined in: [utils/MathUtils.ts:59](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/MathUtils.ts#L59)
+Defined in: [utils/MathUtils.ts:67](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L67)
 
 Aligns a positive number `n` to the next multiple of `m`
 
@@ -58,7 +58,7 @@ Error if `n` is negative, or if `m` is not strictly positive
 
 > `static` **clamp**(`value`, `min`, `max`): `number`
 
-Defined in: [utils/MathUtils.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/MathUtils.ts#L18)
+Defined in: [utils/MathUtils.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L26)
 
 Clamps a value to the range `[min, max]`
 
@@ -94,7 +94,7 @@ The clamped value
 
 > `static` **computeHistogram**(`values`, `range`, `options?`): `Promise`\<\{ `hist`: `number`[]; `range`: \[`number`, `number`\]; \}\>
 
-Defined in: [utils/MathUtils.ts:205](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/MathUtils.ts#L205)
+Defined in: [utils/MathUtils.ts:213](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L213)
 
 Computes the histogram of numeric values over a given value range
 
@@ -168,7 +168,7 @@ and the given value range (`range`)
 
 > `static` **computeRange**(`values`, `options?`): `Promise`\<\[`number`, `number`\]\>
 
-Defined in: [utils/MathUtils.ts:148](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/MathUtils.ts#L148)
+Defined in: [utils/MathUtils.ts:156](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L156)
 
 Computes the range of numeric values, as their minimum and maximum
 
@@ -205,11 +205,49 @@ A promise that resolves to the range, as `[min, max]`
 
 ***
 
+### computeSortOrder()
+
+> `static` **computeSortOrder**(`keys`, `options?`): `Promise`\<`Uint32Array`\<`ArrayBufferLike`\>\>
+
+Defined in: [utils/MathUtils.ts:402](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L402)
+
+Computes the indices that visit the keys in ascending order
+
+The keys are radix-sorted with two 16-bit counting-sort passes, so the
+sort is linear in the number of keys and stable, i.e. equal keys keep
+their relative order. Numbers are mapped to keys with
+[toSortKey](#tosortkey).
+
+#### Parameters
+
+##### keys
+
+`Uint32Array`
+
+The keys to sort
+
+##### options?
+
+Optional abort signal
+
+###### signal?
+
+`AbortSignal`
+
+#### Returns
+
+`Promise`\<`Uint32Array`\<`ArrayBufferLike`\>\>
+
+A promise that resolves to the indices of the keys, in ascending
+order of the keys
+
+***
+
 ### computeUniqueValueCounts()
 
 > `static` **computeUniqueValueCounts**\<`T`\>(`values`, `options?`): `Promise`\<`Map`\<`T`, `number`\>\>
 
-Defined in: [utils/MathUtils.ts:298](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/MathUtils.ts#L298)
+Defined in: [utils/MathUtils.ts:306](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L306)
 
 Counts the number of occurrences of every distinct value
 
@@ -258,7 +296,7 @@ the order the values first appear
 
 > `static` **computeWeightedMedian**(`values`, `weights`): `number`
 
-Defined in: [utils/MathUtils.ts:104](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/MathUtils.ts#L104)
+Defined in: [utils/MathUtils.ts:112](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L112)
 
 Computes the weighted median of numeric values
 
@@ -292,11 +330,74 @@ Error if `values` is empty, or if `weights` has a different length
 
 ***
 
+### countUniqueValues()
+
+> `static` **countUniqueValues**\<`T`\>(`values`, `limit`, `options?`): `Promise`\<`number`\>
+
+Defined in: [utils/MathUtils.ts:346](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L346)
+
+Counts the distinct values, stopping early once there are more than
+`limit` of them
+
+Meant as a cheap guard before treating values as categories: the count is
+exact up to `limit`, and `limit + 1` stands for "more than `limit`".
+Distinctness follows `Set` equality, as in
+[computeUniqueValueCounts](#computeuniquevaluecounts).
+
+The values are traversed on the main thread, yielding to the event loop
+periodically so the UI stays responsive for large arrays (see
+[AsyncUtils.createYielder](AsyncUtils.md#createyielder)). Aborting the signal rejects with its
+reason.
+
+#### Type Parameters
+
+##### T
+
+`T`
+
+Element type of the values
+
+#### Parameters
+
+##### values
+
+[`TypedArrayOrArray`](../type-aliases/TypedArrayOrArray.md)\<`T`\>
+
+The values to count
+
+##### limit
+
+`number`
+
+The non-negative number of distinct values beyond which
+counting stops
+
+##### options?
+
+Optional abort signal
+
+###### signal?
+
+`AbortSignal`
+
+#### Returns
+
+`Promise`\<`number`\>
+
+A promise that resolves to the number of distinct values, or to
+`limit + 1` if there are more than `limit`
+
+#### Throws
+
+Error if `limit` is negative
+
+***
+
 ### rebinHistogram()
 
 > `static` **rebinHistogram**(`histogram`, `range`, `bins`): `object`
 
-Defined in: [utils/MathUtils.ts:258](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/MathUtils.ts#L258)
+Defined in: [utils/MathUtils.ts:266](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L266)
 
 Redistributes the counts of a histogram over equal bins of another range
 
@@ -354,7 +455,7 @@ The redistributed histogram, as the counts of the new bins
 
 > `static` **remap**(`value`, `from`, `to`): `number`
 
-Defined in: [utils/MathUtils.ts:35](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/MathUtils.ts#L35)
+Defined in: [utils/MathUtils.ts:43](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L43)
 
 Linearly maps a value from one range to another
 
@@ -398,7 +499,7 @@ Error if `from` is degenerate
 
 > `static` **roundToStepDecimals**(`value`, `step`): `number`
 
-Defined in: [utils/MathUtils.ts:84](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/MathUtils.ts#L84)
+Defined in: [utils/MathUtils.ts:92](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L92)
 
 Rounds a value to the decimal places that a step needs
 
@@ -429,3 +530,31 @@ The rounded value
 #### Throws
 
 Error if `step` is not strictly positive
+
+***
+
+### toSortKey()
+
+> `static` **toSortKey**(`value`): `number`
+
+Defined in: [utils/MathUtils.ts:381](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/MathUtils.ts#L381)
+
+Maps a finite value to a key for [computeSortOrder](#computesortorder)
+
+Keys compare like the values rounded to 32-bit floats, so values that
+differ by less than the float precision get the same key. Key `0` is left
+free for missing values, which then come first.
+
+#### Parameters
+
+##### value
+
+`number`
+
+The finite value
+
+#### Returns
+
+`number`
+
+The key, at least 1

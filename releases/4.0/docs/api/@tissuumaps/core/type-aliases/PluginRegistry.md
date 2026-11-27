@@ -2,7 +2,7 @@
 
 > **PluginRegistry** = `object`
 
-Defined in: [types/plugins.ts:85](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/plugins.ts#L85)
+Defined in: [types/plugins.ts:85](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/plugins.ts#L85)
 
 The registry through which the application registers, mounts, unmounts and
 unregisters plugins
@@ -13,7 +13,7 @@ unregisters plugins
 
 > **mountPlugin**: (`pluginId`) => `void`
 
-Defined in: [types/plugins.ts:105](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/plugins.ts#L105)
+Defined in: [types/plugins.ts:105](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/plugins.ts#L105)
 
 Mounts a registered plugin, calling its `mount` and showing its panel
 
@@ -38,7 +38,7 @@ The ID of the plugin to mount
 
 > **registerPlugin**: (`plugin`) => `void`
 
-Defined in: [types/plugins.ts:95](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/plugins.ts#L95)
+Defined in: [types/plugins.ts:95](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/plugins.ts#L95)
 
 Registers a plugin, calling its `setup`, if it has one
 
@@ -64,7 +64,7 @@ The plugin to register
 
 > **unmountPlugin**: (`pluginId`) => `void`
 
-Defined in: [types/plugins.ts:115](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/plugins.ts#L115)
+Defined in: [types/plugins.ts:115](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/plugins.ts#L115)
 
 Unmounts a mounted plugin, removing its panel and calling the unmount
 callback returned by its `mount`
@@ -89,7 +89,7 @@ The ID of the plugin to unmount
 
 > **unregisterPlugin**: (`pluginId`) => `void`
 
-Defined in: [types/plugins.ts:123](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/plugins.ts#L123)
+Defined in: [types/plugins.ts:123](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/plugins.ts#L123)
 
 Unregisters a registered plugin, unmounting it if it is mounted and then
 calling the teardown callback returned by its `setup`

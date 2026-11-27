@@ -1,6 +1,6 @@
 # Class: JSONUtils
 
-Defined in: [utils/JSONUtils.ts:9](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/JSONUtils.ts#L9)
+Defined in: [utils/JSONUtils.ts:9](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/JSONUtils.ts#L9)
 
 Utility methods for JSON serialization with support for non-finite numbers
 
@@ -25,7 +25,7 @@ equal a sentinel are therefore not round-trip safe.
 
 > `static` **parse**(`text`): `unknown`
 
-Defined in: [utils/JSONUtils.ts:66](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/JSONUtils.ts#L66)
+Defined in: [utils/JSONUtils.ts:66](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/JSONUtils.ts#L66)
 
 Parses JSON, decoding the sentinel strings written by
 [JSONUtils.stringify](#stringify) back into `NaN`, `Infinity` and `-Infinity`
@@ -52,7 +52,7 @@ If the text is not valid JSON
 
 > `static` **stringify**(`value`, `options?`): `string`
 
-Defined in: [utils/JSONUtils.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/JSONUtils.ts#L30)
+Defined in: [utils/JSONUtils.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/JSONUtils.ts#L30)
 
 Serializes a value to JSON, encoding non-finite numbers as sentinel strings
 

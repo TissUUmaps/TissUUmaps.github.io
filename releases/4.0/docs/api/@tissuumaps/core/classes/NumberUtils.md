@@ -1,6 +1,6 @@
 # Class: NumberUtils
 
-Defined in: [utils/NumberUtils.ts:9](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/NumberUtils.ts#L9)
+Defined in: [utils/NumberUtils.ts:9](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/NumberUtils.ts#L9)
 
 Utility methods for coercing untrusted values to numbers
 
@@ -25,7 +25,7 @@ methods by throwing.
 
 > `static` **parseFinite**(`value`): `number`
 
-Defined in: [utils/NumberUtils.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/NumberUtils.ts#L20)
+Defined in: [utils/NumberUtils.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/NumberUtils.ts#L20)
 
 Parses a value as a finite number
 
@@ -53,7 +53,7 @@ Error if the value is not a finite number
 
 > `static` **parseSafeInt**(`value`): `number`
 
-Defined in: [utils/NumberUtils.ts:35](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/NumberUtils.ts#L35)
+Defined in: [utils/NumberUtils.ts:37](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/NumberUtils.ts#L37)
 
 Parses a value as a safe integer
 
@@ -81,7 +81,7 @@ Error if the value is not a safe integer
 
 > `static` **tryParseFinite**(`value`, `options?`): `number` \| `undefined`
 
-Defined in: [utils/NumberUtils.ts:55](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/NumberUtils.ts#L55)
+Defined in: [utils/NumberUtils.ts:59](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/NumberUtils.ts#L59)
 
 Parses a value as a finite number, without throwing
 
@@ -118,7 +118,7 @@ number
 
 > `static` **tryParseSafeInt**(`value`): `number` \| `undefined`
 
-Defined in: [utils/NumberUtils.ts:88](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/NumberUtils.ts#L88)
+Defined in: [utils/NumberUtils.ts:92](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/NumberUtils.ts#L92)
 
 Parses a value as a safe integer, without throwing
 

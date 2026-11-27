@@ -1,6 +1,6 @@
 # Interface: ParquetTableDataSource
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:7](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts#L7)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:7](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts#L7)
 
 A [RawTableDataSource](../../core/interfaces/RawTableDataSource.md) with [tableDataSourceDefaults](../../core/variables/tableDataSourceDefaults.md) applied
 
@@ -14,7 +14,7 @@ A [RawTableDataSource](../../core/interfaces/RawTableDataSource.md) with [tableD
 
 > `optional` **idColumn?**: `string`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:11](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts#L11)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:11](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts#L11)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:11](https
 
 > `optional` **nameColumn?**: `string`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:12](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts#L12)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:12](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts#L12)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:12](https
 
 > `optional` **requestHeaders?**: `object`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:13](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts#L13)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:13](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts#L13)
 
 #### Index Signature
 
@@ -42,11 +42,14 @@ Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:13](https
 
 > **source**: `string`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:10](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts#L10)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts:10](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetTableDataSource.ts#L10)
 
 Where the data is loaded from: a URL, an app-relative path (`//` prefix),
 a workspace-relative path (`/` prefix), or a project-relative path (no
 prefix); see `SourceUtils` for the syntax and how paths are resolved
+
+This is the only field of a data source that is resolved as a path, so
+that the app can rewrite it when the data source moves to another project.
 
 #### Overrides
 
@@ -58,7 +61,7 @@ prefix); see `SourceUtils` for the syntax and how paths are resolved
 
 > **type**: `"parquet"`
 
-Defined in: @tissuumaps-core/build/src/model/base.d.ts:171
+Defined in: @tissuumaps-core/build/src/model/base.d.ts:180
 
 Data source type
 

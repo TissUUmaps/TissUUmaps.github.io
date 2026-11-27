@@ -2,7 +2,7 @@
 
 > **Config**\<`TSource`\> = `object`
 
-Defined in: [model/configs.ts:10](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/configs.ts#L10)
+Defined in: [model/configs.ts:10](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/configs.ts#L10)
 
 Base type for property configurations that can be sourced from different providers
 
@@ -22,7 +22,7 @@ of this base with one or more source-specific types such as [ConstantConfig](Con
 
 > `optional` **source?**: `TSource`
 
-Defined in: [model/configs.ts:16](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/configs.ts#L16)
+Defined in: [model/configs.ts:16](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/configs.ts#L16)
 
 Explicitly prioritized configuration source
 

@@ -1,6 +1,6 @@
 # Class: TablePointsData
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:9](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L9)
+Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:9](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L9)
 
 Loaded point cloud data providing coordinate access
 
@@ -14,7 +14,7 @@ Loaded point cloud data providing coordinate access
 
 > **new TablePointsData**(`tableData`, `xColumn`, `yColumn`): `TablePointsData`
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:14](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L14)
+Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:14](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L14)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:14](https://github
 
 > **close**(): `void`
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:56](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L56)
+Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:56](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L56)
 
 Releases all resources held by this data object
 
@@ -58,7 +58,7 @@ Releases all resources held by this data object
 
 > **getIds**(): [`IDArray`](../../core/type-aliases/IDArray.md)
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L20)
+Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L20)
 
 Returns an array of item IDs
 
@@ -84,7 +84,7 @@ The item IDs
 
 > **getNames**(): `string`[] \| `undefined`
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L28)
+Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L28)
 
 Returns the item names if available, otherwise undefined
 
@@ -109,7 +109,7 @@ The item names, or `undefined` if not available
 
 > **getSize**(): `number`
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:24](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L24)
+Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:24](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L24)
 
 Returns the total number of items
 
@@ -129,7 +129,7 @@ The item count
 
 > **loadGeometry**(`options?`): `Promise`\<[`PointsGeometry`](../../core/type-aliases/PointsGeometry.md)\>
 
-Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L32)
+Defined in: [@tissuumaps-storage/src/table/TablePointsData.ts:32](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/table/TablePointsData.ts#L32)
 
 Loads the geometry for all points
 

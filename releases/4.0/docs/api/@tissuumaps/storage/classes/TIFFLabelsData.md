@@ -1,6 +1,6 @@
 # Class: TIFFLabelsData
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFLabelsData.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFLabelsData.ts#L20)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFLabelsData.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFLabelsData.ts#L20)
 
 The loaded label mask of a TIFF file
 
@@ -18,7 +18,7 @@ any, and resolves as they are drawn otherwise.
 
 > **new TIFFLabelsData**(`tileSource`): `TIFFLabelsData`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFLabelsData.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFLabelsData.ts#L26)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFLabelsData.ts:26](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFLabelsData.ts#L26)
 
 #### Parameters
 
@@ -38,7 +38,7 @@ The tile source of the label mask
 
 > **close**(): `void`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFLabelsData.ts:68](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFLabelsData.ts#L68)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFLabelsData.ts:68](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFLabelsData.ts#L68)
 
 Closing does nothing: the decoder pool is shared, and the file is read on demand
 
@@ -56,7 +56,7 @@ Closing does nothing: the decoder pool is shared, and the file is read on demand
 
 > **getTileData**(`event`): `Promise`\<\{ `height`: `number`; `values`: [`IntOrUintArray`](../../core/type-aliases/IntOrUintArray.md); `width`: `number`; \}\>
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFLabelsData.ts:48](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFLabelsData.ts#L48)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFLabelsData.ts:48](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFLabelsData.ts#L48)
 
 Extracts the label IDs of a tile from a tile invalidation event
 
@@ -94,7 +94,7 @@ Error if the tile's raster has no band
 
 > **getTileSource**(): `string` \| `object` \| [`CustomTileSource`](../../core/interfaces/CustomTileSource.md)
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFLabelsData.ts:31](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFLabelsData.ts#L31)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFLabelsData.ts:31](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFLabelsData.ts#L31)
 
 Returns the tile source of the label mask
 

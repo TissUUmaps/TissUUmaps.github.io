@@ -1,6 +1,6 @@
 # Interface: PointsData
 
-Defined in: [storage/points.ts:17](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/points.ts#L17)
+Defined in: [storage/points.ts:17](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/points.ts#L17)
 
 Loaded point cloud data providing coordinate access
 
@@ -14,7 +14,7 @@ Loaded point cloud data providing coordinate access
 
 > `optional` **getNames?**: () => `string`[] \| `undefined`
 
-Defined in: [storage/base.ts:66](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L66)
+Defined in: [storage/base.ts:66](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L66)
 
 Returns the item names if available, otherwise undefined
 
@@ -39,7 +39,7 @@ The item names, or `undefined` if not available
 
 > **close**(): `void`
 
-Defined in: [storage/base.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L18)
+Defined in: [storage/base.ts:18](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L18)
 
 Releases all resources held by this data object
 
@@ -57,7 +57,7 @@ Releases all resources held by this data object
 
 > **getIds**(): [`IDArray`](../type-aliases/IDArray.md)
 
-Defined in: [storage/base.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L47)
+Defined in: [storage/base.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L47)
 
 Returns an array of item IDs
 
@@ -83,7 +83,7 @@ The item IDs
 
 > **getSize**(): `number`
 
-Defined in: [storage/base.ts:54](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/base.ts#L54)
+Defined in: [storage/base.ts:54](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/base.ts#L54)
 
 Returns the total number of items
 
@@ -103,7 +103,7 @@ The item count
 
 > **loadGeometry**(`options?`): `Promise`\<[`PointsGeometry`](../type-aliases/PointsGeometry.md)\>
 
-Defined in: [storage/points.ts:24](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/storage/points.ts#L24)
+Defined in: [storage/points.ts:24](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/storage/points.ts#L24)
 
 Loads the geometry for all points
 

@@ -1,9 +1,9 @@
 # @tissuumaps/storage
 
-Official data provider distribution for
+Official storage distribution for
 [TissUUmaps](https://github.com/TissUUmaps/TissUUmaps): implementations of the
-data provider interfaces of `@tissuumaps/core` for images, labels, points,
-shapes and tables.
+provider interfaces of `@tissuumaps/core`, i.e. data providers for images,
+labels, points, shapes and tables, and project providers for project formats.
 
 ## Installation
 
@@ -20,17 +20,19 @@ install them yourself.
 Each format has its own entry point, so that only the providers you use are
 bundled; the package root exports all of them.
 
-| Entry point                         | Data providers                                                                        |
-| ----------------------------------- | ------------------------------------------------------------------------------------- |
-| `@tissuumaps/storage/csv`           | [CSV](https://tissuumaps.github.io/docs/supported-data/csv/) tables                   |
-| `@tissuumaps/storage/geojson`       | [GeoJSON](https://tissuumaps.github.io/docs/supported-data/geojson/) shapes           |
-| `@tissuumaps/storage/hdf5`          | [HDF5](https://tissuumaps.github.io/docs/supported-data/hdf5/) tables                 |
-| `@tissuumaps/storage/ome-zarr`      | [OME-Zarr](https://tissuumaps.github.io/docs/supported-data/ome-zarr/) images, labels |
-| `@tissuumaps/storage/openseadragon` | OpenSeadragon [images](https://tissuumaps.github.io/docs/supported-data/image/)       |
-| `@tissuumaps/storage/parquet`       | [Parquet](https://tissuumaps.github.io/docs/supported-data/parquet/) shapes, tables   |
-| `@tissuumaps/storage/table`         | [points from tables](https://tissuumaps.github.io/docs/supported-data/table/)         |
-| `@tissuumaps/storage/tiff`          | [TIFF](https://tissuumaps.github.io/docs/supported-data/tiff/) images, labels         |
-| `@tissuumaps/storage/zarr`          | [Zarr](https://tissuumaps.github.io/docs/supported-data/zarr/) tables                 |
+| Entry point                         | Providers                                                                                        |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `@tissuumaps/storage/csv`           | [CSV](https://tissuumaps.github.io/docs/supported-data/csv/) tables                              |
+| `@tissuumaps/storage/geojson`       | [GeoJSON](https://tissuumaps.github.io/docs/supported-data/geojson/) shapes                      |
+| `@tissuumaps/storage/hdf5`          | [HDF5](https://tissuumaps.github.io/docs/supported-data/hdf5/) tables                            |
+| `@tissuumaps/storage/ome-zarr`      | [OME-Zarr](https://tissuumaps.github.io/docs/supported-data/ome-zarr/) images, labels            |
+| `@tissuumaps/storage/openseadragon` | OpenSeadragon [images](https://tissuumaps.github.io/docs/supported-data/image/)                  |
+| `@tissuumaps/storage/parquet`       | [Parquet](https://tissuumaps.github.io/docs/supported-data/parquet/) shapes, tables              |
+| `@tissuumaps/storage/spatialdata`   | [SpatialData](https://tissuumaps.github.io/docs/supported-projects/spatialdata/) projects        |
+| `@tissuumaps/storage/table`         | [points from tables](https://tissuumaps.github.io/docs/supported-data/table/)                    |
+| `@tissuumaps/storage/tissuumaps`    | [TissUUmaps](https://tissuumaps.github.io/docs/supported-projects/tissuumaps/) projects (`.tm4`) |
+| `@tissuumaps/storage/tiff`          | [TIFF](https://tissuumaps.github.io/docs/supported-data/tiff/) images, labels                    |
+| `@tissuumaps/storage/zarr`          | [Zarr](https://tissuumaps.github.io/docs/supported-data/zarr/) tables                            |
 
 The CSV, GeoJSON, HDF5 and Parquet providers parse, and the TIFF providers
 decode, in web workers loaded from `blob:` URLs. Under a Content Security Policy,
@@ -42,6 +44,7 @@ providers for some compressions, run WebAssembly in these workers; allow it with
 
 - [API reference](https://tissuumaps.github.io/docs/api/@tissuumaps/storage/)
 - [Supported data](https://tissuumaps.github.io/docs/supported-data/)
+- [Supported projects](https://tissuumaps.github.io/docs/supported-projects/)
 
 ## Known issues
 
@@ -84,12 +87,14 @@ for details.
 - [ParquetShapesDataProvider](classes/ParquetShapesDataProvider.md)
 - [ParquetTableData](classes/ParquetTableData.md)
 - [ParquetTableDataProvider](classes/ParquetTableDataProvider.md)
+- [SpatialDataProjectProvider](classes/SpatialDataProjectProvider.md)
 - [TablePointsData](classes/TablePointsData.md)
 - [TablePointsDataProvider](classes/TablePointsDataProvider.md)
 - [TIFFImageData](classes/TIFFImageData.md)
 - [TIFFImageDataProvider](classes/TIFFImageDataProvider.md)
 - [TIFFLabelsData](classes/TIFFLabelsData.md)
 - [TIFFLabelsDataProvider](classes/TIFFLabelsDataProvider.md)
+- [TissUUmapsProjectProvider](classes/TissUUmapsProjectProvider.md)
 - [ZarrTableData](classes/ZarrTableData.md)
 - [ZarrTableDataProvider](classes/ZarrTableDataProvider.md)
 
@@ -144,12 +149,14 @@ for details.
 - [parquetShapesDataSourceType](variables/parquetShapesDataSourceType.md)
 - [parquetTableDataSourceDefaults](variables/parquetTableDataSourceDefaults.md)
 - [parquetTableDataSourceType](variables/parquetTableDataSourceType.md)
+- [spatialDataProjectType](variables/spatialDataProjectType.md)
 - [tablePointsDataSourceDefaults](variables/tablePointsDataSourceDefaults.md)
 - [tablePointsDataSourceType](variables/tablePointsDataSourceType.md)
 - [tiffImageDataSourceDefaults](variables/tiffImageDataSourceDefaults.md)
 - [tiffImageDataSourceType](variables/tiffImageDataSourceType.md)
 - [tiffLabelsDataSourceDefaults](variables/tiffLabelsDataSourceDefaults.md)
 - [tiffLabelsDataSourceType](variables/tiffLabelsDataSourceType.md)
+- [tissuumapsProjectType](variables/tissuumapsProjectType.md)
 - [zarrTableDataSourceDefaults](variables/zarrTableDataSourceDefaults.md)
 - [zarrTableDataSourceType](variables/zarrTableDataSourceType.md)
 

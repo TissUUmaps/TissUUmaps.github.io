@@ -1,6 +1,6 @@
 # Class: ConfigUtils
 
-Defined in: [utils/ConfigUtils.ts:13](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L13)
+Defined in: [utils/ConfigUtils.ts:13](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L13)
 
 Utility methods for property configurations
 
@@ -20,7 +20,7 @@ Utility methods for property configurations
 
 > `static` **createGroupValueGetter**\<`TValue`\>(`config`, `map`, `defaultValue`, `palette?`, `groups?`): (`group`) => `TValue`
 
-Defined in: [utils/ConfigUtils.ts:82](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L82)
+Defined in: [utils/ConfigUtils.ts:82](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L82)
 
 Creates the function that returns the value a group-by configuration
 assigns to a group
@@ -85,7 +85,7 @@ The value of a group, by group name (the cell value as a string)
 
 > `static` **findGroupByMap**\<`TValue`\>(`config`, `maps`): [`GroupValueMap`](../type-aliases/GroupValueMap.md)\<`TValue`\> \| `undefined`
 
-Defined in: [utils/ConfigUtils.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L28)
+Defined in: [utils/ConfigUtils.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L28)
 
 Returns the group-to-value map that a configuration resolves its values
 from, if any
@@ -128,7 +128,7 @@ from a map, or if the map it references does not exist
 
 > `static` **getGroupByColumn**(`config`): [`TableColumnRef`](../type-aliases/TableColumnRef.md) \| `undefined`
 
-Defined in: [utils/ConfigUtils.ts:115](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L115)
+Defined in: [utils/ConfigUtils.ts:115](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L115)
 
 Returns the table column a configuration groups by
 
@@ -152,7 +152,7 @@ The column, or `undefined` if `groupBy` is not the active source
 
 > `static` **getGroupByMapIds**(`configs`): `Set`\<`string`\>
 
-Defined in: [utils/ConfigUtils.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L51)
+Defined in: [utils/ConfigUtils.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L51)
 
 Returns the IDs of the maps that configurations refer to
 
@@ -179,7 +179,7 @@ The IDs of the referenced maps
 
 > `static` **getUnit**(`config`): [`CoordinateSpace`](../type-aliases/CoordinateSpace.md) \| `undefined`
 
-Defined in: [utils/ConfigUtils.ts:178](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L178)
+Defined in: [utils/ConfigUtils.ts:178](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L178)
 
 Returns the unit of the active source of a configuration
 
@@ -203,7 +203,7 @@ The unit, or `undefined` if the active source has none
 
 > `static` **isSameTableColumn**(`tableColumnRef`, `otherTableColumnRef`, `defaultTable?`): `boolean`
 
-Defined in: [utils/ConfigUtils.ts:206](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L206)
+Defined in: [utils/ConfigUtils.ts:206](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L206)
 
 Determines whether two table column references point to the same column
 
@@ -241,7 +241,7 @@ Whether both references point to the same column
 
 > `static` **withGroupByMap**(`config`, `groupBy`, `mapId`): [`GroupByConfig`](../type-aliases/GroupByConfig.md)\<`true`\>
 
-Defined in: [utils/ConfigUtils.ts:137](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L137)
+Defined in: [utils/ConfigUtils.ts:137](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ConfigUtils.ts#L137)
 
 Points a configuration at a map, grouping by a column
 

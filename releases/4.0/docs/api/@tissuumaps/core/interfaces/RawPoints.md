@@ -1,6 +1,6 @@
 # Interface: RawPoints
 
-Defined in: [model/points.ts:39](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/points.ts#L39)
+Defined in: [model/points.ts:41](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/points.ts#L41)
 
 A two-dimensional point cloud
 
@@ -14,7 +14,7 @@ A two-dimensional point cloud
 
 > **dataSource**: [`RawPointsDataSource`](RawPointsDataSource.md)
 
-Defined in: [model/base.ts:53](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L53)
+Defined in: [model/base.ts:70](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L70)
 
 Data source
 
@@ -28,7 +28,7 @@ Data source
 
 > **id**: `string`
 
-Defined in: [model/base.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L47)
+Defined in: [model/base.ts:64](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L64)
 
 Data object ID
 
@@ -42,7 +42,7 @@ Data object ID
 
 > **layer**: `string` \| [`TableColumnRef`](../type-aliases/TableColumnRef.md)
 
-Defined in: [model/base.ts:236](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L236)
+Defined in: [model/base.ts:253](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L253)
 
 Layer ID
 
@@ -61,7 +61,7 @@ Can be specified as:
 
 > **name**: `string`
 
-Defined in: [model/base.ts:50](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L50)
+Defined in: [model/base.ts:67](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L67)
 
 Human-readable data object name
 
@@ -75,7 +75,7 @@ Human-readable data object name
 
 > `optional` **opacity?**: `number`
 
-Defined in: [model/base.ts:112](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L112)
+Defined in: [model/base.ts:129](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L129)
 
 Data object opacity, in the range [0, 1]
 
@@ -93,7 +93,7 @@ Data object opacity, in the range [0, 1]
 
 > `optional` **pointColor?**: [`ColorConfig`](../type-aliases/ColorConfig.md)
 
-Defined in: [model/points.ts:61](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/points.ts#L61)
+Defined in: [model/points.ts:63](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/points.ts#L63)
 
 Point color
 
@@ -107,7 +107,7 @@ Point color
 
 > `optional` **pointMarker?**: [`MarkerConfig`](../type-aliases/MarkerConfig.md)
 
-Defined in: [model/points.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/points.ts#L47)
+Defined in: [model/points.ts:49](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/points.ts#L49)
 
 Point marker
 
@@ -121,7 +121,7 @@ Point marker
 
 > `optional` **pointOpacity?**: [`OpacityConfig`](../type-aliases/OpacityConfig.md)
 
-Defined in: [model/points.ts:75](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/points.ts#L75)
+Defined in: [model/points.ts:77](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/points.ts#L77)
 
 Point opacity
 
@@ -131,11 +131,23 @@ Point opacity
 
 ***
 
+### pointOrder?
+
+> `optional` **pointOrder?**: [`OrderConfig`](../type-aliases/OrderConfig.md)
+
+Defined in: [model/points.ts:84](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/points.ts#L84)
+
+Point draw order
+
+If not specified, points are drawn in item order.
+
+***
+
 ### pointSize?
 
 > `optional` **pointSize?**: [`SizeConfig`](../type-aliases/SizeConfig.md)
 
-Defined in: [model/points.ts:54](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/points.ts#L54)
+Defined in: [model/points.ts:56](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/points.ts#L56)
 
 Point size
 
@@ -149,7 +161,7 @@ Point size
 
 > `optional` **pointSizeFactor?**: `number`
 
-Defined in: [model/points.ts:89](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/points.ts#L89)
+Defined in: [model/points.ts:98](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/points.ts#L98)
 
 Object-level point size scaling factor
 
@@ -170,7 +182,7 @@ project-global [WebGLPointsRenderOptions.globalPointSizeFactor](../type-aliases/
 
 > `optional` **pointVisibility?**: [`VisibilityConfig`](../type-aliases/VisibilityConfig.md)
 
-Defined in: [model/points.ts:68](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/points.ts#L68)
+Defined in: [model/points.ts:70](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/points.ts#L70)
 
 Point visibility
 
@@ -184,7 +196,7 @@ Point visibility
 
 > `optional` **transform?**: [`SimilarityTransform`](../type-aliases/SimilarityTransform.md)
 
-Defined in: [model/base.ts:119](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L119)
+Defined in: [model/base.ts:136](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L136)
 
 Transformation from data object space to layer space
 
@@ -202,7 +214,7 @@ Transformation from data object space to layer space
 
 > `optional` **visibility?**: `boolean`
 
-Defined in: [model/base.ts:105](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/model/base.ts#L105)
+Defined in: [model/base.ts:122](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/model/base.ts#L122)
 
 Data object visibility
 

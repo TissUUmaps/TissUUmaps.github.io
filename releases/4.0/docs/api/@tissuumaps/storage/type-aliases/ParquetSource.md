@@ -2,7 +2,7 @@
 
 > **ParquetSource** = `object`
 
-Defined in: [@tissuumaps-storage/src/parquet/types.ts:1](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/types.ts#L1)
+Defined in: [@tissuumaps-storage/src/parquet/types.ts:3](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/types.ts#L3)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [@tissuumaps-storage/src/parquet/types.ts:1](https://github.com/Tiss
 
 > `optional` **file?**: `File`
 
-Defined in: [@tissuumaps-storage/src/parquet/types.ts:2](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/types.ts#L2)
+Defined in: [@tissuumaps-storage/src/parquet/types.ts:4](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/types.ts#L4)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [@tissuumaps-storage/src/parquet/types.ts:2](https://github.com/Tiss
 
 > `optional` **headers?**: `object`
 
-Defined in: [@tissuumaps-storage/src/parquet/types.ts:4](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/types.ts#L4)
+Defined in: [@tissuumaps-storage/src/parquet/types.ts:6](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/types.ts#L6)
 
 #### Index Signature
 
@@ -30,4 +30,4 @@ Defined in: [@tissuumaps-storage/src/parquet/types.ts:4](https://github.com/Tiss
 
 > `optional` **url?**: `string`
 
-Defined in: [@tissuumaps-storage/src/parquet/types.ts:3](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/types.ts#L3)
+Defined in: [@tissuumaps-storage/src/parquet/types.ts:5](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/types.ts#L5)

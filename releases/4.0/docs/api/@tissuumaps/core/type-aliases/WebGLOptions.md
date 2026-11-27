@@ -2,7 +2,7 @@
 
 > **WebGLOptions** = `object`
 
-Defined in: [types/webgl.ts:4](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/webgl.ts#L4)
+Defined in: [types/webgl.ts:4](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/webgl.ts#L4)
 
 Options for the WebGL renderers
 
@@ -12,7 +12,7 @@ Options for the WebGL renderers
 
 > **pointsRenderOptions**: [`WebGLPointsRenderOptions`](WebGLPointsRenderOptions.md)
 
-Defined in: [types/webgl.ts:6](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/webgl.ts#L6)
+Defined in: [types/webgl.ts:6](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/webgl.ts#L6)
 
 Options for rendering the project's points
 
@@ -22,6 +22,6 @@ Options for rendering the project's points
 
 > **shapesRenderOptions**: [`WebGLShapesRenderOptions`](WebGLShapesRenderOptions.md)
 
-Defined in: [types/webgl.ts:9](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/webgl.ts#L9)
+Defined in: [types/webgl.ts:9](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/webgl.ts#L9)
 
 Options for rendering the project's shapes

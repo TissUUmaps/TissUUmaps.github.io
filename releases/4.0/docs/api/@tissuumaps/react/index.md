@@ -39,5 +39,6 @@ Under a Content Security Policy, allow `img-src data:` for the marker atlas of
 
 ## Functions
 
+- [useViewportChange](functions/useViewportChange.md)
 - [Viewer](functions/Viewer.md)
 - [ViewerControl](functions/ViewerControl.md)

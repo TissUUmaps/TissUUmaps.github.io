@@ -1,6 +1,6 @@
 # Class: OpenSeadragonImageDataProvider
 
-Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:14](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L14)
+Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:14](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L14)
 
 Data provider for raster images
 
@@ -24,7 +24,7 @@ Data provider for raster images
 
 > `readonly` **name**: `"Image (e.g. PNG, JPEG, DZI, IIIF)"` = `"Image (e.g. PNG, JPEG, DZI, IIIF)"`
 
-Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L45)
+Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L45)
 
 The name of the data provider
 
@@ -38,7 +38,7 @@ The name of the data provider
 
 > `readonly` **schema**: `object`
 
-Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L47)
+Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:47](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L47)
 
 The JSON schema for the data source
 
@@ -64,7 +64,7 @@ The JSON schema for the data source
 
 ##### properties.tileSource.type
 
-> **type**: `string`[]
+> **type**: `string` = `"object"`
 
 #### type
 
@@ -80,7 +80,7 @@ The JSON schema for the data source
 
 > `readonly` **uischema**: `object`
 
-Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:56](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L56)
+Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:56](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L56)
 
 The JSON Forms UI schema for the data source
 
@@ -105,7 +105,7 @@ application renders itself if the schema declares it, as a string.
 
 > **load**(`normalizedDataSource`, `options?`): `Promise`\<[`OpenSeadragonImageData`](OpenSeadragonImageData.md)\>
 
-Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:129](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L129)
+Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:127](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L127)
 
 Opens a data source and returns the loaded data accessor
 
@@ -142,7 +142,7 @@ A promise that resolves to the loaded data accessor
 
 > **normalize**(`dataSource`, `workspace`, `projectSource`): [`NormalizedOpenSeadragonImageDataSource`](../type-aliases/NormalizedOpenSeadragonImageDataSource.md)
 
-Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:63](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L63)
+Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:63](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L63)
 
 Returns the data source with all of this data provider's defaults applied
 and its source normalized
@@ -199,7 +199,7 @@ The normalized data source
 
 > **supports**(`normalizedSource`): `Promise`\<`boolean`\>
 
-Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:119](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L119)
+Defined in: [@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts:117](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/openseadragon/OpenSeadragonImageDataProvider.ts#L117)
 
 Returns whether a source is a plain image or a tile source descriptor,
 judged by its extension (see

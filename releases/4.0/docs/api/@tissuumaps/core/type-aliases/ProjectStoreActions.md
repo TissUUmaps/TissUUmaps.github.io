@@ -2,7 +2,7 @@
 
 > **ProjectStoreActions** = `object`
 
-Defined in: [types/stores/project.ts:55](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L55)
+Defined in: [types/stores/project.ts:71](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L71)
 
 The actions of the project store
 
@@ -26,7 +26,7 @@ The lists of maps are not reordered, so they have no `move*` actions.
 
 > **addColorMap**: (`map`) => `void`
 
-Defined in: [types/stores/project.ts:136](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L136)
+Defined in: [types/stores/project.ts:152](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L152)
 
 Adds a color map to the project
 
@@ -48,7 +48,7 @@ The map to add
 
 > **addImage**: (`image`, `index?`) => `void`
 
-Defined in: [types/stores/project.ts:79](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L79)
+Defined in: [types/stores/project.ts:95](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L95)
 
 Adds an image to the project
 
@@ -77,7 +77,7 @@ collection
 
 > **addLabels**: (`labels`, `index?`) => `void`
 
-Defined in: [types/stores/project.ts:88](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L88)
+Defined in: [types/stores/project.ts:104](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L104)
 
 Adds labels to the project
 
@@ -106,7 +106,7 @@ collection
 
 > **addLayer**: (`layer`, `index?`) => `void`
 
-Defined in: [types/stores/project.ts:70](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L70)
+Defined in: [types/stores/project.ts:86](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L86)
 
 Adds a layer to the project
 
@@ -135,7 +135,7 @@ collection
 
 > **addMarkerMap**: (`map`) => `void`
 
-Defined in: [types/stores/project.ts:122](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L122)
+Defined in: [types/stores/project.ts:138](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L138)
 
 Adds a marker map to the project
 
@@ -157,7 +157,7 @@ The map to add
 
 > **addOpacityMap**: (`map`) => `void`
 
-Defined in: [types/stores/project.ts:150](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L150)
+Defined in: [types/stores/project.ts:166](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L166)
 
 Adds an opacity map to the project
 
@@ -179,7 +179,7 @@ The map to add
 
 > **addPoints**: (`points`, `index?`) => `void`
 
-Defined in: [types/stores/project.ts:97](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L97)
+Defined in: [types/stores/project.ts:113](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L113)
 
 Adds points to the project
 
@@ -208,7 +208,7 @@ collection
 
 > **addShapes**: (`shapes`, `index?`) => `void`
 
-Defined in: [types/stores/project.ts:106](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L106)
+Defined in: [types/stores/project.ts:122](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L122)
 
 Adds shapes to the project
 
@@ -237,7 +237,7 @@ collection
 
 > **addSizeMap**: (`map`) => `void`
 
-Defined in: [types/stores/project.ts:129](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L129)
+Defined in: [types/stores/project.ts:145](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L145)
 
 Adds a size map to the project
 
@@ -259,7 +259,7 @@ The map to add
 
 > **addTable**: (`table`, `index?`) => `void`
 
-Defined in: [types/stores/project.ts:115](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L115)
+Defined in: [types/stores/project.ts:131](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L131)
 
 Adds a table to the project
 
@@ -288,7 +288,7 @@ collection
 
 > **addVisibilityMap**: (`map`) => `void`
 
-Defined in: [types/stores/project.ts:143](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L143)
+Defined in: [types/stores/project.ts:159](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L159)
 
 Adds a visibility map to the project
 
@@ -310,7 +310,7 @@ The map to add
 
 > **clear**: () => `void`
 
-Defined in: [types/stores/project.ts:462](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L462)
+Defined in: [types/stores/project.ts:513](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L513)
 
 Replaces the project with a new, empty one
 
@@ -324,7 +324,7 @@ Replaces the project with a new, empty one
 
 > **clearColorMaps**: () => `void`
 
-Defined in: [types/stores/project.ts:424](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L424)
+Defined in: [types/stores/project.ts:440](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L440)
 
 Removes all color maps from the project
 
@@ -338,7 +338,7 @@ Removes all color maps from the project
 
 > **clearImages**: () => `void`
 
-Defined in: [types/stores/project.ts:389](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L389)
+Defined in: [types/stores/project.ts:405](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L405)
 
 Removes all images from the project
 
@@ -352,7 +352,7 @@ Removes all images from the project
 
 > **clearLabels**: () => `void`
 
-Defined in: [types/stores/project.ts:394](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L394)
+Defined in: [types/stores/project.ts:410](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L410)
 
 Removes all labels from the project
 
@@ -366,7 +366,7 @@ Removes all labels from the project
 
 > **clearLayers**: () => `void`
 
-Defined in: [types/stores/project.ts:384](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L384)
+Defined in: [types/stores/project.ts:400](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L400)
 
 Removes all layers from the project
 
@@ -380,7 +380,7 @@ Removes all layers from the project
 
 > **clearMarkerMaps**: () => `void`
 
-Defined in: [types/stores/project.ts:414](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L414)
+Defined in: [types/stores/project.ts:430](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L430)
 
 Removes all marker maps from the project
 
@@ -394,7 +394,7 @@ Removes all marker maps from the project
 
 > **clearOpacityMaps**: () => `void`
 
-Defined in: [types/stores/project.ts:434](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L434)
+Defined in: [types/stores/project.ts:450](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L450)
 
 Removes all opacity maps from the project
 
@@ -408,7 +408,7 @@ Removes all opacity maps from the project
 
 > **clearPoints**: () => `void`
 
-Defined in: [types/stores/project.ts:399](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L399)
+Defined in: [types/stores/project.ts:415](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L415)
 
 Removes all points from the project
 
@@ -422,7 +422,7 @@ Removes all points from the project
 
 > **clearShapes**: () => `void`
 
-Defined in: [types/stores/project.ts:404](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L404)
+Defined in: [types/stores/project.ts:420](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L420)
 
 Removes all shapes from the project
 
@@ -436,7 +436,7 @@ Removes all shapes from the project
 
 > **clearSizeMaps**: () => `void`
 
-Defined in: [types/stores/project.ts:419](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L419)
+Defined in: [types/stores/project.ts:435](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L435)
 
 Removes all size maps from the project
 
@@ -450,7 +450,7 @@ Removes all size maps from the project
 
 > **clearTables**: () => `void`
 
-Defined in: [types/stores/project.ts:409](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L409)
+Defined in: [types/stores/project.ts:425](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L425)
 
 Removes all tables from the project
 
@@ -464,7 +464,7 @@ Removes all tables from the project
 
 > **clearVisibilityMaps**: () => `void`
 
-Defined in: [types/stores/project.ts:429](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L429)
+Defined in: [types/stores/project.ts:445](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L445)
 
 Removes all visibility maps from the project
 
@@ -478,7 +478,7 @@ Removes all visibility maps from the project
 
 > **deleteColorMap**: (`mapId`) => `void`
 
-Defined in: [types/stores/project.ts:365](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L365)
+Defined in: [types/stores/project.ts:381](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L381)
 
 Removes a color map from the project
 
@@ -500,7 +500,7 @@ The ID of the map to remove
 
 > **deleteImage**: (`imageId`) => `void`
 
-Defined in: [types/stores/project.ts:316](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L316)
+Defined in: [types/stores/project.ts:332](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L332)
 
 Removes an image from the project
 
@@ -522,7 +522,7 @@ The ID of the image to remove
 
 > **deleteLabels**: (`labelsId`) => `void`
 
-Defined in: [types/stores/project.ts:323](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L323)
+Defined in: [types/stores/project.ts:339](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L339)
 
 Removes labels from the project
 
@@ -544,7 +544,7 @@ The ID of the labels to remove
 
 > **deleteLayer**: (`layerId`) => `void`
 
-Defined in: [types/stores/project.ts:309](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L309)
+Defined in: [types/stores/project.ts:325](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L325)
 
 Removes a layer from the project
 
@@ -566,7 +566,7 @@ The ID of the layer to remove
 
 > **deleteMarkerMap**: (`mapId`) => `void`
 
-Defined in: [types/stores/project.ts:351](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L351)
+Defined in: [types/stores/project.ts:367](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L367)
 
 Removes a marker map from the project
 
@@ -588,7 +588,7 @@ The ID of the map to remove
 
 > **deleteOpacityMap**: (`mapId`) => `void`
 
-Defined in: [types/stores/project.ts:379](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L379)
+Defined in: [types/stores/project.ts:395](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L395)
 
 Removes an opacity map from the project
 
@@ -610,7 +610,7 @@ The ID of the map to remove
 
 > **deletePoints**: (`pointsId`) => `void`
 
-Defined in: [types/stores/project.ts:330](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L330)
+Defined in: [types/stores/project.ts:346](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L346)
 
 Removes points from the project
 
@@ -632,7 +632,7 @@ The ID of the points to remove
 
 > **deleteShapes**: (`shapesId`) => `void`
 
-Defined in: [types/stores/project.ts:337](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L337)
+Defined in: [types/stores/project.ts:353](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L353)
 
 Removes shapes from the project
 
@@ -654,7 +654,7 @@ The ID of the shapes to remove
 
 > **deleteSizeMap**: (`mapId`) => `void`
 
-Defined in: [types/stores/project.ts:358](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L358)
+Defined in: [types/stores/project.ts:374](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L374)
 
 Removes a size map from the project
 
@@ -676,7 +676,7 @@ The ID of the map to remove
 
 > **deleteTable**: (`tableId`) => `void`
 
-Defined in: [types/stores/project.ts:344](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L344)
+Defined in: [types/stores/project.ts:360](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L360)
 
 Removes a table from the project
 
@@ -698,7 +698,7 @@ The ID of the table to remove
 
 > **deleteVisibilityMap**: (`mapId`) => `void`
 
-Defined in: [types/stores/project.ts:372](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L372)
+Defined in: [types/stores/project.ts:388](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L388)
 
 Removes a visibility map from the project
 
@@ -720,7 +720,7 @@ The ID of the map to remove
 
 > **moveImage**: (`imageId`, `newIndex`) => `void`
 
-Defined in: [types/stores/project.ts:278](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L278)
+Defined in: [types/stores/project.ts:294](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L294)
 
 Moves an image of the project to another index
 
@@ -748,7 +748,7 @@ The index to move the image to
 
 > **moveLabels**: (`labelsId`, `newIndex`) => `void`
 
-Defined in: [types/stores/project.ts:286](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L286)
+Defined in: [types/stores/project.ts:302](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L302)
 
 Moves labels of the project to another index
 
@@ -776,7 +776,7 @@ The index to move the labels to
 
 > **moveLayer**: (`layerId`, `newIndex`) => `void`
 
-Defined in: [types/stores/project.ts:270](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L270)
+Defined in: [types/stores/project.ts:286](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L286)
 
 Moves a layer of the project to another index
 
@@ -804,7 +804,7 @@ The index to move the layer to
 
 > **movePoints**: (`pointsId`, `newIndex`) => `void`
 
-Defined in: [types/stores/project.ts:294](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L294)
+Defined in: [types/stores/project.ts:310](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L310)
 
 Moves points of the project to another index
 
@@ -832,7 +832,7 @@ The index to move the points to
 
 > **moveShapes**: (`shapesId`, `newIndex`) => `void`
 
-Defined in: [types/stores/project.ts:302](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L302)
+Defined in: [types/stores/project.ts:318](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L318)
 
 Moves shapes of the project to another index
 
@@ -856,11 +856,34 @@ The index to move the shapes to
 
 ***
 
+### setColorbarsVisibility
+
+> **setColorbarsVisibility**: (`colorbarsVisibility`) => `void`
+
+Defined in: [types/stores/project.ts:506](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L506)
+
+Shows or hides the colorbars
+
+#### Parameters
+
+##### colorbarsVisibility
+
+[`Project`](Project.md)\[`"colorbarsVisibility"`\]
+
+Whether the viewer shows the colorbars of colors
+taken from table columns
+
+#### Returns
+
+`void`
+
+***
+
 ### setGLOptions
 
 > **setGLOptions**: (`glOptions`) => `void`
 
-Defined in: [types/stores/project.ts:448](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L448)
+Defined in: [types/stores/project.ts:464](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L464)
 
 Sets the project's WebGL render options
 
@@ -882,7 +905,7 @@ The WebGL options to apply
 
 > **setName**: (`name`) => `void`
 
-Defined in: [types/stores/project.ts:61](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L61)
+Defined in: [types/stores/project.ts:77](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L77)
 
 Renames the project
 
@@ -904,7 +927,7 @@ The new project name
 
 > **setOSOptions**: (`osOptions`) => `void`
 
-Defined in: [types/stores/project.ts:441](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L441)
+Defined in: [types/stores/project.ts:457](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L457)
 
 Sets the project's OpenSeadragon viewer options
 
@@ -922,11 +945,79 @@ The OpenSeadragon options to apply
 
 ***
 
+### setPhysicalUnit
+
+> **setPhysicalUnit**: (`physicalUnit`) => `void`
+
+Defined in: [types/stores/project.ts:489](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L489)
+
+Sets the unit of the project's physical unit size
+
+#### Parameters
+
+##### physicalUnit
+
+[`Project`](Project.md)\[`"physicalUnit"`\]
+
+The physical unit, one of the `PhysicalUnit` names
+or any other text, or `undefined` if it is unknown
+
+#### Returns
+
+`void`
+
+***
+
+### setPhysicalUnitSize
+
+> **setPhysicalUnitSize**: (`physicalUnitSize`) => `void`
+
+Defined in: [types/stores/project.ts:481](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L481)
+
+Sets the project's physical unit size
+
+#### Parameters
+
+##### physicalUnitSize
+
+[`Project`](Project.md)\[`"physicalUnitSize"`\]
+
+The physical size of one world unit, in the
+physical unit, or `undefined` if it is unknown
+
+#### Returns
+
+`void`
+
+***
+
+### setScalebarVisibility
+
+> **setScalebarVisibility**: (`scalebarVisibility`) => `void`
+
+Defined in: [types/stores/project.ts:496](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L496)
+
+Shows or hides the scalebar
+
+#### Parameters
+
+##### scalebarVisibility
+
+[`Project`](Project.md)\[`"scalebarVisibility"`\]
+
+Whether the viewer shows the scalebar
+
+#### Returns
+
+`void`
+
+***
+
 ### setViewerBackgroundColor
 
 > **setViewerBackgroundColor**: (`viewerBackgroundColor`) => `void`
 
-Defined in: [types/stores/project.ts:455](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L455)
+Defined in: [types/stores/project.ts:471](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L471)
 
 Sets the project's viewer background color
 
@@ -948,7 +1039,7 @@ The viewer background color to apply
 
 > **updateColorMap**: (`mapId`, `updates`) => `void`
 
-Defined in: [types/stores/project.ts:237](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L237)
+Defined in: [types/stores/project.ts:253](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L253)
 
 Applies updates to a color map of the project
 
@@ -976,7 +1067,7 @@ The properties to overwrite on the map
 
 > **updateImage**: (`imageId`, `updates`) => `void`
 
-Defined in: [types/stores/project.ts:166](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L166)
+Defined in: [types/stores/project.ts:182](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L182)
 
 Applies updates to an image of the project
 
@@ -1004,7 +1095,7 @@ The properties to overwrite on the image
 
 > **updateLabels**: (`labelsId`, `updates`) => `void`
 
-Defined in: [types/stores/project.ts:174](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L174)
+Defined in: [types/stores/project.ts:190](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L190)
 
 Applies updates to labels of the project
 
@@ -1032,7 +1123,7 @@ The properties to overwrite on the labels
 
 > **updateLayer**: (`layerId`, `updates`) => `void`
 
-Defined in: [types/stores/project.ts:158](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L158)
+Defined in: [types/stores/project.ts:174](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L174)
 
 Applies updates to a layer of the project
 
@@ -1060,7 +1151,7 @@ The properties to overwrite on the layer
 
 > **updateMarkerMap**: (`mapId`, `updates`) => `void`
 
-Defined in: [types/stores/project.ts:215](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L215)
+Defined in: [types/stores/project.ts:231](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L231)
 
 Applies updates to a marker map of the project
 
@@ -1088,7 +1179,7 @@ The properties to overwrite on the map
 
 > **updateOpacityMap**: (`mapId`, `updates`) => `void`
 
-Defined in: [types/stores/project.ts:259](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L259)
+Defined in: [types/stores/project.ts:275](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L275)
 
 Applies updates to an opacity map of the project
 
@@ -1116,7 +1207,7 @@ The properties to overwrite on the map
 
 > **updatePoints**: (`pointsId`, `updates`) => `void`
 
-Defined in: [types/stores/project.ts:185](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L185)
+Defined in: [types/stores/project.ts:201](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L201)
 
 Applies updates to points of the project
 
@@ -1144,7 +1235,7 @@ The properties to overwrite on the points
 
 > **updateShapes**: (`shapesId`, `updates`) => `void`
 
-Defined in: [types/stores/project.ts:196](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L196)
+Defined in: [types/stores/project.ts:212](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L212)
 
 Applies updates to shapes of the project
 
@@ -1172,7 +1263,7 @@ The properties to overwrite on the shapes
 
 > **updateSizeMap**: (`mapId`, `updates`) => `void`
 
-Defined in: [types/stores/project.ts:226](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L226)
+Defined in: [types/stores/project.ts:242](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L242)
 
 Applies updates to a size map of the project
 
@@ -1200,7 +1291,7 @@ The properties to overwrite on the map
 
 > **updateTable**: (`tableId`, `updates`) => `void`
 
-Defined in: [types/stores/project.ts:207](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L207)
+Defined in: [types/stores/project.ts:223](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L223)
 
 Applies updates to a table of the project
 
@@ -1228,7 +1319,7 @@ The properties to overwrite on the table
 
 > **updateVisibilityMap**: (`mapId`, `updates`) => `void`
 
-Defined in: [types/stores/project.ts:248](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/stores/project.ts#L248)
+Defined in: [types/stores/project.ts:264](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/stores/project.ts#L264)
 
 Applies updates to a visibility map of the project
 

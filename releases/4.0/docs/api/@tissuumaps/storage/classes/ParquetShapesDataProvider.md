@@ -1,6 +1,6 @@
 # Class: ParquetShapesDataProvider
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:15](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L15)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:15](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L15)
 
 Data provider for shape (polygon) collections
 
@@ -24,7 +24,7 @@ Data provider for shape (polygon) collections
 
 > `readonly` **name**: `"Parquet"` = `"Parquet"`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:23](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L23)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:23](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L23)
 
 The name of the data provider
 
@@ -38,7 +38,7 @@ The name of the data provider
 
 > `readonly` **schema**: `object`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L25)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:25](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L25)
 
 The JSON schema for the data source
 
@@ -120,7 +120,7 @@ The JSON schema for the data source
 
 > `readonly` **uischema**: `object`
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L51)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:51](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L51)
 
 The JSON Forms UI schema for the data source
 
@@ -145,7 +145,7 @@ application renders itself if the schema declares it, as a string.
 
 > **load**(`normalizedDataSource`, `options?`): `Promise`\<[`ParquetShapesData`](ParquetShapesData.md)\>
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:134](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L134)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:134](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L134)
 
 Opens a data source and returns the loaded data accessor
 
@@ -182,7 +182,7 @@ A promise that resolves to the loaded data accessor
 
 > **normalize**(`dataSource`, `workspace`, `projectSource`): [`NormalizedParquetShapesDataSource`](../type-aliases/NormalizedParquetShapesDataSource.md)
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:77](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L77)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:77](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L77)
 
 Returns the data source with all of this data provider's defaults applied
 and its source normalized
@@ -239,7 +239,7 @@ The normalized data source
 
 > **supports**(`normalizedSource`, `workspace`, `options?`): `Promise`\<`boolean`\>
 
-Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:108](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L108)
+Defined in: [@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts:108](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/parquet/ParquetShapesDataProvider.ts#L108)
 
 Returns whether a source is a GeoParquet file of shapes
 

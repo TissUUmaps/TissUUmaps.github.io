@@ -1,6 +1,6 @@
 # Class: CSVTableDataProvider
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L28)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:28](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L28)
 
 Data provider for tabular data
 
@@ -24,7 +24,7 @@ Data provider for tabular data
 
 > `readonly` **name**: `"CSV"` = `"CSV"`
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:36](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L36)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:36](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L36)
 
 The name of the data provider
 
@@ -38,7 +38,7 @@ The name of the data provider
 
 > `readonly` **schema**: `object`
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:38](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L38)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:38](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L38)
 
 The JSON schema for the data source
 
@@ -88,7 +88,7 @@ The JSON schema for the data source
 
 > `readonly` **uischema**: `object`
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:57](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L57)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:57](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L57)
 
 The JSON Forms UI schema for the data source
 
@@ -113,7 +113,7 @@ application renders itself if the schema declares it, as a string.
 
 > **load**(`normalizedDataSource`, `options?`): `Promise`\<[`CSVTableData`](CSVTableData.md)\>
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:107](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L107)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:107](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L107)
 
 Opens a data source and returns the loaded data accessor
 
@@ -150,7 +150,7 @@ A promise that resolves to the loaded data accessor
 
 > **normalize**(`dataSource`, `workspace`, `projectSource`): [`NormalizedCSVTableDataSource`](../type-aliases/NormalizedCSVTableDataSource.md)
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:76](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L76)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:76](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L76)
 
 Returns the data source with all of this data provider's defaults applied
 and its source normalized
@@ -207,7 +207,7 @@ The normalized data source
 
 > **supports**(`normalizedSource`): `Promise`\<`boolean`\>
 
-Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:99](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L99)
+Defined in: [@tissuumaps-storage/src/csv/CSVTableDataProvider.ts:99](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/csv/CSVTableDataProvider.ts#L99)
 
 Returns whether a source has a CSV file extension (see
 CSVTableDataProvider.\_extensions)

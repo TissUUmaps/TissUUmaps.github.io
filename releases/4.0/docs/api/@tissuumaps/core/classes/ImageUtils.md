@@ -1,6 +1,6 @@
 # Class: ImageUtils
 
-Defined in: [utils/ImageUtils.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L20)
+Defined in: [utils/ImageUtils.ts:20](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L20)
 
 Utility methods for resolving and defaulting image channel settings
 
@@ -20,7 +20,7 @@ Utility methods for resolving and defaulting image channel settings
 
 > `static` **getActiveChannel**(`image`, `sizeC`): `number`
 
-Defined in: [utils/ImageUtils.ts:121](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L121)
+Defined in: [utils/ImageUtils.ts:121](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L121)
 
 Returns the channel an image shows in the single-channel view modes
 
@@ -53,7 +53,7 @@ The channel index (0-based)
 
 > `static` **getChannelColor**(`image`, `data`, `c`): [`Color`](../type-aliases/Color.md)
 
-Defined in: [utils/ImageUtils.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L34)
+Defined in: [utils/ImageUtils.ts:34](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L34)
 
 Returns the color of a channel
 
@@ -94,7 +94,7 @@ The channel's color
 
 > `static` **getChannelContrastLimits**(`image`, `data`, `c`): \[`number`, `number`\] \| `undefined`
 
-Defined in: [utils/ImageUtils.ts:59](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L59)
+Defined in: [utils/ImageUtils.ts:59](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L59)
 
 Returns the contrast limits of a channel
 
@@ -137,7 +137,7 @@ provides neither limits, a histogram nor a data type range
 
 > `static` **getChannelOpacity**(`image`, `data`, `c`): `number`
 
-Defined in: [utils/ImageUtils.ts:107](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L107)
+Defined in: [utils/ImageUtils.ts:107](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L107)
 
 Returns the opacity of a channel
 
@@ -176,7 +176,7 @@ The channel's opacity, in `[0, 1]`
 
 > `static` **getChannelVisibility**(`image`, `data`, `c`): `boolean`
 
-Defined in: [utils/ImageUtils.ts:86](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L86)
+Defined in: [utils/ImageUtils.ts:86](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L86)
 
 Returns the visibility of a channel
 
@@ -215,7 +215,7 @@ Whether the channel is visible
 
 > `static` **getDataTypeRange**(`values`): \[`number`, `number`\]
 
-Defined in: [utils/ImageUtils.ts:275](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L275)
+Defined in: [utils/ImageUtils.ts:275](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L275)
 
 Returns the value range that the type of the given array can hold, for use
 as default contrast limits of image channel data
@@ -243,7 +243,7 @@ The value range, as `[min, max]`
 
 > `static` **getDefaultChannelColor**(`c`): [`Color`](../type-aliases/Color.md)
 
-Defined in: [utils/ImageUtils.ts:143](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L143)
+Defined in: [utils/ImageUtils.ts:143](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L143)
 
 Returns a default color for a channel, for use when no channel colors are
 known
@@ -279,7 +279,7 @@ The default color for the channel
 
 > `static` **getDefaultContrastLimits**(`histogram`, `qlow?`, `qhigh?`): \[`number`, `number`\]
 
-Defined in: [utils/ImageUtils.ts:197](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L197)
+Defined in: [utils/ImageUtils.ts:197](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L197)
 
 Returns quantile-based contrast limits derived from a channel histogram,
 for use as default contrast limits when no contrast limits are known
@@ -338,7 +338,7 @@ range, with `low < high` unless the range is degenerate
 
 > `static` **getIntegerTypeRange**(`bits`, `signed`): \[`number`, `number`\]
 
-Defined in: [utils/ImageUtils.ts:259](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L259)
+Defined in: [utils/ImageUtils.ts:259](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/utils/ImageUtils.ts#L259)
 
 Returns the value range that an integer type can hold
 

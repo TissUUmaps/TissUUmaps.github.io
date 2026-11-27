@@ -2,7 +2,7 @@
 
 > **WebGLShapesRenderOptions** = `object`
 
-Defined in: [types/webgl.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/webgl.ts#L27)
+Defined in: [types/webgl.ts:27](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/webgl.ts#L27)
 
 Options for rendering shapes
 
@@ -12,7 +12,7 @@ Options for rendering shapes
 
 > **binWidthFactor**: `number`
 
-Defined in: [types/webgl.ts:56](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/webgl.ts#L56)
+Defined in: [types/webgl.ts:56](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/webgl.ts#L56)
 
 Width of the x-bins of the scanlines a shapes object is rasterized into
 (see [edgesPerScanline](#edgesperscanline)), relative to the median width of its shapes
@@ -28,7 +28,7 @@ them.
 
 > **edgesPerScanline**: `number`
 
-Defined in: [types/webgl.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/webgl.ts#L45)
+Defined in: [types/webgl.ts:45](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/webgl.ts#L45)
 
 Number of polygon edges of a typical shape that a scanline holds, when
 rasterizing a shapes object
@@ -49,7 +49,7 @@ of them.
 
 > **shapePadding**: `number`
 
-Defined in: [types/webgl.ts:72](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/webgl.ts#L72)
+Defined in: [types/webgl.ts:72](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/webgl.ts#L72)
 
 Fraction of the median height and width of the shapes that shapes and
 polygon edges are padded by on either side when rasterizing a shapes
@@ -70,6 +70,6 @@ larger scanline texture.
 
 > **strokeWidth**: `number`
 
-Defined in: [types/webgl.ts:29](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-core/src/types/webgl.ts#L29)
+Defined in: [types/webgl.ts:29](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-core/src/types/webgl.ts#L29)
 
 Width of the shape outlines, in world coordinates

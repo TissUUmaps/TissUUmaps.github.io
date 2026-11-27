@@ -2,7 +2,7 @@
 
 > **TIFFChannel** = [`TIFFChannelMetadata`](TIFFChannelMetadata.md) & `object`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:17](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L17)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageData.ts:17](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageData.ts#L17)
 
 A channel of a loaded multi-channel TIFF file
 

@@ -1,6 +1,6 @@
 # Interface: TIFFImageDataSource
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts:19](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts#L19)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts:19](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts#L19)
 
 Data source for TIFF images
 
@@ -18,7 +18,7 @@ QPTIFF and plain pyramidal TIFF are recognized by their metadata.
 
 > **source**: `string`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts:23](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts#L23)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts:23](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts#L23)
 
 URL or path of the TIFF file (see `SourceUtils`)
 
@@ -32,7 +32,7 @@ URL or path of the TIFF file (see `SourceUtils`)
 
 > `optional` **t?**: `number`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts:37](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts#L37)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts:37](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts#L37)
 
 The timepoint to display, for OME-TIFF files with a time series
 
@@ -46,7 +46,7 @@ The timepoint to display, for OME-TIFF files with a time series
 
 > **type**: `"tiff"`
 
-Defined in: @tissuumaps-core/build/src/model/base.d.ts:171
+Defined in: @tissuumaps-core/build/src/model/base.d.ts:180
 
 Data source type
 
@@ -60,7 +60,7 @@ Data source type
 
 > `optional` **z?**: `number`
 
-Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/4d87878a5a9aef5a0eabcac819b543bc23f43411/packages/@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts#L30)
+Defined in: [@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts:30](https://github.com/TissUUmaps/TissUUmaps/blob/fff0b4b2976f09abd0015299aa33eb9ef2914996/packages/@tissuumaps-storage/src/tiff/TIFFImageDataSource.ts#L30)
 
 The z-slice to display, for OME-TIFF files with a z-stack
 
